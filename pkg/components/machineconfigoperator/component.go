@@ -25,6 +25,11 @@ var MachineConfigOperatorComponent = Component{
 			{
 				IncludeSubstrings: []string{"machine-config-operator"},
 			},
+			{
+				SIG:               "sig-cluster-lifecycle",
+				IncludeSubstrings: []string{"Pods cannot access the /config"},
+				Capabilities:      []string{"Config"},
+			},
 		},
 	},
 }
