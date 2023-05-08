@@ -13,6 +13,9 @@ func identifyCapabilities(test *v1.TestInfo) []string {
 	// Get the Feature name from the test name as a capability
 	capabilities = append(capabilities, util.ExtractTestField(test.Name, "Feature")...)
 
+	// Storage tests use Testpattern
+	capabilities = append(capabilities, util.ExtractTestField(test.Name, "Testpattern")...)
+
 	if strings.Contains(test.Name, "clusteroperator/") {
 		capabilities = append(capabilities, "Operator")
 	}
