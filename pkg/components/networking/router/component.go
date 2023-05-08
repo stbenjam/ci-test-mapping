@@ -33,6 +33,9 @@ var RouterComponent = Component{
 			{
 				IncludeSubstrings: []string{"openshift-ingress"},
 			},
+			{
+				IncludeSubstrings: []string{"via cluster ingress"},
+			},
 		},
 	},
 }

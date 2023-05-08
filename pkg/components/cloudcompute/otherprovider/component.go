@@ -25,6 +25,13 @@ var OtherProviderComponent = Component{
 			{
 				IncludeSubstrings: []string{"bz-control-plane-machine-set"},
 			},
+			{
+				IncludeSubstrings: []string{"service-load-balancer-", "disruption"},
+			},
+			{
+				SIG:               "sig-network-edge",
+				IncludeSubstrings: []string{"Application behind service load balancer"},
+			},
 		},
 	},
 }
