@@ -8,8 +8,7 @@ set -ex
 if [ "$CI" = "true" ];
 then
   curl -L https://github.com/golangci/golangci-lint/releases/download/v1.52.2/golangci-lint-1.52.2-linux-386.tar.gz | tar xzv
-  mv golangci-lint-1.52.2-linux-386/golangci-lint /usr/local/bin
-  golangci-lint "${@}"
+  ./golangci-lint-1.52.2-linux-386/golangci-lint "${@}"
 else
   DOCKER=${DOCKER:-podman}
 
