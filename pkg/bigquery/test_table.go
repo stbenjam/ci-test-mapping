@@ -20,7 +20,6 @@ var suites = []string{
 	"BakckendDisruption",
 	"Cluster upgrade",
 	"hypershift-e2e",
-	"OSD e2e suite",
 	"cluster install",
 	"Operator results",
 }

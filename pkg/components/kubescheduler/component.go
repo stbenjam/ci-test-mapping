@@ -19,6 +19,10 @@ var KubeSchedulerComponent = Component{
 			{
 				IncludeSubstrings: []string{"bz-kube-scheduler"},
 			},
+			{
+				SIG:      "sig-scheduling",
+				Priority: -1,
+			},
 		},
 	},
 }

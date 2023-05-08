@@ -15,7 +15,31 @@ var TestFrameworkComponent = Component{
 		Name:                 "Test Framework",
 		Operators:            []string{},
 		DefaultJiraComponent: "Test Framework",
-		Matchers:             []config.ComponentMatcher{},
+		Matchers: []config.ComponentMatcher{
+			{
+				IncludeSubstrings: []string{"Undiagnosed panic"},
+			},
+			{
+				SIG: "sig-trt",
+			},
+			{
+				SIG: "sig-ci",
+			},
+			{
+				SIG:               "sig-arch",
+				IncludeSubstrings: []string{"events should not repeat"},
+				Capabilities:      []string{"Pathological Events"},
+				// TRT is owner of last resort for these
+				Priority: -1,
+			},
+			{
+				SIG:               "sig-arch",
+				IncludeSubstrings: []string{"Alerts alert/"},
+				Capabilities:      []string{"Alerts"},
+				// TRT is owner of last resort for these
+				Priority: -1,
+			},
+		},
 	},
 }
 

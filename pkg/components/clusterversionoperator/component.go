@@ -22,6 +22,11 @@ var ClusterVersionOperatorComponent = Component{
 			{
 				IncludeSubstrings: []string{"bz-Cluster Version Operator"},
 			},
+			{
+				IncludeSubstrings: []string{"upgrade"},
+				// Let others claim upgrade tests (i.e. for their component)
+				Priority: -10,
+			},
 		},
 	},
 }
