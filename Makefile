@@ -6,7 +6,7 @@ build:
 	go build .
 
 test:
-	go test -v ./pkg/...
+	./hack/ci-test.sh
 
 mapping: build
 	./ci-test-mapping map --mode=local
