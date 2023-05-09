@@ -1,7 +1,12 @@
 #!/bin/bash
+#
+# For running our test suite in CI
+#
 
 set -euo pipefail
 set -x
+
+PATH=$PATH:/go/bin
 
 ARTIFACT_DIR=${ARTIFACT_DIR:-/tmp}
 
