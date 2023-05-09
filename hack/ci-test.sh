@@ -6,9 +6,8 @@
 set -euo pipefail
 set -x
 
-PATH=$PATH:/go/bin
-
-ARTIFACT_DIR=${ARTIFACT_DIR:-/tmp}
+export ARTIFACT_DIR=${ARTIFACT_DIR:-/tmp}
+export PATH=$PATH:/go/bin
 
 gotestsum --junitfile="${ARTIFACT_DIR}/junit.xml" --format=standard-verbose
 
