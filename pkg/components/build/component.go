@@ -17,9 +17,6 @@ var BuildComponent = Component{
 		DefaultJiraComponent: "Build",
 		Matchers: []config.ComponentMatcher{
 			{
-				SIG: "sig-apps",
-			},
-			{
 				SIG: "sig-builds",
 			},
 			{

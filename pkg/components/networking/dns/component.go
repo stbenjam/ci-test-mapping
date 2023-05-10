@@ -26,6 +26,10 @@ var DNSComponent = Component{
 			{
 				IncludeSubstrings: []string{"bz-DNS"},
 			},
+			{
+				SIG:               "sig-network-edge",
+				IncludeSubstrings: []string{"DNS"},
+			},
 		},
 	},
 }

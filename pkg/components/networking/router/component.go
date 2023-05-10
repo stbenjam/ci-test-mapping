@@ -36,6 +36,9 @@ var RouterComponent = Component{
 			{
 				IncludeSubstrings: []string{"via cluster ingress"},
 			},
+			{
+				IncludeSubstrings: []string{"Cluster frontend ingress"},
+			},
 		},
 	},
 }

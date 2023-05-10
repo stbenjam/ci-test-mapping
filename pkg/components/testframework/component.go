@@ -26,18 +26,28 @@ var TestFrameworkComponent = Component{
 				SIG: "sig-ci",
 			},
 			{
+				IncludeSubstrings: []string{"ci-cluster-network-liveness-", "-connections"},
+				Capabilities:      []string{"Build Clusters"},
+			},
+
+			// TRT is owner of last resort for these
+			{
 				SIG:               "sig-arch",
 				IncludeSubstrings: []string{"events should not repeat"},
 				Capabilities:      []string{"Pathological Events"},
-				// TRT is owner of last resort for these
-				Priority: -1,
+				Priority:          -1,
 			},
 			{
 				SIG:               "sig-arch",
 				IncludeSubstrings: []string{"Alerts alert/"},
 				Capabilities:      []string{"Alerts"},
-				// TRT is owner of last resort for these
-				Priority: -1,
+				Priority:          -1,
+			},
+
+			{
+				IncludeSubstrings: []string{"bz-Unknown", "alert/KubePodNotReady"},
+				Priority:          -1,
+				Capabilities:      []string{"KubePodNotReady - Other"},
 			},
 		},
 	},
