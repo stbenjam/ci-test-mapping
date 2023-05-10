@@ -17,10 +17,10 @@ var InsightsOperatorComponent = Component{
 		DefaultJiraComponent: "Insights Operator",
 		Matchers: []config.ComponentMatcher{
 			{
-				IncludeSubstrings: []string{"bz-Insights Operator"},
+				Include: []string{"bz-Insights Operator"},
 			},
 			{
-				IncludeSubstrings: []string{"insights-operator"},
+				Include: []string{"insights-operator"},
 			},
 		},
 	},

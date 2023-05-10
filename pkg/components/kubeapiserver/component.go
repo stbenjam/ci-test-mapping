@@ -17,16 +17,16 @@ var KubeApiserverComponent = Component{
 		DefaultJiraComponent: "kube-apiserver",
 		Matchers: []config.ComponentMatcher{
 			{
-				IncludeSubstrings: []string{"bz-kube-apiserver"},
+				Include: []string{"bz-kube-apiserver"},
 			},
 			{
-				IncludeSubstrings: []string{"cache-kube-api-"},
+				Include: []string{"cache-kube-api-"},
 			},
 			{
-				IncludeSubstrings: []string{"kube-api-", "-connections"},
+				Include: []string{"kube-api-", "-connections"},
 			},
 			{
-				IncludeSubstrings: []string{"[sig-api-machinery][Feature:APIServer]"},
+				Include: []string{"[sig-api-machinery][Feature:APIServer]"},
 			},
 			{
 				SIG:      "sig-api-machinery",

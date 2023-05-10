@@ -17,7 +17,7 @@ var ServiceCaComponent = Component{
 		DefaultJiraComponent: "service-ca",
 		Matchers: []config.ComponentMatcher{
 			{
-				IncludeSubstrings: []string{"[bz-service-ca]"},
+				Include: []string{"[bz-service-ca]"},
 			},
 		},
 	},

@@ -17,10 +17,10 @@ var OLMComponent = Component{
 		DefaultJiraComponent: "OLM",
 		Matchers: []config.ComponentMatcher{
 			{
-				IncludeSubstrings: []string{"bz-OLM"},
+				Include: []string{"bz-OLM"},
 			},
 			{
-				IncludeSubstrings: []string{"bz-platform-operators-aggregated"},
+				Include: []string{"bz-platform-operators-aggregated"},
 			},
 			{
 				SIG: "sig-operator",

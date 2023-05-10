@@ -17,7 +17,7 @@ var CloudCredentialOperatorComponent = Component{
 		DefaultJiraComponent: "Cloud Credential Operator",
 		Matchers: []config.ComponentMatcher{
 			{
-				IncludeSubstrings: []string{"bz-Cloud Credential Operator"},
+				Include: []string{"bz-Cloud Credential Operator"},
 			},
 		},
 	},

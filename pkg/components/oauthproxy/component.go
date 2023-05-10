@@ -17,7 +17,7 @@ var OauthProxyComponent = Component{
 		DefaultJiraComponent: "oauth-proxy",
 		Matchers: []config.ComponentMatcher{
 			{
-				IncludeSubstrings: []string{"oauth-proxy"},
+				Include: []string{"oauth-proxy"},
 			},
 		},
 	},

@@ -17,7 +17,7 @@ var KubeStorageVersionMigratorComponent = Component{
 		DefaultJiraComponent: "kube-storage-version-migrator",
 		Matchers: []config.ComponentMatcher{
 			{
-				IncludeSubstrings: []string{"bz-kube-storage-version-migrator"},
+				Include: []string{"bz-kube-storage-version-migrator"},
 			},
 		},
 	},

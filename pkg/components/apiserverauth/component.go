@@ -17,7 +17,7 @@ var ApiserverAuthComponent = Component{
 		DefaultJiraComponent: "apiserver-auth",
 		Matchers: []config.ComponentMatcher{
 			{
-				IncludeSubstrings: []string{"bz-apiserver-auth"},
+				Include: []string{"bz-apiserver-auth"},
 			},
 		},
 	},

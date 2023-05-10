@@ -17,7 +17,7 @@ var KubeSchedulerComponent = Component{
 		DefaultJiraComponent: "kube-scheduler",
 		Matchers: []config.ComponentMatcher{
 			{
-				IncludeSubstrings: []string{"bz-kube-scheduler"},
+				Include: []string{"bz-kube-scheduler"},
 			},
 			{
 				SIG:      "sig-scheduling",

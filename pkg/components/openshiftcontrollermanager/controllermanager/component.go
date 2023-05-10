@@ -17,7 +17,7 @@ var ControllerManagerComponent = Component{
 		DefaultJiraComponent: "openshift-controller-manager / controller-manager",
 		Matchers: []config.ComponentMatcher{
 			{
-				IncludeSubstrings: []string{"bz-openshift-controller-manager"},
+				Include: []string{"bz-openshift-controller-manager"},
 			},
 		},
 	},

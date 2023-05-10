@@ -17,8 +17,8 @@ var OpenShiftOnOpenStackComponent = Component{
 		DefaultJiraComponent: "Installer / OpenShift on OpenStack",
 		Matchers: []config.ComponentMatcher{
 			{
-				SIG:               "sig-installer",
-				IncludeSubstrings: []string{"openstack"},
+				SIG:     "sig-installer",
+				Include: []string{"openstack"},
 			},
 		},
 	},
