@@ -17,10 +17,10 @@ var BareMetalHardwareProvisioningComponent = Component{
 		DefaultJiraComponent: "Bare Metal Hardware Provisioning",
 		Matchers: []config.ComponentMatcher{
 			{
-				IncludeSubstrings: []string{"bz-baremetal"},
+				Include: []string{"bz-baremetal"},
 			},
 			{
-				IncludeSubstrings: []string{"bz-Bare Metal Hardware Provisioning"},
+				Include: []string{"bz-Bare Metal Hardware Provisioning"},
 			},
 		},
 	},

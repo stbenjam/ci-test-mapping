@@ -17,12 +17,12 @@ var OvnKubernetesComponent = Component{
 		DefaultJiraComponent: "Networking / ovn-kubernetes",
 		Matchers: []config.ComponentMatcher{
 			{
-				SIG:               "sig-network",
-				ExcludeSubstrings: []string{"[Skipped:Network/OVNKubernetes]"},
+				SIG:     "sig-network",
+				Exclude: []string{"[Skipped:Network/OVNKubernetes]"},
 			},
 			{
-				IncludeSubstrings: []string{"ovn-kubernetes"},
-				Priority:          1,
+				Include:  []string{"ovn-kubernetes"},
+				Priority: 1,
 			},
 		},
 	},

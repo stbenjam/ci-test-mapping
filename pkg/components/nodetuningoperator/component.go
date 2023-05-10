@@ -17,7 +17,7 @@ var NodeTuningOperatorComponent = Component{
 		DefaultJiraComponent: "Node Tuning Operator",
 		Matchers: []config.ComponentMatcher{
 			{
-				IncludeSubstrings: []string{"bz-Node Tuning Operator"},
+				Include: []string{"bz-Node Tuning Operator"},
 			},
 		},
 	},

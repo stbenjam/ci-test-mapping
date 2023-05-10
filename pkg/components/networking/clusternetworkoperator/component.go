@@ -17,10 +17,10 @@ var ClusterNetworkOperatorComponent = Component{
 		DefaultJiraComponent: "Networking / cluster-network-operator",
 		Matchers: []config.ComponentMatcher{
 			{
-				IncludeSubstrings: []string{"bz-Networking"},
+				Include: []string{"bz-Networking"},
 			},
 			{
-				IncludeSubstrings: []string{"bz-networking"},
+				Include: []string{"bz-networking"},
 			},
 			{
 				SIG: "sig-network",
@@ -28,7 +28,7 @@ var ClusterNetworkOperatorComponent = Component{
 				Priority: -1,
 			},
 			{
-				IncludeSubstrings: []string{"cluster-network-operator"},
+				Include: []string{"cluster-network-operator"},
 			},
 		},
 	},

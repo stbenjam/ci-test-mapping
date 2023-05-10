@@ -24,6 +24,20 @@ var suites = []string{
 	"Operator results",
 }
 
+var ignoredTests = []string{
+	"Build image%",
+	"Find the input image%",
+	"Find all of the input images%",
+	"step graph.%",
+	"Run multi-stage test %",
+	"% was not OOMKilled%",
+	"Create the release image%",
+	"Import the release payload %",
+	"All images are built%",
+	"Tag the image %",
+	"%XXXitoring%",
+}
+
 type TestTableManager struct {
 	ctx     context.Context
 	client  *Client
@@ -42,6 +56,11 @@ func (tm *TestTableManager) ListTests() ([]v1.TestInfo, error) {
 	log.Infof("fetching unique test/suite names from bigquery")
 	table := tm.client.bigquery.Dataset(tm.dataset).Table(testTableName)
 
+	var filter []string
+	for _, ignored := range ignoredTests {
+		filter = append(filter, fmt.Sprintf("test_name NOT LIKE '%s'", ignored))
+	}
+
 	sql := fmt.Sprintf(`
 		SELECT DISTINCT
 		    test_name as name,
@@ -51,13 +70,9 @@ func (tm *TestTableManager) ListTests() ([]v1.TestInfo, error) {
 		WHERE
 		    testsuite IN ('%s')
 		AND
-		    test_name NOT LIKE 'steph graph.%%'
-		AND
-		    test_name NOT LIKE 'Run multi-stage test%%'
-		AND
-		    test_name NOT LIKE '%% was not OOMKilled%%'
+		    %s
 		ORDER BY name, testsuite DESC`,
-		table.ProjectID, tm.client.datasetName, table.TableID, strings.Join(suites, "','"))
+		table.ProjectID, tm.client.datasetName, table.TableID, strings.Join(suites, "','"), strings.Join(filter, " AND "))
 	log.Debugf("query is %q", sql)
 
 	q := tm.client.bigquery.Query(sql)

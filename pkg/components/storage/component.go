@@ -20,10 +20,10 @@ var StorageComponent = Component{
 				SIG: "sig-storage",
 			},
 			{
-				IncludeSubstrings: []string{"bz-Storage"},
+				Include: []string{"bz-Storage"},
 			},
 			{
-				IncludeSubstrings: []string{"bz-storage"},
+				Include: []string{"bz-storage"},
 			},
 		},
 	},

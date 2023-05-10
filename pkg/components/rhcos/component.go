@@ -15,7 +15,11 @@ var RHCOSComponent = Component{
 		Name:                 "RHCOS",
 		Operators:            []string{},
 		DefaultJiraComponent: "RHCOS",
-		Matchers:             []config.ComponentMatcher{},
+		Matchers: []config.ComponentMatcher{
+			{
+				SIG: "sig-coreos",
+			},
+		},
 	},
 }
 

@@ -17,10 +17,10 @@ var ImageRegistryComponent = Component{
 		DefaultJiraComponent: "Image Registry",
 		Matchers: []config.ComponentMatcher{
 			{
-				IncludeSubstrings: []string{"bz-Image Registry"},
+				Include: []string{"bz-Image Registry"},
 			},
 			{
-				IncludeSubstrings: []string{"image-registry-", "-connections"},
+				Include: []string{"image-registry-", "-connections"},
 			},
 			{
 				SIG: "sig-imageregistry",
