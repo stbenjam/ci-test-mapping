@@ -9,5 +9,5 @@ RUN dnf install -y \
         make && make build
 
 FROM gcr.io/k8s-prow/pr-creator:latest AS base
-COPY --from=builder /go/src/openshift-eng/ci-test-mapping/ci-test-mapping /ci-test-mapping
+COPY --from=builder /go/src/openshift-eng/ci-test-mapping/ci-test-mapping /ko-app/ci-test-mapping
 ENTRYPOINT ["/ci-test-mapping"]
