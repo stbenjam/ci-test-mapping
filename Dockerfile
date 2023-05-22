@@ -8,6 +8,6 @@ RUN dnf install -y \
         go \
         make && make build
 
-FROM registry.access.redhat.com/ubi9/ubi:latest AS base
+FROM gcr.io/k8s-prow/pr-creator:latest AS base
 COPY --from=builder /go/src/openshift-eng/ci-test-mapping/ci-test-mapping /ci-test-mapping
 ENTRYPOINT ["/ci-test-mapping"]
