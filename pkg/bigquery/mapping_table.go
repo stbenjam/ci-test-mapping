@@ -3,6 +3,7 @@ package bigquery
 import (
 	"context"
 	"fmt"
+	"strings"
 	"time"
 
 	"cloud.google.com/go/bigquery"
@@ -112,6 +113,25 @@ func (tm *MappingTableManager) PushMappings(mappings []v1.TestOwnership) error {
 	}
 
 	return nil
+}
+
+func (tm *MappingTableManager) PruneMappings() error {
+	now := time.Now()
+	log.Infof("pruning mappings from bigquery")
+	table := tm.client.bigquery.Dataset(tm.client.datasetName).Table(mappingTableName)
+
+	tableLocator := fmt.Sprintf("%s.%s.%s", table.ProjectID, tm.client.datasetName, table.TableID)
+
+	sql := fmt.Sprintf(`DELETE FROM %s WHERE created_at < (SELECT MAX(created_at) FROM %s)`, tableLocator, tableLocator)
+	log.Infof("query is %q", sql)
+
+	q := tm.client.bigquery.Query(sql)
+	_, err := q.Read(tm.ctx)
+	log.Infof("pruned mapping table in %+v", time.Since(now))
+	if err != nil && strings.Contains(err.Error(), "streaming") {
+		log.Warningf("got error while trying to prune the table; please wait 90 minutes and try again. You cannot prune after modifying the table.")
+	}
+	return err
 }
 
 func (tm *MappingTableManager) Table() *bigquery.Table {
