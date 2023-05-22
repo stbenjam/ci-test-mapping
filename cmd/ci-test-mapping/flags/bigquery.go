@@ -14,7 +14,7 @@ type Flags struct {
 
 func NewFlags() *Flags {
 	return &Flags{
-		OAuthClientCredentialFile: os.Getenv("GOOGLE_APPLICATION_CREDENTIALS"),
+		ServiceAccountCredentialFile: os.Getenv("GOOGLE_APPLICATION_CREDENTIALS"),
 	}
 }
 
