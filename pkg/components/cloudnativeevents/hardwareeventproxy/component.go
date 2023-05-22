@@ -21,10 +21,14 @@ var HardwareEventProxyComponent = Component{
 
 func (c *Component) IdentifyTest(test *v1.TestInfo) (*v1.TestOwnership, error) {
 	if matcher := c.FindMatch(test); matcher != nil {
+		jira := matcher.JiraComponent
+		if jira == "" {
+			jira = c.DefaultJiraComponent
+		}
 		return &v1.TestOwnership{
 			Name:          test.Name,
 			Component:     c.Name,
-			JIRAComponent: matcher.JiraComponent,
+			JIRAComponent: jira,
 			Priority:      matcher.Priority,
 			Capabilities:  append(matcher.Capabilities, identifyCapabilities(test)...),
 		}, nil
