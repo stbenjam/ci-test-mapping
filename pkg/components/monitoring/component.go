@@ -32,6 +32,12 @@ var MonitoringComponent = Component{
 	},
 }
 
+// renamedTests is a map that maps new test names to the earliest name of the test. This lets us have a stable test ID
+// across all releases.
+var renamedTests = map[string]string{
+	"[sig-instrumentation][Late] Alerts shouldn't report any alerts in firing or pending state apart from Watchdog and AlertmanagerReceiversNotConfigured and have no gaps in Watchdog firing [Skipped:Disconnected] [Suite:openshift/conformance/parallel]": "[sig-instrumentation][Late] Alerts shouldn't report any alerts in firing state apart from Watchdog and AlertmanagerReceiversNotConfigured [Suite:openshift/conformance/parallel]",
+}
+
 func (c *Component) IdentifyTest(test *v1.TestInfo) (*v1.TestOwnership, error) {
 	if matcher := c.FindMatch(test); matcher != nil {
 		jira := matcher.JiraComponent
@@ -51,6 +57,11 @@ func (c *Component) IdentifyTest(test *v1.TestInfo) (*v1.TestOwnership, error) {
 }
 
 func (c *Component) StableID(test *v1.TestInfo) string {
+	// Look up the stable name for our test in our renamed tests map.
+	if stableName, ok := renamedTests[test.Name]; ok {
+		return stableName
+	}
+
 	return test.Name
 }
 

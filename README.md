@@ -37,7 +37,7 @@ save in the DB as an md5sum.
 The first stable ID a test has is the one that remains. Component owners are
 responsible for ensuring the `StableID` function in their component
 returns the same ID for all names of a given test. This can be done with
-a simple look-up map, see the networking component for an example.
+a simple look-up map, see the monitoring component for an example.
 
 # Test Sources
 
