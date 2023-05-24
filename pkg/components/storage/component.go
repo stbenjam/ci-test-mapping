@@ -48,7 +48,7 @@ func (c *Component) IdentifyTest(test *v1.TestInfo) (*v1.TestOwnership, error) {
 }
 
 func (c *Component) StableID(test *v1.TestInfo) string {
-	return util.StableID(test, nil)
+	return util.StableID(test)
 }
 
 func (c *Component) JiraComponents() (components []string) {
