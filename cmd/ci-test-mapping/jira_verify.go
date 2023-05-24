@@ -21,7 +21,7 @@ func NewVerifyFlags() *VerifyFlags {
 }
 
 var verifyCmd = &cobra.Command{
-	Use:   "verify",
+	Use:   "jira-verify",
 	Short: "Verify all JIRA components are represented in ci-test-mapping",
 	Run: func(cmd *cobra.Command, args []string) {
 		f := NewVerifyFlags()

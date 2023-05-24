@@ -30,7 +30,7 @@ func NewCreateFlags() *CreateFlags {
 }
 
 var createCmd = &cobra.Command{
-	Use:   "create",
+	Use:   "jira-create",
 	Short: "Create mapping components for missing Jira components",
 	Run: func(cmd *cobra.Command, args []string) {
 		f := NewCreateFlags()
