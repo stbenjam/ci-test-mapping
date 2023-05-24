@@ -23,13 +23,9 @@ func ExtractTestField(testName, field string) (results []string) {
 	return results
 }
 
-// StableID produces a stable test ID based on a TestInfo struct, and a stable name mapping function.
-// The mapper function can be used to handle test renames.
-func StableID(testInfo *v1.TestInfo, mapper func(string) string) string {
+// StableID produces a stable test ID based on a TestInfo struct.
+func StableID(testInfo *v1.TestInfo) string {
 	testName := testInfo.Name
-	if mapper != nil {
-		testName = mapper(testInfo.Name)
-	}
 
 	if testInfo.Suite != "" {
 		return fmt.Sprintf("%s.%s", testInfo.Suite, testName)
