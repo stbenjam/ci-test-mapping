@@ -19,6 +19,12 @@ var SingleNodeOpenShiftComponent = Component{
 			{
 				SIG: "sig-sno",
 			},
+			{
+				IncludeAny: []string{
+					"[sig-arch] Cluster topology single node tests [apigroup:config.openshift.io] Verify that OpenShift components deploy one replica in SingleReplica topology mode [Suite:openshift/conformance/parallel]",
+					"[sig-arch] Cluster topology single node tests Verify that OpenShift components deploy one replica in SingleReplica topology mode [Suite:openshift/conformance/parallel]",
+				},
+			},
 		},
 	},
 }

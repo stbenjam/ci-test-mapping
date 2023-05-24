@@ -20,10 +20,16 @@ var StorageComponent = Component{
 				SIG: "sig-storage",
 			},
 			{
-				IncludeAll: []string{"bz-Storage"},
+				IncludeAny: []string{
+					"bz-Storage",
+					"bz-storage",
+				},
 			},
 			{
-				IncludeAll: []string{"bz-storage"},
+				IncludeAny: []string{
+					"[k8s.io] GKE local SSD [Feature:GKELocalSSD] should write and read from node local SSD [Feature:GKELocalSSD] [sig-arch] [Suite:openshift/conformance/parallel] [Suite:k8s]",
+					"[k8s.io] GKE node pools [Feature:GKENodePool] should create a cluster with multiple node pools [Feature:GKENodePool] [sig-arch] [Suite:openshift/conformance/parallel] [Suite:k8s]",
+				},
 			},
 		},
 	},

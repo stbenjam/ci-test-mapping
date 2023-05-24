@@ -26,6 +26,13 @@ var MachineConfigOperatorComponent = Component{
 				IncludeAll: []string{"machine-config-operator"},
 			},
 			{
+				IncludeAny: []string{
+					"machine-config-operator",
+					"node count should match or exceed machine count",
+					"OSUpdateStarted event should be recorded for nodes that reach OSUpdateStaged",
+				},
+			},
+			{
 				SIG:          "sig-cluster-lifecycle",
 				IncludeAll:   []string{"Pods cannot access the /config"},
 				Capabilities: []string{"Config"},

@@ -17,15 +17,28 @@ var ClusterVersionOperatorComponent = Component{
 		DefaultJiraComponent: "Cluster Version Operator",
 		Matchers: []config.ComponentMatcher{
 			{
-				IncludeAll: []string{"cluster-version-operator"},
-			},
-			{
-				IncludeAll: []string{"bz-Cluster Version Operator"},
+				IncludeAny: []string{
+					"cluster-version-operator",
+					"bz-Cluster Version Operator",
+				},
 			},
 			{
 				IncludeAll: []string{"upgrade"},
 				// Let others claim upgrade tests (i.e. for their component)
 				Priority: -10,
+			},
+			{
+				IncludeAny: []string{
+					"[sig-arch] ClusterOperators [apigroup:config.openshift.io] should define at least one namespace in their lists of related objects  [Suite:openshift/conformance/parallel]",
+					"[sig-arch] ClusterOperators [apigroup:config.openshift.io] should define at least one namespace in their lists of related objects [Suite:openshift/conformance/parallel]",
+					"[sig-arch] ClusterOperators [apigroup:config.openshift.io] should define at least one related object that is not a namespace [Suite:openshift/conformance/parallel]",
+					"[sig-arch] ClusterOperators [apigroup:config.openshift.io] should define valid related objects [Suite:openshift/conformance/parallel]",
+					"[sig-arch] ClusterOperators should define at least one namespace in their lists of related objects [Suite:openshift/conformance/parallel]",
+					"[sig-arch] ClusterOperators should define at least one related object that is not a namespace [Suite:openshift/conformance/parallel]",
+					"[sig-arch] ClusterOperators should define valid related objects [Suite:openshift/conformance/parallel]",
+					"[sig-cluster-lifecycle] TestAdminAck should succeed [apigroup:config.openshift.io] [Suite:openshift/conformance/parallel]",
+					"[sig-cluster-lifecycle] TestAdminAck should succeed [Suite:openshift/conformance/parallel]",
+				},
 			},
 		},
 	},

@@ -15,7 +15,13 @@ var CRIOComponent = Component{
 		Name:                 "Node / CRI-O",
 		Operators:            []string{},
 		DefaultJiraComponent: "Node / CRI-O",
-		Matchers:             []config.ComponentMatcher{},
+		Matchers: []config.ComponentMatcher{
+			{
+				IncludeAny: []string{
+					"[sig-arch] [Conformance] FIPS TestFIPS",
+				},
+			},
+		},
 	},
 }
 

@@ -15,7 +15,18 @@ var ClusterAutoscalerComponent = Component{
 		Name:                 "Cloud Compute / Cluster Autoscaler",
 		Operators:            []string{},
 		DefaultJiraComponent: "Cloud Compute / Cluster Autoscaler",
-		Matchers:             []config.ComponentMatcher{},
+		Matchers: []config.ComponentMatcher{
+			{
+				IncludeAny: []string{
+					"[sig-cluster-lifecycle][Feature:Machines] Managed cluster should have machine resources [apigroup:machine.openshift.io] [Suite:openshift/conformance/parallel]",
+					"[sig-cluster-lifecycle][Feature:Machines] Managed cluster should have machine resources [Suite:openshift/conformance/parallel]",
+					"[sig-cluster-lifecycle][Feature:Machines][Serial] Managed cluster should grow and decrease when scaling different machineSets simultaneously [Suite:openshift/conformance/serial]",
+					"[sig-cluster-lifecycle][Feature:Machines][Serial] Managed cluster should grow and decrease when scaling different machineSets simultaneously [Timeout:20m] [Suite:openshift/conformance/serial]",
+					"[sig-cluster-lifecycle][Feature:Machines][Serial] Managed cluster should grow and decrease when scaling different machineSets simultaneously [Timeout:30m][apigroup:machine.openshift.io] [Suite:openshift/conformance/serial]",
+					"[sig-cluster-lifecycle][Feature:Machines][Serial] Managed cluster should grow and decrease when scaling different machineSets simultaneously [Timeout:30m] [Suite:openshift/conformance/serial]",
+				},
+			},
+		},
 	},
 }
 
