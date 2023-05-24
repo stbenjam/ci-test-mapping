@@ -21,7 +21,10 @@ var OpenshiftSdnComponent = Component{
 				ExcludeAll: []string{"[Skipped:Network/OpenShiftSDN]"},
 			},
 			{
-				IncludeAll: []string{"Build image sdn"},
+				IncludeAny: []string{
+					"Build image sdn",
+					"Bug 1812261: iptables is segfaulting",
+				},
 			},
 		},
 	},

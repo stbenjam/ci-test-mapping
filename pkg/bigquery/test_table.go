@@ -36,6 +36,7 @@ var ignoredTests = []string{
 	"All images are built%",
 	"Tag the image %",
 	"%XXXitoring%",
+	"[sig-arch] Monitor cluster while tests execute",
 }
 
 type TestTableManager struct {

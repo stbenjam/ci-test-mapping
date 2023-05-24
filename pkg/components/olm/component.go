@@ -17,13 +17,21 @@ var OLMComponent = Component{
 		DefaultJiraComponent: "OLM",
 		Matchers: []config.ComponentMatcher{
 			{
-				IncludeAll: []string{"bz-OLM"},
-			},
-			{
-				IncludeAll: []string{"bz-platform-operators-aggregated"},
+				IncludeAny: []string{
+					"bz-OLM",
+					"bz-platform-operators-aggregated",
+				},
 			},
 			{
 				SIG: "sig-operator",
+			},
+			{
+				IncludeAny: []string{
+					"[sig-arch] ocp payload should be based on existing source OLM version should contain the source commit id [apigroup:config.openshift.io] [Suite:openshift/conformance/parallel]",
+					"[sig-arch] ocp payload should be based on existing source OLM version should contain the source commit id [Suite:openshift/conformance/parallel]",
+					"[sig-arch] ocp payload should be based on existing source [Serial] olm version should contain the source commit id [Suite:openshift/conformance/serial]",
+					"[sig-arch] openshift-marketplace pods should not get excessive startupProbe failures",
+				},
 			},
 		},
 	},

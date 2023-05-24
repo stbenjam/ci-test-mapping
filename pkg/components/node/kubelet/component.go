@@ -21,7 +21,17 @@ var KubeletComponent = Component{
 				Priority: 1,
 			},
 			{
-				IncludeAll: []string{"Node process segfaulted"},
+				IncludeAny: []string{
+					"Node process segfaulted",
+					"all nodes should be ready",
+					"[sig-arch] [Conformance] sysctl pod should not start for sysctl not on whitelist kernel.msgmax [Suite:openshift/conformance/parallel/minimal]",
+					"[sig-arch] [Conformance] sysctl pod should not start for sysctl not on whitelist net.ipv4.ip_dynaddr [Suite:openshift/conformance/parallel/minimal]",
+					"[sig-arch] [Conformance] sysctl whitelists kernel.shm_rmid_forced [Suite:openshift/conformance/parallel/minimal]",
+					"[sig-arch] [Conformance] sysctl whitelists net.ipv4.ip_local_port_range [Suite:openshift/conformance/parallel/minimal]",
+					"[sig-arch] [Conformance] sysctl whitelists net.ipv4.ip_unprivileged_port_start [Suite:openshift/conformance/parallel/minimal]",
+					"[sig-arch] [Conformance] sysctl whitelists net.ipv4.ping_group_range [Suite:openshift/conformance/parallel/minimal]",
+					"[sig-arch] [Conformance] sysctl whitelists net.ipv4.tcp_syncookies [Suite:openshift/conformance/parallel/minimal]",
+				},
 			},
 		},
 	},

@@ -19,6 +19,15 @@ var CloudControllerManagerComponent = Component{
 			{
 				IncludeAll: []string{"bz-cloud-controller-manager"},
 			},
+			{
+				IncludeAny: []string{
+					"[sig-cloud-provider][Feature:OpenShiftCloudControllerManager][Late] Deploy an external cloud provider [apigroup:config.openshift.io][apigroup:machineconfiguration.openshift.io] [Suite:openshift/conformance/parallel]",
+					"[sig-cloud-provider][Feature:OpenShiftCloudControllerManager][Late] Deploy an external cloud provider [apigroup:machineconfiguration.openshift.io] [Suite:openshift/conformance/parallel]",
+					"[sig-cloud-provider][Feature:OpenShiftCloudControllerManager][Late] Deploy an external cloud provider [Suite:openshift/conformance/parallel]",
+					"[sig-cluster-lifecycle] CSRs from machines that are not recognized by the cloud provider are not approved [apigroup:config.openshift.io] [Suite:openshift/conformance/parallel]",
+					"[sig-cluster-lifecycle] CSRs from machines that are not recognized by the cloud provider are not approved [Suite:openshift/conformance/parallel]",
+				},
+			},
 		},
 	},
 }
