@@ -4,11 +4,10 @@ import (
 	"crypto/md5"
 	"fmt"
 
-	log "github.com/sirupsen/logrus"
-
 	v1 "github.com/openshift-eng/ci-test-mapping/pkg/api/types/v1"
 	"github.com/openshift-eng/ci-test-mapping/pkg/registry"
 	"github.com/openshift-eng/ci-test-mapping/pkg/util"
+	log "github.com/sirupsen/logrus"
 )
 
 const (

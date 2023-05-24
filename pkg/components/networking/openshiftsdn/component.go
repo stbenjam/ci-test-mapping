@@ -18,7 +18,7 @@ var OpenshiftSdnComponent = Component{
 		Matchers: []config.ComponentMatcher{
 			{
 				SIG:        "sig-network",
-				IncludeAll: []string{"[Skipped:Network/OpenShiftSDN]"},
+				ExcludeAll: []string{"[Skipped:Network/OpenShiftSDN]"},
 			},
 			{
 				IncludeAll: []string{"Build image sdn"},
