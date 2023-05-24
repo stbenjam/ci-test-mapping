@@ -17,10 +17,10 @@ var SamplesOperatorComponent = Component{
 		DefaultJiraComponent: "Samples Operator",
 		Matchers: []config.ComponentMatcher{
 			{
-				Include: []string{"bz-Samples"},
+				IncludeAll: []string{"bz-Samples"},
 			},
 			{
-				Include: []string{"bz-samples"},
+				IncludeAll: []string{"bz-samples"},
 			},
 		},
 	},

@@ -19,17 +19,19 @@ type Component struct {
 }
 
 // ComponentMatcher is used to match against a TestInfo struct. Note the fields SIG,
-// Suite, Include, and Exclude are ANDed together. That is, all that have values must
+// Suite, IncludeAll, and ExcludeAll are ANDed together. That is, all that have values must
 // match.  For include  and exclude, the individual items in the array are ANDed. That
 // is, if you  specify multiple substrings, all must match. Use separate component
 // matchers for an OR operation.
 //
 // The second set  of fields are metadata used to assign ownership.
 type ComponentMatcher struct {
-	SIG     string
-	Suite   string
-	Include []string
-	Exclude []string
+	SIG        string
+	Suite      string
+	IncludeAll []string
+	IncludeAny []string
+	ExcludeAll []string
+	ExcludeAny []string
 
 	JiraComponent string
 	Capabilities  []string
@@ -49,7 +51,10 @@ func (c *Component) FindMatch(test *v1.TestInfo) *ComponentMatcher {
 		sigMatch := true
 		suiteMatch := true
 		incSubstrMatch := true
+		incAnySubstrMatch := true
 		excSubstrMatch := true
+		excAnySubstrMatch := true
+		excluded := false
 
 		if m.SIG != "" {
 			sigMatch = util.IsSigTest(test.Name, m.SIG)
@@ -59,16 +64,34 @@ func (c *Component) FindMatch(test *v1.TestInfo) *ComponentMatcher {
 			suiteMatch = m.IsSuiteTest(test)
 		}
 
-		if len(m.Include) > 0 {
-			incSubstrMatch = m.IsSubstringTest(test)
+		if len(m.IncludeAll) > 0 {
+			incSubstrMatch = m.IsSubstringAllTest(m.IncludeAll, test)
+		}
+		if len(m.IncludeAny) > 0 {
+			incAnySubstrMatch = m.IsSubstringAnyTest(m.IncludeAny, test)
 		}
 
-		if len(m.Exclude) > 0 {
-			excSubstrMatch = !m.IsSubstringTest(test)
+		if len(m.ExcludeAll) > 0 {
+			excSubstrMatch = !m.IsSubstringAllTest(m.ExcludeAll, test)
+			if excSubstrMatch {
+				excluded = true
+			}
+		}
+		if len(m.ExcludeAny) > 0 {
+			excAnySubstrMatch = !m.IsSubstringAnyTest(m.ExcludeAny, test)
+			if excAnySubstrMatch {
+				excluded = true
+			}
+		}
+
+		// if this item was excluded, then this definitely didn't match.
+		// this prevents us from matching every test we're trying to exclude.
+		if excluded {
+			continue
 		}
 
 		// AND the three match results together
-		if sigMatch && suiteMatch && incSubstrMatch && excSubstrMatch {
+		if sigMatch && suiteMatch && incSubstrMatch && incAnySubstrMatch && excSubstrMatch && excAnySubstrMatch {
 			return &m
 		}
 	}
@@ -80,13 +103,22 @@ func (cm *ComponentMatcher) IsSuiteTest(test *v1.TestInfo) bool {
 	return test.Suite == cm.Suite
 }
 
-func (cm *ComponentMatcher) IsSubstringTest(test *v1.TestInfo) bool {
-	for _, str := range cm.Include {
+func (cm *ComponentMatcher) IsSubstringAllTest(allOf []string, test *v1.TestInfo) bool {
+	for _, str := range allOf {
 		if !strings.Contains(test.Name, str) {
 			return false
 		}
 	}
 	return true
+}
+
+func (cm *ComponentMatcher) IsSubstringAnyTest(anyOf []string, test *v1.TestInfo) bool {
+	for _, str := range anyOf {
+		if strings.Contains(test.Name, str) {
+			return true
+		}
+	}
+	return false
 }
 
 func (c *Component) IsOperatorTest(test *v1.TestInfo) (bool, []string) {

@@ -17,7 +17,7 @@ var KubernetesExternalComponentsComponent = Component{
 		DefaultJiraComponent: "Storage / Kubernetes External Components",
 		Matchers: []config.ComponentMatcher{
 			{
-				Include: []string{"External Storage"},
+				IncludeAll: []string{"External Storage"},
 			},
 		},
 	},

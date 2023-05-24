@@ -20,13 +20,13 @@ var EtcdComponent = Component{
 				SIG: "sig-etcd",
 			},
 			{
-				Include: []string{"bz-etcd"},
+				IncludeAll: []string{"bz-etcd"},
 			},
 			{
-				Include: []string{"bz-Etcd"},
+				IncludeAll: []string{"bz-Etcd"},
 			},
 			{
-				Include: []string{"cluster-etcd-operator"},
+				IncludeAll: []string{"cluster-etcd-operator"},
 			},
 		},
 	},

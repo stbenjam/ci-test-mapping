@@ -17,7 +17,7 @@ var KubeControllerManagerComponent = Component{
 		DefaultJiraComponent: "kube-controller-manager",
 		Matchers: []config.ComponentMatcher{
 			{
-				Include: []string{"bz-kube-controller-manager"},
+				IncludeAll: []string{"bz-kube-controller-manager"},
 			},
 		},
 	},

@@ -17,17 +17,17 @@ var MonitoringComponent = Component{
 		DefaultJiraComponent: "Monitoring",
 		Matchers: []config.ComponentMatcher{
 			{
-				Include: []string{"bz-Monitoring"},
+				IncludeAll: []string{"bz-Monitoring"},
 			},
 			{
-				Include: []string{"bz-monitoring"},
+				IncludeAll: []string{"bz-monitoring"},
 			},
 			{
 				SIG:      "sig-instrumentation",
 				Priority: 1,
 			},
 			{
-				Include: []string{"cluster-monitoring-operator"},
+				IncludeAll: []string{"cluster-monitoring-operator"},
 			},
 		},
 	},

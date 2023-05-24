@@ -17,10 +17,10 @@ var ServiceCatalogComponent = Component{
 		DefaultJiraComponent: "Service Catalog",
 		Matchers: []config.ComponentMatcher{
 			{
-				Include: []string{"bz-service-catalog-apiserver"},
+				IncludeAll: []string{"bz-service-catalog-apiserver"},
 			},
 			{
-				Include: []string{"bz-service-catalog-controller-manager"},
+				IncludeAll: []string{"bz-service-catalog-controller-manager"},
 			},
 		},
 	},

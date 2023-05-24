@@ -17,20 +17,20 @@ var OtherProviderComponent = Component{
 		DefaultJiraComponent: "Cloud Compute / Other Provider",
 		Matchers: []config.ComponentMatcher{
 			{
-				Include: []string{"bz-Cloud Compute"},
+				IncludeAll: []string{"bz-Cloud Compute"},
 			},
 			{
-				Include: []string{"bz-cluster-api"},
+				IncludeAll: []string{"bz-cluster-api"},
 			},
 			{
-				Include: []string{"bz-control-plane-machine-set"},
+				IncludeAll: []string{"bz-control-plane-machine-set"},
 			},
 			{
-				Include: []string{"service-load-balancer-", "disruption"},
+				IncludeAll: []string{"service-load-balancer-", "disruption"},
 			},
 			{
-				SIG:     "sig-network-edge",
-				Include: []string{"Application behind service load balancer"},
+				SIG:        "sig-network-edge",
+				IncludeAll: []string{"Application behind service load balancer"},
 			},
 		},
 	},

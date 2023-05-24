@@ -24,7 +24,7 @@ var OpenshiftInstallerComponent = Component{
 				Suite: "cluster install",
 			},
 			{
-				Include: []string{"install should succeed"},
+				IncludeAll: []string{"install should succeed"},
 			},
 		},
 	},

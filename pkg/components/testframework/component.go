@@ -17,7 +17,7 @@ var TestFrameworkComponent = Component{
 		DefaultJiraComponent: "Test Framework",
 		Matchers: []config.ComponentMatcher{
 			{
-				Include: []string{"Undiagnosed panic"},
+				IncludeAll: []string{"Undiagnosed panic"},
 			},
 			{
 				SIG: "sig-trt",
@@ -26,26 +26,26 @@ var TestFrameworkComponent = Component{
 				SIG: "sig-ci",
 			},
 			{
-				Include:      []string{"ci-cluster-network-liveness-", "-connections"},
+				IncludeAll:   []string{"ci-cluster-network-liveness-", "-connections"},
 				Capabilities: []string{"Build Clusters"},
 			},
 
 			// TRT is owner of last resort for these
 			{
 				SIG:          "sig-arch",
-				Include:      []string{"events should not repeat"},
+				IncludeAll:   []string{"events should not repeat"},
 				Capabilities: []string{"Pathological Events"},
 				Priority:     -1,
 			},
 			{
 				SIG:          "sig-arch",
-				Include:      []string{"Alerts alert/"},
+				IncludeAll:   []string{"Alerts alert/"},
 				Capabilities: []string{"Alerts"},
 				Priority:     -1,
 			},
 
 			{
-				Include:      []string{"bz-Unknown", "alert/KubePodNotReady"},
+				IncludeAll:   []string{"bz-Unknown", "alert/KubePodNotReady"},
 				Priority:     -1,
 				Capabilities: []string{"KubePodNotReady - Other"},
 			},

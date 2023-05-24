@@ -21,7 +21,7 @@ var KubeletComponent = Component{
 				Priority: 1,
 			},
 			{
-				Include: []string{"Node process segfaulted"},
+				IncludeAll: []string{"Node process segfaulted"},
 			},
 		},
 	},

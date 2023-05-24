@@ -17,17 +17,17 @@ var MachineConfigOperatorComponent = Component{
 		DefaultJiraComponent: "Machine Config Operator",
 		Matchers: []config.ComponentMatcher{
 			{
-				Include: []string{"bz-Machine Config Operator"},
+				IncludeAll: []string{"bz-Machine Config Operator"},
 			},
 			{
-				Include: []string{"bz-machine config operator"},
+				IncludeAll: []string{"bz-machine config operator"},
 			},
 			{
-				Include: []string{"machine-config-operator"},
+				IncludeAll: []string{"machine-config-operator"},
 			},
 			{
 				SIG:          "sig-cluster-lifecycle",
-				Include:      []string{"Pods cannot access the /config"},
+				IncludeAll:   []string{"Pods cannot access the /config"},
 				Capabilities: []string{"Config"},
 			},
 		},

@@ -17,7 +17,7 @@ var CertManagerComponent = Component{
 		DefaultJiraComponent: "cert-manager",
 		Matchers: []config.ComponentMatcher{
 			{
-				Include: []string{"bz-cert-manager"},
+				IncludeAll: []string{"bz-cert-manager"},
 			},
 		},
 	},

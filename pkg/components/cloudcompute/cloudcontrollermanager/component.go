@@ -17,7 +17,7 @@ var CloudControllerManagerComponent = Component{
 		DefaultJiraComponent: "Cloud Compute / Cloud Controller Manager",
 		Matchers: []config.ComponentMatcher{
 			{
-				Include: []string{"bz-cloud-controller-manager"},
+				IncludeAll: []string{"bz-cloud-controller-manager"},
 			},
 		},
 	},

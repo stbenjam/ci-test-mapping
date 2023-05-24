@@ -17,13 +17,13 @@ var ClusterVersionOperatorComponent = Component{
 		DefaultJiraComponent: "Cluster Version Operator",
 		Matchers: []config.ComponentMatcher{
 			{
-				Include: []string{"cluster-version-operator"},
+				IncludeAll: []string{"cluster-version-operator"},
 			},
 			{
-				Include: []string{"bz-Cluster Version Operator"},
+				IncludeAll: []string{"bz-Cluster Version Operator"},
 			},
 			{
-				Include: []string{"upgrade"},
+				IncludeAll: []string{"upgrade"},
 				// Let others claim upgrade tests (i.e. for their component)
 				Priority: -10,
 			},

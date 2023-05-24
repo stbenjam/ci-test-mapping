@@ -17,18 +17,18 @@ var DNSComponent = Component{
 		DefaultJiraComponent: "Networking / DNS",
 		Matchers: []config.ComponentMatcher{
 			{
-				SIG:     "sig-network",
-				Include: []string{"DNS"},
+				SIG:        "sig-network",
+				IncludeAll: []string{"DNS"},
 			},
 			{
-				Include: []string{"cluster-dns-operator"},
+				IncludeAll: []string{"cluster-dns-operator"},
 			},
 			{
-				Include: []string{"bz-DNS"},
+				IncludeAll: []string{"bz-DNS"},
 			},
 			{
-				SIG:     "sig-network-edge",
-				Include: []string{"DNS"},
+				SIG:        "sig-network-edge",
+				IncludeAll: []string{"DNS"},
 			},
 		},
 	},
