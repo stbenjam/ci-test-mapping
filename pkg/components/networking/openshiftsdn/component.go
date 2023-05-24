@@ -17,11 +17,11 @@ var OpenshiftSdnComponent = Component{
 		DefaultJiraComponent: "Networking / openshift-sdn",
 		Matchers: []config.ComponentMatcher{
 			{
-				SIG:     "sig-network",
-				Include: []string{"[Skipped:Network/OpenShiftSDN]"},
+				SIG:        "sig-network",
+				IncludeAll: []string{"[Skipped:Network/OpenShiftSDN]"},
 			},
 			{
-				Include: []string{"Build image sdn"},
+				IncludeAll: []string{"Build image sdn"},
 			},
 		},
 	},

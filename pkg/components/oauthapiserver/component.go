@@ -17,10 +17,10 @@ var OauthApiserverComponent = Component{
 		DefaultJiraComponent: "oauth-apiserver",
 		Matchers: []config.ComponentMatcher{
 			{
-				Include: []string{"bz-oauth-apiserver"},
+				IncludeAll: []string{"bz-oauth-apiserver"},
 			},
 			{
-				Include: []string{"oauth-api", "-connections"},
+				IncludeAll: []string{"oauth-api", "-connections"},
 			},
 			{
 				SIG: "sig-auth",

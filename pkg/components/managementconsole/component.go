@@ -17,7 +17,7 @@ var ManagementConsoleComponent = Component{
 		DefaultJiraComponent: "Management Console",
 		Matchers: []config.ComponentMatcher{
 			{
-				Include: []string{"bz-Management Console"},
+				IncludeAll: []string{"bz-Management Console"},
 			},
 		},
 	},

@@ -17,27 +17,27 @@ var RouterComponent = Component{
 		DefaultJiraComponent: "Networking / router",
 		Matchers: []config.ComponentMatcher{
 			{
-				Include: []string{"bz-Routing"},
+				IncludeAll: []string{"bz-Routing"},
 			},
 			{
-				SIG:     "sig-network",
-				Include: []string{"Feature:Router"},
+				SIG:        "sig-network",
+				IncludeAll: []string{"Feature:Router"},
 			},
 			{
-				SIG:     "sig-network-edge",
-				Include: []string{"Feature:Router"},
+				SIG:        "sig-network-edge",
+				IncludeAll: []string{"Feature:Router"},
 			},
 			{
-				Include: []string{"ingress-to-", "disruption"},
+				IncludeAll: []string{"ingress-to-", "disruption"},
 			},
 			{
-				Include: []string{"openshift-ingress"},
+				IncludeAll: []string{"openshift-ingress"},
 			},
 			{
-				Include: []string{"via cluster ingress"},
+				IncludeAll: []string{"via cluster ingress"},
 			},
 			{
-				Include: []string{"Cluster frontend ingress"},
+				IncludeAll: []string{"Cluster frontend ingress"},
 			},
 		},
 	},

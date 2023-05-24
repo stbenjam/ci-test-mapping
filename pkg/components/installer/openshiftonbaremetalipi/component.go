@@ -17,8 +17,8 @@ var OpenShiftOnBareMetalIPIComponent = Component{
 		DefaultJiraComponent: "Installer / OpenShift on Bare Metal IPI",
 		Matchers: []config.ComponentMatcher{
 			{
-				SIG:     "sig-installer",
-				Include: []string{"baremetal"},
+				SIG:        "sig-installer",
+				IncludeAll: []string{"baremetal"},
 			},
 		},
 	},

@@ -17,7 +17,7 @@ var ConfigOperatorComponent = Component{
 		DefaultJiraComponent: "config-operator",
 		Matchers: []config.ComponentMatcher{
 			{
-				Include: []string{"bz-config-operator"},
+				IncludeAll: []string{"bz-config-operator"},
 			},
 		},
 	},

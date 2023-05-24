@@ -19,17 +19,17 @@ type Component struct {
 }
 
 // ComponentMatcher is used to match against a TestInfo struct. Note the fields SIG,
-// Suite, Include, and Exclude are ANDed together. That is, all that have values must
+// Suite, IncludeAll, and ExcludeAll are ANDed together. That is, all that have values must
 // match.  For include  and exclude, the individual items in the array are ANDed. That
 // is, if you  specify multiple substrings, all must match. Use separate component
 // matchers for an OR operation.
 //
 // The second set  of fields are metadata used to assign ownership.
 type ComponentMatcher struct {
-	SIG     string
-	Suite   string
-	Include []string
-	Exclude []string
+	SIG        string
+	Suite      string
+	IncludeAll []string
+	ExcludeAll []string
 
 	JiraComponent string
 	Capabilities  []string
@@ -59,11 +59,11 @@ func (c *Component) FindMatch(test *v1.TestInfo) *ComponentMatcher {
 			suiteMatch = m.IsSuiteTest(test)
 		}
 
-		if len(m.Include) > 0 {
+		if len(m.IncludeAll) > 0 {
 			incSubstrMatch = m.IsSubstringTest(test)
 		}
 
-		if len(m.Exclude) > 0 {
+		if len(m.ExcludeAll) > 0 {
 			excSubstrMatch = !m.IsSubstringTest(test)
 		}
 
@@ -81,7 +81,7 @@ func (cm *ComponentMatcher) IsSuiteTest(test *v1.TestInfo) bool {
 }
 
 func (cm *ComponentMatcher) IsSubstringTest(test *v1.TestInfo) bool {
-	for _, str := range cm.Include {
+	for _, str := range cm.IncludeAll {
 		if !strings.Contains(test.Name, str) {
 			return false
 		}

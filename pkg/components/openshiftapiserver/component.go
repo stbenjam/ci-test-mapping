@@ -17,10 +17,10 @@ var OpenshiftApiserverComponent = Component{
 		DefaultJiraComponent: "openshift-apiserver",
 		Matchers: []config.ComponentMatcher{
 			{
-				Include: []string{"bz-openshift-apiserver"},
+				IncludeAll: []string{"bz-openshift-apiserver"},
 			},
 			{
-				Include: []string{"openshift-api-", "-connections"},
+				IncludeAll: []string{"openshift-api-", "-connections"},
 			},
 		},
 	},
