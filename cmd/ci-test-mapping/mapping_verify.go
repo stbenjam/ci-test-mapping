@@ -73,24 +73,27 @@ var verifyMapCmd = &cobra.Command{
 		// Look for removed mappings
 		removedMaps := make([]cl, 0)
 		for _, n := range newMap {
-			if n.Component == components.DefaultComponent {
-				locator := cl{n.Name, n.Suite}
-				if old, ok := currentComponents[locator]; ok && old != components.DefaultComponent {
-					removedMaps = append(removedMaps, locator)
-				}
+			if n.Component != components.DefaultComponent {
+				continue
+			}
+			locator := cl{n.Name, n.Suite}
+			if old, ok := currentComponents[locator]; ok && old != components.DefaultComponent {
+				removedMaps = append(removedMaps, locator)
 			}
 		}
 
 		logrus.Infof("verification complete in %+v", time.Since(now))
-		if len(removedMaps) > 0 {
-			for _, removed := range removedMaps {
-				logrus.WithFields(logrus.Fields{
-					"Name":  removed.name,
-					"Suite": removed.suite,
-				}).Warningf("test moved from %q to \"Unknown\"", currentComponents[removed])
-			}
-			logrus.Fatalf("Components are not allowed to move to Unknown. Please assign correct ownership.")
+		if len(removedMaps) == 0 {
+			return
 		}
+
+		for _, removed := range removedMaps {
+			logrus.WithFields(logrus.Fields{
+				"Name":  removed.name,
+				"Suite": removed.suite,
+			}).Warningf("test moved from %q to \"Unknown\"", currentComponents[removed])
+		}
+		logrus.Fatalf("Components are not allowed to move to Unknown. Please assign correct ownership.")
 	},
 }
 
