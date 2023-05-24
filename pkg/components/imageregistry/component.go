@@ -3,7 +3,6 @@ package imageregistry
 import (
 	v1 "github.com/openshift-eng/ci-test-mapping/pkg/api/types/v1"
 	"github.com/openshift-eng/ci-test-mapping/pkg/config"
-	"github.com/openshift-eng/ci-test-mapping/pkg/util"
 )
 
 type Component struct {
@@ -48,7 +47,7 @@ func (c *Component) IdentifyTest(test *v1.TestInfo) (*v1.TestOwnership, error) {
 }
 
 func (c *Component) StableID(test *v1.TestInfo) string {
-	return util.StableID(test)
+	return test.Name
 }
 
 func (c *Component) JiraComponents() (components []string) {
