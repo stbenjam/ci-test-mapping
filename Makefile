@@ -10,6 +10,7 @@ test:
 
 mapping: build
 	./ci-test-mapping map --mode=local
+	./ci-test-mapping map-verify
 
 unmapped:
 	jq '.[] | select(.Component == "Unknown") | .Name' mapping.json | sort | uniq
