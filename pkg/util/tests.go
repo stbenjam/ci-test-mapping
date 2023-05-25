@@ -1,6 +1,7 @@
 package util
 
 import (
+	"crypto/md5"
 	"fmt"
 	"regexp"
 	"strings"
@@ -23,13 +24,12 @@ func ExtractTestField(testName, field string) (results []string) {
 	return results
 }
 
-// StableID produces a stable test ID based on a TestInfo struct.
-func StableID(testInfo *v1.TestInfo) string {
-	testName := testInfo.Name
-
+// StableID produces a stable test ID based on a TestInfo struct and a stableName.
+func StableID(testInfo *v1.TestInfo, stableName string) string {
+	hash := fmt.Sprintf("%x", md5.Sum([]byte(stableName)))
 	if testInfo.Suite != "" {
-		return fmt.Sprintf("%s.%s", testInfo.Suite, testName)
+		stableName = fmt.Sprintf("%s:%s", testInfo.Suite, hash)
 	}
 
-	return testName
+	return stableName
 }

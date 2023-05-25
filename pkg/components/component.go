@@ -1,7 +1,6 @@
 package components
 
 import (
-	"crypto/md5"
 	"fmt"
 
 	v1 "github.com/openshift-eng/ci-test-mapping/pkg/api/types/v1"
@@ -35,7 +34,7 @@ func IdentifyTest(reg *registry.Registry, test *v1.TestInfo) (*v1.TestOwnership,
 
 	if len(ownerships) == 0 {
 		ownerships = append(ownerships, setDefaults(test, &v1.TestOwnership{
-			ID:   fmt.Sprintf("%x", md5.Sum([]byte(util.StableID(test)))),
+			ID:   util.StableID(test, util.StableID(test, test.Name)),
 			Name: test.Name,
 		}, nil))
 	}
@@ -45,7 +44,7 @@ func IdentifyTest(reg *registry.Registry, test *v1.TestInfo) (*v1.TestOwnership,
 
 func setDefaults(testInfo *v1.TestInfo, testOwnership *v1.TestOwnership, c v1.Component) *v1.TestOwnership {
 	if testOwnership.ID == "" && c != nil {
-		testOwnership.ID = fmt.Sprintf("%x", md5.Sum([]byte(c.StableID(testInfo))))
+		testOwnership.ID = util.StableID(testInfo, c.StableID(testInfo))
 	}
 
 	testOwnership.Kind = v1.Kind
