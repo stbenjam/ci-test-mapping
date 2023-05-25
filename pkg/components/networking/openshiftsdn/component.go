@@ -16,8 +16,10 @@ var OpenshiftSdnComponent = Component{
 		DefaultJiraComponent: "Networking / openshift-sdn",
 		Matchers: []config.ComponentMatcher{
 			{
+				// Tests that skip a network other than SDN are assumed to belong to us.
 				SIG:        "sig-network",
-				ExcludeAll: []string{"[Skipped:Network/OpenShiftSDN]"},
+				IncludeAll: []string{"Skipped:Network/"},
+				ExcludeAll: []string{"Skipped:Network/OpenShiftSDN"},
 			},
 			{
 				IncludeAny: []string{

@@ -52,9 +52,6 @@ func (c *Component) FindMatch(test *v1.TestInfo) *ComponentMatcher {
 		suiteMatch := true
 		incSubstrMatch := true
 		incAnySubstrMatch := true
-		excSubstrMatch := true
-		excAnySubstrMatch := true
-		excluded := false
 
 		if m.SIG != "" {
 			sigMatch = util.IsSigTest(test.Name, m.SIG)
@@ -72,26 +69,20 @@ func (c *Component) FindMatch(test *v1.TestInfo) *ComponentMatcher {
 		}
 
 		if len(m.ExcludeAll) > 0 {
-			excSubstrMatch = !m.IsSubstringAllTest(m.ExcludeAll, test)
-			if excSubstrMatch {
-				excluded = true
+			// If all the exclusions are present, we force a non-match
+			if m.IsSubstringAllTest(m.ExcludeAll, test) {
+				continue
 			}
 		}
 		if len(m.ExcludeAny) > 0 {
-			excAnySubstrMatch = !m.IsSubstringAnyTest(m.ExcludeAny, test)
-			if excAnySubstrMatch {
-				excluded = true
+			// If any of the exclusions are present, we force a non-match
+			if m.IsSubstringAnyTest(m.ExcludeAny, test) {
+				continue
 			}
 		}
 
-		// if this item was excluded, then this definitely didn't match.
-		// this prevents us from matching every test we're trying to exclude.
-		if excluded {
-			continue
-		}
-
-		// AND the three match results together
-		if sigMatch && suiteMatch && incSubstrMatch && incAnySubstrMatch && excSubstrMatch && excAnySubstrMatch {
+		// AND the match results together
+		if sigMatch && suiteMatch && incSubstrMatch && incAnySubstrMatch {
 			return &m
 		}
 	}
