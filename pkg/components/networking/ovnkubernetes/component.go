@@ -16,8 +16,10 @@ var OvnKubernetesComponent = Component{
 		DefaultJiraComponent: "Networking / ovn-kubernetes",
 		Matchers: []config.ComponentMatcher{
 			{
-				SIG:        "sig-network",
-				ExcludeAll: []string{"[Skipped:Network/OVNKubernetes]"},
+				SIG: "sig-network",
+				// Tests that skip a network other than OVN are assumed to belong to us.
+				IncludeAll: []string{"Skipped:Network/"},
+				ExcludeAny: []string{"Skipped:Network/OVNKubernetes", "Skipped:Network/OVNKuberenetes"},
 			},
 			{
 				IncludeAll: []string{"ovn-kubernetes"},
