@@ -8,12 +8,18 @@ component and it's capabilities. This tool:
 3. Writes the result to a mapping.json file comitted to this repo
 4. Pushes the result to BigQuery
 
-Teams own their component code under `pkg/<component_name>` and can
-handle the mapping as they see fit. New components can copy from
-`pkg/example` and modify it, or write their own implementation of the
-interface. The example tracks ownership and capabilities using the most
-common filters such as sigs, `[Feature:XYZ]` annotations in test names,
-as well as test substrings.
+Teams own their component code under `pkg/components/<component_name>`
+and can handle the mapping as they see fit. New components can copy from
+`pkg/components/example` and modify it, or write their own
+implementation of the interface. The sample Config interface, which you
+can include in your component, provides rich filters on substrings,
+sigs, operators, etc.
+
+TRT has made a first pass at assigning ownership to teams, but it's
+likely we haven't correctly assigned all tests. Please re-assign tests
+to their correct components as needed.  Please also create an OWNERS
+file in your directory so your team can manage components and
+capabilities without TRT's intervention.
 
 Component owners should return a `TestOwnership` struct from their
 identification function. See the details in `pkg/api/v1` for details
@@ -22,17 +28,17 @@ about the `TestOwnership` struct.
 They should return nil when the test is not theirs.  They should ONLY
 return an error on a fatal error such as inability to read from a file.
 
-A test should only map to one component, but may map to several
+A test must only map to one component, but may map to several
 capabilities.  In the event that two components are vying for a test's
-ownership, and one wants to force the matter, you may use the `Priority`
-field in the `TestOwnership` struct.  The highest value wins.
+ownership, you may use the `Priority` field in the `TestOwnership`
+struct.  The highest value wins.
 
 ## Renaming tests
 
 The unfortunate reality is tests may get renamed, so we need to have a
 way to compare the test results across renames. To do that, each test
-has a stable ID which is currently `test suite + . + test name`, which we
-save in the DB as an md5sum.
+has a stable ID which is the current test name stored in the DB as an
+md5sum.
 
 The first stable ID a test has is the one that remains. Component owners are
 responsible for ensuring the `StableID` function in their component
@@ -48,8 +54,8 @@ possible to extend or replace this with other data sources, such as
 importing JSON files from other repos that includes more metadata than
 just test and suite.
 
-At a mimimum though, for compatibility with component readiness, a
-test must:
+At a mimimum though, for compatibility with component readiness (and
+all other OpenShift tooling), a test must:
 
 * always have a result when it runs, indicating it's success, flake or failure (historically some tests only report failure)
 
@@ -64,6 +70,8 @@ test must:
 See --help for more info.
 
 ## Test Mapping
+
+To find unmapped tests, run `make unmapped`.
 
 ### Development
 
@@ -96,7 +104,6 @@ their results to the most recent entry.
 
 ## Syncing with Jira
 
-To create any missing components, run `./ci-test-mapping create`.
+To create any missing components, run `./ci-test-mapping jira-create`.
 You'll need to set the env var `JIRA_TOKEN` to your personal API token
 that you can create from your Jira profile page.
-
