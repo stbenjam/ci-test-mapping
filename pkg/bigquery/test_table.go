@@ -71,6 +71,8 @@ func (tm *TestTableManager) ListTests() ([]v1.TestInfo, error) {
 		WHERE
 		    testsuite IN ('%s')
 		AND
+		    (prowjob_name LIKE 'periodic-%%' OR prowjob_name LIKE 'release-%%' OR prowjob_name LIKE 'aggregator-%%')
+		AND
 		    %s
 		ORDER BY name, testsuite DESC`,
 		table.ProjectID, tm.client.datasetName, table.TableID, strings.Join(suites, "','"), strings.Join(filter, " AND "))
