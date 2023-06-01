@@ -2,11 +2,14 @@ package components
 
 import (
 	"fmt"
+	"sort"
+
+	log "github.com/sirupsen/logrus"
+	"k8s.io/apimachinery/pkg/util/sets"
 
 	v1 "github.com/openshift-eng/ci-test-mapping/pkg/api/types/v1"
 	"github.com/openshift-eng/ci-test-mapping/pkg/registry"
 	"github.com/openshift-eng/ci-test-mapping/pkg/util"
-	log "github.com/sirupsen/logrus"
 )
 
 const (
@@ -39,7 +42,15 @@ func IdentifyTest(reg *registry.Registry, test *v1.TestInfo) (*v1.TestOwnership,
 		}, nil))
 	}
 
-	return getHighestPriority(ownerships)
+	highestPriority, err := getHighestPriority(ownerships)
+	if err != nil {
+		return nil, err
+	}
+
+	uniqueCapabilities := sets.New[string](highestPriority.Capabilities...)
+	highestPriority.Capabilities = uniqueCapabilities.UnsortedList()
+	sort.Strings(highestPriority.Capabilities)
+	return highestPriority, nil
 }
 
 func setDefaults(testInfo *v1.TestInfo, testOwnership *v1.TestOwnership, c v1.Component) *v1.TestOwnership {
