@@ -54,6 +54,11 @@ func (c *Component) IdentifyTest(test *v1.TestInfo) (*v1.TestOwnership, error) {
 }
 
 func (c *Component) StableID(test *v1.TestInfo) string {
+	// Look up the stable name for our test in our renamed tests map.
+	if stableName, ok := c.TestRenames[test.Name]; ok {
+		return stableName
+	}
+
 	return test.Name
 }
 
