@@ -16,6 +16,10 @@ type Component struct {
 	DefaultJiraComponent string
 	Matchers             []ComponentMatcher
 	Operators            []string
+
+	// When a test is renamed, you can still look at results across releases by mapping new names
+	// to the oldest version of the test.
+	TestRenames map[string]string
 }
 
 // ComponentMatcher is used to match against a TestInfo struct. Note the fields SIG,
