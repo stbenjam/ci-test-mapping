@@ -21,5 +21,13 @@ func identifyCapabilities(test *v1.TestInfo) []string {
 		capabilities = append(capabilities, "Alerts")
 	}
 
+	if strings.Contains(test.Name, "ClusterResourceQuota") {
+		capabilities = append(capabilities, "ClusterResourceQuota")
+	}
+
+	if strings.Contains(test.Name, "ResourceQuota") {
+		capabilities = append(capabilities, "ResourceQuota")
+	}
+
 	return capabilities
 }

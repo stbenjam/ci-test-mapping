@@ -18,6 +18,16 @@ var KubeControllerManagerComponent = Component{
 			{
 				IncludeAll: []string{"bz-kube-controller-manager"},
 			},
+			{
+				IncludeAny: []string{
+					"Feature:ClusterResourceQuota",
+					"ResourceQuota",
+				},
+				Priority: 1, // quota is owned by KCM more strongly than apimachinery
+			},
+		},
+		TestRenames: map[string]string{
+			"[sig-api-machinery][Feature:ClusterResourceQuota] Cluster resource quota should control resource limits across namespaces [apigroup:quota.openshift.io][apigroup:image.openshift.io] [Suite:openshift/conformance/parallel]": "[sig-api-machinery][Feature:ClusterResourceQuota] Cluster resource quota should control resource limits across namespaces [apigroup:quota.openshift.io][apigroup:image.openshift.io][apigroup:monitoring.coreos.com][apigroup:template.openshift.io] [Suite:openshift/conformance/parallel]",
 		},
 	},
 }
