@@ -25,6 +25,12 @@ var OauthApiserverComponent = Component{
 				SIG: "sig-auth",
 			},
 		},
+		TestRenames: map[string]string{
+			"[sig-auth][Feature:Authentication] TestFrontProxy should succeed [Suite:openshift/conformance/parallel]":                                                                         "[sig-auth][Feature:Authentication] TestFrontProxy should succeed [apigroup:config.openshift.io] [Suite:openshift/conformance/parallel]",
+			"[sig-auth][Feature:OAuthServer] ClientSecretWithPlus should create oauthclient [apigroup:oauth.openshift.io][apigroup:user.openshift.io] [Suite:openshift/conformance/parallel]": "[sig-auth][Feature:OAuthServer] ClientSecretWithPlus should create oauthclient [apigroup:config.openshift.io][apigroup:oauth.openshift.io][apigroup:user.openshift.io] [Suite:openshift/conformance/parallel]",
+			"[sig-auth][Feature:OAuthServer] OAuth server has the correct token and certificate fallback semantics [apigroup:user.openshift.io] [Suite:openshift/conformance/parallel]":       "[sig-auth][Feature:OAuthServer] OAuth server has the correct token and certificate fallback semantics [apigroup:config.openshift.io][apigroup:user.openshift.io] [Suite:openshift/conformance/parallel]",
+			"[sig-auth][Feature:OAuthServer] well-known endpoint should be reachable [apigroup:route.openshift.io] [Suite:openshift/conformance/parallel]":                                    "[sig-auth][Feature:OAuthServer] well-known endpoint should be reachable [apigroup:config.openshift.io][apigroup:route.openshift.io] [Suite:openshift/conformance/parallel]",
+		},
 	},
 }
 
