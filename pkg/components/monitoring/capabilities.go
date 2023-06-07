@@ -17,7 +17,7 @@ func identifyCapabilities(test *v1.TestInfo) []string {
 		capabilities = append(capabilities, "Operator")
 	}
 
-	if strings.Contains(test.Name, "alert/") {
+	if strings.Contains(test.Name, "alert/") || strings.Contains(test.Name, "Alerts") || strings.Contains(test.Name, "alerting") {
 		capabilities = append(capabilities, "Alerts")
 	}
 
