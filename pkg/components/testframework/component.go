@@ -49,6 +49,9 @@ var TestFrameworkComponent = Component{
 				Capabilities: []string{"KubePodNotReady - Other"},
 			},
 		},
+		TestRenames: map[string]string{
+			"[sig-arch] pathological event should not see excessive pull back-off on registry.redhat.io": "[sig-arch] should not see excessive pull back-off on registry.redhat.io",
+		},
 	},
 }
 
