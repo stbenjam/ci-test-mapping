@@ -14,6 +14,14 @@ var ClusterVersionOperatorComponent = Component{
 		Name:                 "Cluster Version Operator",
 		Operators:            []string{"version"},
 		DefaultJiraComponent: "Cluster Version Operator",
+		TestRenames: map[string]string{
+			"[sig-cluster-lifecycle] cluster upgrade should complete in 105.00 minutes": "[sig-cluster-lifecycle] cluster upgrade should complete in a reasonable time",
+			"[sig-cluster-lifecycle] cluster upgrade should complete in 120.00 minutes": "[sig-cluster-lifecycle] cluster upgrade should complete in a reasonable time",
+			"[sig-cluster-lifecycle] cluster upgrade should complete in 210.00 minutes": "[sig-cluster-lifecycle] cluster upgrade should complete in a reasonable time",
+			"[sig-cluster-lifecycle] cluster upgrade should complete in 240.00 minutes": "[sig-cluster-lifecycle] cluster upgrade should complete in a reasonable time",
+			"[sig-cluster-lifecycle] cluster upgrade should complete in 75.00 minutes":  "[sig-cluster-lifecycle] cluster upgrade should complete in a reasonable time",
+			"[sig-cluster-lifecycle] cluster upgrade should complete in 90.00 minutes":  "[sig-cluster-lifecycle] cluster upgrade should complete in a reasonable time",
+		},
 		Matchers: []config.ComponentMatcher{
 			{
 				IncludeAny: []string{
