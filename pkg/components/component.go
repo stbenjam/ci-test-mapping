@@ -37,7 +37,7 @@ func IdentifyTest(reg *registry.Registry, test *v1.TestInfo) (*v1.TestOwnership,
 
 	if len(ownerships) == 0 {
 		ownerships = append(ownerships, setDefaults(test, &v1.TestOwnership{
-			ID:   util.StableID(test, util.StableID(test, test.Name)),
+			ID:   util.StableID(test, test.Name),
 			Name: test.Name,
 		}, nil))
 	}
