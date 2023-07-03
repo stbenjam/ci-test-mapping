@@ -18,6 +18,9 @@ var OcComponent = Component{
 			{
 				SIG: "sig-cli",
 			},
+			{
+				IncludeAny: []string{"[sig-arch] External binary usage"},
+			},
 		},
 	},
 }
