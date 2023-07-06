@@ -1,10 +1,10 @@
 package config
 
 import (
-	"strings"
-
 	v1 "github.com/openshift-eng/ci-test-mapping/pkg/api/types/v1"
 	"github.com/openshift-eng/ci-test-mapping/pkg/util"
+	"regexp"
+	"strings"
 )
 
 // Component is the default configuration struct that you can include in your
@@ -32,6 +32,7 @@ type Component struct {
 type ComponentMatcher struct {
 	SIG        string
 	Suite      string
+	Namespaces []string
 	IncludeAll []string
 	IncludeAny []string
 	ExcludeAll []string
@@ -54,6 +55,7 @@ func (c *Component) FindMatch(test *v1.TestInfo) *ComponentMatcher {
 	for _, m := range c.Matchers {
 		sigMatch := true
 		suiteMatch := true
+		namespaceMatch := true
 		incSubstrMatch := true
 		incAnySubstrMatch := true
 
@@ -63,6 +65,10 @@ func (c *Component) FindMatch(test *v1.TestInfo) *ComponentMatcher {
 
 		if m.Suite != "" {
 			suiteMatch = m.IsSuiteTest(test)
+		}
+
+		if len(m.Namespaces) > 0 {
+			namespaceMatch = m.IsInNamespace(test.Name)
 		}
 
 		if len(m.IncludeAll) > 0 {
@@ -86,7 +92,7 @@ func (c *Component) FindMatch(test *v1.TestInfo) *ComponentMatcher {
 		}
 
 		// AND the match results together
-		if sigMatch && suiteMatch && incSubstrMatch && incAnySubstrMatch {
+		if sigMatch && suiteMatch && namespaceMatch && incSubstrMatch && incAnySubstrMatch {
 			return &m
 		}
 	}
@@ -96,6 +102,16 @@ func (c *Component) FindMatch(test *v1.TestInfo) *ComponentMatcher {
 
 func (cm *ComponentMatcher) IsSuiteTest(test *v1.TestInfo) bool {
 	return test.Suite == cm.Suite
+}
+
+func (cm *ComponentMatcher) IsInNamespace(testName string) bool {
+	testNamespace := ExtractNamespaceFromTestName(testName)
+	for _, namespace := range cm.Namespaces {
+		if testNamespace == namespace {
+			return true
+		}
+	}
+	return false
 }
 
 func (cm *ComponentMatcher) IsSubstringAllTest(allOf []string, test *v1.TestInfo) bool {
@@ -125,4 +141,17 @@ func (c *Component) IsOperatorTest(test *v1.TestInfo) (bool, []string) {
 	}
 
 	return false, nil
+}
+
+var namespaceShort = regexp.MustCompile(`ns/(?P<Namespace>[-\w]+)`)
+var namespaceFull = regexp.MustCompile(`namespace/(?P<Namespace>[-\w]+)`)
+
+func ExtractNamespaceFromTestName(in string) string {
+	if namespaceShort.MatchString(in) {
+		return namespaceShort.FindStringSubmatch(in)[1]
+	}
+	if namespaceFull.MatchString(in) {
+		return namespaceFull.FindStringSubmatch(in)[1]
+	}
+	return ""
 }
