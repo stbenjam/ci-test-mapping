@@ -3,14 +3,15 @@ package namespacecheck
 import (
 	"encoding/json"
 	"fmt"
-	v1 "github.com/openshift-eng/ci-test-mapping/pkg/api/types/v1"
-	"github.com/openshift-eng/ci-test-mapping/pkg/config"
-	"github.com/openshift-eng/ci-test-mapping/pkg/registry"
-	"k8s.io/apimachinery/pkg/util/sets"
 	"os"
 	"reflect"
 	"strings"
 	"testing"
+
+	v1 "github.com/openshift-eng/ci-test-mapping/pkg/api/types/v1"
+	"github.com/openshift-eng/ci-test-mapping/pkg/config"
+	"github.com/openshift-eng/ci-test-mapping/pkg/registry"
+	"k8s.io/apimachinery/pkg/util/sets"
 )
 
 func TestNoOverlap(t *testing.T) {
@@ -19,20 +20,10 @@ func TestNoOverlap(t *testing.T) {
 	componentNameToNamespaces := map[string][]string{}
 	namespacesToComponentNames := map[string][]string{}
 
-	for _, component := range defaultRegistry.Components {
-		// All types currently conform.  If any don't in the future, find a way to handle them.
-		// I recommend not skipping them.  Probably force conformance
-		componentValuePointer := reflect.ValueOf(component)
-		componentValue := componentValuePointer.Elem()
-		defaultComponentValuePointer := componentValue.FieldByName("Component")
-		asInterface := defaultComponentValuePointer.Interface()
-
-		defaultComponent := asInterface.(*config.Component)
-		for _, matcher := range defaultComponent.Matchers {
-			for _, namespace := range matcher.Namespaces {
-				namespacesToComponentNames[namespace] = append(namespacesToComponentNames[namespace], defaultComponent.Name)
-				componentNameToNamespaces[defaultComponent.Name] = append(componentNameToNamespaces[defaultComponent.Name], namespace)
-			}
+	for componentName, component := range defaultRegistry.Components {
+		for _, namespace := range component.Namespaces() {
+			namespacesToComponentNames[namespace] = append(namespacesToComponentNames[namespace], componentName)
+			componentNameToNamespaces[componentName] = append(componentNameToNamespaces[componentName], namespace)
 		}
 
 	}

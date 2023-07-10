@@ -191,9 +191,9 @@ var (
 		},
 		"Networking / cluster-network-operator": {
 			"openshift-host-network",
+			"openshift-kni-infra",
 			"openshift-network-diagnostics",
 			"openshift-network-operator",
-			"openshift-kni-infra",
 		},
 		"Networking / multus": {
 			"openshift-multus",
@@ -230,8 +230,8 @@ var (
 		},
 		"kube-apiserver": {
 			"default",
-			"openshift",
 			"kube-system",
+			"openshift",
 			"openshift-config",
 			"openshift-config-managed",
 			"openshift-kube-apiserver",

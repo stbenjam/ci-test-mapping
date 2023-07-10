@@ -1,10 +1,12 @@
 package config
 
 import (
-	v1 "github.com/openshift-eng/ci-test-mapping/pkg/api/types/v1"
-	"github.com/openshift-eng/ci-test-mapping/pkg/util"
 	"regexp"
 	"strings"
+
+	v1 "github.com/openshift-eng/ci-test-mapping/pkg/api/types/v1"
+	"github.com/openshift-eng/ci-test-mapping/pkg/util"
+	"k8s.io/apimachinery/pkg/util/sets"
 )
 
 // Component is the default configuration struct that you can include in your
@@ -98,6 +100,14 @@ func (c *Component) FindMatch(test *v1.TestInfo) *ComponentMatcher {
 	}
 
 	return nil
+}
+
+func (c *Component) Namespaces() []string {
+	ret := sets.NewString()
+	for _, cm := range c.Matchers {
+		ret.Insert(cm.Namespaces...)
+	}
+	return ret.List()
 }
 
 func (cm *ComponentMatcher) IsSuiteTest(test *v1.TestInfo) bool {
