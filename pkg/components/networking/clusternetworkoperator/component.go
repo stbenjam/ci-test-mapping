@@ -14,6 +14,12 @@ var ClusterNetworkOperatorComponent = Component{
 		Name:                 "Networking / cluster-network-operator",
 		Operators:            []string{"networking", "network"},
 		DefaultJiraComponent: "Networking / cluster-network-operator",
+		Namespaces: []string{
+			"openshift-host-network",
+			"openshift-network-diagnostics",
+			"openshift-network-operator",
+			"openshift-kni-infra",
+		},
 		Matchers: []config.ComponentMatcher{
 			{
 				IncludeAll: []string{"bz-Networking"},

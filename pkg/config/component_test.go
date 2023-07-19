@@ -124,3 +124,14 @@ func TestComponent_FindMatch(t *testing.T) {
 		})
 	}
 }
+
+func TestIHateRegexes(t *testing.T) {
+	actual := ExtractNamespaceFromTestName("[sig-arch][bz-Unknown][Late] Alerts [apigroup:monitoring.coreos.com] alert/KubePodNotReady should not be at or above info in ns/openshift [Suite:openshift/conformance/parallel]")
+	if actual != "openshift" {
+		t.Fatal(actual)
+	}
+	actual = ExtractNamespaceFromTestName("[sig-arch][bz-openshift-apiserver][Late] Alerts [apigroup:monitoring.coreos.com] alert/KubePodNotReady should not be at or above info in ns/openshift-apiserver [Suite:openshift/conformance/parallel]")
+	if actual != "openshift-apiserver" {
+		t.Fatal(actual)
+	}
+}

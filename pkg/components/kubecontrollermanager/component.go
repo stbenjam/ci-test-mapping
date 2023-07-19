@@ -14,6 +14,10 @@ var KubeControllerManagerComponent = Component{
 		Name:                 "kube-controller-manager",
 		Operators:            []string{"kube-controller-manager"},
 		DefaultJiraComponent: "kube-controller-manager",
+		Namespaces: []string{
+			"openshift-kube-controller-manager",
+			"openshift-kube-controller-manager-operator",
+		},
 		Matchers: []config.ComponentMatcher{
 			{
 				IncludeAll: []string{"bz-kube-controller-manager"},

@@ -14,6 +14,10 @@ var KubeSchedulerComponent = Component{
 		Name:                 "kube-scheduler",
 		Operators:            []string{"kube-scheduler"},
 		DefaultJiraComponent: "kube-scheduler",
+		Namespaces: []string{
+			"openshift-kube-scheduler",
+			"openshift-kube-scheduler-operator",
+		},
 		Matchers: []config.ComponentMatcher{
 			{
 				IncludeAll: []string{"bz-kube-scheduler"},

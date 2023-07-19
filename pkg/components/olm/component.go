@@ -14,6 +14,11 @@ var OLMComponent = Component{
 		Name:                 "OLM",
 		Operators:            []string{"marketplace", "operator-lifecycle-manager", "operator-lifecycle-manager-catalog", "operator-lifecycle-manager-packageserver"},
 		DefaultJiraComponent: "OLM",
+		Namespaces: []string{
+			"openshift-marketplace",
+			"openshift-operator-lifecycle-manager",
+			"openshift-operators",
+		},
 		Matchers: []config.ComponentMatcher{
 			{
 				IncludeAny: []string{

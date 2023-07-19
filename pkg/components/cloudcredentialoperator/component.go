@@ -14,6 +14,9 @@ var CloudCredentialOperatorComponent = Component{
 		Name:                 "Cloud Credential Operator",
 		Operators:            []string{"cloud-credential"},
 		DefaultJiraComponent: "Cloud Credential Operator",
+		Namespaces: []string{
+			"openshift-cloud-credential-operator",
+		},
 		Matchers: []config.ComponentMatcher{
 			{
 				IncludeAll: []string{"bz-Cloud Credential Operator"},

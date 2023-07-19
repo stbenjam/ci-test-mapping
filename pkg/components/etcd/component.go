@@ -14,6 +14,10 @@ var EtcdComponent = Component{
 		Name:                 "Etcd",
 		Operators:            []string{"etcd"},
 		DefaultJiraComponent: "Etcd",
+		Namespaces: []string{
+			"openshift-etcd",
+			"openshift-etcd-operator",
+		},
 		Matchers: []config.ComponentMatcher{
 			{
 				SIG: "sig-etcd",

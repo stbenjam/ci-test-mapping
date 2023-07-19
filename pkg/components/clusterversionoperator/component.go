@@ -14,6 +14,9 @@ var ClusterVersionOperatorComponent = Component{
 		Name:                 "Cluster Version Operator",
 		Operators:            []string{"version"},
 		DefaultJiraComponent: "Cluster Version Operator",
+		Namespaces: []string{
+			"openshift-cluster-version",
+		},
 		TestRenames: map[string]string{
 			"[sig-cluster-lifecycle] cluster upgrade should complete in 105.00 minutes": "[sig-cluster-lifecycle] cluster upgrade should complete in a reasonable time",
 			"[sig-cluster-lifecycle] cluster upgrade should complete in 120.00 minutes": "[sig-cluster-lifecycle] cluster upgrade should complete in a reasonable time",

@@ -1,10 +1,12 @@
 package config
 
 import (
+	"regexp"
 	"strings"
 
 	v1 "github.com/openshift-eng/ci-test-mapping/pkg/api/types/v1"
 	"github.com/openshift-eng/ci-test-mapping/pkg/util"
+	"k8s.io/apimachinery/pkg/util/sets"
 )
 
 // Component is the default configuration struct that you can include in your
@@ -16,6 +18,7 @@ type Component struct {
 	DefaultJiraComponent string
 	Matchers             []ComponentMatcher
 	Operators            []string
+	Namespaces           []string
 
 	// When a test is renamed, you can still look at results across releases by mapping new names
 	// to the oldest version of the test.
@@ -50,10 +53,20 @@ func (c *Component) FindMatch(test *v1.TestInfo) *ComponentMatcher {
 		}
 	}
 
+	if namespace, ok := c.IsNamespaceTest(test.Name); ok {
+		if c.IsInNamespace(namespace) {
+			return &ComponentMatcher{
+				JiraComponent: c.DefaultJiraComponent,
+			}
+		}
+		return nil
+	}
+
 	// Check if any of the Matchers match the given test
 	for _, m := range c.Matchers {
 		sigMatch := true
 		suiteMatch := true
+		namespaceMatch := true
 		incSubstrMatch := true
 		incAnySubstrMatch := true
 
@@ -86,12 +99,30 @@ func (c *Component) FindMatch(test *v1.TestInfo) *ComponentMatcher {
 		}
 
 		// AND the match results together
-		if sigMatch && suiteMatch && incSubstrMatch && incAnySubstrMatch {
+		if sigMatch && suiteMatch && namespaceMatch && incSubstrMatch && incAnySubstrMatch {
 			return &m
 		}
 	}
 
 	return nil
+}
+
+func (c *Component) ListNamespaces() []string {
+	return sets.NewString(c.Namespaces...).List()
+}
+
+func (c *Component) IsInNamespace(testNamespace string) bool {
+	for _, namespace := range c.Namespaces {
+		if testNamespace == namespace {
+			return true
+		}
+	}
+	return false
+}
+
+func (c *Component) IsNamespaceTest(testName string) (string, bool) {
+	testNamespace := ExtractNamespaceFromTestName(testName)
+	return testNamespace, len(testNamespace) > 0
 }
 
 func (cm *ComponentMatcher) IsSuiteTest(test *v1.TestInfo) bool {
@@ -125,4 +156,17 @@ func (c *Component) IsOperatorTest(test *v1.TestInfo) (bool, []string) {
 	}
 
 	return false, nil
+}
+
+var namespaceShort = regexp.MustCompile(`ns/(?P<Namespace>[-\w]+)`)
+var namespaceFull = regexp.MustCompile(`namespace/(?P<Namespace>[-\w]+)`)
+
+func ExtractNamespaceFromTestName(in string) string {
+	if namespaceShort.MatchString(in) {
+		return namespaceShort.FindStringSubmatch(in)[1]
+	}
+	if namespaceFull.MatchString(in) {
+		return namespaceFull.FindStringSubmatch(in)[1]
+	}
+	return ""
 }

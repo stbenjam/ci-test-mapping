@@ -14,6 +14,11 @@ var RouterComponent = Component{
 		Name:                 "Networking / router",
 		Operators:            []string{"ingress"},
 		DefaultJiraComponent: "Networking / router",
+		Namespaces: []string{
+			"openshift-ingress",
+			"openshift-ingress-canary",
+			"openshift-ingress-operator",
+		},
 		Matchers: []config.ComponentMatcher{
 			{
 				IncludeAll: []string{"bz-Routing"},

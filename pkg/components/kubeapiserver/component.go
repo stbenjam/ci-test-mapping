@@ -14,6 +14,15 @@ var KubeApiserverComponent = Component{
 		Name:                 "kube-apiserver",
 		Operators:            []string{"kube-apiserver"},
 		DefaultJiraComponent: "kube-apiserver",
+		Namespaces: []string{
+			"default",
+			"openshift",
+			"kube-system",
+			"openshift-config",
+			"openshift-config-managed",
+			"openshift-kube-apiserver",
+			"openshift-kube-apiserver-operator",
+		},
 		Matchers: []config.ComponentMatcher{
 			{
 				IncludeAll: []string{"bz-kube-apiserver"},

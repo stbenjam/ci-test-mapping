@@ -14,6 +14,10 @@ var CloudControllerManagerComponent = Component{
 		Name:                 "Cloud Compute / Cloud Controller Manager",
 		Operators:            []string{"cloud-controller-manager"},
 		DefaultJiraComponent: "Cloud Compute / Cloud Controller Manager",
+		Namespaces: []string{
+			"openshift-cloud-controller-manager",
+			"openshift-cloud-controller-manager-operator",
+		},
 		Matchers: []config.ComponentMatcher{
 			{
 				IncludeAll: []string{"bz-cloud-controller-manager"},

@@ -14,7 +14,10 @@ var NutanixComponent = Component{
 		Name:                 "Installer / Nutanix",
 		Operators:            []string{},
 		DefaultJiraComponent: "Installer / Nutanix",
-		Matchers:             []config.ComponentMatcher{},
+		Namespaces: []string{
+			"openshift-nutanix-infra",
+		},
+		Matchers: []config.ComponentMatcher{},
 	},
 }
 

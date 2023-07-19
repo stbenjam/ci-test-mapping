@@ -14,6 +14,10 @@ var OpenshiftApiserverComponent = Component{
 		Name:                 "openshift-apiserver",
 		Operators:            []string{"openshift-apiserver", "openshift-lifecycle-manager", "openshift-lifecycle-manager-catalog", "openshift-lifecycle-manager-packageserver", "platform-operators-aggregated"},
 		DefaultJiraComponent: "openshift-apiserver",
+		Namespaces: []string{
+			"openshift-apiserver",
+			"openshift-apiserver-operator",
+		},
 		Matchers: []config.ComponentMatcher{
 			{
 				IncludeAll: []string{"bz-openshift-apiserver"},

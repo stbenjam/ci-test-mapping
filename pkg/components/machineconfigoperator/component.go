@@ -14,6 +14,9 @@ var MachineConfigOperatorComponent = Component{
 		Name:                 "Machine Config Operator",
 		Operators:            []string{"machine-config"},
 		DefaultJiraComponent: "Machine Config Operator",
+		Namespaces: []string{
+			"openshift-machine-config-operator",
+		},
 		Matchers: []config.ComponentMatcher{
 			{
 				IncludeAll: []string{"bz-Machine Config Operator"},

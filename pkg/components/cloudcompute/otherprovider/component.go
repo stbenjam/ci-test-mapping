@@ -14,6 +14,10 @@ var OtherProviderComponent = Component{
 		Name:                 "Cloud Compute / Other Provider",
 		Operators:            []string{"cluster-api", "machine-approver", "machine-api", "control-plane-machine-set"},
 		DefaultJiraComponent: "Cloud Compute / Other Provider",
+		Namespaces: []string{
+			"openshift-cluster-machine-approver",
+			"openshift-machine-api",
+		},
 		Matchers: []config.ComponentMatcher{
 			{
 				IncludeAll: []string{"bz-Cloud Compute"},

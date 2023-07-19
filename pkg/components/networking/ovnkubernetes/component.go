@@ -14,6 +14,9 @@ var OvnKubernetesComponent = Component{
 		Name:                 "Networking / ovn-kubernetes",
 		Operators:            []string{},
 		DefaultJiraComponent: "Networking / ovn-kubernetes",
+		Namespaces: []string{
+			"openshift-ovn-kubernetes",
+		},
 		Matchers: []config.ComponentMatcher{
 			{
 				SIG: "sig-network",

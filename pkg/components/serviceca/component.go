@@ -14,6 +14,10 @@ var ServiceCaComponent = Component{
 		Name:                 "service-ca",
 		Operators:            []string{"service-ca"},
 		DefaultJiraComponent: "service-ca",
+		Namespaces: []string{
+			"openshift-service-ca",
+			"openshift-service-ca-operator",
+		},
 		Matchers: []config.ComponentMatcher{
 			{
 				IncludeAll: []string{"[bz-service-ca]"},
