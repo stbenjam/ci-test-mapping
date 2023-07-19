@@ -14,16 +14,13 @@ var ManagementConsoleComponent = Component{
 		Name:                 "Management Console",
 		Operators:            []string{"console-operator", "console"},
 		DefaultJiraComponent: "Management Console",
+		Namespaces: []string{
+			"openshift-console",
+			"openshift-console-operator",
+		},
 		Matchers: []config.ComponentMatcher{
 			{
 				IncludeAll: []string{"bz-Management Console"},
-			},
-			{
-				Namespaces: []string{
-					"openshift-console",
-					"openshift-console-operator",
-				},
-				Priority: 1,
 			},
 		},
 	},

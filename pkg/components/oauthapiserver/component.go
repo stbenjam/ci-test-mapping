@@ -14,14 +14,12 @@ var OauthApiserverComponent = Component{
 		Name:                 "oauth-apiserver",
 		Operators:            []string{"authentication"},
 		DefaultJiraComponent: "oauth-apiserver",
+		Namespaces: []string{
+			"openshift-oauth-apiserver",
+		},
 		Matchers: []config.ComponentMatcher{
 			{
 				IncludeAll: []string{"bz-oauth-apiserver"},
-			},
-			{
-				Namespaces: []string{
-					"openshift-oauth-apiserver",
-				},
 			},
 			{
 				IncludeAll: []string{"oauth-api", "-connections"},

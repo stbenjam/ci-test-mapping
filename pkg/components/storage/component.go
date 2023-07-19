@@ -14,6 +14,10 @@ var StorageComponent = Component{
 		Name:                 "Storage",
 		Operators:            []string{"storage", "csi-snapshot-controller"},
 		DefaultJiraComponent: "Storage",
+		Namespaces: []string{
+			"openshift-cluster-csi-drivers",
+			"openshift-cluster-storage-operator",
+		},
 		Matchers: []config.ComponentMatcher{
 			{
 				SIG: "sig-storage",
@@ -22,12 +26,6 @@ var StorageComponent = Component{
 				IncludeAny: []string{
 					"bz-Storage",
 					"bz-storage",
-				},
-			},
-			{
-				Namespaces: []string{
-					"openshift-cluster-csi-drivers",
-					"openshift-cluster-storage-operator",
 				},
 			},
 			{

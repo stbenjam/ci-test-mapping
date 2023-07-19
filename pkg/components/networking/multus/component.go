@@ -14,14 +14,10 @@ var MultusComponent = Component{
 		Name:                 "Networking / multus",
 		Operators:            []string{},
 		DefaultJiraComponent: "Networking / multus",
-		Matchers: []config.ComponentMatcher{
-			{
-				Namespaces: []string{
-					"openshift-multus",
-				},
-				Priority: 1,
-			},
+		Namespaces: []string{
+			"openshift-multus",
 		},
+		Matchers: []config.ComponentMatcher{},
 	},
 }
 

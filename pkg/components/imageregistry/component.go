@@ -14,14 +14,12 @@ var ImageRegistryComponent = Component{
 		Name:                 "Image Registry",
 		Operators:            []string{"image-registry"},
 		DefaultJiraComponent: "Image Registry",
+		Namespaces: []string{
+			"openshift-image-registry",
+		},
 		Matchers: []config.ComponentMatcher{
 			{
 				IncludeAll: []string{"bz-Image Registry"},
-			},
-			{
-				Namespaces: []string{
-					"openshift-image-registry",
-				},
 			},
 			{
 				IncludeAll: []string{"image-registry-", "-connections"},

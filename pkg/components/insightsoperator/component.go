@@ -14,17 +14,15 @@ var InsightsOperatorComponent = Component{
 		Name:                 "Insights Operator",
 		Operators:            []string{"insights"},
 		DefaultJiraComponent: "Insights Operator",
+		Namespaces: []string{
+			"openshift-insights",
+		},
 		Matchers: []config.ComponentMatcher{
 			{
 				IncludeAll: []string{"bz-Insights Operator"},
 			},
 			{
 				IncludeAll: []string{"insights-operator"},
-			},
-			{
-				Namespaces: []string{
-					"openshift-insights",
-				},
 			},
 		},
 	},

@@ -21,7 +21,7 @@ func TestNoOverlap(t *testing.T) {
 	namespacesToComponentNames := map[string][]string{}
 
 	for componentName, component := range defaultRegistry.Components {
-		for _, namespace := range component.Namespaces() {
+		for _, namespace := range component.ListNamespaces() {
 			namespacesToComponentNames[namespace] = append(namespacesToComponentNames[namespace], componentName)
 			componentNameToNamespaces[componentName] = append(componentNameToNamespaces[componentName], namespace)
 		}

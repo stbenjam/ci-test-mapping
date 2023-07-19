@@ -14,17 +14,15 @@ var SamplesOperatorComponent = Component{
 		Name:                 "Samples Operator",
 		Operators:            []string{"openshift-samples", "samples"},
 		DefaultJiraComponent: "Samples Operator",
+		Namespaces: []string{
+			"openshift-cluster-samples-operator",
+		},
 		Matchers: []config.ComponentMatcher{
 			{
 				IncludeAll: []string{"bz-Samples"},
 			},
 			{
 				IncludeAll: []string{"bz-samples"},
-			},
-			{
-				Namespaces: []string{
-					"openshift-cluster-samples-operator",
-				},
 			},
 		},
 	},

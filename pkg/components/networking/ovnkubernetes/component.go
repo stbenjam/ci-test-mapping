@@ -14,18 +14,15 @@ var OvnKubernetesComponent = Component{
 		Name:                 "Networking / ovn-kubernetes",
 		Operators:            []string{},
 		DefaultJiraComponent: "Networking / ovn-kubernetes",
+		Namespaces: []string{
+			"openshift-ovn-kubernetes",
+		},
 		Matchers: []config.ComponentMatcher{
 			{
 				SIG: "sig-network",
 				// Tests that skip a network other than OVN are assumed to belong to us.
 				IncludeAll: []string{"Skipped:Network/"},
 				ExcludeAny: []string{"Skipped:Network/OVNKubernetes", "Skipped:Network/OVNKuberenetes"},
-			},
-			{
-				Namespaces: []string{
-					"openshift-ovn-kubernetes",
-				},
-				Priority: 1,
 			},
 			{
 				IncludeAll: []string{"ovn-kubernetes"},

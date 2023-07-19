@@ -14,16 +14,14 @@ var DNSComponent = Component{
 		Name:                 "Networking / DNS",
 		Operators:            []string{"dns"},
 		DefaultJiraComponent: "Networking / DNS",
+		Namespaces: []string{
+			"openshift-dns",
+			"openshift-dns-operator",
+		},
 		Matchers: []config.ComponentMatcher{
 			{
 				SIG:        "sig-network",
 				IncludeAll: []string{"DNS"},
-			},
-			{
-				Namespaces: []string{
-					"openshift-dns",
-					"openshift-dns-operator",
-				},
 			},
 			{
 				IncludeAll: []string{"cluster-dns-operator"},

@@ -14,14 +14,10 @@ var CloudNetworkConfigControllerComponent = Component{
 		Name:                 "Networking / cloud-network-config-controller",
 		Operators:            []string{},
 		DefaultJiraComponent: "Networking / cloud-network-config-controller",
-		Matchers: []config.ComponentMatcher{
-			{
-				Namespaces: []string{
-					"openshift-cloud-network-config-controller",
-				},
-				Priority: 1,
-			},
+		Namespaces: []string{
+			"openshift-cloud-network-config-controller",
 		},
+		Matchers: []config.ComponentMatcher{},
 	},
 }
 

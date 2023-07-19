@@ -14,14 +14,12 @@ var ConfigOperatorComponent = Component{
 		Name:                 "config-operator",
 		Operators:            []string{"config-operator"},
 		DefaultJiraComponent: "config-operator",
+		Namespaces: []string{
+			"openshift-config-operator",
+		},
 		Matchers: []config.ComponentMatcher{
 			{
 				IncludeAll: []string{"bz-config-operator"},
-			},
-			{
-				Namespaces: []string{
-					"openshift-config-operator",
-				},
 			},
 		},
 	},

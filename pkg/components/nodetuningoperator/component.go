@@ -14,14 +14,12 @@ var NodeTuningOperatorComponent = Component{
 		Name:                 "Node Tuning Operator",
 		Operators:            []string{"node-tuning"},
 		DefaultJiraComponent: "Node Tuning Operator",
+		Namespaces: []string{
+			"openshift-cluster-node-tuning-operator",
+		},
 		Matchers: []config.ComponentMatcher{
 			{
 				IncludeAll: []string{"bz-Node Tuning Operator"},
-			},
-			{
-				Namespaces: []string{
-					"openshift-cluster-node-tuning-operator",
-				},
 			},
 		},
 	},

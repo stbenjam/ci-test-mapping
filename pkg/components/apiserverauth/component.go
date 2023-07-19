@@ -14,16 +14,13 @@ var ApiserverAuthComponent = Component{
 		Name:                 "apiserver-auth",
 		Operators:            []string{},
 		DefaultJiraComponent: "apiserver-auth",
+		Namespaces: []string{
+			"openshift-authentication",
+			"openshift-authentication-operator",
+		},
 		Matchers: []config.ComponentMatcher{
 			{
 				IncludeAll: []string{"bz-apiserver-auth"},
-			},
-			{
-				Namespaces: []string{
-					"openshift-authentication",
-					"openshift-authentication-operator",
-				},
-				Priority: 1,
 			},
 		},
 	},

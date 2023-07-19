@@ -14,15 +14,13 @@ var ControllerManagerComponent = Component{
 		Name:                 "openshift-controller-manager / controller-manager",
 		Operators:            []string{"openshift-controller-manager"},
 		DefaultJiraComponent: "openshift-controller-manager / controller-manager",
+		Namespaces: []string{
+			"openshift-controller-manager",
+			"openshift-controller-manager-operator",
+		},
 		Matchers: []config.ComponentMatcher{
 			{
 				IncludeAll: []string{"bz-openshift-controller-manager"},
-			},
-			{
-				Namespaces: []string{
-					"openshift-controller-manager",
-					"openshift-controller-manager-operator",
-				},
 			},
 		},
 	},

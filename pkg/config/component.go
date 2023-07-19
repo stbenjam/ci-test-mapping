@@ -18,6 +18,7 @@ type Component struct {
 	DefaultJiraComponent string
 	Matchers             []ComponentMatcher
 	Operators            []string
+	Namespaces           []string
 
 	// When a test is renamed, you can still look at results across releases by mapping new names
 	// to the oldest version of the test.
@@ -34,7 +35,6 @@ type Component struct {
 type ComponentMatcher struct {
 	SIG        string
 	Suite      string
-	Namespaces []string
 	IncludeAll []string
 	IncludeAny []string
 	ExcludeAll []string
@@ -53,6 +53,15 @@ func (c *Component) FindMatch(test *v1.TestInfo) *ComponentMatcher {
 		}
 	}
 
+	if namespace, ok := c.IsNamespaceTest(test.Name); ok {
+		if c.IsInNamespace(namespace) {
+			return &ComponentMatcher{
+				JiraComponent: c.DefaultJiraComponent,
+			}
+		}
+		return nil
+	}
+
 	// Check if any of the Matchers match the given test
 	for _, m := range c.Matchers {
 		sigMatch := true
@@ -67,10 +76,6 @@ func (c *Component) FindMatch(test *v1.TestInfo) *ComponentMatcher {
 
 		if m.Suite != "" {
 			suiteMatch = m.IsSuiteTest(test)
-		}
-
-		if len(m.Namespaces) > 0 {
-			namespaceMatch = m.IsInNamespace(test.Name)
 		}
 
 		if len(m.IncludeAll) > 0 {
@@ -102,26 +107,26 @@ func (c *Component) FindMatch(test *v1.TestInfo) *ComponentMatcher {
 	return nil
 }
 
-func (c *Component) Namespaces() []string {
-	ret := sets.NewString()
-	for _, cm := range c.Matchers {
-		ret.Insert(cm.Namespaces...)
-	}
-	return ret.List()
+func (c *Component) ListNamespaces() []string {
+	return sets.NewString(c.Namespaces...).List()
 }
 
-func (cm *ComponentMatcher) IsSuiteTest(test *v1.TestInfo) bool {
-	return test.Suite == cm.Suite
-}
-
-func (cm *ComponentMatcher) IsInNamespace(testName string) bool {
-	testNamespace := ExtractNamespaceFromTestName(testName)
-	for _, namespace := range cm.Namespaces {
+func (c *Component) IsInNamespace(testNamespace string) bool {
+	for _, namespace := range c.Namespaces {
 		if testNamespace == namespace {
 			return true
 		}
 	}
 	return false
+}
+
+func (c *Component) IsNamespaceTest(testName string) (string, bool) {
+	testNamespace := ExtractNamespaceFromTestName(testName)
+	return testNamespace, len(testNamespace) > 0
+}
+
+func (cm *ComponentMatcher) IsSuiteTest(test *v1.TestInfo) bool {
+	return test.Suite == cm.Suite
 }
 
 func (cm *ComponentMatcher) IsSubstringAllTest(allOf []string, test *v1.TestInfo) bool {

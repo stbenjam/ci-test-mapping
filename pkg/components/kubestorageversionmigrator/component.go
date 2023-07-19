@@ -14,15 +14,13 @@ var KubeStorageVersionMigratorComponent = Component{
 		Name:                 "kube-storage-version-migrator",
 		Operators:            []string{"kube-storage-version-migrator"},
 		DefaultJiraComponent: "kube-storage-version-migrator",
+		Namespaces: []string{
+			"openshift-kube-storage-version-migrator",
+			"openshift-kube-storage-version-migrator-operator",
+		},
 		Matchers: []config.ComponentMatcher{
 			{
 				IncludeAll: []string{"bz-kube-storage-version-migrator"},
-			},
-			{
-				Namespaces: []string{
-					"openshift-kube-storage-version-migrator",
-					"openshift-kube-storage-version-migrator-operator",
-				},
 			},
 		},
 	},

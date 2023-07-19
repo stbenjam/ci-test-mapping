@@ -14,13 +14,10 @@ var PlatformOvirtRhvComponent = Component{
 		Name:                 "Machine Config Operator / platform-ovirt-rhv",
 		Operators:            []string{},
 		DefaultJiraComponent: "Machine Config Operator / platform-ovirt-rhv",
-		Matchers: []config.ComponentMatcher{
-			{
-				Namespaces: []string{
-					"openshift-ovirt-infra",
-				},
-			},
+		Namespaces: []string{
+			"openshift-ovirt-infra",
 		},
+		Matchers: []config.ComponentMatcher{},
 	},
 }
 

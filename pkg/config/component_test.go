@@ -35,26 +35,6 @@ func TestComponent_FindMatch(t *testing.T) {
 			matches: false,
 		},
 		{
-			name: "namespace matches",
-			matcher: ComponentMatcher{
-				Namespaces: []string{"openshift-authentication"},
-			},
-			test: v1.TestInfo{
-				Name: "[sig-network] there should be reasonably few single second disruptions for ns/openshift-authentication route/oauth-openshift disruption/ingress-to-oauth-server connection/reused",
-			},
-			matches: true,
-		},
-		{
-			name: "namespace does not match",
-			matcher: ComponentMatcher{
-				Namespaces: []string{"openshift-console"},
-			},
-			test: v1.TestInfo{
-				Name: "[sig-network] there should be reasonably few single second disruptions for ns/openshift-authentication route/oauth-openshift disruption/ingress-to-oauth-server connection/reused",
-			},
-			matches: false,
-		},
-		{
 			name: "sig and suite and include any matches",
 			matcher: ComponentMatcher{
 				SIG:        "sig-network-edge",
