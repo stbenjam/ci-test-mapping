@@ -20,13 +20,12 @@ var OtherProviderComponent = Component{
 		},
 		Matchers: []config.ComponentMatcher{
 			{
-				IncludeAll: []string{"bz-Cloud Compute"},
-			},
-			{
-				IncludeAll: []string{"bz-cluster-api"},
-			},
-			{
-				IncludeAll: []string{"bz-control-plane-machine-set"},
+				IncludeAny: []string{
+					"bz-Cloud Compute",
+					"bz-cluster-api",
+					"bz-control-plane-machine-set",
+					"Managed cluster should have same number of Machines and Nodes",
+				},
 			},
 			{
 				IncludeAll: []string{"service-load-balancer-", "disruption"},
