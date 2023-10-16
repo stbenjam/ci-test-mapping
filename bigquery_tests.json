@@ -24188,6 +24188,10 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "[sig-api-machinery][Feature:ResourceQuota] Object count check the quota after import-image with --all option [Skipped:Disconnected] [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "[sig-api-machinery][Feature:ResourceQuota] Object count check the quota after import-image with --all option [Suite:openshift/conformance/parallel]",
     "Suite": "openshift-tests"
   },
@@ -30652,11 +30656,19 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "[sig-devex][Feature:OpenShiftControllerManager] TestAutomaticCreationOfPullSecrets [apigroup:config.openshift.io][apigroup:image.openshift.io] [Skipped:NoOptionalCapabilities] [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "[sig-devex][Feature:OpenShiftControllerManager] TestAutomaticCreationOfPullSecrets [apigroup:config.openshift.io][apigroup:image.openshift.io] [Suite:openshift/conformance/parallel]",
     "Suite": "openshift-tests"
   },
   {
     "Name": "[sig-devex][Feature:OpenShiftControllerManager] TestDockercfgTokenDeletedController [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-devex][Feature:OpenShiftControllerManager] TestDockercfgTokenDeletedController [apigroup:image.openshift.io] [Skipped:NoOptionalCapabilities] [Suite:openshift/conformance/parallel]",
     "Suite": "openshift-tests"
   },
   {
@@ -30864,6 +30876,10 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "[sig-imageregistry] Image registry [apigroup:route.openshift.io] should redirect on blob pull [apigroup:image.openshift.io] [Skipped:NoOptionalCapabilities] [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "[sig-imageregistry] Image registry [apigroup:route.openshift.io] should redirect on blob pull [apigroup:image.openshift.io] [Suite:openshift/conformance/parallel]",
     "Suite": "openshift-tests"
   },
@@ -30905,6 +30921,10 @@
   },
   {
     "Name": "[sig-imageregistry][Feature:ImageAppend] Image append should create images by appending them [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-imageregistry][Feature:ImageAppend] Image append should create images by appending them [apigroup:image.openshift.io] [Skipped:Disconnected] [Skipped:NoOptionalCapabilities] [Suite:openshift/conformance/parallel]",
     "Suite": "openshift-tests"
   },
   {
@@ -35812,11 +35832,19 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "[sig-operator] OLM should Implement packages API server and list packagemanifest info with namespace not NULL [apigroup:packages.operators.coreos.com] [Skipped:NoOptionalCapabilities] [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "[sig-operator] OLM should Implement packages API server and list packagemanifest info with namespace not NULL [apigroup:packages.operators.coreos.com] [Suite:openshift/conformance/parallel]",
     "Suite": "openshift-tests"
   },
   {
     "Name": "[sig-operator] OLM should be installed with catalogsources at version v1alpha1 [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-operator] OLM should be installed with catalogsources at version v1alpha1 [apigroup:operators.coreos.com] [Skipped:NoOptionalCapabilities] [Suite:openshift/conformance/parallel]",
     "Suite": "openshift-tests"
   },
   {
@@ -35828,11 +35856,19 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "[sig-operator] OLM should be installed with clusterserviceversions at version v1alpha1 [apigroup:operators.coreos.com] [Skipped:NoOptionalCapabilities] [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "[sig-operator] OLM should be installed with clusterserviceversions at version v1alpha1 [apigroup:operators.coreos.com] [Suite:openshift/conformance/parallel]",
     "Suite": "openshift-tests"
   },
   {
     "Name": "[sig-operator] OLM should be installed with installplans at version v1alpha1 [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-operator] OLM should be installed with installplans at version v1alpha1 [apigroup:operators.coreos.com] [Skipped:NoOptionalCapabilities] [Suite:openshift/conformance/parallel]",
     "Suite": "openshift-tests"
   },
   {
@@ -35844,6 +35880,10 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "[sig-operator] OLM should be installed with operatorgroups at version v1 [apigroup:operators.coreos.com] [Skipped:NoOptionalCapabilities] [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "[sig-operator] OLM should be installed with operatorgroups at version v1 [apigroup:operators.coreos.com] [Suite:openshift/conformance/parallel]",
     "Suite": "openshift-tests"
   },
@@ -35852,11 +35892,19 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "[sig-operator] OLM should be installed with packagemanifests at version v1 [apigroup:packages.operators.coreos.com] [Skipped:NoOptionalCapabilities] [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "[sig-operator] OLM should be installed with packagemanifests at version v1 [apigroup:packages.operators.coreos.com] [Suite:openshift/conformance/parallel]",
     "Suite": "openshift-tests"
   },
   {
     "Name": "[sig-operator] OLM should be installed with subscriptions at version v1alpha1 [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-operator] OLM should be installed with subscriptions at version v1alpha1 [apigroup:operators.coreos.com] [Skipped:NoOptionalCapabilities] [Suite:openshift/conformance/parallel]",
     "Suite": "openshift-tests"
   },
   {
