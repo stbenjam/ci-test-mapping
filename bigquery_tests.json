@@ -1320,7 +1320,15 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "External Storage [Driver: csi.kubevirt.io] [Testpattern: Dynamic PV (block volmode)] provisioning should provision storage with pvc data source (ROX mode)",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "External Storage [Driver: csi.kubevirt.io] [Testpattern: Dynamic PV (block volmode)] provisioning should provision storage with pvc data source in parallel [Slow]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "External Storage [Driver: csi.kubevirt.io] [Testpattern: Dynamic PV (block volmode)] provisioning should provision storage with snapshot data source (ROX mode) [Feature:VolumeSnapshotDataSource]",
     "Suite": "openshift-tests"
   },
   {
@@ -1400,7 +1408,15 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "External Storage [Driver: csi.kubevirt.io] [Testpattern: Dynamic PV (default fs)] provisioning should provision storage with pvc data source (ROX mode)",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "External Storage [Driver: csi.kubevirt.io] [Testpattern: Dynamic PV (default fs)] provisioning should provision storage with pvc data source in parallel [Slow]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "External Storage [Driver: csi.kubevirt.io] [Testpattern: Dynamic PV (default fs)] provisioning should provision storage with snapshot data source (ROX mode) [Feature:VolumeSnapshotDataSource]",
     "Suite": "openshift-tests"
   },
   {
@@ -1421,6 +1437,14 @@
   },
   {
     "Name": "External Storage [Driver: csi.kubevirt.io] [Testpattern: Dynamic PV (default fs)] read-write-once-pod[Feature:ReadWriteOncePod] should block a second pod from using an in-use ReadWriteOncePod volume on the same node",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "External Storage [Driver: csi.kubevirt.io] [Testpattern: Dynamic PV (default fs)] read-write-once-pod[MinimumKubeletVersion:1.27] should block a second pod from using an in-use ReadWriteOncePod volume on the same node",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "External Storage [Driver: csi.kubevirt.io] [Testpattern: Dynamic PV (default fs)] read-write-once-pod[MinimumKubeletVersion:1.27] should preempt lower priority pods using ReadWriteOncePod volumes",
     "Suite": "openshift-tests"
   },
   {
@@ -1692,7 +1716,15 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "External Storage [Driver: csi.kubevirt.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] provisioning should provision storage with pvc data source (ROX mode)",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "External Storage [Driver: csi.kubevirt.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] provisioning should provision storage with pvc data source in parallel [Slow]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "External Storage [Driver: csi.kubevirt.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] provisioning should provision storage with snapshot data source (ROX mode) [Feature:VolumeSnapshotDataSource]",
     "Suite": "openshift-tests"
   },
   {
@@ -28481,6 +28513,10 @@
   },
   {
     "Name": "[sig-builds][Feature:Builds][Slow] builds with a context directory s2i context directory build should s2i build an application using a context directory [apigroup:build.openshift.io]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-builds][Feature:Builds][Slow] builds with a context directory s2i context directory build should unprivileged s2i build an application using a context directory [apigroup:build.openshift.io]",
     "Suite": "openshift-tests"
   },
   {
