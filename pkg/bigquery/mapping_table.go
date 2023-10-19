@@ -14,7 +14,7 @@ import (
 	v1 "github.com/openshift-eng/ci-test-mapping/pkg/api/types/v1"
 )
 
-const mappingTableName = "component_mapping"
+const mappingTableName = "component_mapping_latest"
 
 type MappingTableManager struct {
 	ctx    context.Context
