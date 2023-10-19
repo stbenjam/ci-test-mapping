@@ -14,7 +14,7 @@ import (
 	v1 "github.com/openshift-eng/ci-test-mapping/pkg/api/types/v1"
 )
 
-const mappingTableName = "component_mapping_latest"
+const mappingTableName = "component_mapping"
 
 type MappingTableManager struct {
 	ctx    context.Context
@@ -62,7 +62,7 @@ func (tm *MappingTableManager) Migrate() error {
 func (tm *MappingTableManager) ListMappings() ([]v1.TestOwnership, error) {
 	now := time.Now()
 	log.Infof("fetching mappings from bigquery")
-	table := tm.client.bigquery.Dataset(tm.client.datasetName).Table(mappingTableName)
+	table := tm.client.bigquery.Dataset(tm.client.datasetName).Table(mappingTableName + "_latest") // use the view
 
 	sql := fmt.Sprintf(`
 		SELECT 
