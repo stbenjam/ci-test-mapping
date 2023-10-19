@@ -67,6 +67,7 @@ func setDefaults(testInfo *v1.TestInfo, testOwnership *v1.TestOwnership, c v1.Co
 
 	if testOwnership.Component == "" {
 		testOwnership.Component = DefaultComponent
+		testOwnership.JIRAComponent = DefaultComponent
 	}
 
 	if len(testOwnership.Capabilities) == 0 {

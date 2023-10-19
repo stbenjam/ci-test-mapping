@@ -15,6 +15,7 @@ import (
 	cloudcomputebaremetalprovider "github.com/openshift-eng/ci-test-mapping/pkg/components/cloudcompute/baremetalprovider"
 	cloudcomputecloudcontrollermanager "github.com/openshift-eng/ci-test-mapping/pkg/components/cloudcompute/cloudcontrollermanager"
 	cloudcomputeclusterautoscaler "github.com/openshift-eng/ci-test-mapping/pkg/components/cloudcompute/clusterautoscaler"
+	cloudcomputeexternalprovider "github.com/openshift-eng/ci-test-mapping/pkg/components/cloudcompute/externalprovider"
 	cloudcomputeibmprovider "github.com/openshift-eng/ci-test-mapping/pkg/components/cloudcompute/ibmprovider"
 	cloudcomputekubevirtprovider "github.com/openshift-eng/ci-test-mapping/pkg/components/cloudcompute/kubevirtprovider"
 	cloudcomputemachinehealthcheck "github.com/openshift-eng/ci-test-mapping/pkg/components/cloudcompute/machinehealthcheck"
@@ -27,12 +28,12 @@ import (
 	cloudnativeeventscloudnativeevents "github.com/openshift-eng/ci-test-mapping/pkg/components/cloudnativeevents/cloudnativeevents"
 	cloudnativeeventshardwareeventproxy "github.com/openshift-eng/ci-test-mapping/pkg/components/cloudnativeevents/hardwareeventproxy"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/clusterloader"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/clusterresourceoverrideadmissionoperator"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/clusterversionoperator"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/cnfcerttnf"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/cnfplatformvalidation"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/complianceoperator"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/configoperator"
-	"github.com/openshift-eng/ci-test-mapping/pkg/components/consolekubevirtplugin"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/consolemetal3plugin"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/consolestorageplugin"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/containers"
@@ -59,7 +60,6 @@ import (
 	installeropenshiftansible "github.com/openshift-eng/ci-test-mapping/pkg/components/installer/openshiftansible"
 	installeropenshiftinstaller "github.com/openshift-eng/ci-test-mapping/pkg/components/installer/openshiftinstaller"
 	installeropenshiftonbaremetalipi "github.com/openshift-eng/ci-test-mapping/pkg/components/installer/openshiftonbaremetalipi"
-	installeropenshiftonkubevirt "github.com/openshift-eng/ci-test-mapping/pkg/components/installer/openshiftonkubevirt"
 	installeropenshiftonopenstack "github.com/openshift-eng/ci-test-mapping/pkg/components/installer/openshiftonopenstack"
 	installeropenshiftonrhv "github.com/openshift-eng/ci-test-mapping/pkg/components/installer/openshiftonrhv"
 	installerpowervs "github.com/openshift-eng/ci-test-mapping/pkg/components/installer/powervs"
@@ -96,19 +96,20 @@ import (
 	networkingkubernetesnmstate "github.com/openshift-eng/ci-test-mapping/pkg/components/networking/kubernetesnmstate"
 	networkingkubernetesnmstateoperator "github.com/openshift-eng/ci-test-mapping/pkg/components/networking/kubernetesnmstateoperator"
 	networkingkuryr "github.com/openshift-eng/ci-test-mapping/pkg/components/networking/kuryr"
-	networkingmdns "github.com/openshift-eng/ci-test-mapping/pkg/components/networking/mdns"
 	networkingmetallb "github.com/openshift-eng/ci-test-mapping/pkg/components/networking/metallb"
 	networkingmultus "github.com/openshift-eng/ci-test-mapping/pkg/components/networking/multus"
 	networkingnetobs "github.com/openshift-eng/ci-test-mapping/pkg/components/networking/netobs"
+	networkingnetworktools "github.com/openshift-eng/ci-test-mapping/pkg/components/networking/networktools"
 	networkingnmstateconsoleplugin "github.com/openshift-eng/ci-test-mapping/pkg/components/networking/nmstateconsoleplugin"
+	networkingonpremdns "github.com/openshift-eng/ci-test-mapping/pkg/components/networking/onpremdns"
+	networkingonpremhostnetworking "github.com/openshift-eng/ci-test-mapping/pkg/components/networking/onpremhostnetworking"
+	networkingonpremloadbalancer "github.com/openshift-eng/ci-test-mapping/pkg/components/networking/onpremloadbalancer"
 	networkingopenshiftsdn "github.com/openshift-eng/ci-test-mapping/pkg/components/networking/openshiftsdn"
 	networkingovnkubernetes "github.com/openshift-eng/ci-test-mapping/pkg/components/networking/ovnkubernetes"
 	networkingptp "github.com/openshift-eng/ci-test-mapping/pkg/components/networking/ptp"
 	networkingrouter "github.com/openshift-eng/ci-test-mapping/pkg/components/networking/router"
 	networkingruntimecfg "github.com/openshift-eng/ci-test-mapping/pkg/components/networking/runtimecfg"
 	networkingsriov "github.com/openshift-eng/ci-test-mapping/pkg/components/networking/sriov"
-	nodeautoscaler "github.com/openshift-eng/ci-test-mapping/pkg/components/node/autoscaler"
-	nodeclusterresourceoverrideadmissionoperator "github.com/openshift-eng/ci-test-mapping/pkg/components/node/clusterresourceoverrideadmissionoperator"
 	nodecpumanager "github.com/openshift-eng/ci-test-mapping/pkg/components/node/cpumanager"
 	nodecrio "github.com/openshift-eng/ci-test-mapping/pkg/components/node/crio"
 	nodedevicemanager "github.com/openshift-eng/ci-test-mapping/pkg/components/node/devicemanager"
@@ -123,6 +124,7 @@ import (
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/nodeobservabilityoperator"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/nodetuningoperator"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/none"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/nvidia"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/oauthapiserver"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/oauthproxy"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/observabilityui"
@@ -140,6 +142,7 @@ import (
 	openshiftupdateserviceoperator "github.com/openshift-eng/ci-test-mapping/pkg/components/openshiftupdateservice/operator"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/operatorsdk"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/performanceaddonoperator"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/podautoscaler"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/poisonpilloperator"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/registryconsole"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/release"
@@ -176,7 +179,6 @@ import (
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/testinfrastructure"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/topolvm"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/unknown"
-	"github.com/openshift-eng/ci-test-mapping/pkg/components/virtualization"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/windowscontainers"
 )
 
@@ -187,7 +189,6 @@ type Registry struct {
 func NewComponentRegistry() *Registry {
 	var r Registry
 
-	r.Register(" Virtualization", &virtualization.VirtualizationComponent)
 	r.Register("apiserver-auth", &apiserverauth.ApiserverAuthComponent)
 	r.Register("AWS Load Balancer Operator", &awsloadbalanceroperator.AWSLoadBalancerOperatorComponent)
 	r.Register("Bare Metal Hardware Provisioning", &baremetalhardwareprovisioning.BareMetalHardwareProvisioningComponent)
@@ -218,7 +219,6 @@ func NewComponentRegistry() *Registry {
 	r.Register("CNF-Cert-TNF", &cnfcerttnf.CNFCertTNFComponent)
 	r.Register("Compliance Operator", &complianceoperator.ComplianceOperatorComponent)
 	r.Register("config-operator", &configoperator.ConfigOperatorComponent)
-	r.Register("Console Kubevirt Plugin", &consolekubevirtplugin.ConsoleKubevirtPluginComponent)
 	r.Register("Console Metal3 Plugin", &consolemetal3plugin.ConsoleMetal3PluginComponent)
 	r.Register("Console Storage Plugin", &consolestorageplugin.ConsoleStoragePluginComponent)
 	r.Register("Containers", &containers.ContainersComponent)
@@ -243,7 +243,6 @@ func NewComponentRegistry() *Registry {
 	r.Register("Installer / IBM Cloud", &installeribmcloud.IBMCloudComponent)
 	r.Register("Installer / Nutanix", &installernutanix.NutanixComponent)
 	r.Register("Installer / OpenShift on Bare Metal IPI", &installeropenshiftonbaremetalipi.OpenShiftOnBareMetalIPIComponent)
-	r.Register("Installer / OpenShift on KubeVirt", &installeropenshiftonkubevirt.OpenShiftOnKubeVirtComponent)
 	r.Register("Installer / OpenShift on OpenStack", &installeropenshiftonopenstack.OpenShiftOnOpenStackComponent)
 	r.Register("Installer / OpenShift on RHV", &installeropenshiftonrhv.OpenShiftOnRHVComponent)
 	r.Register("Installer / openshift-ansible", &installeropenshiftansible.OpenshiftAnsibleComponent)
@@ -282,7 +281,6 @@ func NewComponentRegistry() *Registry {
 	r.Register("Networking / kubernetes-nmstate", &networkingkubernetesnmstate.KubernetesNmstateComponent)
 	r.Register("Networking / kubernetes-nmstate-operator", &networkingkubernetesnmstateoperator.KubernetesNmstateOperatorComponent)
 	r.Register("Networking / kuryr", &networkingkuryr.KuryrComponent)
-	r.Register("Networking / mDNS", &networkingmdns.MDNSComponent)
 	r.Register("Networking / Metal LB", &networkingmetallb.MetalLBComponent)
 	r.Register("Networking / multus", &networkingmultus.MultusComponent)
 	r.Register("Networking / NetObs", &networkingnetobs.NetObsComponent)
@@ -293,8 +291,6 @@ func NewComponentRegistry() *Registry {
 	r.Register("Networking / router", &networkingrouter.RouterComponent)
 	r.Register("Networking / runtime-cfg", &networkingruntimecfg.RuntimeCfgComponent)
 	r.Register("Networking / SR-IOV", &networkingsriov.SRIOVComponent)
-	r.Register("Node / Autoscaler (HPA, VPA, CMA)", &nodeautoscaler.AutoscalerComponent)
-	r.Register("Node / Cluster Resource Override Admission Operator", &nodeclusterresourceoverrideadmissionoperator.ClusterResourceOverrideAdmissionOperatorComponent)
 	r.Register("Node / CPU manager", &nodecpumanager.CPUManagerComponent)
 	r.Register("Node / CRI-O", &nodecrio.CRIOComponent)
 	r.Register("Node / Device Manager", &nodedevicemanager.DeviceManagerComponent)
@@ -363,6 +359,14 @@ func NewComponentRegistry() *Registry {
 	r.Register("topolvm", &topolvm.TopolvmComponent)
 	r.Register("Unknown", &unknown.UnknownComponent)
 	r.Register("Windows Containers", &windowscontainers.WindowsContainersComponent)
+	r.Register("Cloud Compute / External Provider", &cloudcomputeexternalprovider.ExternalProviderComponent)
+	r.Register("Cluster Resource Override Admission Operator", &clusterresourceoverrideadmissionoperator.ClusterResourceOverrideAdmissionOperatorComponent)
+	r.Register("Networking / network-tools", &networkingnetworktools.NetworkToolsComponent)
+	r.Register("Networking / On-Prem DNS", &networkingonpremdns.OnPremDNSComponent)
+	r.Register("Networking / On-Prem Host Networking", &networkingonpremhostnetworking.OnPremHostNetworkingComponent)
+	r.Register("Networking / On-Prem Load Balancer", &networkingonpremloadbalancer.OnPremLoadBalancerComponent)
+	r.Register("NVIDIA", &nvidia.NVIDIAComponent)
+	r.Register("Pod Autoscaler", &podautoscaler.PodAutoscalerComponent)
 	// New components go here
 
 	return &r

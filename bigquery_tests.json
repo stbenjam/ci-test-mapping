@@ -26572,6 +26572,10 @@
     "Suite": "openshift-tests-upgrade"
   },
   {
+    "Name": "[sig-arch][Feature:ClusterUpgrade] Cluster should remain functional during upgrade [Disruptive]",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
     "Name": "[sig-arch][Feature:ClusterUpgrade] Cluster should remain functional during upgrade [Disruptive] [Serial]",
     "Suite": "openshift-tests-upgrade"
   },
@@ -26593,6 +26597,10 @@
   },
   {
     "Name": "[sig-arch][Late] clients should not use APIs that are removed in upcoming releases [apigroup:config.openshift.io] [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-arch][Late] collect certificate data [Suite:openshift/conformance/parallel]",
     "Suite": "openshift-tests"
   },
   {
