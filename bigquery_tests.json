@@ -21812,6 +21812,30 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "[bz-[sig-apps][Feature:OpenShiftControllerManager]] clusteroperator/[sig-apps][Feature:OpenShiftControllerManager] should not change condition/Available",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[bz-[sig-apps][Feature:OpenShiftControllerManager]] clusteroperator/[sig-apps][Feature:OpenShiftControllerManager] should not change condition/Degraded",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[bz-[sig-auth][Feature:OAuthServer]] clusteroperator/[sig-auth][Feature:OAuthServer] should not change condition/Available",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[bz-[sig-auth][Feature:OAuthServer]] clusteroperator/[sig-auth][Feature:OAuthServer] should not change condition/Degraded",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[bz-[sig-network][Feature:Network] clusteroperator/[sig-network][Feature:Network should not change condition/Available",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[bz-[sig-network][Feature:Network] clusteroperator/[sig-network][Feature:Network should not change condition/Degraded",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "[bz-apiserver-auth] clusteroperator/authentication should not change condition/Available",
     "Suite": "openshift-tests-upgrade"
   },
@@ -62661,6 +62685,14 @@
   },
   {
     "Name": "[sig-trt][invariant] No alerts without an explicit test should be firing/pending more than historically",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-trt][invariant] No new alerts should be firing",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[sig-trt][invariant] No new alerts should be firing",
     "Suite": "openshift-tests"
   },
   {
