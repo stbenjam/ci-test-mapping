@@ -6040,7 +6040,15 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "External Storage [Driver: diskplugin.csi.alibabacloud.com] [Testpattern: Dynamic PV (block volmode)] provisioning should provision storage with pvc data source (ROX mode)",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "External Storage [Driver: diskplugin.csi.alibabacloud.com] [Testpattern: Dynamic PV (block volmode)] provisioning should provision storage with pvc data source in parallel [Slow]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "External Storage [Driver: diskplugin.csi.alibabacloud.com] [Testpattern: Dynamic PV (block volmode)] provisioning should provision storage with snapshot data source (ROX mode) [Feature:VolumeSnapshotDataSource]",
     "Suite": "openshift-tests"
   },
   {
@@ -6120,7 +6128,15 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "External Storage [Driver: diskplugin.csi.alibabacloud.com] [Testpattern: Dynamic PV (default fs)] provisioning should provision storage with pvc data source (ROX mode)",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "External Storage [Driver: diskplugin.csi.alibabacloud.com] [Testpattern: Dynamic PV (default fs)] provisioning should provision storage with pvc data source in parallel [Slow]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "External Storage [Driver: diskplugin.csi.alibabacloud.com] [Testpattern: Dynamic PV (default fs)] provisioning should provision storage with snapshot data source (ROX mode) [Feature:VolumeSnapshotDataSource]",
     "Suite": "openshift-tests"
   },
   {
@@ -6141,6 +6157,14 @@
   },
   {
     "Name": "External Storage [Driver: diskplugin.csi.alibabacloud.com] [Testpattern: Dynamic PV (default fs)] read-write-once-pod[Feature:ReadWriteOncePod] should block a second pod from using an in-use ReadWriteOncePod volume on the same node",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "External Storage [Driver: diskplugin.csi.alibabacloud.com] [Testpattern: Dynamic PV (default fs)] read-write-once-pod[MinimumKubeletVersion:1.27] should block a second pod from using an in-use ReadWriteOncePod volume on the same node",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "External Storage [Driver: diskplugin.csi.alibabacloud.com] [Testpattern: Dynamic PV (default fs)] read-write-once-pod[MinimumKubeletVersion:1.27] should preempt lower priority pods using ReadWriteOncePod volumes",
     "Suite": "openshift-tests"
   },
   {
@@ -6424,7 +6448,15 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "External Storage [Driver: diskplugin.csi.alibabacloud.com] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] provisioning should provision storage with pvc data source (ROX mode)",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "External Storage [Driver: diskplugin.csi.alibabacloud.com] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] provisioning should provision storage with pvc data source in parallel [Slow]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "External Storage [Driver: diskplugin.csi.alibabacloud.com] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] provisioning should provision storage with snapshot data source (ROX mode) [Feature:VolumeSnapshotDataSource]",
     "Suite": "openshift-tests"
   },
   {
@@ -13669,6 +13701,14 @@
   },
   {
     "Name": "TestCreateCluster/EnsurePodsWithEmptyDirPVsHaveSafeToEvictAnnotations",
+    "Suite": "hypershift-e2e"
+  },
+  {
+    "Name": "TestCreateCluster/Main",
+    "Suite": "hypershift-e2e"
+  },
+  {
+    "Name": "TestCreateCluster/Main/EnsurePSANotPrivileged",
     "Suite": "hypershift-e2e"
   },
   {
@@ -31336,6 +31376,18 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "[sig-installer][Suite:openshift/openstack] ControlPlane MachineSet ProviderSpec template is correctly applied to Machines",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-installer][Suite:openshift/openstack] ControlPlane MachineSet has role master",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-installer][Suite:openshift/openstack] ControlPlane MachineSet replica number corresponds to the number of Machines",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "[sig-installer][Suite:openshift/openstack] Machine ProviderSpec is correctly applied to OpenStack instances",
     "Suite": "openshift-tests"
   },
@@ -31353,6 +31405,10 @@
   },
   {
     "Name": "[sig-installer][Suite:openshift/openstack] MachineSet replica number corresponds to the number of Machines",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-installer][Suite:openshift/openstack] The OpenShift cluster runs with etcd on ephemeral local block device",
     "Suite": "openshift-tests"
   },
   {
