@@ -500,6 +500,14 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "External Storage [Driver: cinder.csi.openstack.org] [Testpattern: Dynamic PV (ntfs)(allowExpansion)][sig-windows] volume-expand Verify if offline PVC expansion works",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "External Storage [Driver: cinder.csi.openstack.org] [Testpattern: Dynamic PV (ntfs)(allowExpansion)][sig-windows] volume-expand should resize volume when PVC is edited while pod is using it",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "External Storage [Driver: cinder.csi.openstack.org] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] multiVolume [Slow] should access to two volumes with different volume mode and retain data across pod recreation on different node",
     "Suite": "openshift-tests"
   },
@@ -649,6 +657,98 @@
   },
   {
     "Name": "External Storage [Driver: cinder.csi.openstack.org] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] volumes should store data",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "External Storage [Driver: cinder.csi.openstack.org] [Testpattern: Dynamic PV (ntfs)][sig-windows] provisioning should provision storage with mount options",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "External Storage [Driver: cinder.csi.openstack.org] [Testpattern: Dynamic PV (ntfs)][sig-windows] provisioning should provision storage with pvc data source",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "External Storage [Driver: cinder.csi.openstack.org] [Testpattern: Dynamic PV (ntfs)][sig-windows] provisioning should provision storage with pvc data source in parallel [Slow]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "External Storage [Driver: cinder.csi.openstack.org] [Testpattern: Dynamic PV (ntfs)][sig-windows] provisioning should provision storage with snapshot data source [Feature:VolumeSnapshotDataSource]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "External Storage [Driver: cinder.csi.openstack.org] [Testpattern: Dynamic PV (ntfs)][sig-windows] subPath should be able to unmount after the subpath directory is deleted [LinuxOnly]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "External Storage [Driver: cinder.csi.openstack.org] [Testpattern: Dynamic PV (ntfs)][sig-windows] subPath should fail if non-existent subpath is outside the volume [Slow][LinuxOnly]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "External Storage [Driver: cinder.csi.openstack.org] [Testpattern: Dynamic PV (ntfs)][sig-windows] subPath should fail if subpath directory is outside the volume [Slow][LinuxOnly]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "External Storage [Driver: cinder.csi.openstack.org] [Testpattern: Dynamic PV (ntfs)][sig-windows] subPath should fail if subpath file is outside the volume [Slow][LinuxOnly]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "External Storage [Driver: cinder.csi.openstack.org] [Testpattern: Dynamic PV (ntfs)][sig-windows] subPath should fail if subpath with backstepping is outside the volume [Slow][LinuxOnly]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "External Storage [Driver: cinder.csi.openstack.org] [Testpattern: Dynamic PV (ntfs)][sig-windows] subPath should support creating multiple subpath from same volumes [Slow]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "External Storage [Driver: cinder.csi.openstack.org] [Testpattern: Dynamic PV (ntfs)][sig-windows] subPath should support existing directories when readOnly specified in the volumeSource",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "External Storage [Driver: cinder.csi.openstack.org] [Testpattern: Dynamic PV (ntfs)][sig-windows] subPath should support existing directory",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "External Storage [Driver: cinder.csi.openstack.org] [Testpattern: Dynamic PV (ntfs)][sig-windows] subPath should support existing single file [LinuxOnly]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "External Storage [Driver: cinder.csi.openstack.org] [Testpattern: Dynamic PV (ntfs)][sig-windows] subPath should support file as subpath [LinuxOnly]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "External Storage [Driver: cinder.csi.openstack.org] [Testpattern: Dynamic PV (ntfs)][sig-windows] subPath should support non-existent path",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "External Storage [Driver: cinder.csi.openstack.org] [Testpattern: Dynamic PV (ntfs)][sig-windows] subPath should support readOnly directory specified in the volumeMount",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "External Storage [Driver: cinder.csi.openstack.org] [Testpattern: Dynamic PV (ntfs)][sig-windows] subPath should support readOnly file specified in the volumeMount [LinuxOnly]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "External Storage [Driver: cinder.csi.openstack.org] [Testpattern: Dynamic PV (ntfs)][sig-windows] subPath should support restarting containers using directory as subpath [Slow]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "External Storage [Driver: cinder.csi.openstack.org] [Testpattern: Dynamic PV (ntfs)][sig-windows] subPath should support restarting containers using file as subpath [Slow][LinuxOnly]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "External Storage [Driver: cinder.csi.openstack.org] [Testpattern: Dynamic PV (ntfs)][sig-windows] subPath should verify container cannot write to subpath readonly volumes [Slow]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "External Storage [Driver: cinder.csi.openstack.org] [Testpattern: Dynamic PV (ntfs)][sig-windows] volume-expand should not allow expansion of pvcs without AllowVolumeExpansion property",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "External Storage [Driver: cinder.csi.openstack.org] [Testpattern: Dynamic PV (ntfs)][sig-windows] volumes should allow exec of files on the volume",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "External Storage [Driver: cinder.csi.openstack.org] [Testpattern: Dynamic PV (ntfs)][sig-windows] volumes should store data",
     "Suite": "openshift-tests"
   },
   {
@@ -848,6 +948,38 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "External Storage [Driver: cinder.csi.openstack.org] [Testpattern: Generic Ephemeral-volume (default fs) [Feature:GenericEphemeralVolume] (immediate-binding)] ephemeral should create read-only inline ephemeral volume",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "External Storage [Driver: cinder.csi.openstack.org] [Testpattern: Generic Ephemeral-volume (default fs) [Feature:GenericEphemeralVolume] (immediate-binding)] ephemeral should create read/write inline ephemeral volume",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "External Storage [Driver: cinder.csi.openstack.org] [Testpattern: Generic Ephemeral-volume (default fs) [Feature:GenericEphemeralVolume] (immediate-binding)] ephemeral should support multiple inline ephemeral volumes",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "External Storage [Driver: cinder.csi.openstack.org] [Testpattern: Generic Ephemeral-volume (default fs) [Feature:GenericEphemeralVolume] (immediate-binding)] ephemeral should support two pods which share the same volume",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "External Storage [Driver: cinder.csi.openstack.org] [Testpattern: Generic Ephemeral-volume (default fs) [Feature:GenericEphemeralVolume] (late-binding)] ephemeral should create read-only inline ephemeral volume",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "External Storage [Driver: cinder.csi.openstack.org] [Testpattern: Generic Ephemeral-volume (default fs) [Feature:GenericEphemeralVolume] (late-binding)] ephemeral should create read/write inline ephemeral volume",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "External Storage [Driver: cinder.csi.openstack.org] [Testpattern: Generic Ephemeral-volume (default fs) [Feature:GenericEphemeralVolume] (late-binding)] ephemeral should support multiple inline ephemeral volumes",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "External Storage [Driver: cinder.csi.openstack.org] [Testpattern: Generic Ephemeral-volume (default fs) [Feature:GenericEphemeralVolume] (late-binding)] ephemeral should support two pods which share the same volume",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "External Storage [Driver: cinder.csi.openstack.org] [Testpattern: Generic Ephemeral-volume (default fs)] volumeLimits should support volume limits [Serial]",
     "Suite": "openshift-tests"
   },
@@ -957,6 +1089,14 @@
   },
   {
     "Name": "External Storage [Driver: cinder.csi.openstack.org] [Testpattern: Inline-volume (ntfs)][Feature:Windows] volumes should store data",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "External Storage [Driver: cinder.csi.openstack.org] [Testpattern: Inline-volume (ntfs)][sig-windows] volumes should allow exec of files on the volume",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "External Storage [Driver: cinder.csi.openstack.org] [Testpattern: Inline-volume (ntfs)][sig-windows] volumes should store data",
     "Suite": "openshift-tests"
   },
   {
@@ -1209,6 +1349,14 @@
   },
   {
     "Name": "External Storage [Driver: cinder.csi.openstack.org] [Testpattern: Pre-provisioned PV (ntfs)][Feature:Windows] volumes should store data",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "External Storage [Driver: cinder.csi.openstack.org] [Testpattern: Pre-provisioned PV (ntfs)][sig-windows] volumes should allow exec of files on the volume",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "External Storage [Driver: cinder.csi.openstack.org] [Testpattern: Pre-provisioned PV (ntfs)][sig-windows] volumes should store data",
     "Suite": "openshift-tests"
   },
   {
@@ -13388,6 +13536,14 @@
     "Suite": "hypershift-e2e"
   },
   {
+    "Name": "TestAutoscaling/EnsureHostedCluster/EnsureHCPPodsAffinitiesAndTolerations",
+    "Suite": "hypershift-e2e"
+  },
+  {
+    "Name": "TestAutoscaling/EnsureHostedCluster/EnsureHCPPodsAffinitiesAndTolerations_",
+    "Suite": "hypershift-e2e"
+  },
+  {
     "Name": "TestAutoscaling/EnsureHostedCluster/EnsureNetworkPolicies",
     "Suite": "hypershift-e2e"
   },
@@ -13637,6 +13793,14 @@
   },
   {
     "Name": "TestCreateCluster/EnsureHostedCluster/EnsureHCPContainersHaveResourceRequests",
+    "Suite": "hypershift-e2e"
+  },
+  {
+    "Name": "TestCreateCluster/EnsureHostedCluster/EnsureHCPPodsAffinitiesAndTolerations",
+    "Suite": "hypershift-e2e"
+  },
+  {
+    "Name": "TestCreateCluster/EnsureHostedCluster/EnsureHCPPodsAffinitiesAndTolerations_",
     "Suite": "hypershift-e2e"
   },
   {
@@ -13893,6 +14057,14 @@
   },
   {
     "Name": "TestCreateClusterCustomConfig/EnsureHostedCluster/EnsureHCPContainersHaveResourceRequests",
+    "Suite": "hypershift-e2e"
+  },
+  {
+    "Name": "TestCreateClusterCustomConfig/EnsureHostedCluster/EnsureHCPPodsAffinitiesAndTolerations",
+    "Suite": "hypershift-e2e"
+  },
+  {
+    "Name": "TestCreateClusterCustomConfig/EnsureHostedCluster/EnsureHCPPodsAffinitiesAndTolerations_",
     "Suite": "hypershift-e2e"
   },
   {
@@ -14252,6 +14424,14 @@
     "Suite": "hypershift-e2e"
   },
   {
+    "Name": "TestCreateClusterPrivate/EnsureHostedCluster/EnsureHCPPodsAffinitiesAndTolerations",
+    "Suite": "hypershift-e2e"
+  },
+  {
+    "Name": "TestCreateClusterPrivate/EnsureHostedCluster/EnsureHCPPodsAffinitiesAndTolerations_",
+    "Suite": "hypershift-e2e"
+  },
+  {
     "Name": "TestCreateClusterPrivate/EnsureHostedCluster/EnsureNetworkPolicies",
     "Suite": "hypershift-e2e"
   },
@@ -14540,6 +14720,14 @@
     "Suite": "hypershift-e2e"
   },
   {
+    "Name": "TestCreateClusterProxy/EnsureHostedCluster/EnsureHCPPodsAffinitiesAndTolerations",
+    "Suite": "hypershift-e2e"
+  },
+  {
+    "Name": "TestCreateClusterProxy/EnsureHostedCluster/EnsureHCPPodsAffinitiesAndTolerations_",
+    "Suite": "hypershift-e2e"
+  },
+  {
     "Name": "TestCreateClusterProxy/EnsureHostedCluster/EnsureNetworkPolicies",
     "Suite": "hypershift-e2e"
   },
@@ -14713,6 +14901,10 @@
   },
   {
     "Name": "TestCreateClusterProxy/ValidateMetricsAreExposed",
+    "Suite": "hypershift-e2e"
+  },
+  {
+    "Name": "TestCreateClusterRequestServingIsolation",
     "Suite": "hypershift-e2e"
   },
   {
@@ -15488,6 +15680,14 @@
     "Suite": "hypershift-e2e"
   },
   {
+    "Name": "TestNodePool/EnsureHostedCluster/EnsureHCPPodsAffinitiesAndTolerations",
+    "Suite": "hypershift-e2e"
+  },
+  {
+    "Name": "TestNodePool/EnsureHostedCluster/EnsureHCPPodsAffinitiesAndTolerations_",
+    "Suite": "hypershift-e2e"
+  },
+  {
     "Name": "TestNodePool/EnsureHostedCluster/EnsureNetworkPolicies",
     "Suite": "hypershift-e2e"
   },
@@ -15537,6 +15737,10 @@
   },
   {
     "Name": "TestNodePool/Main",
+    "Suite": "hypershift-e2e"
+  },
+  {
+    "Name": "TestNodePool/Main/KubeKubeVirtJsonPatchTest",
     "Suite": "hypershift-e2e"
   },
   {
@@ -16181,6 +16385,14 @@
   },
   {
     "Name": "TestUpgradeControlPlane/EnsureHostedCluster/EnsureHCPContainersHaveResourceRequests",
+    "Suite": "hypershift-e2e"
+  },
+  {
+    "Name": "TestUpgradeControlPlane/EnsureHostedCluster/EnsureHCPPodsAffinitiesAndTolerations",
+    "Suite": "hypershift-e2e"
+  },
+  {
+    "Name": "TestUpgradeControlPlane/EnsureHostedCluster/EnsureHCPPodsAffinitiesAndTolerations_",
     "Suite": "hypershift-e2e"
   },
   {
@@ -19125,6 +19337,54 @@
   },
   {
     "Name": "[Jira:\"Test Framework\"] monitor test alert-summary-serializer writing to storage",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Jira:\"Test Framework\"] monitor test azure-metrics-collector cleanup",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Jira:\"Test Framework\"] monitor test azure-metrics-collector cleanup",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Jira:\"Test Framework\"] monitor test azure-metrics-collector collection",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Jira:\"Test Framework\"] monitor test azure-metrics-collector collection",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Jira:\"Test Framework\"] monitor test azure-metrics-collector interval construction",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Jira:\"Test Framework\"] monitor test azure-metrics-collector interval construction",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Jira:\"Test Framework\"] monitor test azure-metrics-collector setup",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Jira:\"Test Framework\"] monitor test azure-metrics-collector setup",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Jira:\"Test Framework\"] monitor test azure-metrics-collector test evaluation",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Jira:\"Test Framework\"] monitor test azure-metrics-collector test evaluation",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Jira:\"Test Framework\"] monitor test azure-metrics-collector writing to storage",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Jira:\"Test Framework\"] monitor test azure-metrics-collector writing to storage",
     "Suite": "openshift-tests"
   },
   {
@@ -26652,6 +26912,22 @@
     "Suite": "openshift-tests-upgrade"
   },
   {
+    "Name": "[sig-arch][Late] all registered tls artifacts must have expected owners [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-arch][Late] all registered tls artifacts must have required metadata: ownership [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-arch][Late] all registered tls artifacts should have optional metadata: description [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-arch][Late] all tls artifacts must be registered [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "[sig-arch][Late] clients should not use APIs that are removed in upcoming releases [Suite:openshift/conformance/parallel]",
     "Suite": "openshift-tests"
   },
@@ -29724,6 +30000,14 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "[sig-cli] oc builds import necessary images [Early] [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[sig-cli] oc builds import necessary images [Early] [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "[sig-cli] oc builds new-build [Skipped:Disconnected] [Suite:openshift/conformance/parallel]",
     "Suite": "openshift-tests"
   },
@@ -30113,6 +30397,10 @@
   },
   {
     "Name": "[sig-cluster-lifecycle] cluster upgrade should complete in 120.00 minutes",
+    "Suite": "Cluster upgrade"
+  },
+  {
+    "Name": "[sig-cluster-lifecycle] cluster upgrade should complete in 180.00 minutes",
     "Suite": "Cluster upgrade"
   },
   {
@@ -31565,6 +31853,18 @@
   },
   {
     "Name": "[sig-installer][Suite:openshift/openstack][lb][Serial] The Openstack platform should limit service access on an UDP Amphora LoadBalancer when an UDP LoadBalancer svc setting the loadBalancerSourceRanges spec is created on Openshift",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-installer][Suite:openshift/openstack][lb][Serial] The Openstack platform should limit service access on an UDP OVN LoadBalancer when an UDP LoadBalancer svc setting the loadBalancerSourceRanges spec is created on Openshift",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-installer][Suite:openshift/openstack][lb][Serial] The Openstack platform should not re-use an existing UDP Amphora LoadBalancer if shared internal svc is created",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-installer][Suite:openshift/openstack][lb][Serial] The Openstack platform should not re-use an existing UDP OVN LoadBalancer if shared internal svc is created",
     "Suite": "openshift-tests"
   },
   {
@@ -34612,11 +34912,19 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "[sig-network][Feature:Router][apigroup:route.openshift.io] The HAProxy router should override the route host for overridden domains with a custom value [Skipped:Disconnected] [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "[sig-network][Feature:Router][apigroup:route.openshift.io] The HAProxy router should override the route host for overridden domains with a custom value [apigroup:image.openshift.io] [Skipped:Disconnected] [Suite:openshift/conformance/parallel]",
     "Suite": "openshift-tests"
   },
   {
     "Name": "[sig-network][Feature:Router][apigroup:route.openshift.io] The HAProxy router should override the route host with a custom value [Skipped:Disconnected] [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network][Feature:Router][apigroup:route.openshift.io] The HAProxy router should run even if it has no access to update status [Skipped:Disconnected] [Suite:openshift/conformance/parallel]",
     "Suite": "openshift-tests"
   },
   {
@@ -63413,6 +63721,10 @@
   },
   {
     "Name": "test 'install should succeed: overall' has required number of successful passes across payload jobs",
+    "Suite": "cluster install"
+  },
+  {
+    "Name": "test 'install should succeed: overall' has required number of successful passes across payload jobs for including:fips",
     "Suite": "cluster install"
   },
   {
