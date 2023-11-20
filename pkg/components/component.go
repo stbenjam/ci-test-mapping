@@ -93,6 +93,7 @@ func (t *TestIdentifier) setDefaults(testInfo *v1.TestInfo, testOwnership *v1.Te
 	if id, ok := t.componentIDs[testOwnership.JIRAComponent]; ok {
 		testOwnership.JIRAComponentID = bigquery.NullInt64{
 			Int64: id,
+			Valid: true,
 		}
 	}
 
