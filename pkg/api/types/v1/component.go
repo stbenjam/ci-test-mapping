@@ -89,6 +89,9 @@ type TestOwnership struct {
 	// JIRAComponent specifies the JIRA component that this test belongs to.
 	JIRAComponent string `bigquery:"jira_component"`
 
+	// JIRAComponentID specifies the ID of the JIRA component above.
+	JIRAComponentID bigquery.NullInt64 `bigquery:"jira_component_id"`
+
 	// CreatedAt is the time this particular record was created.
 	//
 	// Components do not need to set this value.
@@ -127,6 +130,10 @@ var MappingTableSchema = bigquery.Schema{
 	{
 		Name: "jira_component",
 		Type: bigquery.StringFieldType,
+	},
+	{
+		Name: "jira_component_id",
+		Type: bigquery.NumericFieldType,
 	},
 	{
 		Name:     "capabilities",
