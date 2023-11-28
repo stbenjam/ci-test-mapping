@@ -50,7 +50,9 @@ var TestFrameworkComponent = Component{
 			},
 		},
 		TestRenames: map[string]string{
-			"[sig-arch] pathological event should not see excessive pull back-off on registry.redhat.io": "[sig-arch] should not see excessive pull back-off on registry.redhat.io",
+			"[sig-arch] pathological event should not see excessive pull back-off on registry.redhat.io":               "[sig-arch] should not see excessive pull back-off on registry.redhat.io",
+			"[Unknown][invariant] alert/KubePodNotReady should not be at or above info in all the other namespaces":    "[bz-Unknown][invariant] alert/KubePodNotReady should not be at or above info in all the other namespaces",
+			"[Unknown][invariant] alert/KubePodNotReady should not be at or above pending in all the other namespaces": "[bz-Unknown][invariant] alert/KubePodNotReady should not be at or above pending in all the other namespaces",
 		},
 	},
 }

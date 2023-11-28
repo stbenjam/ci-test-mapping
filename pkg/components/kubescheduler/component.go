@@ -27,6 +27,12 @@ var KubeSchedulerComponent = Component{
 				Priority: -1,
 			},
 		},
+		TestRenames: map[string]string{
+			"[kube-scheduler][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-kube-scheduler":             "[bz-kube-scheduler][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-kube-scheduler",
+			"[kube-scheduler][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-kube-scheduler-operator":    "[bz-kube-scheduler][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-kube-scheduler-operator",
+			"[kube-scheduler][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-kube-scheduler":          "[bz-kube-scheduler][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-kube-scheduler",
+			"[kube-scheduler][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-kube-scheduler-operator": "[bz-kube-scheduler][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-kube-scheduler-operator",
+		},
 	},
 }
 

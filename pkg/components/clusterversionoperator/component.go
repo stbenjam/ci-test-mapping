@@ -18,12 +18,14 @@ var ClusterVersionOperatorComponent = Component{
 			"openshift-cluster-version",
 		},
 		TestRenames: map[string]string{
-			"[sig-cluster-lifecycle] cluster upgrade should complete in 105.00 minutes": "[sig-cluster-lifecycle] cluster upgrade should complete in a reasonable time",
-			"[sig-cluster-lifecycle] cluster upgrade should complete in 120.00 minutes": "[sig-cluster-lifecycle] cluster upgrade should complete in a reasonable time",
-			"[sig-cluster-lifecycle] cluster upgrade should complete in 210.00 minutes": "[sig-cluster-lifecycle] cluster upgrade should complete in a reasonable time",
-			"[sig-cluster-lifecycle] cluster upgrade should complete in 240.00 minutes": "[sig-cluster-lifecycle] cluster upgrade should complete in a reasonable time",
-			"[sig-cluster-lifecycle] cluster upgrade should complete in 75.00 minutes":  "[sig-cluster-lifecycle] cluster upgrade should complete in a reasonable time",
-			"[sig-cluster-lifecycle] cluster upgrade should complete in 90.00 minutes":  "[sig-cluster-lifecycle] cluster upgrade should complete in a reasonable time",
+			"[sig-cluster-lifecycle] cluster upgrade should complete in 105.00 minutes":                                                     "[sig-cluster-lifecycle] cluster upgrade should complete in a reasonable time",
+			"[sig-cluster-lifecycle] cluster upgrade should complete in 120.00 minutes":                                                     "[sig-cluster-lifecycle] cluster upgrade should complete in a reasonable time",
+			"[sig-cluster-lifecycle] cluster upgrade should complete in 210.00 minutes":                                                     "[sig-cluster-lifecycle] cluster upgrade should complete in a reasonable time",
+			"[sig-cluster-lifecycle] cluster upgrade should complete in 240.00 minutes":                                                     "[sig-cluster-lifecycle] cluster upgrade should complete in a reasonable time",
+			"[sig-cluster-lifecycle] cluster upgrade should complete in 75.00 minutes":                                                      "[sig-cluster-lifecycle] cluster upgrade should complete in a reasonable time",
+			"[sig-cluster-lifecycle] cluster upgrade should complete in 90.00 minutes":                                                      "[sig-cluster-lifecycle] cluster upgrade should complete in a reasonable time",
+			"[Cluster Version Operator][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-cluster-version":    "[bz-Cluster Version Operator][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-cluster-version",
+			"[Cluster Version Operator][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-cluster-version": "[bz-Cluster Version Operator][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-cluster-version",
 		},
 		Matchers: []config.ComponentMatcher{
 			{

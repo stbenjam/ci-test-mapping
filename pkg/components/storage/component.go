@@ -35,6 +35,12 @@ var StorageComponent = Component{
 				},
 			},
 		},
+		TestRenames: map[string]string{
+			"[Storage][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-cluster-csi-drivers":         "[bz-Storage][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-cluster-csi-drivers",
+			"[Storage][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-cluster-storage-operator":    "[bz-Storage][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-cluster-storage-operator",
+			"[Storage][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-cluster-csi-drivers":      "[bz-Storage][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-cluster-csi-drivers",
+			"[Storage][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-cluster-storage-operator": "[bz-Storage][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-cluster-storage-operator",
+		},
 	},
 }
 

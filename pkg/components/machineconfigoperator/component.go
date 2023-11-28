@@ -40,6 +40,10 @@ var MachineConfigOperatorComponent = Component{
 				Capabilities: []string{"Config"},
 			},
 		},
+		TestRenames: map[string]string{
+			"[Machine Config Operator][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-machine-config-operator":    "[bz-Machine Config Operator][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-machine-config-operator",
+			"[Machine Config Operator][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-machine-config-operator": "[bz-Machine Config Operator][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-machine-config-operator",
+		},
 	},
 }
 

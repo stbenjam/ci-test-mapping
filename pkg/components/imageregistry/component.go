@@ -17,6 +17,10 @@ var ImageRegistryComponent = Component{
 		Namespaces: []string{
 			"openshift-image-registry",
 		},
+		TestRenames: map[string]string{
+			"[Image Registry][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-image-registry":    "[bz-Image Registry][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-image-registry",
+			"[Image Registry][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-image-registry": "[bz-Image Registry][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-image-registry",
+		},
 		Matchers: []config.ComponentMatcher{
 			{
 				IncludeAll: []string{"bz-Image Registry"},
