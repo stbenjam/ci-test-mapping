@@ -16584,6 +16584,102 @@
     "Suite": "hypershift-e2e"
   },
   {
+    "Name": "[Cloud Compute][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-cloud-controller-manager",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Cloud Compute][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-cloud-controller-manager",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Cloud Compute][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-cloud-controller-manager-operator",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Cloud Compute][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-cloud-controller-manager-operator",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Cloud Compute][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-cluster-machine-approver",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Cloud Compute][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-cluster-machine-approver",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Cloud Compute][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-machine-api",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Cloud Compute][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-machine-api",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Cloud Compute][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-cloud-controller-manager",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Cloud Compute][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-cloud-controller-manager",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Cloud Compute][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-cloud-controller-manager-operator",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Cloud Compute][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-cloud-controller-manager-operator",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Cloud Compute][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-cluster-machine-approver",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Cloud Compute][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-cluster-machine-approver",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Cloud Compute][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-machine-api",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Cloud Compute][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-machine-api",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Cloud Credential Operator][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-cloud-credential-operator",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Cloud Credential Operator][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-cloud-credential-operator",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Cloud Credential Operator][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-cloud-credential-operator",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Cloud Credential Operator][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-cloud-credential-operator",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Cluster Version Operator][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-cluster-version",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Cluster Version Operator][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-cluster-version",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Cluster Version Operator][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-cluster-version",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Cluster Version Operator][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-cluster-version",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "[Conformance][sig-api-machinery][Feature:APIServer] local kubeconfig \"lb-ext.kubeconfig\" should be present on all masters and work [Suite:openshift/conformance/parallel/minimal]",
     "Suite": "openshift-tests"
   },
@@ -16625,6 +16721,86 @@
   },
   {
     "Name": "[Conformance][sig-sno][Serial] Cluster should allow a fast rollout of kube-apiserver with no pods restarts during API disruption [apigroup:config.openshift.io][apigroup:operator.openshift.io] [Suite:openshift/conformance/serial/minimal]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[DNS][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-dns",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[DNS][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-dns",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[DNS][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-dns-operator",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[DNS][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-dns-operator",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[DNS][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-dns",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[DNS][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-dns",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[DNS][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-dns-operator",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[DNS][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-dns-operator",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Etcd][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-etcd",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Etcd][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-etcd",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Etcd][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-etcd-operator",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Etcd][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-etcd-operator",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Etcd][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-etcd",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Etcd][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-etcd",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Etcd][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-etcd-operator",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Etcd][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-etcd-operator",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Image Registry][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-image-registry",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Image Registry][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-image-registry",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Image Registry][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-image-registry",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Image Registry][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-image-registry",
     "Suite": "openshift-tests"
   },
   {
@@ -20852,6 +21028,294 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "[Machine Config Operator][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-machine-config-operator",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Machine Config Operator][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-machine-config-operator",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Machine Config Operator][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-machine-config-operator",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Machine Config Operator][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-machine-config-operator",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Management Console][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-console",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Management Console][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-console",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Management Console][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-console-operator",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Management Console][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-console-operator",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Management Console][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-console",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Management Console][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-console",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Management Console][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-console-operator",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Management Console][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-console-operator",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Monitoring][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-monitoring",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Monitoring][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-monitoring",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Monitoring][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-monitoring",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Monitoring][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-monitoring",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Networking][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-cloud-network-config-controller",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Networking][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-cloud-network-config-controller",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Networking][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-host-network",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Networking][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-host-network",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Networking][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-multus",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Networking][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-multus",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Networking][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-network-diagnostics",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Networking][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-network-diagnostics",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Networking][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-network-operator",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Networking][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-network-operator",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Networking][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-ovn-kubernetes",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Networking][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-ovn-kubernetes",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Networking][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-cloud-network-config-controller",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Networking][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-cloud-network-config-controller",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Networking][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-host-network",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Networking][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-host-network",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Networking][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-multus",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Networking][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-multus",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Networking][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-network-diagnostics",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Networking][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-network-diagnostics",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Networking][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-network-operator",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Networking][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-network-operator",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Networking][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-ovn-kubernetes",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Networking][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-ovn-kubernetes",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Node Tuning Operator][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-cluster-node-tuning-operator",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Node Tuning Operator][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-cluster-node-tuning-operator",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Node Tuning Operator][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-cluster-node-tuning-operator",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Node Tuning Operator][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-cluster-node-tuning-operator",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[OLM][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-marketplace",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[OLM][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-marketplace",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[OLM][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-operator-lifecycle-manager",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[OLM][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-operator-lifecycle-manager",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[OLM][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-operators",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[OLM][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-operators",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[OLM][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-marketplace",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[OLM][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-marketplace",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[OLM][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-operator-lifecycle-manager",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[OLM][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-operator-lifecycle-manager",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[OLM][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-operators",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[OLM][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-operators",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Routing][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-ingress",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Routing][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-ingress",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Routing][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-ingress-canary",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Routing][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-ingress-canary",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Routing][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-ingress-operator",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Routing][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-ingress-operator",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Routing][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-ingress",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Routing][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-ingress",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Routing][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-ingress-canary",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Routing][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-ingress-canary",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Routing][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-ingress-operator",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Routing][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-ingress-operator",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Samples][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-cluster-samples-operator",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Samples][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-cluster-samples-operator",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Samples][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-cluster-samples-operator",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Samples][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-cluster-samples-operator",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "[Serial] [sig-auth][Feature:OAuthServer] [RequestHeaders] [IdP] test RequestHeaders IdP [Suite:openshift/conformance/serial]",
     "Suite": "openshift-tests"
   },
@@ -20901,6 +21365,278 @@
   },
   {
     "Name": "[Serial][sig-node][Feature:TopologyManager] Configured cluster with gu workload should guarantee NUMA-aligned cpu cores in gu pods with single pod, single container requesting 4 cores, 1 device [Suite:openshift/conformance/serial]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Storage][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-cluster-csi-drivers",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Storage][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-cluster-csi-drivers",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Storage][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-cluster-storage-operator",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Storage][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-cluster-storage-operator",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Storage][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-cluster-csi-drivers",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Storage][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-cluster-csi-drivers",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Storage][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-cluster-storage-operator",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Storage][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-cluster-storage-operator",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Unknown][invariant] alert/KubePodNotReady should not be at or above info in all the other namespaces",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Unknown][invariant] alert/KubePodNotReady should not be at or above info in all the other namespaces",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Unknown][invariant] alert/KubePodNotReady should not be at or above info in ns/default",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Unknown][invariant] alert/KubePodNotReady should not be at or above info in ns/default",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Unknown][invariant] alert/KubePodNotReady should not be at or above info in ns/kube-system",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Unknown][invariant] alert/KubePodNotReady should not be at or above info in ns/kube-system",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Unknown][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Unknown][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Unknown][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-config",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Unknown][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-config",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Unknown][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-config-managed",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Unknown][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-config-managed",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Unknown][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-insights",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Unknown][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-insights",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Unknown][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-kni-infra",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Unknown][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-kni-infra",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Unknown][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-nutanix-infra",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Unknown][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-nutanix-infra",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Unknown][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-openstack-infra",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Unknown][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-openstack-infra",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Unknown][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-ovirt-infra",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Unknown][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-ovirt-infra",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Unknown][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-user-workload-monitoring",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Unknown][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-user-workload-monitoring",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Unknown][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-vsphere-infra",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Unknown][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-vsphere-infra",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Unknown][invariant] alert/KubePodNotReady should not be at or above pending in all the other namespaces",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Unknown][invariant] alert/KubePodNotReady should not be at or above pending in all the other namespaces",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Unknown][invariant] alert/KubePodNotReady should not be at or above pending in ns/default",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Unknown][invariant] alert/KubePodNotReady should not be at or above pending in ns/default",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Unknown][invariant] alert/KubePodNotReady should not be at or above pending in ns/kube-system",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Unknown][invariant] alert/KubePodNotReady should not be at or above pending in ns/kube-system",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Unknown][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Unknown][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Unknown][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-config",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Unknown][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-config",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Unknown][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-config-managed",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Unknown][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-config-managed",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Unknown][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-insights",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Unknown][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-insights",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Unknown][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-kni-infra",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Unknown][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-kni-infra",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Unknown][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-nutanix-infra",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Unknown][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-nutanix-infra",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Unknown][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-openstack-infra",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Unknown][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-openstack-infra",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Unknown][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-ovirt-infra",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Unknown][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-ovirt-infra",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Unknown][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-user-workload-monitoring",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Unknown][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-user-workload-monitoring",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Unknown][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-vsphere-infra",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Unknown][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-vsphere-infra",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[apiserver-auth][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-authentication",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[apiserver-auth][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-authentication",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[apiserver-auth][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-authentication-operator",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[apiserver-auth][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-authentication-operator",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[apiserver-auth][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-authentication",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[apiserver-auth][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-authentication",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[apiserver-auth][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-authentication-operator",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[apiserver-auth][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-authentication-operator",
     "Suite": "openshift-tests"
   },
   {
@@ -22164,6 +22900,14 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "[bz-apiserver-auth] openshift-oauth-apiserver should not get probe error on liveness probe due to timeout",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[bz-apiserver-auth] openshift-oauth-apiserver should not get probe error on liveness probe due to timeout",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "[bz-apiserver-auth] openshift-oauth-apiserver should not get probe error on readiiness probe due to connection refused",
     "Suite": "openshift-tests-upgrade"
   },
@@ -22177,6 +22921,22 @@
   },
   {
     "Name": "[bz-apiserver-auth] openshift-oauth-apiserver should not get probe error on readiiness probe due to timeout",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[bz-apiserver-auth] openshift-oauth-apiserver should not get probe error on readiness probe due to connection refused",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[bz-apiserver-auth] openshift-oauth-apiserver should not get probe error on readiness probe due to connection refused",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[bz-apiserver-auth] openshift-oauth-apiserver should not get probe error on readiness probe due to timeout",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[bz-apiserver-auth] openshift-oauth-apiserver should not get probe error on readiness probe due to timeout",
     "Suite": "openshift-tests"
   },
   {
@@ -23052,6 +23812,22 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "[config-operator][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-config-operator",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[config-operator][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-config-operator",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[config-operator][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-config-operator",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[config-operator][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-config-operator",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "[k8s.io] Container Lifecycle Hook when create a pod with lifecycle hook should execute poststart exec hook properly [NodeConformance] [Conformance] [sig-node] [Suite:openshift/conformance/parallel/minimal] [Suite:k8s]",
     "Suite": "openshift-tests"
   },
@@ -23513,6 +24289,246 @@
   },
   {
     "Name": "[k8s.io] [sig-node] kubelet [k8s.io] [sig-node] Clean up pods on node kubelet should be able to delete 10 pods per node in 1m0s. [Serial] [Suite:openshift/conformance/serial] [Suite:k8s]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[kube-apiserver][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-kube-apiserver",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[kube-apiserver][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-kube-apiserver",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[kube-apiserver][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-kube-apiserver-operator",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[kube-apiserver][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-kube-apiserver-operator",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[kube-apiserver][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-kube-apiserver",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[kube-apiserver][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-kube-apiserver",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[kube-apiserver][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-kube-apiserver-operator",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[kube-apiserver][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-kube-apiserver-operator",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[kube-controller-manager][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-kube-controller-manager",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[kube-controller-manager][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-kube-controller-manager",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[kube-controller-manager][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-kube-controller-manager-operator",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[kube-controller-manager][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-kube-controller-manager-operator",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[kube-controller-manager][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-kube-controller-manager",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[kube-controller-manager][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-kube-controller-manager",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[kube-controller-manager][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-kube-controller-manager-operator",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[kube-controller-manager][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-kube-controller-manager-operator",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[kube-scheduler][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-kube-scheduler",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[kube-scheduler][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-kube-scheduler",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[kube-scheduler][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-kube-scheduler-operator",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[kube-scheduler][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-kube-scheduler-operator",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[kube-scheduler][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-kube-scheduler",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[kube-scheduler][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-kube-scheduler",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[kube-scheduler][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-kube-scheduler-operator",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[kube-scheduler][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-kube-scheduler-operator",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[kube-storage-version-migrator][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-kube-storage-version-migrator",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[kube-storage-version-migrator][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-kube-storage-version-migrator",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[kube-storage-version-migrator][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-kube-storage-version-migrator-operator",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[kube-storage-version-migrator][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-kube-storage-version-migrator-operator",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[kube-storage-version-migrator][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-kube-storage-version-migrator",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[kube-storage-version-migrator][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-kube-storage-version-migrator",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[kube-storage-version-migrator][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-kube-storage-version-migrator-operator",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[kube-storage-version-migrator][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-kube-storage-version-migrator-operator",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[oauth-apiserver][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-oauth-apiserver",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[oauth-apiserver][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-oauth-apiserver",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[oauth-apiserver][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-oauth-apiserver",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[oauth-apiserver][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-oauth-apiserver",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[openshift-apiserver][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-apiserver",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[openshift-apiserver][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-apiserver",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[openshift-apiserver][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-apiserver-operator",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[openshift-apiserver][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-apiserver-operator",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[openshift-apiserver][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-apiserver",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[openshift-apiserver][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-apiserver",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[openshift-apiserver][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-apiserver-operator",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[openshift-apiserver][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-apiserver-operator",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[openshift-controller-manager][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-controller-manager",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[openshift-controller-manager][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-controller-manager",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[openshift-controller-manager][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-controller-manager-operator",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[openshift-controller-manager][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-controller-manager-operator",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[openshift-controller-manager][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-controller-manager",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[openshift-controller-manager][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-controller-manager",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[openshift-controller-manager][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-controller-manager-operator",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[openshift-controller-manager][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-controller-manager-operator",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[service-ca][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-service-ca",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[service-ca][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-service-ca",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[service-ca][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-service-ca-operator",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[service-ca][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-service-ca-operator",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[service-ca][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-service-ca",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[service-ca][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-service-ca",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[service-ca][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-service-ca-operator",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[service-ca][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-service-ca-operator",
     "Suite": "openshift-tests"
   },
   {
@@ -30456,6 +31472,22 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "[sig-cluster-lifecycle][Feature:Machines] Managed cluster should [sig-scheduling][Early] control plane machine set operator should not cause an early rollout [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[sig-cluster-lifecycle][Feature:Machines] Managed cluster should [sig-scheduling][Early] control plane machine set operator should not cause an early rollout [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-cluster-lifecycle][Feature:Machines] Managed cluster should [sig-scheduling][Early] control plane machine set operator should not have any events [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[sig-cluster-lifecycle][Feature:Machines] Managed cluster should [sig-scheduling][Early] control plane machine set operator should not have any events [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "[sig-cluster-lifecycle][Feature:Machines] Managed cluster should have machine resources [Suite:openshift/conformance/parallel]",
     "Suite": "openshift-tests"
   },
@@ -36084,6 +37116,14 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "[sig-node] pathological event openshift-config-operator should not get probe error on readiness probe due to connection refused",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[sig-node] pathological event openshift-config-operator should not get probe error on readiness probe due to connection refused",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "[sig-node] pathological event openshift-config-operator should not get probe error on readiness probe due to timeout",
     "Suite": "openshift-tests-upgrade"
   },
@@ -36257,6 +37297,14 @@
   },
   {
     "Name": "[sig-node][apigroup:config.openshift.io] CPU Partitioning node validation should have correct cpuset and cpushare set in crio containers [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-node][invariant] alert/TargetDown should not be at or above info in ns/kube-system",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[sig-node][invariant] alert/TargetDown should not be at or above info in ns/kube-system",
     "Suite": "openshift-tests"
   },
   {
