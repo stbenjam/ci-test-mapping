@@ -18,6 +18,10 @@ var PlatformVsphereComponent = Component{
 			"openshift-vsphere-infra",
 		},
 		Matchers: []config.ComponentMatcher{},
+		TestRenames: map[string]string{
+			"[Unknown][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-vsphere-infra":    "[bz-Unknown][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-vsphere-infra",
+			"[Unknown][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-vsphere-infra": "[bz-Unknown][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-vsphere-infra",
+		},
 	},
 }
 

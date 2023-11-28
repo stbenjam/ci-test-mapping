@@ -41,6 +41,22 @@ var KubeApiserverComponent = Component{
 				Priority: -1,
 			},
 		},
+		TestRenames: map[string]string{
+			"[Unknown][invariant] alert/KubePodNotReady should not be at or above info in ns/default":                                     "[bz-Unknown][invariant] alert/KubePodNotReady should not be at or above info in ns/default",
+			"[Unknown][invariant] alert/KubePodNotReady should not be at or above info in ns/kube-system":                                 "[bz-Unknown][invariant] alert/KubePodNotReady should not be at or above info in ns/kube-system",
+			"[Unknown][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift":                                   "[bz-Unknown][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift",
+			"[Unknown][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-config":                            "[bz-Unknown][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-config",
+			"[Unknown][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-config-managed":                    "[bz-Unknown][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-config-managed",
+			"[Unknown][invariant] alert/KubePodNotReady should not be at or above pending in ns/default":                                  "[bz-Unknown][invariant] alert/KubePodNotReady should not be at or above pending in ns/default",
+			"[Unknown][invariant] alert/KubePodNotReady should not be at or above pending in ns/kube-system":                              "[bz-Unknown][invariant] alert/KubePodNotReady should not be at or above pending in ns/kube-system",
+			"[Unknown][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift":                                "[bz-Unknown][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift",
+			"[Unknown][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-config":                         "[bz-Unknown][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-config",
+			"[Unknown][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-config-managed":                 "[bz-Unknown][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-config-managed",
+			"[kube-apiserver][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-kube-apiserver":             "[bz-kube-apiserver][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-kube-apiserver",
+			"[kube-apiserver][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-kube-apiserver-operator":    "[bz-kube-apiserver][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-kube-apiserver-operator",
+			"[kube-apiserver][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-kube-apiserver":          "[bz-kube-apiserver][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-kube-apiserver",
+			"[kube-apiserver][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-kube-apiserver-operator": "[bz-kube-apiserver][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-kube-apiserver-operator",
+		},
 	},
 }
 

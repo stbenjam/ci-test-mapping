@@ -26,6 +26,12 @@ var OpenshiftApiserverComponent = Component{
 				IncludeAll: []string{"openshift-api-", "-connections"},
 			},
 		},
+		TestRenames: map[string]string{
+			"[openshift-apiserver][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-apiserver":             "[bz-openshift-apiserver][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-apiserver",
+			"[openshift-apiserver][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-apiserver-operator":    "[bz-openshift-apiserver][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-apiserver-operator",
+			"[openshift-apiserver][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-apiserver":          "[bz-openshift-apiserver][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-apiserver",
+			"[openshift-apiserver][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-apiserver-operator": "[bz-openshift-apiserver][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-apiserver-operator",
+		},
 	},
 }
 

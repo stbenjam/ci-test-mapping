@@ -62,6 +62,14 @@ var RouterComponent = Component{
 				},
 			},
 		},
+		TestRenames: map[string]string{
+			"[Routing][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-ingress":             "[bz-Routing][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-ingress",
+			"[Routing][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-ingress-canary":      "[bz-Routing][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-ingress-canary",
+			"[Routing][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-ingress-operator":    "[bz-Routing][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-ingress-operator",
+			"[Routing][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-ingress":          "[bz-Routing][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-ingress",
+			"[Routing][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-ingress-canary":   "[bz-Routing][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-ingress-canary",
+			"[Routing][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-ingress-operator": "[bz-Routing][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-ingress-operator",
+		},
 	},
 }
 

@@ -18,6 +18,12 @@ var OtherProviderComponent = Component{
 			"openshift-cluster-machine-approver",
 			"openshift-machine-api",
 		},
+		TestRenames: map[string]string{
+			"[Cloud Compute][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-cluster-machine-approver":    "[bz-Cloud Compute][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-cluster-machine-approver",
+			"[Cloud Compute][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-machine-api":                 "[bz-Cloud Compute][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-machine-api",
+			"[Cloud Compute][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-cluster-machine-approver": "[bz-Cloud Compute][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-cluster-machine-approver",
+			"[Cloud Compute][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-machine-api":              "[bz-Cloud Compute][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-machine-api",
+		},
 		Matchers: []config.ComponentMatcher{
 			{
 				IncludeAny: []string{

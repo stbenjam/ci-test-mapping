@@ -17,6 +17,10 @@ var CloudCredentialOperatorComponent = Component{
 		Namespaces: []string{
 			"openshift-cloud-credential-operator",
 		},
+		TestRenames: map[string]string{
+			"[Cloud Credential Operator][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-cloud-credential-operator":    "[bz-Cloud Credential Operator][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-cloud-credential-operator",
+			"[Cloud Credential Operator][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-cloud-credential-operator": "[bz-Cloud Credential Operator][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-cloud-credential-operator",
+		},
 		Matchers: []config.ComponentMatcher{
 			{
 				IncludeAll: []string{"bz-Cloud Credential Operator"},

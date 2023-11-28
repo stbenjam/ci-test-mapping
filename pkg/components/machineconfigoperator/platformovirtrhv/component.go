@@ -18,6 +18,10 @@ var PlatformOvirtRhvComponent = Component{
 			"openshift-ovirt-infra",
 		},
 		Matchers: []config.ComponentMatcher{},
+		TestRenames: map[string]string{
+			"[Unknown][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-ovirt-infra":    "[bz-Unknown][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-ovirt-infra",
+			"[Unknown][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-ovirt-infra": "[bz-Unknown][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-ovirt-infra",
+		},
 	},
 }
 

@@ -29,6 +29,10 @@ var OvnKubernetesComponent = Component{
 				Priority:   1,
 			},
 		},
+		TestRenames: map[string]string{
+			"[Networking][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-ovn-kubernetes":    "[bz-Networking][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-ovn-kubernetes",
+			"[Networking][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-ovn-kubernetes": "[bz-Networking][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-ovn-kubernetes",
+		},
 	},
 }
 

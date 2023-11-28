@@ -23,6 +23,12 @@ var ApiserverAuthComponent = Component{
 				IncludeAll: []string{"bz-apiserver-auth"},
 			},
 		},
+		TestRenames: map[string]string{
+			"[apiserver-auth][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-authentication":             "[bz-apiserver-auth][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-authentication",
+			"[apiserver-auth][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-authentication-operator":    "[bz-apiserver-auth][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-authentication-operator",
+			"[apiserver-auth][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-authentication":          "[bz-apiserver-auth][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-authentication",
+			"[apiserver-auth][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-authentication-operator": "[bz-apiserver-auth][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-authentication-operator",
+		},
 	},
 }
 

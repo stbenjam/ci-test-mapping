@@ -38,6 +38,14 @@ var OLMComponent = Component{
 				},
 			},
 		},
+		TestRenames: map[string]string{
+			"[OLM][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-marketplace":                   "[bz-OLM][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-marketplace",
+			"[OLM][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-operator-lifecycle-manager":    "[bz-OLM][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-operator-lifecycle-manager",
+			"[OLM][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-operators":                     "[bz-OLM][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-operators",
+			"[OLM][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-marketplace":                "[bz-OLM][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-marketplace",
+			"[OLM][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-operator-lifecycle-manager": "[bz-OLM][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-operator-lifecycle-manager",
+			"[OLM][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-operators":                  "[bz-OLM][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-operators",
+		},
 	},
 }
 

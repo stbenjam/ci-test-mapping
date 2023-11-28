@@ -18,6 +18,10 @@ var MultusComponent = Component{
 			"openshift-multus",
 		},
 		Matchers: []config.ComponentMatcher{},
+		TestRenames: map[string]string{
+			"[Networking][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-multus":    "[bz-Networking][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-multus",
+			"[Networking][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-multus": "[bz-Networking][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-multus",
+		},
 	},
 }
 
