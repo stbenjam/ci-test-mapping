@@ -29,6 +29,7 @@ var KubeApiserverComponent = Component{
 					"bz-kube-apiserver",
 					"cache-kube-api-",
 					"[sig-api-machinery][Feature:APIServer]",
+					"should have a status in the CRD schema", // only observed failures are kube-apiserver availability.
 				},
 			},
 			{
