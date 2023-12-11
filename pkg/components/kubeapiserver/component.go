@@ -25,16 +25,14 @@ var KubeApiserverComponent = Component{
 		},
 		Matchers: []config.ComponentMatcher{
 			{
-				IncludeAll: []string{"bz-kube-apiserver"},
-			},
-			{
-				IncludeAll: []string{"cache-kube-api-"},
+				IncludeAny: []string{
+					"bz-kube-apiserver",
+					"cache-kube-api-",
+					"[sig-api-machinery][Feature:APIServer]",
+				},
 			},
 			{
 				IncludeAll: []string{"kube-api-", "-connections"},
-			},
-			{
-				IncludeAll: []string{"[sig-api-machinery][Feature:APIServer]"},
 			},
 			{
 				SIG:      "sig-api-machinery",
