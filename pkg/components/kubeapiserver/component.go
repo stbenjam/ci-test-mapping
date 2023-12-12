@@ -25,16 +25,15 @@ var KubeApiserverComponent = Component{
 		},
 		Matchers: []config.ComponentMatcher{
 			{
-				IncludeAll: []string{"bz-kube-apiserver"},
-			},
-			{
-				IncludeAll: []string{"cache-kube-api-"},
+				IncludeAny: []string{
+					"bz-kube-apiserver",
+					"cache-kube-api-",
+					"[sig-api-machinery][Feature:APIServer]",
+					"should have a status in the CRD schema", // only observed failures are kube-apiserver availability.
+				},
 			},
 			{
 				IncludeAll: []string{"kube-api-", "-connections"},
-			},
-			{
-				IncludeAll: []string{"[sig-api-machinery][Feature:APIServer]"},
 			},
 			{
 				SIG:      "sig-api-machinery",
