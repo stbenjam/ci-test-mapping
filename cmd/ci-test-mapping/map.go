@@ -17,6 +17,7 @@ import (
 	"github.com/openshift-eng/ci-test-mapping/pkg/bigquery"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components"
 	"github.com/openshift-eng/ci-test-mapping/pkg/jira"
+	"github.com/openshift-eng/ci-test-mapping/pkg/obsoletetests"
 	"github.com/openshift-eng/ci-test-mapping/pkg/registry"
 )
 
@@ -79,7 +80,7 @@ var mapCmd = &cobra.Command{
 		if err != nil {
 			log.WithError(err).Fatalf("could not get jira component mapping")
 		}
-
+		testObsoleter := &obsoletetests.OCPObsoleteTestManager{}
 		testIdentifier := components.New(componentRegistry, jiraComponentIDs)
 		var newMappings []v1.TestOwnership
 		var matched, unmatched int
@@ -95,6 +96,8 @@ var mapCmd = &cobra.Command{
 					matched++
 				}
 				ownership.CreatedAt = createdAt
+
+				ownership.StaffApprovedObsolete = testObsoleter.IsObsolete(&tests[i])
 				newMappings = append(newMappings, *ownership)
 			}
 		}
