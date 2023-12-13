@@ -1,0 +1,6 @@
+approvers:
+  - openshift-staff-engineers
+reviewers:
+  - openshift-staff-engineers
+options:
+  no_parent_owners: true
