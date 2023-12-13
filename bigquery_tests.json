@@ -13876,6 +13876,18 @@
     "Suite": "hypershift-e2e"
   },
   {
+    "Name": "TestCreateCluster/Main/break-glass-credentials",
+    "Suite": "hypershift-e2e"
+  },
+  {
+    "Name": "TestCreateCluster/Main/break-glass-credentials/CSR_flow",
+    "Suite": "hypershift-e2e"
+  },
+  {
+    "Name": "TestCreateCluster/Main/break-glass-credentials/direct_fetch",
+    "Suite": "hypershift-e2e"
+  },
+  {
     "Name": "TestCreateCluster/NoticePreemptionOrFailedScheduling",
     "Suite": "hypershift-e2e"
   },
@@ -15748,6 +15760,10 @@
     "Suite": "hypershift-e2e"
   },
   {
+    "Name": "TestNodePool/Main/KubeVirtNodeSelectorTest",
+    "Suite": "hypershift-e2e"
+  },
+  {
     "Name": "TestNodePool/Main/KubeVirtQoSClassGuaranteedTest",
     "Suite": "hypershift-e2e"
   },
@@ -17596,6 +17612,150 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "[Jira:\"Networking / cluster-network-operator\"] monitor test legacy-networking-invariants cleanup",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Jira:\"Networking / cluster-network-operator\"] monitor test legacy-networking-invariants cleanup",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Jira:\"Networking / cluster-network-operator\"] monitor test legacy-networking-invariants collection",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Jira:\"Networking / cluster-network-operator\"] monitor test legacy-networking-invariants collection",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Jira:\"Networking / cluster-network-operator\"] monitor test legacy-networking-invariants interval construction",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Jira:\"Networking / cluster-network-operator\"] monitor test legacy-networking-invariants interval construction",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Jira:\"Networking / cluster-network-operator\"] monitor test legacy-networking-invariants setup",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Jira:\"Networking / cluster-network-operator\"] monitor test legacy-networking-invariants setup",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Jira:\"Networking / cluster-network-operator\"] monitor test legacy-networking-invariants test evaluation",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Jira:\"Networking / cluster-network-operator\"] monitor test legacy-networking-invariants test evaluation",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Jira:\"Networking / cluster-network-operator\"] monitor test legacy-networking-invariants writing to storage",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Jira:\"Networking / cluster-network-operator\"] monitor test legacy-networking-invariants writing to storage",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Jira:\"Networking / router\"] monitor test ingress-availability cleanup",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Jira:\"Networking / router\"] monitor test ingress-availability cleanup",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Jira:\"Networking / router\"] monitor test ingress-availability collection",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Jira:\"Networking / router\"] monitor test ingress-availability collection",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Jira:\"Networking / router\"] monitor test ingress-availability interval construction",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Jira:\"Networking / router\"] monitor test ingress-availability interval construction",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Jira:\"Networking / router\"] monitor test ingress-availability setup",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Jira:\"Networking / router\"] monitor test ingress-availability setup",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Jira:\"Networking / router\"] monitor test ingress-availability test evaluation",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Jira:\"Networking / router\"] monitor test ingress-availability test evaluation",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Jira:\"Networking / router\"] monitor test ingress-availability writing to storage",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Jira:\"Networking / router\"] monitor test ingress-availability writing to storage",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Jira:\"Networking / router\"] monitor test service-type-load-balancer-availability cleanup",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Jira:\"Networking / router\"] monitor test service-type-load-balancer-availability cleanup",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Jira:\"Networking / router\"] monitor test service-type-load-balancer-availability collection",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Jira:\"Networking / router\"] monitor test service-type-load-balancer-availability collection",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Jira:\"Networking / router\"] monitor test service-type-load-balancer-availability interval construction",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Jira:\"Networking / router\"] monitor test service-type-load-balancer-availability interval construction",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Jira:\"Networking / router\"] monitor test service-type-load-balancer-availability setup",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Jira:\"Networking / router\"] monitor test service-type-load-balancer-availability setup",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Jira:\"Networking / router\"] monitor test service-type-load-balancer-availability test evaluation",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Jira:\"Networking / router\"] monitor test service-type-load-balancer-availability test evaluation",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Jira:\"Networking / router\"] monitor test service-type-load-balancer-availability writing to storage",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Jira:\"Networking / router\"] monitor test service-type-load-balancer-availability writing to storage",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "[Jira:\"Networking\"] XXXitor test legacy-networking-invariants cleanup",
     "Suite": "openshift-tests"
   },
@@ -17713,6 +17873,246 @@
   },
   {
     "Name": "[Jira:\"Networking\"] monitor test legacy-networking-invariants writing to storage",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Jira:\"Node / Kubelet\"] monitor test kubelet-log-collector cleanup",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Jira:\"Node / Kubelet\"] monitor test kubelet-log-collector cleanup",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Jira:\"Node / Kubelet\"] monitor test kubelet-log-collector collection",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Jira:\"Node / Kubelet\"] monitor test kubelet-log-collector collection",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Jira:\"Node / Kubelet\"] monitor test kubelet-log-collector interval construction",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Jira:\"Node / Kubelet\"] monitor test kubelet-log-collector interval construction",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Jira:\"Node / Kubelet\"] monitor test kubelet-log-collector setup",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Jira:\"Node / Kubelet\"] monitor test kubelet-log-collector setup",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Jira:\"Node / Kubelet\"] monitor test kubelet-log-collector test evaluation",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Jira:\"Node / Kubelet\"] monitor test kubelet-log-collector test evaluation",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Jira:\"Node / Kubelet\"] monitor test kubelet-log-collector writing to storage",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Jira:\"Node / Kubelet\"] monitor test kubelet-log-collector writing to storage",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Jira:\"Node / Kubelet\"] monitor test legacy-node-invariants cleanup",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Jira:\"Node / Kubelet\"] monitor test legacy-node-invariants cleanup",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Jira:\"Node / Kubelet\"] monitor test legacy-node-invariants collection",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Jira:\"Node / Kubelet\"] monitor test legacy-node-invariants collection",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Jira:\"Node / Kubelet\"] monitor test legacy-node-invariants interval construction",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Jira:\"Node / Kubelet\"] monitor test legacy-node-invariants interval construction",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Jira:\"Node / Kubelet\"] monitor test legacy-node-invariants setup",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Jira:\"Node / Kubelet\"] monitor test legacy-node-invariants setup",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Jira:\"Node / Kubelet\"] monitor test legacy-node-invariants test evaluation",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Jira:\"Node / Kubelet\"] monitor test legacy-node-invariants test evaluation",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Jira:\"Node / Kubelet\"] monitor test legacy-node-invariants writing to storage",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Jira:\"Node / Kubelet\"] monitor test legacy-node-invariants writing to storage",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Jira:\"Node / Kubelet\"] monitor test node-lifecycle cleanup",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Jira:\"Node / Kubelet\"] monitor test node-lifecycle cleanup",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Jira:\"Node / Kubelet\"] monitor test node-lifecycle collection",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Jira:\"Node / Kubelet\"] monitor test node-lifecycle collection",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Jira:\"Node / Kubelet\"] monitor test node-lifecycle interval construction",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Jira:\"Node / Kubelet\"] monitor test node-lifecycle interval construction",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Jira:\"Node / Kubelet\"] monitor test node-lifecycle setup",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Jira:\"Node / Kubelet\"] monitor test node-lifecycle setup",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Jira:\"Node / Kubelet\"] monitor test node-lifecycle test evaluation",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Jira:\"Node / Kubelet\"] monitor test node-lifecycle test evaluation",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Jira:\"Node / Kubelet\"] monitor test node-lifecycle writing to storage",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Jira:\"Node / Kubelet\"] monitor test node-lifecycle writing to storage",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Jira:\"Node / Kubelet\"] monitor test node-state-analyzer cleanup",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Jira:\"Node / Kubelet\"] monitor test node-state-analyzer cleanup",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Jira:\"Node / Kubelet\"] monitor test node-state-analyzer collection",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Jira:\"Node / Kubelet\"] monitor test node-state-analyzer collection",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Jira:\"Node / Kubelet\"] monitor test node-state-analyzer interval construction",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Jira:\"Node / Kubelet\"] monitor test node-state-analyzer interval construction",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Jira:\"Node / Kubelet\"] monitor test node-state-analyzer setup",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Jira:\"Node / Kubelet\"] monitor test node-state-analyzer setup",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Jira:\"Node / Kubelet\"] monitor test node-state-analyzer test evaluation",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Jira:\"Node / Kubelet\"] monitor test node-state-analyzer test evaluation",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Jira:\"Node / Kubelet\"] monitor test node-state-analyzer writing to storage",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Jira:\"Node / Kubelet\"] monitor test node-state-analyzer writing to storage",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Jira:\"Node / Kubelet\"] monitor test pod-lifecycle cleanup",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Jira:\"Node / Kubelet\"] monitor test pod-lifecycle cleanup",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Jira:\"Node / Kubelet\"] monitor test pod-lifecycle collection",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Jira:\"Node / Kubelet\"] monitor test pod-lifecycle collection",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Jira:\"Node / Kubelet\"] monitor test pod-lifecycle interval construction",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Jira:\"Node / Kubelet\"] monitor test pod-lifecycle interval construction",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Jira:\"Node / Kubelet\"] monitor test pod-lifecycle setup",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Jira:\"Node / Kubelet\"] monitor test pod-lifecycle setup",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Jira:\"Node / Kubelet\"] monitor test pod-lifecycle test evaluation",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Jira:\"Node / Kubelet\"] monitor test pod-lifecycle test evaluation",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Jira:\"Node / Kubelet\"] monitor test pod-lifecycle writing to storage",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Jira:\"Node / Kubelet\"] monitor test pod-lifecycle writing to storage",
     "Suite": "openshift-tests"
   },
   {
@@ -20185,6 +20585,54 @@
   },
   {
     "Name": "[Jira:\"Test Framework\"] monitor test upload-to-loki-serializer writing to storage",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Jira:\"apiserver-auth\"] monitor test legacy-authentication-invariants cleanup",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Jira:\"apiserver-auth\"] monitor test legacy-authentication-invariants cleanup",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Jira:\"apiserver-auth\"] monitor test legacy-authentication-invariants collection",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Jira:\"apiserver-auth\"] monitor test legacy-authentication-invariants collection",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Jira:\"apiserver-auth\"] monitor test legacy-authentication-invariants interval construction",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Jira:\"apiserver-auth\"] monitor test legacy-authentication-invariants interval construction",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Jira:\"apiserver-auth\"] monitor test legacy-authentication-invariants setup",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Jira:\"apiserver-auth\"] monitor test legacy-authentication-invariants setup",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Jira:\"apiserver-auth\"] monitor test legacy-authentication-invariants test evaluation",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Jira:\"apiserver-auth\"] monitor test legacy-authentication-invariants test evaluation",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Jira:\"apiserver-auth\"] monitor test legacy-authentication-invariants writing to storage",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Jira:\"apiserver-auth\"] monitor test legacy-authentication-invariants writing to storage",
     "Suite": "openshift-tests"
   },
   {
@@ -27932,6 +28380,10 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "[sig-arch][Late] all registered tls artifacts must have no metadata violation regressions [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "[sig-arch][Late] all registered tls artifacts must have required metadata: ownership [Suite:openshift/conformance/parallel]",
     "Suite": "openshift-tests"
   },
@@ -32344,6 +32796,22 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "[sig-imageregistry] disruption/image-registry connection/new should be available throughout the test",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[sig-imageregistry] disruption/image-registry connection/new should be available throughout the test",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-imageregistry] disruption/image-registry connection/reused should be available throughout the test",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[sig-imageregistry] disruption/image-registry connection/reused should be available throughout the test",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "[sig-imageregistry][Feature:ImageAppend] Image append should create images by appending them [Skipped:Disconnected] [Suite:openshift/conformance/parallel]",
     "Suite": "openshift-tests"
   },
@@ -33278,6 +33746,22 @@
   {
     "Name": "[sig-network-edge] Verify DNS availability during and after upgrade success",
     "Suite": "Cluster upgrade"
+  },
+  {
+    "Name": "[sig-network-edge] disruption/service-load-balancer-with-pdb connection/new should be available throughout the test",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[sig-network-edge] disruption/service-load-balancer-with-pdb connection/new should be available throughout the test",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network-edge] disruption/service-load-balancer-with-pdb connection/reused should be available throughout the test",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[sig-network-edge] disruption/service-load-balancer-with-pdb connection/reused should be available throughout the test",
+    "Suite": "openshift-tests"
   },
   {
     "Name": "[sig-network-edge] ns/openshift-authentication route/oauth-openshift disruption/ingress-to-oauth-server connection/new should be available throughout the test",
@@ -64116,6 +64600,10 @@
     "Suite": "cluster install"
   },
   {
+    "Name": "install should succeed: cluster operator stability",
+    "Suite": "cluster install"
+  },
+  {
     "Name": "install should succeed: configuration",
     "Suite": "cluster install"
   },
@@ -64829,6 +65317,10 @@
   },
   {
     "Name": "test 'install should succeed: overall' has required number of successful passes across payload jobs for plaftorm:vsphere network:sdn infrastructure:ipi",
+    "Suite": "cluster install"
+  },
+  {
+    "Name": "test 'install should succeed: overall' has required number of successful passes across payload jobs for platform:aws including:single-node",
     "Suite": "cluster install"
   },
   {
