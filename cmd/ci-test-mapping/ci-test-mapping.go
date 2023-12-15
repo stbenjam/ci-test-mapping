@@ -17,15 +17,18 @@ var rootCmd = &cobra.Command{
 }
 
 func Execute() {
-	// Set log level
-	level, err := log.ParseLevel(logLevel)
-	if err != nil {
-		log.WithError(err).Fatal("cannot parse log-level")
+	rootCmd.PersistentPreRunE = func(_ *cobra.Command, _ []string) error {
+		level, err := log.ParseLevel(logLevel)
+		if err != nil {
+			log.WithError(err).Fatal("cannot parse log-level")
+			return err
+		}
+		log.SetLevel(level)
+		log.SetOutput(os.Stderr)
+		return nil
 	}
-	log.SetLevel(level)
-	log.SetOutput(os.Stderr)
 
-	err = rootCmd.Execute()
+	err := rootCmd.Execute()
 	if err != nil {
 		log.WithError(err).Fatal("could not execute root command")
 	}
