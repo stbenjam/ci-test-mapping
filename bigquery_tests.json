@@ -16252,6 +16252,10 @@
     "Suite": "hypershift-e2e"
   },
   {
+    "Name": "TestRegeneratePKI",
+    "Suite": "hypershift-e2e"
+  },
+  {
     "Name": "TestReplaceUpgradeNodePool",
     "Suite": "hypershift-e2e"
   },
@@ -20585,6 +20589,54 @@
   },
   {
     "Name": "[Jira:\"Test Framework\"] monitor test upload-to-loki-serializer writing to storage",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Jira:\"Test Framework\"] monitor test watch-request-counts-collector cleanup",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Jira:\"Test Framework\"] monitor test watch-request-counts-collector cleanup",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Jira:\"Test Framework\"] monitor test watch-request-counts-collector collection",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Jira:\"Test Framework\"] monitor test watch-request-counts-collector collection",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Jira:\"Test Framework\"] monitor test watch-request-counts-collector interval construction",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Jira:\"Test Framework\"] monitor test watch-request-counts-collector interval construction",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Jira:\"Test Framework\"] monitor test watch-request-counts-collector setup",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Jira:\"Test Framework\"] monitor test watch-request-counts-collector setup",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Jira:\"Test Framework\"] monitor test watch-request-counts-collector test evaluation",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Jira:\"Test Framework\"] monitor test watch-request-counts-collector test evaluation",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Jira:\"Test Framework\"] monitor test watch-request-counts-collector writing to storage",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Jira:\"Test Framework\"] monitor test watch-request-counts-collector writing to storage",
     "Suite": "openshift-tests"
   },
   {
