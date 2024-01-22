@@ -13,7 +13,7 @@ mapping: build
 	./ci-test-mapping map-verify
 
 unmapped:
-	jq '.[] | select(.Component == "Unknown") | .Name' mapping.json | sort | uniq
+	jq -r '.[] | select(.Component == "Unknown") | .Name' mapping.json | sort | uniq
 
 lint:
 	./hack/go-lint.sh run ./...
