@@ -4,17 +4,45 @@ import (
 	"fmt"
 	"regexp"
 	"strings"
+
+	v1 "github.com/openshift-eng/ci-test-mapping/pkg/api/types/v1"
 )
 
 var (
-	conditions   = regexp.MustCompile(`operator conditions (.*)`)
-	upgradeRegex = regexp.MustCompile(`Operator upgrade (.*)`)
-	installRegex = regexp.MustCompile("operator install (.*)")
-	imageBuild   = regexp.MustCompile("Build image (.*) from the repository")
+	conditions      = regexp.MustCompile(`operator conditions (.*)`)
+	upgradeRegex    = regexp.MustCompile(`Operator upgrade (.*)`)
+	installRegex    = regexp.MustCompile("operator install (.*)")
+	imageBuild      = regexp.MustCompile("Build image (.*) from the repository")
+	disruptionRegex = regexp.MustCompile("disruption/|connection.*should be available|remains available")
 )
+
+func DefaultCapabilities(test *v1.TestInfo) []string {
+	var capabilities []string
+
+	// Get the Feature name from the test name as a capability
+	capabilities = append(capabilities, ExtractTestField(test.Name, "Feature")...)
+
+	if strings.Contains(test.Name, "clusteroperator/") {
+		capabilities = append(capabilities, "Operator")
+	}
+
+	if strings.Contains(test.Name, "alert/") {
+		capabilities = append(capabilities, "Alerts")
+	}
+
+	if IsDisruptionTest(test.Name) {
+		capabilities = append(capabilities, "Disruption")
+	}
+
+	return capabilities
+}
 
 func IsSigTest(testName, sigName string) bool {
 	return strings.Contains(testName, fmt.Sprintf("[%s]", sigName))
+}
+
+func IsDisruptionTest(testName string) bool {
+	return disruptionRegex.MatchString(testName)
 }
 
 func IdentifyOperatorTest(operator, testName string) (isOperatorTest bool, capabilities []string) {
