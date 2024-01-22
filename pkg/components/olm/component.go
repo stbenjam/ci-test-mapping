@@ -12,7 +12,7 @@ type Component struct {
 var OLMComponent = Component{
 	Component: &config.Component{
 		Name:                 "OLM",
-		Operators:            []string{"marketplace", "operator-lifecycle-manager", "operator-lifecycle-manager-catalog", "operator-lifecycle-manager-packageserver"},
+		Operators:            []string{"olm", "marketplace", "operator-lifecycle-manager", "operator-lifecycle-manager-catalog", "operator-lifecycle-manager-packageserver"},
 		DefaultJiraComponent: "OLM",
 		Namespaces: []string{
 			"openshift-marketplace",

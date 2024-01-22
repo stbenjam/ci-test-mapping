@@ -39,6 +39,12 @@ var KubeApiserverComponent = Component{
 				SIG:      "sig-api-machinery",
 				Priority: -1,
 			},
+			{
+				SIG:          "sig-arch",
+				IncludeAll:   []string{"tls artifacts"},
+				Capabilities: []string{"TLS"},
+				Priority:     -1,
+			},
 		},
 		TestRenames: map[string]string{
 			"[Unknown][invariant] alert/KubePodNotReady should not be at or above info in ns/default":                                     "[bz-Unknown][invariant] alert/KubePodNotReady should not be at or above info in ns/default",

@@ -13,10 +13,28 @@ func TestExtractField(t *testing.T) {
 		wantValues []string
 	}{
 		{
-			name:       "can extract single value",
+			name:       "can extract bracketed single value",
 			test:       "[sig-storage] In-tree Volumes [Driver: windows-gcepd] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] subPath should be able to unmount after the subpath directory is deleted [LinuxOnly] [Skipped:NoOptionalCapabilities] [Suite:openshift/conformance/parallel] [Suite:k8s]",
 			field:      "Driver",
 			wantValues: []string{"windows-gcepd"},
+		},
+		{
+			name:       "can extract slash single value",
+			test:       `jira/"Test Framework" validate the thing works`,
+			field:      "jira",
+			wantValues: []string{"Test Framework"},
+		},
+		{
+			name:       "can extract fields case-insensitive",
+			test:       `jira/"Test Framework" [Jira: Networking]`,
+			field:      "JIRA",
+			wantValues: []string{"Test Framework", "Networking"},
+		},
+		{
+			name:       "can extract slash multiple value",
+			test:       `jira/"Test Framework" jira/Installer validate the thing works`,
+			field:      "jira",
+			wantValues: []string{"Test Framework", "Installer"},
 		},
 		{
 			name:       "handles field not present",
