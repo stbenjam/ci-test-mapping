@@ -31,6 +31,7 @@ var OtherProviderComponent = Component{
 					"bz-cluster-api",
 					"bz-control-plane-machine-set",
 					"Managed cluster should have same number of Machines and Nodes",
+					"control plane machine set operator",
 				},
 			},
 			{
