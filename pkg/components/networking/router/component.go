@@ -29,7 +29,7 @@ var RouterComponent = Component{
 				IncludeAll: []string{"Feature:Router"},
 			},
 			{
-				IncludeAll: []string{"ingress-to-", "disruption"},
+				IncludeAll: []string{"single second disruption", "ingress-to-"},
 			},
 			{
 				IncludeAny: []string{

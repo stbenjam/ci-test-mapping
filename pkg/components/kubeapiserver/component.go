@@ -33,6 +33,9 @@ var KubeApiserverComponent = Component{
 				},
 			},
 			{
+				IncludeAll: []string{"single second disruption", "kube-api"},
+			},
+			{
 				IncludeAll: []string{"kube-api-", "-connections"},
 			},
 			{

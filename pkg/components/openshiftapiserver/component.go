@@ -23,6 +23,9 @@ var OpenshiftApiserverComponent = Component{
 				IncludeAll: []string{"bz-openshift-apiserver"},
 			},
 			{
+				IncludeAll: []string{"single second disruption", "openshift-api"},
+			},
+			{
 				IncludeAll: []string{"openshift-api-", "-connections"},
 			},
 		},
