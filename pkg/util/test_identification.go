@@ -13,7 +13,7 @@ var (
 	upgradeRegex    = regexp.MustCompile(`Operator upgrade (.*)`)
 	installRegex    = regexp.MustCompile("operator install (.*)")
 	imageBuild      = regexp.MustCompile("Build image (.*) from the repository")
-	disruptionRegex = regexp.MustCompile("disruption/|connection.*should be available|remains available")
+	disruptionRegex = regexp.MustCompile("disruption/|connection.*should be available|remains available|single second disruptions")
 )
 
 func DefaultCapabilities(test *v1.TestInfo) []string {

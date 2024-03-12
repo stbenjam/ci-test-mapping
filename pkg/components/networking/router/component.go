@@ -29,7 +29,7 @@ var RouterComponent = Component{
 				IncludeAll: []string{"Feature:Router"},
 			},
 			{
-				IncludeAll: []string{"ingress-to-", "disruption"},
+				IncludeAll: []string{"single second disruption", "ingress-to-"},
 			},
 			{
 				IncludeAny: []string{
@@ -54,14 +54,23 @@ var RouterComponent = Component{
 			},
 		},
 		TestRenames: map[string]string{
-			"[Routing][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-ingress":                      "[bz-Routing][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-ingress",
-			"[Routing][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-ingress-canary":               "[bz-Routing][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-ingress-canary",
-			"[Routing][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-ingress-operator":             "[bz-Routing][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-ingress-operator",
-			"[Routing][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-ingress":                   "[bz-Routing][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-ingress",
-			"[Routing][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-ingress-canary":            "[bz-Routing][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-ingress-canary",
-			"[Routing][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-ingress-operator":          "[bz-Routing][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-ingress-operator",
-			"[sig-network-edge] disruption/service-load-balancer-with-pdb connection/new should be available throughout the test":    "[sig-network-edge] Application behind service load balancer with PDB remains available using new connections",
-			"[sig-network-edge] disruption/service-load-balancer-with-pdb connection/reused should be available throughout the test": "[sig-network-edge] Application behind service load balancer with PDB remains available using reused connections",
+			"[Routing][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-ingress":                                                             "[bz-Routing][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-ingress",
+			"[Routing][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-ingress-canary":                                                      "[bz-Routing][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-ingress-canary",
+			"[Routing][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-ingress-operator":                                                    "[bz-Routing][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-ingress-operator",
+			"[Routing][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-ingress":                                                          "[bz-Routing][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-ingress",
+			"[Routing][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-ingress-canary":                                                   "[bz-Routing][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-ingress-canary",
+			"[Routing][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-ingress-operator":                                                 "[bz-Routing][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-ingress-operator",
+			"[sig-network-edge] disruption/service-load-balancer-with-pdb connection/new should be available throughout the test":                                           "[sig-network-edge] Application behind service load balancer with PDB remains available using new connections",
+			"[sig-network-edge] disruption/service-load-balancer-with-pdb connection/reused should be available throughout the test":                                        "[sig-network-edge] Application behind service load balancer with PDB remains available using reused connections",
+			"[sig-network] there should be nearly zero single second disruptions for ns/openshift-console route/console disruption/ingress-to-console connection/new":       "[sig-network] there should be nearly zero single second disruptions for ingress-to-console-new-connections",
+			"[sig-network] there should be nearly zero single second disruptions for ns/openshift-console route/console disruption/ingress-to-console connection/reused":    "[sig-network] there should be nearly zero single second disruptions for ingress-to-console-reused-connections",
+			"[sig-network] there should be reasonably few single second disruptions for ns/openshift-console route/console disruption/ingress-to-console connection/new":    "[sig-network] there should be reasonably few single second disruptions for ingress-to-console-new-connections",
+			"[sig-network] there should be reasonably few single second disruptions for ns/openshift-console route/console disruption/ingress-to-console connection/reused": "[sig-network] there should be reasonably few single second disruptions for ingress-to-console-reused-connections",
+
+			"[sig-network] there should be nearly zero single second disruptions for ns/openshift-authentication route/oauth-openshift disruption/ingress-to-oauth-server connection/new":       "[sig-network] there should be nearly zero single second disruptions for ingress-to-oauth-server-new-connections",
+			"[sig-network] there should be nearly zero single second disruptions for ns/openshift-authentication route/oauth-openshift disruption/ingress-to-oauth-server connection/reused":    "[sig-network] there should be nearly zero single second disruptions for ingress-to-oauth-server-reused-connections",
+			"[sig-network] there should be reasonably few single second disruptions for ns/openshift-authentication route/oauth-openshift disruption/ingress-to-oauth-server connection/new":    "[sig-network] there should be reasonably few single second disruptions for ingress-to-oauth-server-new-connections",
+			"[sig-network] there should be reasonably few single second disruptions for ns/openshift-authentication route/oauth-openshift disruption/ingress-to-oauth-server connection/reused": "[sig-network] there should be reasonably few single second disruptions for ingress-to-oauth-server-reused-connections",
 		},
 	},
 }
