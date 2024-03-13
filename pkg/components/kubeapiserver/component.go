@@ -80,6 +80,9 @@ var KubeApiserverComponent = Component{
 			"[sig-network] there should be reasonably few single second disruptions for disruption/cache-kube-api connection/reused target=api-int":         "[sig-network] there should be reasonably few single second disruptions for cache-kube-api-reused-connections",
 			"[sig-network] there should be reasonably few single second disruptions for disruption/cache-kube-api connection/reused target=service-network": "[sig-network] there should be reasonably few single second disruptions for cache-kube-api-reused-connections",
 			"[sig-network] there should be reasonably few single second disruptions for disruption/service-network/cache-kube-api connection/reused":        "[sig-network] there should be reasonably few single second disruptions for cache-kube-api-reused-connections",
+			"[sig-arch][Late] collect certificate data [Suite:openshift/conformance/parallel]":                                                              "[sig-arch][Late][Jira:\"kube-apiserver\"] collect certificate data [Suite:openshift/conformance/parallel]",
+			"[sig-arch][Late] all tls artifacts must be registered [Suite:openshift/conformance/parallel]":                                                  "[sig-arch][Late][Jira:\"kube-apiserver\"] all tls artifacts must be registered [Suite:openshift/conformance/parallel]",
+			"[sig-arch][Late] all registered tls artifacts must have no metadata violation regressions [Suite:openshift/conformance/parallel]":              "[sig-arch][Late][Jira:\"kube-apiserver\"] all registered tls artifacts must have no metadata violation regressions [Suite:openshift/conformance/parallel]",
 		},
 	},
 }
