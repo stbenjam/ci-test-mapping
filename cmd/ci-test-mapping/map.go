@@ -3,9 +3,12 @@ package cmd
 import (
 	"context"
 	"encoding/json"
+	"fmt"
 	"os"
 	"sort"
 	"time"
+
+	"github.com/pkg/errors"
 
 	"cloud.google.com/go/civil"
 	log "github.com/sirupsen/logrus"
@@ -27,8 +30,11 @@ const ModeLocal = "local"
 var mapCmd = &cobra.Command{
 	Use:   "map",
 	Short: "Map tests to components and capabilities",
-	Run: func(cmd *cobra.Command, args []string) {
-		verifyParams(cmd)
+	RunE: func(cmd *cobra.Command, args []string) error {
+		if err := verifyParams(); err != nil {
+			_ = cmd.Usage()
+			return err
+		}
 
 		var tests []v1.TestInfo
 		var tableManager *bigquery.MappingTableManager
@@ -39,13 +45,13 @@ var mapCmd = &cobra.Command{
 				f.bigqueryFlags.ServiceAccountCredentialFile,
 				f.bigqueryFlags.OAuthClientCredentialFile)
 			if err != nil {
-				log.WithError(err).Fatal("could not obtain bigquery client")
+				return errors.WithMessage(err, "could not obtain bigquery client")
 			}
 
 			// Create or update schema for mapping table
 			tableManager = bigquery.NewMappingTableManager(context.Background(), bigqueryClient)
 			if err := tableManager.Migrate(); err != nil {
-				log.WithError(err).Fatal("could not migrate mapping table")
+				return errors.WithMessage(err, "could not migrate mapping table")
 			}
 
 			// Get a list of all tests from bigquery - this could be swapped out with other
@@ -53,18 +59,18 @@ var mapCmd = &cobra.Command{
 			testLister := bigquery.NewTestTableManager(context.Background(), bigqueryClient)
 			tests, err = testLister.ListTests()
 			if err != nil {
-				log.WithError(err).Fatal("could not list tests")
+				return errors.WithMessage(err, "could not list tests")
 			}
 			if err := writeRecords(tests, "bigquery_tests.json"); err != nil {
-				log.WithError(err).Fatal("couldn't write records")
+				return errors.WithMessage(err, "couldn't write records")
 			}
 		} else {
 			data, err := os.ReadFile(f.testsFile)
 			if err != nil {
-				log.WithError(err).Fatalf("could not fetch tests from file")
+				return errors.WithMessage(err, "could not fetch tests from file")
 			}
 			if err := json.Unmarshal(data, &tests); err != nil {
-				log.WithError(err).Fatalf("could not marshal tests from file")
+				return errors.WithMessage(err, "could not marshal tests from file")
 			}
 		}
 
@@ -78,7 +84,7 @@ var mapCmd = &cobra.Command{
 
 		jiraComponentIDs, err := jira.GetJiraComponents()
 		if err != nil {
-			log.WithError(err).Fatalf("could not get jira component mapping")
+			return errors.WithMessage(err, "could not get jira component mapping")
 		}
 		testObsoleter := &obsoletetests.OCPObsoleteTestManager{}
 		testIdentifier := components.New(componentRegistry, jiraComponentIDs)
@@ -105,7 +111,7 @@ var mapCmd = &cobra.Command{
 			}
 		}
 		if !success {
-			log.Fatalf("encountered errors while trying to identify tests")
+			return fmt.Errorf("encountered errors while trying to identify tests")
 		}
 
 		// Ensure slice is sorted
@@ -122,14 +128,15 @@ var mapCmd = &cobra.Command{
 			now = time.Now()
 			log.Infof("pushing to bigquery...")
 			if err := tableManager.PushMappings(newMappings); err != nil {
-				log.WithError(err).Fatalf("could not push records to bigquery")
+				return errors.WithMessage(err, "could not push records to bigquery")
 			}
 			log.Infof("push finished in %+v", time.Since(now))
 		}
 
 		if err := writeRecords(newMappings, f.mappingFile); err != nil {
-			log.WithError(err).Fatal("could not write records to mapping file")
+			return errors.WithMessage(err, "could not write records to mapping file")
 		}
+		return nil
 	},
 }
 
@@ -163,27 +170,25 @@ func init() {
 	rootCmd.AddCommand(mapCmd)
 }
 
-func verifyParams(cmd *cobra.Command) {
+func verifyParams() error {
 	switch f.mode {
 	case ModeBigQuery:
 		if f.bigqueryFlags.ServiceAccountCredentialFile == "" && f.bigqueryFlags.OAuthClientCredentialFile == "" {
-			cmd.Usage()                                                           //nolint:errcheck
-			log.Fatalf("please supply bigquery credentials, or use --mode=local") //nolint
+			return fmt.Errorf("please supply bigquery credentials, or use --mode=local") //nolint
 		}
 	case ModeLocal:
 		if f.pushToBQ {
-			cmd.Usage()                                           //nolint:errcheck
-			log.Fatalf("cannot push to bigquery in --mode=local") //nolint
+			return fmt.Errorf("cannot push to bigquery in --mode=local") //nolint
 		}
 
 		if f.bigqueryFlags.ServiceAccountCredentialFile != "" || f.bigqueryFlags.OAuthClientCredentialFile != "" {
-			cmd.Usage()                                                                                              //nolint:errcheck
-			log.Fatalf("bigquery credentials not required for local mode, did you mean to specify --mode=bigquery?") //nolint
+			return fmt.Errorf("bigquery credentials not required for local mode, maybe you meant to specify --mode=bigquery") //nolint
 		}
 	default:
-		cmd.Usage()                                                                  //nolint:errcheck
-		log.Fatalf("invalid mode, must be one of: bigquery, local. got: %q", f.mode) //nolint
+		return fmt.Errorf("invalid mode, must be one of: bigquery, local. got: %q", f.mode) //nolint
 	}
+
+	return nil
 }
 
 func writeRecords(records interface{}, filename string) error {

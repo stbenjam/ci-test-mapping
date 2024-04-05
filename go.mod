@@ -5,6 +5,7 @@ go 1.19
 require (
 	cloud.google.com/go v0.110.0
 	cloud.google.com/go/bigquery v1.50.0
+	github.com/pkg/errors v0.9.1
 	github.com/sirupsen/logrus v1.9.0
 	github.com/spf13/cobra v1.7.0
 	github.com/spf13/pflag v1.0.5
