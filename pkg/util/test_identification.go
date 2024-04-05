@@ -22,6 +22,14 @@ func DefaultCapabilities(test *v1.TestInfo) []string {
 	// Get the Feature name from the test name as a capability
 	capabilities = append(capabilities, ExtractTestField(test.Name, "Feature")...)
 
+	for _, featureGate := range ExtractTestField(test.Name, "FeatureGate") {
+		capabilities = append(capabilities, fmt.Sprintf("FeatureGate:%s", featureGate))
+	}
+
+	for _, featureGate := range ExtractTestField(test.Name, "OCPFeatureGate") {
+		capabilities = append(capabilities, fmt.Sprintf("OCPFeatureGate:%s", featureGate))
+	}
+
 	if strings.Contains(test.Name, "clusteroperator/") {
 		capabilities = append(capabilities, "Operator")
 	}
