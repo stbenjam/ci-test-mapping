@@ -30,7 +30,7 @@ var RouterComponent = Component{
 			},
 			{
 				IncludeAll: []string{"single second disruption", "ingress-to-"},
-				Priority:   10,
+				Priority:   20,
 			},
 			{
 				IncludeAny: []string{

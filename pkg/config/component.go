@@ -110,13 +110,15 @@ func (c *Component) FindMatch(test *v1.TestInfo) *ComponentMatcher {
 		}
 	}
 
-	// Namespace ownership is a fall-back, to allow specifically overriding a test's ownership.
+	// Namespace ownership is last to allow specifically overriding a test's ownership.
 	// For example, ns/console disruption tests are moved to router, because it's much more
-	// likely to be an ingress problem.
+	// likely to be an ingress problem. Components must still force their priority higher than
+	// namespace ownership to override.
 	if namespace, ok := c.IsNamespaceTest(test.Name); ok {
 		if c.IsInNamespace(namespace) {
 			return &ComponentMatcher{
 				JiraComponent: c.DefaultJiraComponent,
+				Priority:      10,
 			}
 		}
 		return nil

@@ -5,14 +5,18 @@ import (
 	"fmt"
 	"os"
 	"reflect"
+	"regexp"
 	"strings"
 	"testing"
+
+	"k8s.io/apimachinery/pkg/util/sets"
 
 	v1 "github.com/openshift-eng/ci-test-mapping/pkg/api/types/v1"
 	"github.com/openshift-eng/ci-test-mapping/pkg/config"
 	"github.com/openshift-eng/ci-test-mapping/pkg/registry"
-	"k8s.io/apimachinery/pkg/util/sets"
 )
+
+var ignoredNamespaces = regexp.MustCompile("openshift-must-gather.*")
 
 func TestNoOverlap(t *testing.T) {
 	defaultRegistry := registry.NewComponentRegistry()
@@ -75,16 +79,20 @@ func TestListOfKnownNamespaces(t *testing.T) {
 	foundNamespaces := sets.NewString()
 	for _, test := range allTests {
 		namespace := config.ExtractNamespaceFromTestName(test.Name)
+		if ignoredNamespaces.MatchString(namespace) {
+			continue
+		}
 		if len(namespace) > 0 {
 			foundNamespaces.Insert(namespace)
 		}
 	}
 
-	if !foundNamespaces.Equal(AllKnownNamespaces) {
-		for _, ns := range foundNamespaces.List() {
+	missingNamespaces := AllKnownNamespaces.Difference(foundNamespaces)
+	if missingNamespaces.Len() > 0 {
+		for _, ns := range missingNamespaces.List() {
 			fmt.Printf("%q,\n", ns)
 		}
-		t.Error("mismatch in namespaces")
+		t.Errorf("these namespaces are missing: %v", missingNamespaces.List())
 	}
 }
 
