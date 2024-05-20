@@ -48,6 +48,12 @@ var KubeApiserverComponent = Component{
 				Capabilities: []string{"TLS"},
 				Priority:     -1,
 			},
+			{
+				SIG:          "sig-node",
+				IncludeAll:   []string{"TargetDown should not be at or above info in ns/kube-system"},
+				Capabilities: []string{"Alerts"},
+				Priority:     -10,
+			},
 		},
 		TestRenames: map[string]string{
 			"[Unknown][invariant] alert/KubePodNotReady should not be at or above info in ns/default":                                                       "[bz-Unknown][invariant] alert/KubePodNotReady should not be at or above info in ns/default",
