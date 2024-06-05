@@ -62,6 +62,9 @@ var (
 		"openshift-openstack-infra",
 		"openshift-operator-lifecycle-manager",
 		"openshift-operators",
+		"openshift-operator-controller",
+		"openshift-cluster-olm-operator",
+		"openshift-rukpak",
 		"openshift-ovirt-infra",
 		"openshift-ovn-kubernetes",
 		"openshift-service-ca",
@@ -213,11 +216,11 @@ var (
 			"openshift-cluster-node-tuning-operator",
 		},
 		"OLM": {
+			"openshift-cluster-olm-operator",
 			"openshift-marketplace",
+			"openshift-operator-controller",
 			"openshift-operator-lifecycle-manager",
 			"openshift-operators",
-			"openshift-operator-controller",
-			"openshift-cluster-olm-operator",
 			"openshift-rukpak",
 		},
 		"Samples Operator": {
