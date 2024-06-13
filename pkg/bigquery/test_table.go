@@ -74,10 +74,12 @@ func (tm *TestTableManager) ListTests() ([]v1.TestInfo, error) {
 		AND
 		    (prowjob_name LIKE 'periodic-%%' OR prowjob_name LIKE 'release-%%' OR prowjob_name LIKE 'aggregator-%%')
 		AND
+		    modified_time <= CURRENT_DATETIME()
+		AND
 		    %s
 		ORDER BY name, testsuite DESC`,
 		table.ProjectID, tm.client.datasetName, table.TableID, strings.Join(suites, "','"), strings.Join(filter, " AND "))
-	log.Debugf("query is %q", sql)
+	log.Debugf("query is %s", sql)
 
 	q := tm.client.bigquery.Query(sql)
 	it, err := q.Read(tm.ctx)
