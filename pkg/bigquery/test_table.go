@@ -22,6 +22,7 @@ var suites = []string{
 	"hypershift-e2e",
 	"cluster install",
 	"Operator results",
+	"Symptom Detection",
 }
 
 var ignoredTests = []string{
