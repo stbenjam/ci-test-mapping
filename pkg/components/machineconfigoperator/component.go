@@ -39,6 +39,9 @@ var MachineConfigOperatorComponent = Component{
 				IncludeAll:   []string{"Pods cannot access the /config"},
 				Capabilities: []string{"Config"},
 			},
+			{
+				SIG: "sig-mco",
+			},
 		},
 		TestRenames: map[string]string{
 			"[Machine Config Operator][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-machine-config-operator":    "[bz-Machine Config Operator][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-machine-config-operator",
