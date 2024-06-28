@@ -5,6 +5,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"os"
+	"path"
 	"sort"
 	"time"
 
@@ -39,33 +40,36 @@ var mapCmd = &cobra.Command{
 		var tests []v1.TestInfo
 		var tableManager *bigquery.MappingTableManager
 
+		testsFile := path.Join("data", f.bigqueryFlags.Project, f.bigqueryFlags.Dataset, fmt.Sprintf("%s.json", f.junitTable))
+		mappingFile := path.Join("data", f.bigqueryFlags.Project, f.bigqueryFlags.Dataset, fmt.Sprintf("%s.json", f.mappingTable))
+
 		if f.mode == ModeBigQuery {
 			// Get a bigquery client
 			bigqueryClient, err := bigquery.NewClient(context.Background(),
 				f.bigqueryFlags.ServiceAccountCredentialFile,
-				f.bigqueryFlags.OAuthClientCredentialFile)
+				f.bigqueryFlags.OAuthClientCredentialFile, f.bigqueryFlags.Project, f.bigqueryFlags.Dataset)
 			if err != nil {
 				return errors.WithMessage(err, "could not obtain bigquery client")
 			}
 
 			// Create or update schema for mapping table
-			tableManager = bigquery.NewMappingTableManager(context.Background(), bigqueryClient)
+			tableManager = bigquery.NewMappingTableManager(context.Background(), bigqueryClient, f.mappingTable)
 			if err := tableManager.Migrate(); err != nil {
 				return errors.WithMessage(err, "could not migrate mapping table")
 			}
 
 			// Get a list of all tests from bigquery - this could be swapped out with other
 			// mechanisms to get test details later on.
-			testLister := bigquery.NewTestTableManager(context.Background(), bigqueryClient)
+			testLister := bigquery.NewTestTableManager(context.Background(), bigqueryClient, f.junitTable)
 			tests, err = testLister.ListTests()
 			if err != nil {
 				return errors.WithMessage(err, "could not list tests")
 			}
-			if err := writeRecords(tests, "bigquery_tests.json"); err != nil {
+			if err := writeRecords(tests, testsFile); err != nil {
 				return errors.WithMessage(err, "couldn't write records")
 			}
 		} else {
-			data, err := os.ReadFile(f.testsFile)
+			data, err := os.ReadFile(testsFile)
 			if err != nil {
 				return errors.WithMessage(err, "could not fetch tests from file")
 			}
@@ -133,7 +137,7 @@ var mapCmd = &cobra.Command{
 			log.Infof("push finished in %+v", time.Since(now))
 		}
 
-		if err := writeRecords(newMappings, f.mappingFile); err != nil {
+		if err := writeRecords(newMappings, mappingFile); err != nil {
 			return errors.WithMessage(err, "could not write records to mapping file")
 		}
 		return nil
@@ -142,10 +146,10 @@ var mapCmd = &cobra.Command{
 
 type MapFlags struct {
 	mode          string
-	mappingFile   string
-	testsFile     string
 	pushToBQ      bool
 	bigqueryFlags *flags.Flags
+	junitTable    string
+	mappingTable  string
 }
 
 var f = NewMapFlags()
@@ -161,9 +165,8 @@ func (f *MapFlags) BindFlags(fs *pflag.FlagSet) {
 }
 
 func init() {
-	mapCmd.PersistentFlags().StringVar(&f.mappingFile, "mapping-file", "mapping.json",
-		"File containing existing mappings")
-	mapCmd.PersistentFlags().StringVar(&f.testsFile, "tests-file", "bigquery_tests.json", "File containing a list of tests to process, see bigquery_tests.json. For local testing without access to canonical test data from BigQuery.")
+	mapCmd.PersistentFlags().StringVar(&f.junitTable, "table-junit", "junit", "BigQuery table name storing JUnit test results")
+	mapCmd.PersistentFlags().StringVar(&f.mappingTable, "table-mapping", "component_mapping", "BigQuery table name storing component mappings")
 	mapCmd.PersistentFlags().StringVar(&f.mode, "mode", "local", "Mode (one of: local, bigquery). Local mode doesn't require access to BigQuery and is suitable for local development.")
 	mapCmd.PersistentFlags().BoolVar(&f.pushToBQ, "push-to-bigquery", false, "whether or not to push the updated records to bigquery")
 	f.BindFlags(mapCmd.Flags())

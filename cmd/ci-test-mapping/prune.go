@@ -18,14 +18,14 @@ var pruneCommand = &cobra.Command{
 		// Get a bigquery client
 		bigqueryClient, err := bigquery.NewClient(context.Background(),
 			pruneFlags.bigqueryFlags.ServiceAccountCredentialFile,
-			pruneFlags.bigqueryFlags.OAuthClientCredentialFile)
+			pruneFlags.bigqueryFlags.OAuthClientCredentialFile, pruneFlags.bigqueryFlags.Project, pruneFlags.bigqueryFlags.Dataset)
 		if err != nil {
 			log.WithError(err).Fatal("could not obtain bigquery client")
 			cmd.Usage() //nolint
 		}
 
 		// Create or update schema for mapping table
-		tableManager := bigquery.NewMappingTableManager(context.Background(), bigqueryClient)
+		tableManager := bigquery.NewMappingTableManager(context.Background(), bigqueryClient, pruneFlags.mappingTable)
 		if err := tableManager.PruneMappings(); err != nil {
 			log.WithError(err).Fatal("could not prune mapping table")
 		}
@@ -34,6 +34,7 @@ var pruneCommand = &cobra.Command{
 
 type PruneFlags struct {
 	bigqueryFlags *flags.Flags
+	mappingTable  string
 }
 
 var pruneFlags = NewPruneFlags()
@@ -49,6 +50,7 @@ func (f *PruneFlags) BindFlags(fs *pflag.FlagSet) {
 }
 
 func init() {
+	pruneCommand.PersistentFlags().StringVar(&pruneFlags.mappingTable, "table-mapping", "component_mapping", "BigQuery table name storing component mappings")
 	pruneFlags.BindFlags(pruneCommand.Flags())
 	rootCmd.AddCommand(pruneCommand)
 }

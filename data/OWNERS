@@ -1,0 +1,14 @@
+# Allow approving automatically generated data,
+# this lets component owners update their own components.  Presubmits
+# protect against unexpected modifications.
+options:
+  auto_approve_unowned_subfolders: true
+reviewers:
+approvers:
+- DennisPeriquet
+- deads2k
+- deepsm007
+- dgoodwin
+- neisw
+- stbenjam
+- xueqzhan
