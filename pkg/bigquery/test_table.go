@@ -12,7 +12,7 @@ import (
 	v1 "github.com/openshift-eng/ci-test-mapping/pkg/api/types/v1"
 )
 
-const testTableName = "qe_junit"
+const testTableName = "junit"
 
 var suites = []string{
 	"openshift-tests",
@@ -22,6 +22,7 @@ var suites = []string{
 	"hypershift-e2e",
 	"cluster install",
 	"Operator results",
+	"Symptom Detection",
 }
 
 var ignoredTests = []string{
@@ -69,12 +70,16 @@ func (tm *TestTableManager) ListTests() ([]v1.TestInfo, error) {
 		FROM
 			%s.%s.%s
 		WHERE
+		    testsuite IN ('%s')
+		AND
 		    (prowjob_name LIKE 'periodic-%%' OR prowjob_name LIKE 'release-%%' OR prowjob_name LIKE 'aggregator-%%')
+		AND
+		    modified_time <= CURRENT_DATETIME()
 		AND
 		    %s
 		ORDER BY name, testsuite DESC`,
-		table.ProjectID, tm.client.datasetName, table.TableID, strings.Join(filter, " AND "))
-	log.Debugf("query is %q", sql)
+		table.ProjectID, tm.client.datasetName, table.TableID, strings.Join(suites, "','"), strings.Join(filter, " AND "))
+	log.Debugf("query is %s", sql)
 
 	q := tm.client.bigquery.Query(sql)
 	it, err := q.Read(tm.ctx)
