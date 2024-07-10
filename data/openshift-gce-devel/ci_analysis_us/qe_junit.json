@@ -1,0 +1,210 @@
+[
+  {
+    "Name": "Bug 1812261: iptables is segfaulting",
+    "Suite": "Symptom Detection"
+  },
+  {
+    "Name": "Bug 181XX61: iptables is segfaulting",
+    "Suite": "Symptom Detection"
+  },
+  {
+    "Name": "Infrastructure - AWS simulate policy rate-limit",
+    "Suite": "Symptom Detection"
+  },
+  {
+    "Name": "Infrastructure - GCP quota exceeded (route to forum-gcp)",
+    "Suite": "Symptom Detection"
+  },
+  {
+    "Name": "Node process segfaulted",
+    "Suite": "Symptom Detection"
+  },
+  {
+    "Name": "Undiagnosed panic detected in journal",
+    "Suite": "Symptom Detection"
+  },
+  {
+    "Name": "Undiagnosed panic detected in pod",
+    "Suite": "Symptom Detection"
+  },
+  {
+    "Name": "install should succeed: cluster bootstrap",
+    "Suite": "cluster install"
+  },
+  {
+    "Name": "install should succeed: cluster creation",
+    "Suite": "cluster install"
+  },
+  {
+    "Name": "install should succeed: cluster operator stability",
+    "Suite": "cluster install"
+  },
+  {
+    "Name": "install should succeed: configuration",
+    "Suite": "cluster install"
+  },
+  {
+    "Name": "install should succeed: infrastructure",
+    "Suite": "cluster install"
+  },
+  {
+    "Name": "install should succeed: other",
+    "Suite": "cluster install"
+  },
+  {
+    "Name": "install should succeed: overall",
+    "Suite": "cluster install"
+  },
+  {
+    "Name": "operator conditions authentication",
+    "Suite": "Operator results"
+  },
+  {
+    "Name": "operator conditions baremetal",
+    "Suite": "Operator results"
+  },
+  {
+    "Name": "operator conditions cloud-controller-manager",
+    "Suite": "Operator results"
+  },
+  {
+    "Name": "operator conditions cloud-credential",
+    "Suite": "Operator results"
+  },
+  {
+    "Name": "operator conditions cluster-api",
+    "Suite": "Operator results"
+  },
+  {
+    "Name": "operator conditions cluster-autoscaler",
+    "Suite": "Operator results"
+  },
+  {
+    "Name": "operator conditions config-operator",
+    "Suite": "Operator results"
+  },
+  {
+    "Name": "operator conditions console",
+    "Suite": "Operator results"
+  },
+  {
+    "Name": "operator conditions control-plane-machine-set",
+    "Suite": "Operator results"
+  },
+  {
+    "Name": "operator conditions csi-snapshot-controller",
+    "Suite": "Operator results"
+  },
+  {
+    "Name": "operator conditions dns",
+    "Suite": "Operator results"
+  },
+  {
+    "Name": "operator conditions etcd",
+    "Suite": "Operator results"
+  },
+  {
+    "Name": "operator conditions image-registry",
+    "Suite": "Operator results"
+  },
+  {
+    "Name": "operator conditions ingress",
+    "Suite": "Operator results"
+  },
+  {
+    "Name": "operator conditions insights",
+    "Suite": "Operator results"
+  },
+  {
+    "Name": "operator conditions kube-apiserver",
+    "Suite": "Operator results"
+  },
+  {
+    "Name": "operator conditions kube-controller-manager",
+    "Suite": "Operator results"
+  },
+  {
+    "Name": "operator conditions kube-scheduler",
+    "Suite": "Operator results"
+  },
+  {
+    "Name": "operator conditions kube-storage-version-migrator",
+    "Suite": "Operator results"
+  },
+  {
+    "Name": "operator conditions machine-api",
+    "Suite": "Operator results"
+  },
+  {
+    "Name": "operator conditions machine-approver",
+    "Suite": "Operator results"
+  },
+  {
+    "Name": "operator conditions machine-config",
+    "Suite": "Operator results"
+  },
+  {
+    "Name": "operator conditions marketplace",
+    "Suite": "Operator results"
+  },
+  {
+    "Name": "operator conditions monitoring",
+    "Suite": "Operator results"
+  },
+  {
+    "Name": "operator conditions network",
+    "Suite": "Operator results"
+  },
+  {
+    "Name": "operator conditions node-tuning",
+    "Suite": "Operator results"
+  },
+  {
+    "Name": "operator conditions olm",
+    "Suite": "Operator results"
+  },
+  {
+    "Name": "operator conditions openshift-apiserver",
+    "Suite": "Operator results"
+  },
+  {
+    "Name": "operator conditions openshift-controller-manager",
+    "Suite": "Operator results"
+  },
+  {
+    "Name": "operator conditions openshift-samples",
+    "Suite": "Operator results"
+  },
+  {
+    "Name": "operator conditions operator-lifecycle-manager",
+    "Suite": "Operator results"
+  },
+  {
+    "Name": "operator conditions operator-lifecycle-manager-catalog",
+    "Suite": "Operator results"
+  },
+  {
+    "Name": "operator conditions operator-lifecycle-manager-packageserver",
+    "Suite": "Operator results"
+  },
+  {
+    "Name": "operator conditions platform-operators-aggregated",
+    "Suite": "Operator results"
+  },
+  {
+    "Name": "operator conditions service-ca",
+    "Suite": "Operator results"
+  },
+  {
+    "Name": "operator conditions service-catalog-apiserver",
+    "Suite": "Operator results"
+  },
+  {
+    "Name": "operator conditions service-catalog-controller-manager",
+    "Suite": "Operator results"
+  },
+  {
+    "Name": "operator conditions storage",
+    "Suite": "Operator results"
+  }
+]

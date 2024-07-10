@@ -12,7 +12,7 @@ type Component struct {
 var PodAutoscalerComponent = Component{
 	Component: &config.Component{
 		Name:                 "Pod Autoscaler",
-		Operators:            []string{"cluster-autoscaler"},
+		Operators:            []string{},
 		DefaultJiraComponent: "Pod Autoscaler",
 		Matchers: []config.ComponentMatcher{
 			{

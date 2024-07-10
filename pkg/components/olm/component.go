@@ -12,12 +12,15 @@ type Component struct {
 var OLMComponent = Component{
 	Component: &config.Component{
 		Name:                 "OLM",
-		Operators:            []string{"marketplace", "operator-lifecycle-manager", "operator-lifecycle-manager-catalog", "operator-lifecycle-manager-packageserver"},
+		Operators:            []string{"olm", "marketplace", "operator-lifecycle-manager", "operator-lifecycle-manager-catalog", "operator-lifecycle-manager-packageserver"},
 		DefaultJiraComponent: "OLM",
 		Namespaces: []string{
 			"openshift-marketplace",
 			"openshift-operator-lifecycle-manager",
 			"openshift-operators",
+			"openshift-operator-controller",
+			"openshift-cluster-olm-operator",
+			"openshift-rukpak",
 		},
 		Matchers: []config.ComponentMatcher{
 			{
@@ -39,6 +42,14 @@ var OLMComponent = Component{
 			},
 			{Suite: "Marketplace related scenarios"},
 			{Suite: "OLM"},
+		},
+		TestRenames: map[string]string{
+			"[OLM][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-marketplace":                   "[bz-OLM][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-marketplace",
+			"[OLM][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-operator-lifecycle-manager":    "[bz-OLM][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-operator-lifecycle-manager",
+			"[OLM][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-operators":                     "[bz-OLM][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-operators",
+			"[OLM][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-marketplace":                "[bz-OLM][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-marketplace",
+			"[OLM][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-operator-lifecycle-manager": "[bz-OLM][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-operator-lifecycle-manager",
+			"[OLM][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-operators":                  "[bz-OLM][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-operators",
 		},
 	},
 }

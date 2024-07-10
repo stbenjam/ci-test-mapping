@@ -36,7 +36,11 @@ var EtcdComponent = Component{
 			{Suite: "etcd related features"},
 		},
 		TestRenames: map[string]string{
-			"[bz-etcd] pathological event should not see excessive RequiredInstallerResourcesMissing secrets": "[bz-etcd] should not see excessive RequiredInstallerResourcesMissing secrets",
+			"[bz-etcd] pathological event should not see excessive RequiredInstallerResourcesMissing secrets":         "[bz-etcd] should not see excessive RequiredInstallerResourcesMissing secrets",
+			"[Etcd][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-etcd":             "[bz-Etcd][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-etcd",
+			"[Etcd][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-etcd-operator":    "[bz-Etcd][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-etcd-operator",
+			"[Etcd][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-etcd":          "[bz-Etcd][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-etcd",
+			"[Etcd][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-etcd-operator": "[bz-Etcd][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-etcd-operator",
 		},
 	},
 }

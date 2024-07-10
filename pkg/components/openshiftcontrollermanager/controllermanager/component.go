@@ -24,6 +24,12 @@ var ControllerManagerComponent = Component{
 			},
 			{Suite: "Check rollout restart and retry in Deployment/DC"},
 		},
+		TestRenames: map[string]string{
+			"[openshift-controller-manager][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-controller-manager":             "[bz-openshift-controller-manager][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-controller-manager",
+			"[openshift-controller-manager][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-controller-manager-operator":    "[bz-openshift-controller-manager][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-controller-manager-operator",
+			"[openshift-controller-manager][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-controller-manager":          "[bz-openshift-controller-manager][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-controller-manager",
+			"[openshift-controller-manager][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-controller-manager-operator": "[bz-openshift-controller-manager][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-controller-manager-operator",
+		},
 	},
 }
 

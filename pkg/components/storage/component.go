@@ -1,12 +1,23 @@
 package storage
 
 import (
+	"regexp"
+
 	v1 "github.com/openshift-eng/ci-test-mapping/pkg/api/types/v1"
 	"github.com/openshift-eng/ci-test-mapping/pkg/config"
+	log "github.com/sirupsen/logrus"
 )
+
+// A regular expression + its replacement string to apply to test names
+type testNameReplacement struct {
+	regexp      *regexp.Regexp
+	replacement string
+}
 
 type Component struct {
 	*config.Component
+
+	testNameReplacements []testNameReplacement
 }
 
 var StorageComponent = Component{
@@ -55,6 +66,20 @@ var StorageComponent = Component{
 			{Suite: "CSI snapshot webhook related scenarios"},
 			{Suite: "testing for parameter fsType"},
 		},
+		TestRenames: map[string]string{
+			"[Storage][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-cluster-csi-drivers":         "[bz-Storage][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-cluster-csi-drivers",
+			"[Storage][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-cluster-storage-operator":    "[bz-Storage][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-cluster-storage-operator",
+			"[Storage][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-cluster-csi-drivers":      "[bz-Storage][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-cluster-csi-drivers",
+			"[Storage][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-cluster-storage-operator": "[bz-Storage][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-cluster-storage-operator",
+		},
+	},
+
+	testNameReplacements: []testNameReplacement{
+		{
+			// Remove [MinimumKubeletVersion:1.27] introduced in Kubernetes 1.29 read-write-once-pod tests to match 1.28 test names.
+			regexp:      regexp.MustCompile(`\[MinimumKubeletVersion:1\.27\]`),
+			replacement: "",
+		},
 	},
 }
 
@@ -77,11 +102,20 @@ func (c *Component) IdentifyTest(test *v1.TestInfo) (*v1.TestOwnership, error) {
 }
 
 func (c *Component) StableID(test *v1.TestInfo) string {
-	// Look up the stable name for our test in our renamed tests map.
-	if stableName, ok := c.TestRenames[test.Name]; ok {
-		return stableName
+	// Apply any test name replacements
+	name := test.Name
+	for _, r := range c.testNameReplacements {
+		name = r.regexp.ReplaceAllString(name, r.replacement)
 	}
-	return test.Name
+
+	// Look up the stable name for our test in our renamed tests map.
+	if stableName, ok := c.TestRenames[name]; ok {
+		name = stableName
+	}
+	if name != test.Name {
+		log.Tracef("Mapped storage test %q to %q", test.Name, name)
+	}
+	return name
 }
 
 func (c *Component) JiraComponents() (components []string) {

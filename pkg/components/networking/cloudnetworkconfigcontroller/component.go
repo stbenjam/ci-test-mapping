@@ -18,6 +18,10 @@ var CloudNetworkConfigControllerComponent = Component{
 			"openshift-cloud-network-config-controller",
 		},
 		Matchers: []config.ComponentMatcher{},
+		TestRenames: map[string]string{
+			"[Networking][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-cloud-network-config-controller":    "[bz-Networking][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-cloud-network-config-controller",
+			"[Networking][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-cloud-network-config-controller": "[bz-Networking][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-cloud-network-config-controller",
+		},
 	},
 }
 

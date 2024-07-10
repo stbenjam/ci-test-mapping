@@ -18,6 +18,12 @@ var CloudControllerManagerComponent = Component{
 			"openshift-cloud-controller-manager",
 			"openshift-cloud-controller-manager-operator",
 		},
+		TestRenames: map[string]string{
+			"[Cloud Compute][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-cloud-controller-manager":             "[bz-Cloud Compute][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-cloud-controller-manager",
+			"[Cloud Compute][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-cloud-controller-manager-operator":    "[bz-Cloud Compute][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-cloud-controller-manager-operator",
+			"[Cloud Compute][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-cloud-controller-manager":          "[bz-Cloud Compute][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-cloud-controller-manager",
+			"[Cloud Compute][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-cloud-controller-manager-operator": "[bz-Cloud Compute][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-cloud-controller-manager-operator",
+		},
 		Matchers: []config.ComponentMatcher{
 			{
 				IncludeAll: []string{"bz-cloud-controller-manager"},

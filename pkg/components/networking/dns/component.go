@@ -18,6 +18,12 @@ var DNSComponent = Component{
 			"openshift-dns",
 			"openshift-dns-operator",
 		},
+		TestRenames: map[string]string{
+			"[DNS][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-dns":             "[bz-DNS][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-dns",
+			"[DNS][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-dns-operator":    "[bz-DNS][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-dns-operator",
+			"[DNS][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-dns":          "[bz-DNS][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-dns",
+			"[DNS][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-dns-operator": "[bz-DNS][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-dns-operator",
+		},
 		Matchers: []config.ComponentMatcher{
 			{
 				SIG:        "sig-network",

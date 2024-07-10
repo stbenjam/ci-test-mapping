@@ -69,20 +69,10 @@ func (c *Component) FindMatch(test *v1.TestInfo) *ComponentMatcher {
 		}
 	}
 
-	if namespace, ok := c.IsNamespaceTest(test.Name); ok {
-		if c.IsInNamespace(namespace) {
-			return &ComponentMatcher{
-				JiraComponent: c.DefaultJiraComponent,
-			}
-		}
-		return nil
-	}
-
 	// Check if any of the Matchers match the given test
 	for _, m := range c.Matchers {
 		sigMatch := true
 		suiteMatch := true
-		namespaceMatch := true
 		incSubstrMatch := true
 		incAnySubstrMatch := true
 
@@ -115,9 +105,23 @@ func (c *Component) FindMatch(test *v1.TestInfo) *ComponentMatcher {
 		}
 
 		// AND the match results together
-		if sigMatch && suiteMatch && namespaceMatch && incSubstrMatch && incAnySubstrMatch {
+		if sigMatch && suiteMatch && incSubstrMatch && incAnySubstrMatch {
 			return &m
 		}
+	}
+
+	// Namespace ownership is last to allow specifically overriding a test's ownership.
+	// For example, ns/console disruption tests are moved to router, because it's much more
+	// likely to be an ingress problem. Components must still force their priority higher than
+	// namespace ownership to override.
+	if namespace, ok := c.IsNamespaceTest(test.Name); ok {
+		if c.IsInNamespace(namespace) {
+			return &ComponentMatcher{
+				JiraComponent: c.DefaultJiraComponent,
+				Priority:      10,
+			}
+		}
+		return nil
 	}
 
 	return nil

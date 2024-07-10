@@ -18,6 +18,10 @@ var NutanixComponent = Component{
 			"openshift-nutanix-infra",
 		},
 		Matchers: []config.ComponentMatcher{},
+		TestRenames: map[string]string{
+			"[Unknown][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-nutanix-infra":    "[bz-Unknown][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-nutanix-infra",
+			"[Unknown][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-nutanix-infra": "[bz-Unknown][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-nutanix-infra",
+		},
 	},
 }
 

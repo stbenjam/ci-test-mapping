@@ -24,7 +24,7 @@ var KubeSchedulerComponent = Component{
 			},
 			{
 				SIG:      "sig-scheduling",
-				Priority: -1,
+				Priority: -10,
 			},
 			{Suite: "Scheduler predicates and priority test suites"},
 			{Suite: "Scheduler related scenarios"},
@@ -34,6 +34,12 @@ var KubeSchedulerComponent = Component{
 			{Suite: "resouces related scenarios"},
 			{Suite: "taint toleration related scenarios"},
 			{Suite: "Scheduler alert related features"},
+		},
+		TestRenames: map[string]string{
+			"[kube-scheduler][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-kube-scheduler":             "[bz-kube-scheduler][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-kube-scheduler",
+			"[kube-scheduler][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-kube-scheduler-operator":    "[bz-kube-scheduler][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-kube-scheduler-operator",
+			"[kube-scheduler][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-kube-scheduler":          "[bz-kube-scheduler][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-kube-scheduler",
+			"[kube-scheduler][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-kube-scheduler-operator": "[bz-kube-scheduler][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-kube-scheduler-operator",
 		},
 	},
 }

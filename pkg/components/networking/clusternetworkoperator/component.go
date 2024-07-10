@@ -23,6 +23,7 @@ var ClusterNetworkOperatorComponent = Component{
 		Matchers: []config.ComponentMatcher{
 			{
 				IncludeAll: []string{"bz-Networking"},
+				Priority:   -1,
 			},
 			{
 				IncludeAll: []string{"bz-networking"},
@@ -46,6 +47,16 @@ var ClusterNetworkOperatorComponent = Component{
 			{Suite: "service upgrade scenarios"},
 			{Suite: "service related scenarios"},
 			{Suite: "Egress IP related features"},
+		},
+		TestRenames: map[string]string{
+			"[Networking][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-host-network":           "[bz-Networking][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-host-network",
+			"[Networking][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-network-diagnostics":    "[bz-Networking][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-network-diagnostics",
+			"[Networking][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-network-operator":       "[bz-Networking][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-network-operator",
+			"[Networking][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-host-network":        "[bz-Networking][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-host-network",
+			"[Networking][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-network-diagnostics": "[bz-Networking][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-network-diagnostics",
+			"[Networking][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-network-operator":    "[bz-Networking][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-network-operator",
+			"[Unknown][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-kni-infra":                 "[bz-Unknown][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-kni-infra",
+			"[Unknown][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-kni-infra":              "[bz-Unknown][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-kni-infra",
 		},
 	},
 }

@@ -18,6 +18,10 @@ var PlatformOpenstackComponent = Component{
 			"openshift-openstack-infra",
 		},
 		Matchers: []config.ComponentMatcher{},
+		TestRenames: map[string]string{
+			"[Unknown][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-openstack-infra":    "[bz-Unknown][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-openstack-infra",
+			"[Unknown][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-openstack-infra": "[bz-Unknown][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-openstack-infra",
+		},
 	},
 }
 

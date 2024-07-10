@@ -24,6 +24,10 @@ var MultusComponent = Component{
 			{Suite: "SDN multus compoment upgrade testing"},
 			{Suite: "testing multicast scenarios"},
 		},
+		TestRenames: map[string]string{
+			"[Networking][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-multus":    "[bz-Networking][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-multus",
+			"[Networking][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-multus": "[bz-Networking][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-multus",
+		},
 	},
 }
 

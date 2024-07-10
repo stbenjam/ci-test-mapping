@@ -43,6 +43,10 @@ var KubeControllerManagerComponent = Component{
 		},
 		TestRenames: map[string]string{
 			"[sig-api-machinery][Feature:ClusterResourceQuota] Cluster resource quota should control resource limits across namespaces [apigroup:quota.openshift.io][apigroup:image.openshift.io] [Suite:openshift/conformance/parallel]": "[sig-api-machinery][Feature:ClusterResourceQuota] Cluster resource quota should control resource limits across namespaces [apigroup:quota.openshift.io][apigroup:image.openshift.io][apigroup:monitoring.coreos.com][apigroup:template.openshift.io] [Suite:openshift/conformance/parallel]",
+			"[kube-controller-manager][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-kube-controller-manager":                                                                                           "[bz-kube-controller-manager][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-kube-controller-manager",
+			"[kube-controller-manager][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-kube-controller-manager-operator":                                                                                  "[bz-kube-controller-manager][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-kube-controller-manager-operator",
+			"[kube-controller-manager][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-kube-controller-manager":                                                                                        "[bz-kube-controller-manager][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-kube-controller-manager",
+			"[kube-controller-manager][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-kube-controller-manager-operator":                                                                               "[bz-kube-controller-manager][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-kube-controller-manager-operator",
 		},
 	},
 }

@@ -23,6 +23,10 @@ var NodeTuningOperatorComponent = Component{
 			},
 			{Suite: "PSAP"},
 		},
+		TestRenames: map[string]string{
+			"[Node Tuning Operator][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-cluster-node-tuning-operator":    "[bz-Node Tuning Operator][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-cluster-node-tuning-operator",
+			"[Node Tuning Operator][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-cluster-node-tuning-operator": "[bz-Node Tuning Operator][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-cluster-node-tuning-operator",
+		},
 	},
 }
 

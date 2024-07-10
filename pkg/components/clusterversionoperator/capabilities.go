@@ -1,25 +1,46 @@
 package clusterversionoperator
 
 import (
-	"strings"
+	"regexp"
 
 	v1 "github.com/openshift-eng/ci-test-mapping/pkg/api/types/v1"
 	"github.com/openshift-eng/ci-test-mapping/pkg/util"
+	"k8s.io/apimachinery/pkg/util/sets"
 )
 
+const (
+	// ClusterUpgrade is a CVO capability to upgrade the cluster
+	ClusterUpgrade = "ClusterUpgrade"
+	// ClusterOperators is a CVO capability to manage and monitor Cluster Operators
+	ClusterOperators = "ClusterOperators"
+	// Operator is a CVO capability to operate the cluster both during and outside of upgrades
+	Operator = "Operator"
+	// AdminAck is a CVO capability to process administrator acknowledgements
+	AdminAck = "AdminAck"
+)
+
+var cvoCapabilitiesIdentifiers = map[*regexp.Regexp]string{
+	regexp.MustCompile(`.*upgrade.*`): ClusterUpgrade,
+
+	// e.g. [sig-cluster-lifecycle] pathological event should not see excessive Back-off restarting failed containers for ns/openshift-cluster-version
+	regexp.MustCompile(".*ns/openshift-cluster-version.*"): Operator,
+	// all invariant tests
+	// e.g. [Jira:"Cluster Version Operator"] monitor test legacy-cvo-invariants collection
+	regexp.MustCompile(".*monitor test.*"): Operator,
+
+	// e.g. Cluster upgrade.[sig-cluster-lifecycle] ClusterOperators are available and not degraded after upgrade
+	regexp.MustCompile(".*ClusterOperators.*"): ClusterOperators,
+
+	regexp.MustCompile(`.*(admin ack|AdminAck).*`): AdminAck,
+}
+
 func identifyCapabilities(test *v1.TestInfo) []string {
-	var capabilities []string
-
-	// Get the Feature name from the test name as a capability
-	capabilities = append(capabilities, util.ExtractTestField(test.Name, "Feature")...)
-
-	if strings.Contains(test.Name, "clusteroperator/") {
-		capabilities = append(capabilities, "Operator")
+	capabilities := sets.New[string](util.DefaultCapabilities(test)...)
+	for matcher, capability := range cvoCapabilitiesIdentifiers {
+		if matcher.MatchString(test.Name) {
+			capabilities.Insert(capability)
+		}
 	}
 
-	if strings.Contains(test.Name, "alert/") {
-		capabilities = append(capabilities, "Alerts")
-	}
-
-	return capabilities
+	return capabilities.UnsortedList()
 }

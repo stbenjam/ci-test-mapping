@@ -17,6 +17,12 @@ var ImageRegistryComponent = Component{
 		Namespaces: []string{
 			"openshift-image-registry",
 		},
+		TestRenames: map[string]string{
+			"[Image Registry][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-image-registry":    "[bz-Image Registry][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-image-registry",
+			"[Image Registry][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-image-registry": "[bz-Image Registry][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-image-registry",
+			"[sig-imageregistry] disruption/image-registry connection/new should be available throughout the test":               "[sig-imageregistry] Image registry remains available using new connections",
+			"[sig-imageregistry] disruption/image-registry connection/reused should be available throughout the test":            "[sig-imageregistry] Image registry remains available using reused connections",
+		},
 		Matchers: []config.ComponentMatcher{
 			{
 				IncludeAll: []string{"bz-Image Registry"},

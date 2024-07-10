@@ -1,0 +1,834 @@
+[
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "Symptom Detection:bd1cf741f4abbe13f27d3bd1d2f5a244",
+    "Name": "Bug 1812261: iptables is segfaulting",
+    "Suite": "Symptom Detection",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / openshift-sdn",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Networking / openshift-sdn",
+    "JIRAComponentID": 12367861
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "Symptom Detection:fc76297ae9386d66c9a4f0a7d8d23dc3",
+    "Name": "Bug 181XX61: iptables is segfaulting",
+    "Suite": "Symptom Detection",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": 12367926
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "Symptom Detection:2869c23a07ccec805105958509dea961",
+    "Name": "Infrastructure - AWS simulate policy rate-limit",
+    "Suite": "Symptom Detection",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Test Infrastructure",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Test Infrastructure",
+    "JIRAComponentID": 12367925
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "Symptom Detection:88370463321eae63b624f506f00530ff",
+    "Name": "Infrastructure - GCP quota exceeded (route to forum-gcp)",
+    "Suite": "Symptom Detection",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Test Infrastructure",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Test Infrastructure",
+    "JIRAComponentID": 12367925
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "Symptom Detection:0fe14ca0a1da23f023875ab0338aa542",
+    "Name": "Node process segfaulted",
+    "Suite": "Symptom Detection",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Node / Kubelet",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Node / Kubelet",
+    "JIRAComponentID": 12367697
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "Symptom Detection:30df800b06880434237ce4f9a915b08e",
+    "Name": "Undiagnosed panic detected in journal",
+    "Suite": "Symptom Detection",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Test Framework",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Test Framework",
+    "JIRAComponentID": 12367924
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "Symptom Detection:171acaa74f3d5ea96e3b687038d0cf13",
+    "Name": "Undiagnosed panic detected in pod",
+    "Suite": "Symptom Detection",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Test Framework",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Test Framework",
+    "JIRAComponentID": 12367924
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "cluster install:6ce515c7c732a322333427bf4f5508a5",
+    "Name": "install should succeed: cluster bootstrap",
+    "Suite": "cluster install",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Installer / openshift-installer",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Installer / openshift-installer",
+    "JIRAComponentID": 12367694
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "cluster install:2bc0fe9de9a98831c20e569a21d7ded9",
+    "Name": "install should succeed: cluster creation",
+    "Suite": "cluster install",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Installer / openshift-installer",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Installer / openshift-installer",
+    "JIRAComponentID": 12367694
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "cluster install:2475b8d49269382871f89b7995e53f11",
+    "Name": "install should succeed: cluster operator stability",
+    "Suite": "cluster install",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Installer / openshift-installer",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Installer / openshift-installer",
+    "JIRAComponentID": 12367694
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "cluster install:e51be882b0f8ccea9d71e608f2683cc9",
+    "Name": "install should succeed: configuration",
+    "Suite": "cluster install",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Installer / openshift-installer",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Installer / openshift-installer",
+    "JIRAComponentID": 12367694
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "cluster install:3e14279ba2c202608dd9a041e5023c4c",
+    "Name": "install should succeed: infrastructure",
+    "Suite": "cluster install",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Installer / openshift-installer",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Installer / openshift-installer",
+    "JIRAComponentID": 12367694
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "cluster install:2ec4097c2122a2e07e7270c2d7cb3cc6",
+    "Name": "install should succeed: other",
+    "Suite": "cluster install",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Installer / openshift-installer",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Installer / openshift-installer",
+    "JIRAComponentID": 12367694
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "cluster install:0cb1bb27e418491b1ffdacab58c5c8c0",
+    "Name": "install should succeed: overall",
+    "Suite": "cluster install",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Installer / openshift-installer",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Installer / openshift-installer",
+    "JIRAComponentID": 12367694
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "Operator results:466e1a49a33b63218495dc8201953194",
+    "Name": "operator conditions authentication",
+    "Suite": "Operator results",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "oauth-apiserver",
+    "Capabilities": [
+      "operator-conditions"
+    ],
+    "JIRAComponent": "oauth-apiserver",
+    "JIRAComponentID": 12367877
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "Operator results:4bbb5f684e8dbdb76c3fe7769f5e092c",
+    "Name": "operator conditions baremetal",
+    "Suite": "Operator results",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Bare Metal Hardware Provisioning / cluster-baremetal-operator",
+    "Capabilities": [
+      "operator-conditions"
+    ],
+    "JIRAComponent": "Bare Metal Hardware Provisioning / cluster-baremetal-operator",
+    "JIRAComponentID": 12367723
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "Operator results:603d54d4305c314b17a510e07328d55b",
+    "Name": "operator conditions cloud-controller-manager",
+    "Suite": "Operator results",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Cloud Compute / Cloud Controller Manager",
+    "Capabilities": [
+      "operator-conditions"
+    ],
+    "JIRAComponent": "Cloud Compute / Cloud Controller Manager",
+    "JIRAComponentID": 12367726
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "Operator results:ab5196ebb6bf3bea6278b71f135a81bf",
+    "Name": "operator conditions cloud-credential",
+    "Suite": "Operator results",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Cloud Credential Operator",
+    "Capabilities": [
+      "operator-conditions"
+    ],
+    "JIRAComponent": "Cloud Credential Operator",
+    "JIRAComponentID": 12367740
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "Operator results:5f5b1a1213be32d56116ecc5cb4b2778",
+    "Name": "operator conditions cluster-api",
+    "Suite": "Operator results",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Cloud Compute / Other Provider",
+    "Capabilities": [
+      "operator-conditions"
+    ],
+    "JIRAComponent": "Cloud Compute / Other Provider",
+    "JIRAComponentID": 12367739
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "Operator results:868edf33fa32b0aab132c2a676d49e3b",
+    "Name": "operator conditions cluster-autoscaler",
+    "Suite": "Operator results",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Cloud Compute / Cluster Autoscaler",
+    "Capabilities": [
+      "operator-conditions"
+    ],
+    "JIRAComponent": "Cloud Compute / Cluster Autoscaler",
+    "JIRAComponentID": 12367727
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "Operator results:ecf5dd6fd0708635c0e3bf5cef712a31",
+    "Name": "operator conditions config-operator",
+    "Suite": "Operator results",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "config-operator",
+    "Capabilities": [
+      "operator-conditions"
+    ],
+    "JIRAComponent": "config-operator",
+    "JIRAComponentID": 12367606
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "Operator results:258e3ff8c9692c937596663377c10e29",
+    "Name": "operator conditions console",
+    "Suite": "Operator results",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Management Console",
+    "Capabilities": [
+      "operator-conditions"
+    ],
+    "JIRAComponent": "Management Console",
+    "JIRAComponentID": 12367696
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "Operator results:6d9ee55972f66121016367d07d52f0a9",
+    "Name": "operator conditions control-plane-machine-set",
+    "Suite": "Operator results",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Cloud Compute / Other Provider",
+    "Capabilities": [
+      "operator-conditions"
+    ],
+    "JIRAComponent": "Cloud Compute / Other Provider",
+    "JIRAComponentID": 12367739
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "Operator results:e4d4a6f205c99fcdd54162cb6714fedd",
+    "Name": "operator conditions csi-snapshot-controller",
+    "Suite": "Operator results",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Storage",
+    "Capabilities": [
+      "operator-conditions"
+    ],
+    "JIRAComponent": "Storage",
+    "JIRAComponentID": 12367909
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "Operator results:0b1d741d7b5ff159086444b49bfe8918",
+    "Name": "operator conditions dns",
+    "Suite": "Operator results",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / DNS",
+    "Capabilities": [
+      "operator-conditions"
+    ],
+    "JIRAComponent": "Networking / DNS",
+    "JIRAComponentID": 12367613
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "Operator results:45d55df296fbbfa7144600dce70c1182",
+    "Name": "operator conditions etcd",
+    "Suite": "Operator results",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Etcd",
+    "Capabilities": [
+      "operator-conditions"
+    ],
+    "JIRAComponent": "Etcd",
+    "JIRAComponentID": 12367617
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "Operator results:ad47fd0f8db4a5195cee022678627c9b",
+    "Name": "operator conditions image-registry",
+    "Suite": "Operator results",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Image Registry",
+    "Capabilities": [
+      "operator-conditions"
+    ],
+    "JIRAComponent": "Image Registry",
+    "JIRAComponentID": 12367625
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "Operator results:33921465a4b24f992f7e9c47b1ec9409",
+    "Name": "operator conditions ingress",
+    "Suite": "Operator results",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / router",
+    "Capabilities": [
+      "operator-conditions"
+    ],
+    "JIRAComponent": "Networking / router",
+    "JIRAComponentID": 12367900
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "Operator results:140f92ef45561669f04e79af1f14fa3b",
+    "Name": "operator conditions insights",
+    "Suite": "Operator results",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Insights Operator",
+    "Capabilities": [
+      "operator-conditions"
+    ],
+    "JIRAComponent": "Insights Operator",
+    "JIRAComponentID": 12367627
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "Operator results:2bc3a57ebccf0bcb4d36d338809848c2",
+    "Name": "operator conditions kube-apiserver",
+    "Suite": "Operator results",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "kube-apiserver",
+    "Capabilities": [
+      "operator-conditions"
+    ],
+    "JIRAComponent": "kube-apiserver",
+    "JIRAComponentID": 12367637
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "Operator results:5c8f5ec6b30928a1b2b69aba4b7d7daa",
+    "Name": "operator conditions kube-controller-manager",
+    "Suite": "Operator results",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "kube-controller-manager",
+    "Capabilities": [
+      "operator-conditions"
+    ],
+    "JIRAComponent": "kube-controller-manager",
+    "JIRAComponentID": 12367638
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "Operator results:50009b9589c6c5db8d438d0a551a4681",
+    "Name": "operator conditions kube-scheduler",
+    "Suite": "Operator results",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "kube-scheduler",
+    "Capabilities": [
+      "operator-conditions"
+    ],
+    "JIRAComponent": "kube-scheduler",
+    "JIRAComponentID": 12367639
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "Operator results:fd60de526543d7ba97ee861d4470fdd5",
+    "Name": "operator conditions kube-storage-version-migrator",
+    "Suite": "Operator results",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "kube-storage-version-migrator",
+    "Capabilities": [
+      "operator-conditions"
+    ],
+    "JIRAComponent": "kube-storage-version-migrator",
+    "JIRAComponentID": 12367840
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "Operator results:ff3f4ce2ada4b853ece12306b1ef3eaf",
+    "Name": "operator conditions machine-api",
+    "Suite": "Operator results",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Cloud Compute / Other Provider",
+    "Capabilities": [
+      "operator-conditions"
+    ],
+    "JIRAComponent": "Cloud Compute / Other Provider",
+    "JIRAComponentID": 12367739
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "Operator results:b6f0f23c1eb9d3389fb590263017f28c",
+    "Name": "operator conditions machine-approver",
+    "Suite": "Operator results",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Cloud Compute / Other Provider",
+    "Capabilities": [
+      "operator-conditions"
+    ],
+    "JIRAComponent": "Cloud Compute / Other Provider",
+    "JIRAComponentID": 12367739
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "Operator results:9855fdba309a0838d2db273c1f73ad88",
+    "Name": "operator conditions machine-config",
+    "Suite": "Operator results",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Machine Config Operator",
+    "Capabilities": [
+      "operator-conditions"
+    ],
+    "JIRAComponent": "Machine Config Operator",
+    "JIRAComponentID": 12367841
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "Operator results:7ab5c9c5171e072831e4ed0c7feed5fe",
+    "Name": "operator conditions marketplace",
+    "Suite": "Operator results",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "OLM",
+    "Capabilities": [
+      "operator-conditions"
+    ],
+    "JIRAComponent": "OLM",
+    "JIRAComponentID": 12367882
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "Operator results:7e4c8db94dde9f957ea7d639cd29d6dd",
+    "Name": "operator conditions monitoring",
+    "Suite": "Operator results",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Monitoring",
+    "Capabilities": [
+      "operator-conditions"
+    ],
+    "JIRAComponent": "Monitoring",
+    "JIRAComponentID": 12367700
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "Operator results:4b5f6af893ad5577904fbaec3254506d",
+    "Name": "operator conditions network",
+    "Suite": "Operator results",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / cluster-network-operator",
+    "Capabilities": [
+      "operator-conditions"
+    ],
+    "JIRAComponent": "Networking / cluster-network-operator",
+    "JIRAComponentID": 12372668
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "Operator results:8a8d796395b45f1bfb9f7f04c3628989",
+    "Name": "operator conditions node-tuning",
+    "Suite": "Operator results",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Node Tuning Operator",
+    "Capabilities": [
+      "operator-conditions"
+    ],
+    "JIRAComponent": "Node Tuning Operator",
+    "JIRAComponentID": 12367869
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "Operator results:349ae2ffd8b5cfcb4021fcd275fd5f13",
+    "Name": "operator conditions olm",
+    "Suite": "Operator results",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "OLM",
+    "Capabilities": [
+      "operator-conditions"
+    ],
+    "JIRAComponent": "OLM",
+    "JIRAComponentID": 12367882
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "Operator results:a4dfe6caa55e94230b4ee0ff127b6d64",
+    "Name": "operator conditions openshift-apiserver",
+    "Suite": "Operator results",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "openshift-apiserver",
+    "Capabilities": [
+      "operator-conditions"
+    ],
+    "JIRAComponent": "openshift-apiserver",
+    "JIRAComponentID": 12367887
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "Operator results:2bcbd383b8e2ed76bfdc939c52bab093",
+    "Name": "operator conditions openshift-controller-manager",
+    "Suite": "Operator results",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "openshift-controller-manager / controller-manager",
+    "Capabilities": [
+      "operator-conditions"
+    ],
+    "JIRAComponent": "openshift-controller-manager / controller-manager",
+    "JIRAComponentID": 12367891
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "Operator results:776d244e9df7ada04b8510480fb86902",
+    "Name": "operator conditions openshift-samples",
+    "Suite": "Operator results",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Samples Operator",
+    "Capabilities": [
+      "operator-conditions"
+    ],
+    "JIRAComponent": "Samples Operator",
+    "JIRAComponentID": 12367901
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "Operator results:8ff97a6ad27e7d31f1898878dfb086cf",
+    "Name": "operator conditions operator-lifecycle-manager",
+    "Suite": "Operator results",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "OLM",
+    "Capabilities": [
+      "operator-conditions"
+    ],
+    "JIRAComponent": "OLM",
+    "JIRAComponentID": 12367882
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "Operator results:a2bfee761baf19bc7be479d649c54603",
+    "Name": "operator conditions operator-lifecycle-manager-catalog",
+    "Suite": "Operator results",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "OLM",
+    "Capabilities": [
+      "operator-conditions"
+    ],
+    "JIRAComponent": "OLM",
+    "JIRAComponentID": 12367882
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "Operator results:55a75a8aa11231d0ca36a4d65644e1dd",
+    "Name": "operator conditions operator-lifecycle-manager-packageserver",
+    "Suite": "Operator results",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "OLM",
+    "Capabilities": [
+      "operator-conditions"
+    ],
+    "JIRAComponent": "OLM",
+    "JIRAComponentID": 12367882
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "Operator results:a746bfa4ade9fccddaeb55abf5f3c0e8",
+    "Name": "operator conditions platform-operators-aggregated",
+    "Suite": "Operator results",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "openshift-apiserver",
+    "Capabilities": [
+      "operator-conditions"
+    ],
+    "JIRAComponent": "openshift-apiserver",
+    "JIRAComponentID": 12367887
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "Operator results:43873963795485018aac3b5e82694c14",
+    "Name": "operator conditions service-ca",
+    "Suite": "Operator results",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "service-ca",
+    "Capabilities": [
+      "operator-conditions"
+    ],
+    "JIRAComponent": "service-ca",
+    "JIRAComponentID": 12367907
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "Operator results:9af74169c4b67c3a39abe49f92d2230e",
+    "Name": "operator conditions service-catalog-apiserver",
+    "Suite": "Operator results",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Service Catalog",
+    "Capabilities": [
+      "operator-conditions"
+    ],
+    "JIRAComponent": "Service Catalog",
+    "JIRAComponentID": 12367906
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "Operator results:459212824239104b6a6fcd746aba5370",
+    "Name": "operator conditions service-catalog-controller-manager",
+    "Suite": "Operator results",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Service Catalog",
+    "Capabilities": [
+      "operator-conditions"
+    ],
+    "JIRAComponent": "Service Catalog",
+    "JIRAComponentID": 12367906
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "Operator results:871b9b096c0fa7fae6368bae4be46434",
+    "Name": "operator conditions storage",
+    "Suite": "Operator results",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Storage",
+    "Capabilities": [
+      "operator-conditions"
+    ],
+    "JIRAComponent": "Storage",
+    "JIRAComponentID": 12367909
+  }
+]

@@ -35,23 +35,25 @@ var TestFrameworkComponent = Component{
 				SIG:          "sig-arch",
 				IncludeAll:   []string{"events should not repeat"},
 				Capabilities: []string{"Pathological Events"},
-				Priority:     -1,
+				Priority:     -10,
 			},
 			{
 				SIG:          "sig-arch",
 				IncludeAll:   []string{"Alerts alert/"},
 				Capabilities: []string{"Alerts"},
-				Priority:     -1,
+				Priority:     -10,
 			},
 
 			{
 				IncludeAll:   []string{"bz-Unknown", "alert/KubePodNotReady"},
-				Priority:     -1,
+				Priority:     -10,
 				Capabilities: []string{"KubePodNotReady - Other"},
 			},
 		},
 		TestRenames: map[string]string{
-			"[sig-arch] pathological event should not see excessive pull back-off on registry.redhat.io": "[sig-arch] should not see excessive pull back-off on registry.redhat.io",
+			"[sig-arch] pathological event should not see excessive pull back-off on registry.redhat.io":               "[sig-arch] should not see excessive pull back-off on registry.redhat.io",
+			"[Unknown][invariant] alert/KubePodNotReady should not be at or above info in all the other namespaces":    "[bz-Unknown][invariant] alert/KubePodNotReady should not be at or above info in all the other namespaces",
+			"[Unknown][invariant] alert/KubePodNotReady should not be at or above pending in all the other namespaces": "[bz-Unknown][invariant] alert/KubePodNotReady should not be at or above pending in all the other namespaces",
 		},
 	},
 }

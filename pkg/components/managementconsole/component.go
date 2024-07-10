@@ -66,6 +66,12 @@ var ManagementConsoleComponent = Component{
 			{Suite: "knmstate operator console plugin related features"},
 			{Suite: "masthead related"},
 		},
+		TestRenames: map[string]string{
+			"[Management Console][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-console":             "[bz-Management Console][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-console",
+			"[Management Console][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-console-operator":    "[bz-Management Console][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-console-operator",
+			"[Management Console][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-console":          "[bz-Management Console][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-console",
+			"[Management Console][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-console-operator": "[bz-Management Console][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-console-operator",
+		},
 	},
 }
 

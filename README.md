@@ -45,6 +45,14 @@ responsible for ensuring the `StableID` function in their component
 returns the same ID for all names of a given test. This can be done with
 a simple look-up map, see the monitoring component for an example.
 
+## Removing tests
+
+If a test is removed, or is refactored in such a way (i.e. one to many)
+that it's not reasonable to mark them as renames, then it should be
+tracked as an obsolete test. In `pkg/obsoletetests` one can manage their
+obsolete tests by adding an entry to the set.  For OCP, only staff
+engineers can approve a test's removal.
+
 # Test Sources
 
 Currently the tests we use for mapping comes from the corpus of tests

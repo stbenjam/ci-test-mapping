@@ -26,6 +26,10 @@ var InsightsOperatorComponent = Component{
 			},
 			{Suite: "Insights check"},
 		},
+		TestRenames: map[string]string{
+			"[Unknown][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-insights":    "[bz-Unknown][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-insights",
+			"[Unknown][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-insights": "[bz-Unknown][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-insights",
+		},
 	},
 }
 
