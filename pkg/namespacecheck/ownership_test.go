@@ -67,7 +67,7 @@ func TestNoOverlap(t *testing.T) {
 }
 
 func TestListOfKnownNamespaces(t *testing.T) {
-	content, err := os.ReadFile("../../bigquery_tests.json")
+	content, err := os.ReadFile("../../data/openshift-gce-devel/ci_analysis_us/junit.json")
 	if err != nil {
 		t.Fatal(err)
 	}

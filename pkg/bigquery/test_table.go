@@ -12,8 +12,6 @@ import (
 	v1 "github.com/openshift-eng/ci-test-mapping/pkg/api/types/v1"
 )
 
-const testTableName = "junit"
-
 var suites = []string{
 	"openshift-tests",
 	"openshift-tests-upgrade",
@@ -41,22 +39,24 @@ var ignoredTests = []string{
 }
 
 type TestTableManager struct {
-	ctx     context.Context
-	client  *Client
-	dataset string
+	ctx        context.Context
+	junitTable string
+	client     *Client
+	dataset    string
 }
 
-func NewTestTableManager(ctx context.Context, client *Client) *TestTableManager {
+func NewTestTableManager(ctx context.Context, client *Client, junitTable string) *TestTableManager {
 	return &TestTableManager{
-		ctx:    ctx,
-		client: client,
+		ctx:        ctx,
+		junitTable: junitTable,
+		client:     client,
 	}
 }
 
 func (tm *TestTableManager) ListTests() ([]v1.TestInfo, error) {
 	now := time.Now()
 	log.Infof("fetching unique test/suite names from bigquery")
-	table := tm.client.bigquery.Dataset(tm.dataset).Table(testTableName)
+	table := tm.client.bigquery.Dataset(tm.dataset).Table(tm.junitTable)
 
 	var filter []string
 	for _, ignored := range ignoredTests {
