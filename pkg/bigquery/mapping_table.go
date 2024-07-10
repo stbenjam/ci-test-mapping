@@ -14,45 +14,45 @@ import (
 	v1 "github.com/openshift-eng/ci-test-mapping/pkg/api/types/v1"
 )
 
-const mappingTableName = "component_mapping"
-
 type MappingTableManager struct {
-	ctx    context.Context
-	client *Client
+	ctx              context.Context
+	mappingTableName string
+	client           *Client
 }
 
-func NewMappingTableManager(ctx context.Context, client *Client) *MappingTableManager {
+func NewMappingTableManager(ctx context.Context, client *Client, mappingTable string) *MappingTableManager {
 	return &MappingTableManager{
-		ctx:    ctx,
-		client: client,
+		ctx:              ctx,
+		mappingTableName: mappingTable,
+		client:           client,
 	}
 }
 
 func (tm *MappingTableManager) Migrate() error {
 	dataset := tm.client.bigquery.Dataset(tm.client.datasetName)
-	table := dataset.Table(mappingTableName)
+	table := dataset.Table(tm.mappingTableName)
 
 	md, err := table.Metadata(tm.ctx)
 	// Create table if it doesn't exist
 	if gbErr, ok := err.(*googleapi.Error); err != nil && ok && gbErr.Code == 404 {
-		log.Infof("table doesn't existing, creating table %q", mappingTableName)
+		log.Infof("table doesn't existing, creating table %q", tm.mappingTableName)
 		if err := table.Create(tm.ctx, &bigquery.TableMetadata{
 			Schema: v1.MappingTableSchema,
 		}); err != nil {
 			return err
 		}
-		log.Infof("table created %q", mappingTableName)
+		log.Infof("table created %q", tm.mappingTableName)
 	} else if err != nil {
 		return err
 	} else {
 		if !schemasEqual(md.Schema, v1.MappingTableSchema) {
 			if _, err := table.Update(tm.ctx, bigquery.TableMetadataToUpdate{Schema: v1.MappingTableSchema}, md.ETag); err != nil {
-				log.WithError(err).Errorf("failed to update table schema for %q", mappingTableName)
+				log.WithError(err).Errorf("failed to update table schema for %q", tm.mappingTableName)
 				return err
 			}
-			log.Infof("table schema updated %q", mappingTableName)
+			log.Infof("table schema updated %q", tm.mappingTableName)
 		} else {
-			log.Infof("table schema is up-to-date %q", mappingTableName)
+			log.Infof("table schema is up-to-date %q", tm.mappingTableName)
 		}
 	}
 
@@ -62,7 +62,7 @@ func (tm *MappingTableManager) Migrate() error {
 func (tm *MappingTableManager) ListMappings() ([]v1.TestOwnership, error) {
 	now := time.Now()
 	log.Infof("fetching mappings from bigquery")
-	table := tm.client.bigquery.Dataset(tm.client.datasetName).Table(mappingTableName + "_latest") // use the view
+	table := tm.client.bigquery.Dataset(tm.client.datasetName).Table(tm.mappingTableName + "_latest") // use the view
 
 	sql := fmt.Sprintf(`
 		SELECT 
@@ -98,7 +98,7 @@ func (tm *MappingTableManager) ListMappings() ([]v1.TestOwnership, error) {
 func (tm *MappingTableManager) PushMappings(mappings []v1.TestOwnership) error {
 	var batchSize = 500
 
-	table := tm.client.bigquery.Dataset(tm.client.datasetName).Table(mappingTableName)
+	table := tm.client.bigquery.Dataset(tm.client.datasetName).Table(tm.mappingTableName)
 	inserter := table.Inserter()
 	for i := 0; i < len(mappings); i += batchSize {
 		end := i + batchSize
@@ -118,7 +118,7 @@ func (tm *MappingTableManager) PushMappings(mappings []v1.TestOwnership) error {
 func (tm *MappingTableManager) PruneMappings() error {
 	now := time.Now()
 	log.Infof("pruning mappings from bigquery")
-	table := tm.client.bigquery.Dataset(tm.client.datasetName).Table(mappingTableName)
+	table := tm.client.bigquery.Dataset(tm.client.datasetName).Table(tm.mappingTableName)
 
 	tableLocator := fmt.Sprintf("%s.%s.%s", table.ProjectID, tm.client.datasetName, table.TableID)
 
@@ -136,7 +136,7 @@ func (tm *MappingTableManager) PruneMappings() error {
 
 func (tm *MappingTableManager) Table() *bigquery.Table {
 	dataset := tm.client.bigquery.Dataset(tm.client.datasetName)
-	return dataset.Table(mappingTableName)
+	return dataset.Table(tm.mappingTableName)
 }
 
 func schemasEqual(a, b bigquery.Schema) bool {

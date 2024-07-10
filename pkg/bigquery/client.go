@@ -14,18 +14,13 @@ import (
 	"google.golang.org/api/option"
 )
 
-const (
-	projectName = "openshift-gce-devel"
-	datasetName = "ci_analysis_us"
-)
-
 type Client struct {
 	bigquery    *bigquery.Client
 	projectName string
 	datasetName string
 }
 
-func NewClient(ctx context.Context, googleServiceAccountCredentialFile, googleOAuthClientCredentialFile string) (*Client, error) {
+func NewClient(ctx context.Context, googleServiceAccountCredentialFile, googleOAuthClientCredentialFile, projectName, datasetName string) (*Client, error) {
 	client := Client{
 		projectName: projectName,
 		datasetName: datasetName,

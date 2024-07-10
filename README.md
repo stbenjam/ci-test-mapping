@@ -5,7 +5,7 @@ component and it's capabilities. This tool:
 
 1. Takes a set of metadata about all tests such as it's name and suite
 2. Maps the test to exactly one component that provides details about the capabilities that test is testing
-3. Writes the result to a mapping.json file comitted to this repo
+3. Writes the result to a json file comitted to this repo in `data/`
 4. Pushes the result to BigQuery
 
 Teams own their component code under `pkg/components/<component_name>`
@@ -103,6 +103,19 @@ ci-test-mapping map --mode bigquery \
   --push-to-bigquery
 ```
 
+### Alternative data sources/destinations
+
+The BigQuery project, dataset, JUnit table, and component mapping tables
+are all configurable.
+
+```
+ci-test-mapping map \
+    --mode bigquery \
+    --bigquery-project openshift-gce-devel \
+    --bigquery-dataset ci_analysis_us \
+    --table-junit junit \
+    --table-mapping component_mapping
+```
 
 ### Using the BigQuery table for lookups
 
