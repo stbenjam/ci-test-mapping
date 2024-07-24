@@ -38,6 +38,7 @@ var DNSComponent = Component{
 			{
 				SIG:        "sig-network-edge",
 				IncludeAll: []string{"DNS"},
+				Priority:   1,
 			},
 			{Suite: "Testing DNS features"},
 		},

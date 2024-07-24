@@ -32,7 +32,6 @@ var KubeControllerManagerComponent = Component{
 			{Suite: "Features of daemonset"},
 			{Suite: "Quota related scenarios"},
 			{Suite: "Testing kube-controller-manager-operator"},
-			{Suite: "Workloads"},
 			{Suite: "cronjob related"},
 			{Suite: "deployment related features"},
 			{Suite: "deployment/dc related features via web"},

@@ -21,6 +21,7 @@ var OcComponent = Component{
 			{
 				IncludeAny: []string{"[sig-arch] External binary usage"},
 			},
+			{Suite: "Workloads"},
 			{Suite: `"Check status via oc status, wait etc"`},
 			{Suite: "Update emptyDir volumes via command: oc set volumes"},
 			{Suite: "basic verification for upgrade oc client testing"},
