@@ -33,7 +33,7 @@ var pruneCommand = &cobra.Command{
 }
 
 type PruneFlags struct {
-	bigqueryFlags *flags.Flags
+	bigqueryFlags *flags.BigQueryFlags
 	mappingTable  string
 }
 
@@ -41,7 +41,7 @@ var pruneFlags = NewPruneFlags()
 
 func NewPruneFlags() *PruneFlags {
 	return &PruneFlags{
-		bigqueryFlags: flags.NewFlags(),
+		bigqueryFlags: flags.NewBigQueryFlags(),
 	}
 }
 

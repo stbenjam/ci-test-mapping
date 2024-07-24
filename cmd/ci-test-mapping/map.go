@@ -43,6 +43,11 @@ var mapCmd = &cobra.Command{
 		testsFile := path.Join("data", f.bigqueryFlags.Project, f.bigqueryFlags.Dataset, fmt.Sprintf("%s.json", f.junitTable))
 		mappingFile := path.Join("data", f.bigqueryFlags.Project, f.bigqueryFlags.Dataset, fmt.Sprintf("%s.json", f.mappingTable))
 
+		config, err := f.configFlags.GetConfig()
+		if err != nil {
+			return err
+		}
+
 		if f.mode == ModeBigQuery {
 			// Get a bigquery client
 			bigqueryClient, err := bigquery.NewClient(context.Background(),
@@ -60,7 +65,7 @@ var mapCmd = &cobra.Command{
 
 			// Get a list of all tests from bigquery - this could be swapped out with other
 			// mechanisms to get test details later on.
-			testLister := bigquery.NewTestTableManager(context.Background(), bigqueryClient, f.junitTable)
+			testLister := bigquery.NewTestTableManager(context.Background(), bigqueryClient, config, f.junitTable)
 			tests, err = testLister.ListTests()
 			if err != nil {
 				return errors.WithMessage(err, "could not list tests")
@@ -147,7 +152,8 @@ var mapCmd = &cobra.Command{
 type MapFlags struct {
 	mode          string
 	pushToBQ      bool
-	bigqueryFlags *flags.Flags
+	bigqueryFlags *flags.BigQueryFlags
+	configFlags   *flags.ConfigFlags
 	junitTable    string
 	mappingTable  string
 }
@@ -156,12 +162,14 @@ var f = NewMapFlags()
 
 func NewMapFlags() *MapFlags {
 	return &MapFlags{
-		bigqueryFlags: flags.NewFlags(),
+		bigqueryFlags: flags.NewBigQueryFlags(),
+		configFlags:   flags.NewConfigFlags(),
 	}
 }
 
 func (f *MapFlags) BindFlags(fs *pflag.FlagSet) {
 	f.bigqueryFlags.BindFlags(fs)
+	f.configFlags.BindFlags(fs)
 }
 
 func init() {
