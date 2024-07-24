@@ -40,6 +40,8 @@ var OLMComponent = Component{
 					"[sig-arch] openshift-marketplace pods should not get excessive startupProbe failures",
 				},
 			},
+			{Suite: "Marketplace related scenarios"},
+			{Suite: "OLM"},
 		},
 		TestRenames: map[string]string{
 			"[OLM][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-marketplace":                   "[bz-OLM][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-marketplace",

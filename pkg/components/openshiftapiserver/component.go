@@ -28,6 +28,9 @@ var OpenshiftApiserverComponent = Component{
 			{
 				IncludeAll: []string{"openshift-api-", "-connections"},
 			},
+			{Suite: "Projects"},
+			{Suite: "project list tests"},
+			{Suite: "project permissions"},
 		},
 		TestRenames: map[string]string{
 			"[openshift-apiserver][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-apiserver":                                    "[bz-openshift-apiserver][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-apiserver",

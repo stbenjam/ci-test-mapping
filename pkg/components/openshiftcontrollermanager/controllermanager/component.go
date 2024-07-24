@@ -22,6 +22,7 @@ var ControllerManagerComponent = Component{
 			{
 				IncludeAll: []string{"bz-openshift-controller-manager"},
 			},
+			{Suite: "Check rollout restart and retry in Deployment/DC"},
 		},
 		TestRenames: map[string]string{
 			"[openshift-controller-manager][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-controller-manager":             "[bz-openshift-controller-manager][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-controller-manager",
