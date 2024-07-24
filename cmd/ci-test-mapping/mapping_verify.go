@@ -48,11 +48,11 @@ var verifyMapCmd = &cobra.Command{
 				fmt.Println("Failed to fetch data:", err)
 				return
 			}
-			defer response.Body.Close()
 			currentMap, err := fetchMap(response.Body)
 			if err != nil {
 				logrus.WithError(err).Fatalf("couldn't fetch current mapping")
 			}
+			_ = response.Body.Close()
 
 			// Create current mapping lookup table
 			type cl struct {
@@ -70,11 +70,11 @@ var verifyMapCmd = &cobra.Command{
 				fmt.Println("Failed to open file:", err)
 				return
 			}
-			defer file.Close()
 			newMap, err := fetchMap(file)
 			if err != nil {
 				logrus.WithError(err).Fatalf("couldn't read new mapping from file")
 			}
+			_ = file.Close()
 
 			// Look for removed mappings
 			removedMaps := make([]cl, 0)
