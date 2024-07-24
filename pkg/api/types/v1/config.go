@@ -10,7 +10,9 @@ type Config struct {
 	// ExcludeTests is a specific list of tests to exclude from the tests table.
 	ExcludeTests []string `yaml:"excludeTests"`
 
+	// IncludeJobs is a specific list of CI jobs to include from the tests table.
 	IncludeJobs []string `yaml:"includeJobs"`
 
+	// ExcludeJobs is a specific list of CI jobs to exclude from the tests table.
 	ExcludeJobs []string `yaml:"excludeJobs"`
 }
