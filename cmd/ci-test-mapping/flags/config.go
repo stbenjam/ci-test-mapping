@@ -4,6 +4,7 @@ import (
 	"os"
 
 	"github.com/pkg/errors"
+	log "github.com/sirupsen/logrus"
 	"github.com/spf13/pflag"
 	"gopkg.in/yaml.v2"
 
@@ -29,19 +30,23 @@ func (f *ConfigFlags) BindFlags(fs *pflag.FlagSet) {
 }
 
 func (f *ConfigFlags) GetConfig() (*v1.Config, error) {
-	var config *v1.Config
+	var config v1.Config
+	if f.configPath == "" {
+		log.Debugf("using empty configuration")
+		return &config, nil
+	}
 
 	// Read the file
 	data, err := os.ReadFile(f.configPath)
 	if err != nil {
-		return config, errors.WithMessage(err, "failed to read config file")
+		return &config, errors.WithMessage(err, "failed to read config file")
 	}
 
 	// Unmarshal the YAML content into the config struct
 	err = yaml.Unmarshal(data, &config)
 	if err != nil {
-		return config, errors.WithMessage(err, "failed to unmarshal config")
+		return &config, errors.WithMessage(err, "failed to unmarshal config")
 	}
 
-	return config, nil
+	return &config, nil
 }

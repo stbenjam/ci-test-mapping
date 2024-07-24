@@ -6,7 +6,7 @@
     "Name": "Bug 1812261: iptables is segfaulting",
     "Suite": "Symptom Detection",
     "Product": "OpenShift",
-    "Priority": 0,
+    "Priority": 1,
     "StaffApprovedObsolete": false,
     "Component": "Networking / openshift-sdn",
     "Capabilities": [
@@ -24,12 +24,12 @@
     "Product": "OpenShift",
     "Priority": 0,
     "StaffApprovedObsolete": false,
-    "Component": "Unknown",
+    "Component": "Monitoring",
     "Capabilities": [
       "Other"
     ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": 12367926
+    "JIRAComponent": "Monitoring",
+    "JIRAComponentID": 12367700
   },
   {
     "APIVersion": "v1",
@@ -38,7 +38,7 @@
     "Name": "Infrastructure - AWS simulate policy rate-limit",
     "Suite": "Symptom Detection",
     "Product": "OpenShift",
-    "Priority": 0,
+    "Priority": 2,
     "StaffApprovedObsolete": false,
     "Component": "Test Infrastructure",
     "Capabilities": [
@@ -54,7 +54,7 @@
     "Name": "Infrastructure - GCP quota exceeded (route to forum-gcp)",
     "Suite": "Symptom Detection",
     "Product": "OpenShift",
-    "Priority": 0,
+    "Priority": 2,
     "StaffApprovedObsolete": false,
     "Component": "Test Infrastructure",
     "Capabilities": [
@@ -70,7 +70,7 @@
     "Name": "Node process segfaulted",
     "Suite": "Symptom Detection",
     "Product": "OpenShift",
-    "Priority": 0,
+    "Priority": 1,
     "StaffApprovedObsolete": false,
     "Component": "Node / Kubelet",
     "Capabilities": [
@@ -86,7 +86,7 @@
     "Name": "Undiagnosed panic detected in journal",
     "Suite": "Symptom Detection",
     "Product": "OpenShift",
-    "Priority": 0,
+    "Priority": 1,
     "StaffApprovedObsolete": false,
     "Component": "Test Framework",
     "Capabilities": [
@@ -102,7 +102,7 @@
     "Name": "Undiagnosed panic detected in pod",
     "Suite": "Symptom Detection",
     "Product": "OpenShift",
-    "Priority": 0,
+    "Priority": 1,
     "StaffApprovedObsolete": false,
     "Component": "Test Framework",
     "Capabilities": [
@@ -212,6 +212,38 @@
     "Kind": "TestOwnership",
     "ID": "cluster install:0cb1bb27e418491b1ffdacab58c5c8c0",
     "Name": "install should succeed: overall",
+    "Suite": "cluster install",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Installer / openshift-installer",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Installer / openshift-installer",
+    "JIRAComponentID": 12367694
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "cluster install:34d33eff202e9c1e293d70dbf4ccb717",
+    "Name": "install should succeed: post check",
+    "Suite": "cluster install",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Installer / openshift-installer",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Installer / openshift-installer",
+    "JIRAComponentID": 12367694
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "cluster install:1573873af7d258bc051b7f7d387f691a",
+    "Name": "install should succeed: pre configuration",
     "Suite": "cluster install",
     "Product": "OpenShift",
     "Priority": 0,

@@ -70,7 +70,7 @@ func (tm *TestTableManager) buildSQLQuery() string {
 	}
 
 	if len(tm.config.IncludeJobs) > 0 {
-		jobsFilter = fmt.Sprintf("(%s)", strings.Join(func(jobs []string) []string {
+		jobsFilter = fmt.Sprintf("AND (%s)", strings.Join(func(jobs []string) []string {
 			var filters []string
 			for _, job := range jobs {
 				filters = append(filters, fmt.Sprintf("prowjob_name LIKE '%s'", job))
@@ -99,8 +99,7 @@ func (tm *TestTableManager) buildSQLQuery() string {
 			%s.%s.%s
 		WHERE
 		    %s
-		AND
-		    %s
+		%s
 		%s
 		%s
 		%s

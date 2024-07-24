@@ -1,4 +1,3 @@
----
 includeSuites:
   - openshift-tests
   - openshift-tests-upgrade
@@ -10,20 +9,20 @@ includeSuites:
   - Symptom Detection
 excludeSuites: []
 excludeTests:
-  - Build image%
-  - Find the input image%
-  - Find all of the input images%
-  - step graph.%
-  - Run multi-stage test %
-  - % was not OOMKilled%
-  - Create the release image%
-  - Import the release payload %
-  - All images are built%
-  - Tag the image %
-  - %XXXitoring%
+  - "Build image%"
+  - "Find the input image%"
+  - "Find all of the input images%"
+  - "step graph.%"
+  - "Run multi-stage test %"
+  - "% was not OOMKilled%"
+  - "Create the release image%"
+  - "Import the release payload %"
+  - "All images are built%"
+  - "Tag the image %"
+  - "%XXXitoring%"
   - "[sig-arch] Monitor cluster while tests execute"
 includeJobs:
-  - periodic-%
-  - release-%
-  - aggregator-%
+  - "periodic-%"
+  - "release-%"
+  - "aggregator-%"
 excludeJobs: []
