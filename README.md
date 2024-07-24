@@ -57,13 +57,13 @@ engineers can approve a test's removal.
 
 Currently the tests we use for mapping comes from the corpus of tests
 we've previously seen in job results. This list is filtered down to
-smaller quantity by selecting only those in certain suites. It is
-possible to extend or replace this with other data sources, such as
-importing JSON files from other repos that includes more metadata than
-just test and suite.
+smaller quantity by selecting only those in certain suites, jobs, or
+matching certain names.  This is configurable by specifying a
+configuration file. An example is present in
+`config/openshift-eng.yaml`.
 
-At a mimimum though, for compatibility with component readiness (and
-all other OpenShift tooling), a test must:
+At a mimimum though, for compatibility with component readiness (and all
+other OpenShift tooling), a test must:
 
 * always have a result when it runs, indicating it's success, flake or failure (historically some tests only report failure)
 

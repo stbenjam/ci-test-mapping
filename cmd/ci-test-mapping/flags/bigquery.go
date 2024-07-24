@@ -11,23 +11,23 @@ const (
 	datasetName = "ci_analysis_us"
 )
 
-// Flags contain auth information for Google BigQuery services.
-type Flags struct {
+// BigQueryFlags contain auth information for Google BigQuery services.
+type BigQueryFlags struct {
 	ServiceAccountCredentialFile string
 	OAuthClientCredentialFile    string
 	Project                      string
 	Dataset                      string
 }
 
-func NewFlags() *Flags {
-	return &Flags{
+func NewBigQueryFlags() *BigQueryFlags {
+	return &BigQueryFlags{
 		ServiceAccountCredentialFile: os.Getenv("GOOGLE_APPLICATION_CREDENTIALS"),
 		Project:                      projectName,
 		Dataset:                      datasetName,
 	}
 }
 
-func (f *Flags) BindFlags(fs *pflag.FlagSet) {
+func (f *BigQueryFlags) BindFlags(fs *pflag.FlagSet) {
 	fs.StringVar(&f.ServiceAccountCredentialFile,
 		"google-service-account-credential-file",
 		f.ServiceAccountCredentialFile,
