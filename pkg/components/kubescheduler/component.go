@@ -24,7 +24,7 @@ var KubeSchedulerComponent = Component{
 			},
 			{
 				SIG:      "sig-scheduling",
-				Priority: -10,
+				Priority: -20,
 			},
 			{Suite: "Scheduler predicates and priority test suites"},
 			{Suite: "Scheduler related scenarios"},

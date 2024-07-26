@@ -51,6 +51,7 @@ var KubeApiserverComponent = Component{
 			{Suite: "limit range related scenarios:"},
 			{Suite: "test master config related steps"},
 			{Suite: "REST policy related features"},
+			// nolint:misspell
 			{Suite: "senarios for checking transfer scheme"},
 			{Suite: "Api proxy related cases"},
 			{Suite: "REST related features"},
