@@ -17,7 +17,10 @@ import (
 )
 
 var verifyMapFlags = NewVerifyMapFlags()
-var mappingFiles = []string{"data/openshift-gce-devel/ci_analysis_us/component_mapping.json"}
+var mappingFiles = []string{
+	"data/openshift-gce-devel/ci_analysis_us/component_mapping.json",
+	"data/openshift-gce-devel/ci_analaysis_us/qe_component_mapping.json",
+}
 
 type VerifyMapFlags struct {
 	MappingFiles []string
