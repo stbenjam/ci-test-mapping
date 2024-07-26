@@ -46,6 +46,10 @@ var MonitoringComponent = Component{
 			{Suite: "cluster monitoring related upgrade check"},
 			{Suite: "servicemonitor"},
 			{Suite: "serviceXXXitor"},
+			{Suite: "alerts browser"},
+			{Suite: "query browser"},
+			{Suite: "Install and configuration related scenarios"},
+			{Suite: "Monitoring dashboards related features"},
 		},
 	},
 }

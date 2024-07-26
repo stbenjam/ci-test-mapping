@@ -1964,6 +1964,14 @@
     "Suite": "Check rollout restart and retry in Deployment/DC"
   },
   {
+    "Name": "Check sdn2ovn egressip is functional post upgrade",
+    "Suite": "sdn2ovn migration testing"
+  },
+  {
+    "Name": "Check sdn2ovn egressip is functional post upgrade - prepare",
+    "Suite": "sdn2ovn migration testing"
+  },
+  {
     "Name": "Check some container related oc commands still work after upgrade",
     "Suite": "basic verification for upgrade oc client testing"
   },
@@ -46612,6 +46620,14 @@
     "Suite": "NODE"
   },
   {
+    "Name": "OCP-60962:asahay:NODE:[sig-node] NODE keda Audit logging test - stdout Request[Serial]",
+    "Suite": "NODE"
+  },
+  {
+    "Name": "OCP-60963:asahay:NODE:[sig-node] NODE keda Audit logging test - stdout RequestResponse[Serial]",
+    "Suite": "NODE"
+  },
+  {
     "Name": "OCP-60971:yuwan:Cluster_Management_Service:Create operator-roles prior to cluster creation [Serial]",
     "Suite": "Cluster_Management_Service"
   },
@@ -53384,6 +53400,10 @@
     "Suite": "Cluster_Infrastructure"
   },
   {
+    "Name": "OCP-70566:miyadav:Cluster_Infrastructure:[sig-cluster-lifecycle] Cluster_Infrastructure CCM Garbage in cloud-controller-manager status [Disruptive] [Serial]",
+    "Suite": "Cluster_Infrastructure"
+  },
+  {
     "Name": "OCP-70577:rioliu:MCO:Run ovs-configuration.service before dnsmasq.service on Azure",
     "Suite": "MCO"
   },
@@ -55696,6 +55716,10 @@
     "Suite": "OLM"
   },
   {
+    "Name": "OCP-74644:sregidor:MCO:[sig-mco] MCO MachineConfigNode Scope each MCN object to only be accessible from its associated MCD [Disruptive] [Serial]",
+    "Suite": "MCO"
+  },
+  {
     "Name": "OCP-74646:yinzhou:Workloads:[sig-cli] Workloads ocmirror v2 works well Show warning when an eus channel with minor versions range \u003e=2 for v1[Serial]",
     "Suite": "Workloads"
   },
@@ -55750,6 +55774,10 @@
   {
     "Name": "OCP-74764:sregidor:MCO:[sig-mco] MCO Bootimages ManagedBootImages on GCP. Delete machineset when error [Disruptive] [Serial]",
     "Suite": "MCO"
+  },
+  {
+    "Name": "OCP-74803:huliu:Cluster_Infrastructure:[sig-cluster-lifecycle] Cluster_Infrastructure CAPI [CAPI] Support AWS Placement Group Partition Number [Disruptive] [Serial][Slow]",
+    "Suite": "Cluster_Infrastructure"
   },
   {
     "Name": "OCP-74921:anusaxen:SDN:[sig-networking] SDN udn Check udn pods isolation on user defined networks",
@@ -56726,6 +56754,10 @@
   {
     "Name": "Persistent volume with RWO access mode and Delete policy (outline example : | OCP-9943:Storage | awsElasticBlockStore | volumeID | ebs | pv-rwo.yaml |)",
     "Suite": "Persistent Volume reclaim policy tests"
+  },
+  {
+    "Name": "Pin target release image",
+    "Suite": "PinnedImageSet"
   },
   {
     "Name": "Pools updated with the new kerneltype",
@@ -61804,6 +61836,10 @@
     "Suite": "tests/e2e/daemonset-features"
   },
   {
+    "Name": "daemonset-features",
+    "Suite": "tests/e2e"
+  },
+  {
     "Name": "dark-theme related feature \"after all\" hook in \"{root}\"",
     "Suite": "dark-theme related feature"
   },
@@ -62108,6 +62144,10 @@
     "Suite": "tests/e2e/gateway"
   },
   {
+    "Name": "gateway",
+    "Suite": "tests/e2e"
+  },
+  {
     "Name": "generate",
     "Suite": "tests/e2e/generate"
   },
@@ -62126,6 +62166,10 @@
   {
     "Name": "ingress",
     "Suite": "tests/e2e/ingress"
+  },
+  {
+    "Name": "ingress",
+    "Suite": "tests/e2e"
   },
   {
     "Name": "ingress-subdomains",
@@ -62188,6 +62232,10 @@
     "Suite": "tests/e2e-instrumentation/instrumentation-dotnet-multicontainer"
   },
   {
+    "Name": "instrumentation-dotnet-multicontainer",
+    "Suite": "tests/e2e"
+  },
+  {
     "Name": "instrumentation-dotnet-musl",
     "Suite": "tests/e2e-instrumentation/instrumentation-dotnet-musl"
   },
@@ -62204,8 +62252,16 @@
     "Suite": "tests/e2e-instrumentation/instrumentation-java-multicontainer"
   },
   {
+    "Name": "instrumentation-java-multicontainer",
+    "Suite": "tests/e2e"
+  },
+  {
     "Name": "instrumentation-java-other-ns",
     "Suite": "tests/e2e-instrumentation/instrumentation-java-other-ns"
+  },
+  {
+    "Name": "instrumentation-java-other-ns",
+    "Suite": "tests/e2e"
   },
   {
     "Name": "instrumentation-multi-no-containers",
@@ -62232,12 +62288,20 @@
     "Suite": "tests/e2e-instrumentation/instrumentation-nodejs-multicontainer"
   },
   {
+    "Name": "instrumentation-nodejs-multicontainer",
+    "Suite": "tests/e2e"
+  },
+  {
     "Name": "instrumentation-python",
     "Suite": "tests/e2e-instrumentation/instrumentation-python"
   },
   {
     "Name": "instrumentation-python-multicontainer",
     "Suite": "tests/e2e-instrumentation/instrumentation-python-multicontainer"
+  },
+  {
+    "Name": "instrumentation-python-multicontainer",
+    "Suite": "tests/e2e"
   },
   {
     "Name": "instrumentation-sdk",
@@ -63296,12 +63360,20 @@
     "Suite": "tests/e2e/reconcile"
   },
   {
+    "Name": "reconcile",
+    "Suite": "tests/e2e"
+  },
+  {
     "Name": "red-metrics",
     "Suite": "tests/e2e-openshift/red-metrics"
   },
   {
     "Name": "route",
     "Suite": "tests/e2e-openshift/route"
+  },
+  {
+    "Name": "route",
+    "Suite": "tests/e2e-openshift"
   },
   {
     "Name": "routingconnector",
@@ -63424,6 +63496,10 @@
     "Suite": "tests/e2e-metadata-filters/annotations"
   },
   {
+    "Name": "smoke-pod-annotations",
+    "Suite": "tests/e2e"
+  },
+  {
     "Name": "smoke-pod-dns-config",
     "Suite": "tests/e2e/smoke-dns-config"
   },
@@ -63440,6 +63516,10 @@
     "Suite": "tests/e2e/smoke-restarting-deployment"
   },
   {
+    "Name": "smoke-restarting-deployment",
+    "Suite": "tests/e2e"
+  },
+  {
     "Name": "smoke-shareprocessnamespace",
     "Suite": "tests/e2e/smoke-shareprocessnamespace"
   },
@@ -63448,12 +63528,24 @@
     "Suite": "tests/e2e/smoke-sidecar"
   },
   {
+    "Name": "smoke-sidecar",
+    "Suite": "tests/e2e"
+  },
+  {
     "Name": "smoke-sidecar-other-namespace",
     "Suite": "tests/e2e/smoke-sidecar-other-namespace"
   },
   {
+    "Name": "smoke-sidecar-other-namespace",
+    "Suite": "tests/e2e"
+  },
+  {
     "Name": "smoke-simplest",
     "Suite": "tests/e2e/smoke-simplest"
+  },
+  {
+    "Name": "smoke-simplest",
+    "Suite": "tests/e2e"
   },
   {
     "Name": "smoke-simplest-v1beta1",
@@ -63462,6 +63554,10 @@
   {
     "Name": "smoke-statefulset",
     "Suite": "tests/e2e/smoke-statefulset"
+  },
+  {
+    "Name": "smoke-statefulset",
+    "Suite": "tests/e2e"
   },
   {
     "Name": "smoke-targetallocator",
@@ -63474,6 +63570,10 @@
   {
     "Name": "statefulset-features",
     "Suite": "tests/e2e/statefulset-features"
+  },
+  {
+    "Name": "statefulset-features",
+    "Suite": "tests/e2e"
   },
   {
     "Name": "storage class provisioner (outline example : | OCP-10160:Storage | aws-ebs | gp2 | us-east-1d | false | 1Gi |)",

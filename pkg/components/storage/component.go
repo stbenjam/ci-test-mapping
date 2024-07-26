@@ -3,9 +3,10 @@ package storage
 import (
 	"regexp"
 
+	log "github.com/sirupsen/logrus"
+
 	v1 "github.com/openshift-eng/ci-test-mapping/pkg/api/types/v1"
 	"github.com/openshift-eng/ci-test-mapping/pkg/config"
-	log "github.com/sirupsen/logrus"
 )
 
 // A regular expression + its replacement string to apply to test names
@@ -65,6 +66,10 @@ var StorageComponent = Component{
 			{Suite: "Scenarios specific for block volume support"},
 			{Suite: "CSI snapshot webhook related scenarios"},
 			{Suite: "testing for parameter fsType"},
+			{Suite: "Persistent Volume Claim binding policies"},
+			{Suite: "Storage of Hostpath plugin testing"},
+			{Suite: "Testing for pv and pvc pre-bind feature"},
+			{Suite: "Target pvc to a specific pv"},
 		},
 		TestRenames: map[string]string{
 			"[Storage][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-cluster-csi-drivers":         "[bz-Storage][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-cluster-csi-drivers",

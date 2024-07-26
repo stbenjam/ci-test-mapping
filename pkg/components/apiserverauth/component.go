@@ -26,7 +26,6 @@ var ApiserverAuthComponent = Component{
 			{Suite: "Group sync related scenarios"},
 			{Suite: "SCC policy related scenarios"},
 			{Suite: "Seccomp part of SCC policy should be kept and working after upgrade"},
-			{Suite: "Security_and_Compliance"},
 			{Suite: "User management related"},
 			{Suite: "apiserver and auth related upgrade check"},
 			{Suite: "auth prometheus metrics feature"},

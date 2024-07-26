@@ -52,7 +52,6 @@ var OcComponent = Component{
 			{Suite: "projects related features via cli"},
 			{Suite: "route related features via cli"},
 			{Suite: "set deployment-hook/build-hook with CLI"},
-			{Suite: "yaml editor tests"},
 			{Suite: "oc image mirror related scenarios"},
 			{Suite: "oc_rsync.feature"},
 			{Suite: "oc_portforward.feature"},

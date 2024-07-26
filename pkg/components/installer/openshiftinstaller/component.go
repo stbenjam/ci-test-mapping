@@ -25,10 +25,6 @@ var OpenshiftInstallerComponent = Component{
 			{
 				IncludeAll: []string{"install should succeed"},
 			},
-			{
-				Suite:    "Install and configuration related scenarios",
-				Priority: 1,
-			},
 			{Suite: "UPI GCP Tests"},
 			{Suite: "cluster install"},
 			{Suite: "fips"},
