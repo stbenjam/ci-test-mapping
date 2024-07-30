@@ -8,6 +8,10 @@ component and it's capabilities. This tool:
 3. Writes the result to a json file comitted to this repo in `data/`
 4. Pushes the result to BigQuery
 
+## Updating Mappings
+
+# Overview
+
 Teams own their component code under `pkg/components/<component_name>`
 and can handle the mapping as they see fit. New components can copy from
 `pkg/components/example` and modify it, or write their own
@@ -32,6 +36,31 @@ A test must only map to one component, but may map to several
 capabilities.  In the event that two components are vying for a test's
 ownership, you may use the `Priority` field in the `TestOwnership`
 struct.  The highest value wins.
+
+# Process
+
+These are the general steps for updating a test's ownership:
+
+1. Open the `component.go` for a particular component in
+   `pkg/components`. If a test is tied to a namespace, operator, or
+   particular SIG, update that section. If you want to match on the
+   suite or test name, add a new matcher using one of the existing
+   types, such as `Suite`, or `IncludeAny`, which matches a test
+   substring.
+2. Update the `Priority` field if you need to force a higher or lower
+   priority for this component.
+3. Run `make mapping`, to apply the new rules to the test names. Review
+   the results of the changes by using `git diff`.  Ensure that the
+   changes you see are expected.
+4. Commit the result and open a pull request on GitHub.
+
+If you'd like to annotate a test has having additional capabilities,
+update `capabilities.go`. A test may have multiple capabilities, but it
+can only belong to a single component.
+
+`make mapping` enforces this, as well as disallowing any test to move
+back to `Unknown`. If a test is incorrectly attributed, you must find
+the owner and move it to their component.
 
 ## Renaming tests
 
