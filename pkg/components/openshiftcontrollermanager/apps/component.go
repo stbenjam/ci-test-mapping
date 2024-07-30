@@ -16,7 +16,8 @@ var AppsComponent = Component{
 		DefaultJiraComponent: "openshift-controller-manager / apps",
 		Matchers: []config.ComponentMatcher{
 			{
-				SIG: "sig-apps",
+				SIG:      "sig-apps",
+				Priority: 1,
 			},
 		},
 	},

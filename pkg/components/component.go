@@ -119,8 +119,8 @@ func getHighestPriority(ownerships []*v1.TestOwnership) (*v1.TestOwnership, erro
 	var highest *v1.TestOwnership
 	for _, ownership := range ownerships {
 		if highest != nil && ownership.Priority == highest.Priority {
-			return nil, fmt.Errorf("test %q is claimed by %s, %s - unable to resolve conflict "+
-				"-- please use priority field", highest.Name, highest.Component, ownership.Component)
+			return nil, fmt.Errorf("suite=%q test=%q is claimed by %s, %s - unable to resolve conflict "+
+				"-- please use priority field", highest.Suite, highest.Name, highest.Component, ownership.Component)
 		}
 
 		if highest == nil || ownership.Priority > highest.Priority {

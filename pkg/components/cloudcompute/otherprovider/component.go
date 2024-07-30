@@ -42,6 +42,8 @@ var OtherProviderComponent = Component{
 				SIG:        "sig-network-edge",
 				IncludeAll: []string{"Application behind service load balancer"},
 			},
+			{Suite: "Alerting for machine-api"},
+			{Suite: "Machine-api components upgrade tests"},
 		},
 	},
 }

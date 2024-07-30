@@ -21,6 +21,12 @@ var BuildComponent = Component{
 			{
 				SIG: "sig-devex",
 			},
+			{Suite: "BuildAPI"},
+			{Suite: "build related"},
+			{Suite: "template related scenarios:"},
+			{Suite: "Testing the isolation during build scenarios"},
+			{Suite: "buildlogic.feature"},
+			{Suite: "admin build related features"},
 		},
 	},
 }

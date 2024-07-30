@@ -22,6 +22,10 @@ var ManagementConsoleComponent = Component{
 			{
 				IncludeAll: []string{"bz-Management Console"},
 			},
+			{
+				IncludeAll: []string{"UserInterface"},
+				Priority:   -1,
+			},
 		},
 		TestRenames: map[string]string{
 			"[Management Console][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-console":             "[bz-Management Console][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-console",

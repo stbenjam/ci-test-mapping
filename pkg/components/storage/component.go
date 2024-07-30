@@ -3,9 +3,10 @@ package storage
 import (
 	"regexp"
 
+	log "github.com/sirupsen/logrus"
+
 	v1 "github.com/openshift-eng/ci-test-mapping/pkg/api/types/v1"
 	"github.com/openshift-eng/ci-test-mapping/pkg/config"
-	log "github.com/sirupsen/logrus"
 )
 
 // A regular expression + its replacement string to apply to test names
@@ -45,6 +46,30 @@ var StorageComponent = Component{
 					"[k8s.io] GKE node pools [Feature:GKENodePool] should create a cluster with multiple node pools [Feature:GKENodePool] [sig-arch] [Suite:openshift/conformance/parallel] [Suite:k8s]",
 				},
 			},
+			{Suite: "All in one volume"},
+			{Suite: "Azure disk and Azure file specific scenarios"},
+			{Suite: "CSI Resizing related feature"},
+			{Suite: "CSI snapshot operator related scenarios"},
+			{Suite: "CSI testing related feature"},
+			{Suite: "STORAGE"},
+			{Suite: "Storage upgrade tests"},
+			{Suite: "cluster storage operator related scenarios"},
+			{Suite: "storage security check"},
+			{Suite: `"storage (storageclass, pv, pvc) related"`},
+			{Suite: "storage security check"},
+			{Suite: "storageClass related feature"},
+			{Suite: "NFS Persistent Volume"},
+			{Suite: "Persistent Volume reclaim policy tests"},
+			{Suite: "ResourceQuata for storage"},
+			{Suite: "PVC resizing Test"},
+			{Suite: "storage (storageclass, pv, pvc) related"},
+			{Suite: "Scenarios specific for block volume support"},
+			{Suite: "CSI snapshot webhook related scenarios"},
+			{Suite: "testing for parameter fsType"},
+			{Suite: "Persistent Volume Claim binding policies"},
+			{Suite: "Storage of Hostpath plugin testing"},
+			{Suite: "Testing for pv and pvc pre-bind feature"},
+			{Suite: "Target pvc to a specific pv"},
 		},
 		TestRenames: map[string]string{
 			"[Storage][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-cluster-csi-drivers":         "[bz-Storage][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-cluster-csi-drivers",
