@@ -18,6 +18,9 @@ var CertManagerComponent = Component{
 			{
 				IncludeAll: []string{"bz-cert-manager"},
 			},
+			{
+				IncludeAll: []string{"CFE cert-manager"}, // cert-manager QE cases all have "CFE cert-manager" in junit xml
+			},
 		},
 	},
 }
