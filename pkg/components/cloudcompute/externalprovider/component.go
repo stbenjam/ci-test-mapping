@@ -14,9 +14,7 @@ var ExternalProviderComponent = Component{
 		Name:                 "Cloud Compute / External Provider",
 		Operators:            []string{},
 		DefaultJiraComponent: "Cloud Compute / External Provider",
-		Matchers: []config.ComponentMatcher{
-			{Suite: "AWS machine specific features testing"},
-		},
+		Matchers:             []config.ComponentMatcher{},
 	},
 }
 
