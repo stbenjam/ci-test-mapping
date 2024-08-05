@@ -22,19 +22,10 @@ var ApiserverAuthComponent = Component{
 			{
 				IncludeAll: []string{"bz-apiserver-auth"},
 			},
-			{Suite: "Authentication"},
-			{Suite: "Group sync related scenarios"},
-			{Suite: "SCC policy related scenarios"},
-			{Suite: "Seccomp part of SCC policy should be kept and working after upgrade"},
-			{Suite: "User management related"},
-			{Suite: "apiserver and auth related upgrade check"},
-			{Suite: "auth prometheus metrics feature"},
-			{Suite: "change the policy of user/service account"},
-			{Suite: "groups and users related features"},
-			{Suite: "idp feature"},
-			{Suite: "permission related test"},
-			{Suite: "token feature"},
-			{Suite: "certificates related scenarios"},
+			{
+				IncludeAny: []string{":Authentication ", ":Authentication:"}, // Auth QE cases all include either ":Authentication " (for cucushift cases) or ":Authentication:" (for go-lang cases) in junit xml
+				Priority:   20,
+			},
 		},
 		TestRenames: map[string]string{
 			"[apiserver-auth][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-authentication":             "[bz-apiserver-auth][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-authentication",
