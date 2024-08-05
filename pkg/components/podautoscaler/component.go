@@ -18,7 +18,6 @@ var PodAutoscalerComponent = Component{
 			{
 				SIG: "sig-autoscaling",
 			},
-			{Suite: "Cluster Autoscaler Tests"},
 			{Suite: "HPA related"},
 			{Suite: "hpa scale"},
 			{Suite: "HPA relate features"},

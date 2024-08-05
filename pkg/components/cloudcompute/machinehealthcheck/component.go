@@ -16,6 +16,7 @@ var MachineHealthCheckComponent = Component{
 		DefaultJiraComponent: "Cloud Compute / MachineHealthCheck",
 		Matchers: []config.ComponentMatcher{
 			{Suite: "MachineHealthCheck Test Scenarios"},
+			{Suite: "Cluster_Infrastructure MHC MAPI"},
 		},
 	},
 }
