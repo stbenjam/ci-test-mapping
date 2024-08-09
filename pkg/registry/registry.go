@@ -10,14 +10,17 @@ import (
 	baremetalhardwareprovisioningclusterbaremetaloperator "github.com/openshift-eng/ci-test-mapping/pkg/components/baremetalhardwareprovisioning/clusterbaremetaloperator"
 	baremetalhardwareprovisioningironic "github.com/openshift-eng/ci-test-mapping/pkg/components/baremetalhardwareprovisioning/ironic"
 	baremetalhardwareprovisioningosimageprovider "github.com/openshift-eng/ci-test-mapping/pkg/components/baremetalhardwareprovisioning/osimageprovider"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/bmerevents"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/build"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/certmanager"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/climanager"
 	cloudcomputebaremetalprovider "github.com/openshift-eng/ci-test-mapping/pkg/components/cloudcompute/baremetalprovider"
 	cloudcomputecloudcontrollermanager "github.com/openshift-eng/ci-test-mapping/pkg/components/cloudcompute/cloudcontrollermanager"
 	cloudcomputeclusterautoscaler "github.com/openshift-eng/ci-test-mapping/pkg/components/cloudcompute/clusterautoscaler"
 	cloudcomputeexternalprovider "github.com/openshift-eng/ci-test-mapping/pkg/components/cloudcompute/externalprovider"
 	cloudcomputeibmprovider "github.com/openshift-eng/ci-test-mapping/pkg/components/cloudcompute/ibmprovider"
 	cloudcomputekubevirtprovider "github.com/openshift-eng/ci-test-mapping/pkg/components/cloudcompute/kubevirtprovider"
+	cloudcomputelibvirtprovider "github.com/openshift-eng/ci-test-mapping/pkg/components/cloudcompute/libvirtprovider"
 	cloudcomputemachinehealthcheck "github.com/openshift-eng/ci-test-mapping/pkg/components/cloudcompute/machinehealthcheck"
 	cloudcomputenutanixprovider "github.com/openshift-eng/ci-test-mapping/pkg/components/cloudcompute/nutanixprovider"
 	cloudcomputeopenstackprovider "github.com/openshift-eng/ci-test-mapping/pkg/components/cloudcompute/openstackprovider"
@@ -31,7 +34,6 @@ import (
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/clusterresourceoverrideadmissionoperator"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/clusterversionoperator"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/cnfcerttnf"
-	"github.com/openshift-eng/ci-test-mapping/pkg/components/cnfplatformvalidation"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/complianceoperator"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/configoperator"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/consolemetal3plugin"
@@ -44,10 +46,13 @@ import (
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/etcd"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/externaldnsoperator"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/fileintegrityoperator"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/gitopsztp"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/hawkular"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/helm"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/hive"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/hypershift"
+	hypershiftagent "github.com/openshift-eng/ci-test-mapping/pkg/components/hypershift/agent"
+	hypershiftocpvirtualization "github.com/openshift-eng/ci-test-mapping/pkg/components/hypershift/ocpvirtualization"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/ibmrokstoolkit"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/imageregistry"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/imagestreams"
@@ -71,8 +76,10 @@ import (
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/kubecontrollermanager"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/kubescheduler"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/kubestorageversionmigrator"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/lcaoperator"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/logging"
-	"github.com/openshift-eng/ci-test-mapping/pkg/components/lvms"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/logicalvolumemanagerstorage"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/lowlatencyvalidationtooling"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/machineconfigoperator"
 	machineconfigoperatorplatformbaremetal "github.com/openshift-eng/ci-test-mapping/pkg/components/machineconfigoperator/platformbaremetal"
 	machineconfigoperatorplatformnone "github.com/openshift-eng/ci-test-mapping/pkg/components/machineconfigoperator/platformnone"
@@ -89,9 +96,11 @@ import (
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/multiarch"
 	multiarcharm "github.com/openshift-eng/ci-test-mapping/pkg/components/multiarch/arm"
 	multiarchibmpandz "github.com/openshift-eng/ci-test-mapping/pkg/components/multiarch/ibmpandz"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/multiarchtuningoperator"
 	networkingcloudnetworkconfigcontroller "github.com/openshift-eng/ci-test-mapping/pkg/components/networking/cloudnetworkconfigcontroller"
 	networkingclusternetworkoperator "github.com/openshift-eng/ci-test-mapping/pkg/components/networking/clusternetworkoperator"
 	networkingdns "github.com/openshift-eng/ci-test-mapping/pkg/components/networking/dns"
+	networkingdpu "github.com/openshift-eng/ci-test-mapping/pkg/components/networking/dpu"
 	networkingingressnodefirewall "github.com/openshift-eng/ci-test-mapping/pkg/components/networking/ingressnodefirewall"
 	networkingkubernetesnmstate "github.com/openshift-eng/ci-test-mapping/pkg/components/networking/kubernetesnmstate"
 	networkingkubernetesnmstateoperator "github.com/openshift-eng/ci-test-mapping/pkg/components/networking/kubernetesnmstateoperator"
@@ -99,6 +108,7 @@ import (
 	networkingmetallb "github.com/openshift-eng/ci-test-mapping/pkg/components/networking/metallb"
 	networkingmultus "github.com/openshift-eng/ci-test-mapping/pkg/components/networking/multus"
 	networkingnetobs "github.com/openshift-eng/ci-test-mapping/pkg/components/networking/netobs"
+	networkingnetworkingconsoleplugin "github.com/openshift-eng/ci-test-mapping/pkg/components/networking/networkingconsoleplugin"
 	networkingnetworktools "github.com/openshift-eng/ci-test-mapping/pkg/components/networking/networktools"
 	networkingnmstateconsoleplugin "github.com/openshift-eng/ci-test-mapping/pkg/components/networking/nmstateconsoleplugin"
 	networkingonpremdns "github.com/openshift-eng/ci-test-mapping/pkg/components/networking/onpremdns"
@@ -130,10 +140,15 @@ import (
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/observabilityui"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/oc"
 	ococmirror "github.com/openshift-eng/ci-test-mapping/pkg/components/oc/ocmirror"
+	ocupdate "github.com/openshift-eng/ci-test-mapping/pkg/components/oc/update"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/occompliance"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/olm"
 	olmoperatorhub "github.com/openshift-eng/ci-test-mapping/pkg/components/olm/operatorhub"
 	olmregistry "github.com/openshift-eng/ci-test-mapping/pkg/components/olm/registry"
+	opctcli "github.com/openshift-eng/ci-test-mapping/pkg/components/opct/cli"
+	opctother "github.com/openshift-eng/ci-test-mapping/pkg/components/opct/other"
+	opctresultsgeneral "github.com/openshift-eng/ci-test-mapping/pkg/components/opct/results/general"
+	opctresultsvcsp "github.com/openshift-eng/ci-test-mapping/pkg/components/opct/results/vcsp"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/openshiftapiserver"
 	openshiftcontrollermanagerapps "github.com/openshift-eng/ci-test-mapping/pkg/components/openshiftcontrollermanager/apps"
 	openshiftcontrollermanagerbuild "github.com/openshift-eng/ci-test-mapping/pkg/components/openshiftcontrollermanager/build"
@@ -168,10 +183,8 @@ import (
 	storageoperators "github.com/openshift-eng/ci-test-mapping/pkg/components/storage/operators"
 	storageovirtcsidriver "github.com/openshift-eng/ci-test-mapping/pkg/components/storage/ovirtcsidriver"
 	storagesharedresourcecsidriver "github.com/openshift-eng/ci-test-mapping/pkg/components/storage/sharedresourcecsidriver"
-	telcoedgehweventoperator "github.com/openshift-eng/ci-test-mapping/pkg/components/telcoedge/hweventoperator"
-	telcoedgeran "github.com/openshift-eng/ci-test-mapping/pkg/components/telcoedge/ran"
-	telcoedgetalo "github.com/openshift-eng/ci-test-mapping/pkg/components/telcoedge/talo"
-	telcoedgeztp "github.com/openshift-eng/ci-test-mapping/pkg/components/telcoedge/ztp"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/talmoperator"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/telcoperformance"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/telemeter"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/templates"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/testframework"
@@ -215,7 +228,6 @@ func NewComponentRegistry() *Registry {
 	r.Register("Cloud Native Events / Hardware Event Proxy", &cloudnativeeventshardwareeventproxy.HardwareEventProxyComponent)
 	r.Register("Cluster Loader", &clusterloader.ClusterLoaderComponent)
 	r.Register("Cluster Version Operator", &clusterversionoperator.ClusterVersionOperatorComponent)
-	r.Register("CNF Platform Validation", &cnfplatformvalidation.CNFPlatformValidationComponent)
 	r.Register("CNF-Cert-TNF", &cnfcerttnf.CNFCertTNFComponent)
 	r.Register("Compliance Operator", &complianceoperator.ComplianceOperatorComponent)
 	r.Register("config-operator", &configoperator.ConfigOperatorComponent)
@@ -257,7 +269,6 @@ func NewComponentRegistry() *Registry {
 	r.Register("kube-scheduler", &kubescheduler.KubeSchedulerComponent)
 	r.Register("kube-storage-version-migrator", &kubestorageversionmigrator.KubeStorageVersionMigratorComponent)
 	r.Register("Logging", &logging.LoggingComponent)
-	r.Register("lvms", &lvms.LvmsComponent)
 	r.Register("Machine Config Operator", &machineconfigoperator.MachineConfigOperatorComponent)
 	r.Register("Machine Config Operator / platform-baremetal", &machineconfigoperatorplatformbaremetal.PlatformBaremetalComponent)
 	r.Register("Machine Config Operator / platform-none", &machineconfigoperatorplatformnone.PlatformNoneComponent)
@@ -347,10 +358,6 @@ func NewComponentRegistry() *Registry {
 	r.Register("Storage / Operators", &storageoperators.OperatorsComponent)
 	r.Register("Storage / oVirt CSI Driver", &storageovirtcsidriver.OVirtCSIDriverComponent)
 	r.Register("Storage / Shared Resource CSI Driver", &storagesharedresourcecsidriver.SharedResourceCSIDriverComponent)
-	r.Register("Telco Edge / HW Event Operator", &telcoedgehweventoperator.HWEventOperatorComponent)
-	r.Register("Telco Edge / RAN", &telcoedgeran.RANComponent)
-	r.Register("Telco Edge / TALO", &telcoedgetalo.TALOComponent)
-	r.Register("Telco Edge / ZTP", &telcoedgeztp.ZTPComponent)
 	r.Register("Telemeter", &telemeter.TelemeterComponent)
 	r.Register("Templates", &templates.TemplatesComponent)
 	r.Register("Test Framework", &testframework.TestFrameworkComponent)
@@ -367,6 +374,25 @@ func NewComponentRegistry() *Registry {
 	r.Register("Networking / On-Prem Load Balancer", &networkingonpremloadbalancer.OnPremLoadBalancerComponent)
 	r.Register("NVIDIA", &nvidia.NVIDIAComponent)
 	r.Register("Pod Autoscaler", &podautoscaler.PodAutoscalerComponent)
+	r.Register("BMER Events", &bmerevents.BMEREventsComponent)
+	r.Register("cli-manager", &climanager.CliManagerComponent)
+	r.Register("Cloud Compute / Libvirt Provider", &cloudcomputelibvirtprovider.LibvirtProviderComponent)
+	r.Register("GitOps ZTP", &gitopsztp.GitOpsZTPComponent)
+	r.Register("HyperShift / Agent", &hypershiftagent.AgentComponent)
+	r.Register("HyperShift / OCP Virtualization", &hypershiftocpvirtualization.OCPVirtualizationComponent)
+	r.Register("LCA operator", &lcaoperator.LCAOperatorComponent)
+	r.Register("Logical Volume Manager Storage", &logicalvolumemanagerstorage.LogicalVolumeManagerStorageComponent)
+	r.Register("Low latency validation tooling", &lowlatencyvalidationtooling.LowLatencyValidationToolingComponent)
+	r.Register("Multiarch Tuning Operator", &multiarchtuningoperator.MultiarchTuningOperatorComponent)
+	r.Register("Networking / DPU", &networkingdpu.DPUComponent)
+	r.Register("Networking / networking-console-plugin", &networkingnetworkingconsoleplugin.NetworkingConsolePluginComponent)
+	r.Register("oc / update", &ocupdate.UpdateComponent)
+	r.Register("OPCT / CLI", &opctcli.CLIComponent)
+	r.Register("OPCT / Other", &opctother.OtherComponent)
+	r.Register("OPCT / Results / General", &opctresultsgeneral.GeneralComponent)
+	r.Register("OPCT / Results / VCSP", &opctresultsvcsp.VCSPComponent)
+	r.Register("TALM Operator", &talmoperator.TALMOperatorComponent)
+	r.Register("Telco Performance", &telcoperformance.TelcoPerformanceComponent)
 	// New components go here
 
 	return &r

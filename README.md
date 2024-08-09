@@ -152,8 +152,16 @@ The BigQuery mapping table may have older entries trimmed, but it should
 be assumed to be used in append only mode, so mappings should limit
 their results to the most recent entry.
 
-## Syncing with Jira
+## Updating Jira Components
+
+The command `./ci-test-mapping jira-verify` will inform you of any Jira
+components that have been removed, and report on any new Jira components
+that are available.
 
 To create any missing components, run `./ci-test-mapping jira-create`.
 You'll need to set the env var `JIRA_TOKEN` to your personal API token
-that you can create from your Jira profile page.
+that you can create from your Jira profile page. Then:
+
+1. Move any configuration for renamed components
+2. Delete the obsolete `pkg/components/<component>` directory
+3. Remove references to removed components from `pkg/registry`.
