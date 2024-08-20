@@ -69,6 +69,11 @@ var OcComponent = Component{
 			{Suite: "oc plugin related tests"},
 			{Suite: "oc/kubernetes version related features"},
 		},
+		TestRenames: map[string]string{
+			"[sig-cli] oc adm build-chain [apigroup:build.openshift.io][apigroup:image.openshift.io][apigroup:project.openshift.io][apigroup:apps.openshift.io] [Suite:openshift/conformance/parallel]": "[sig-cli] oc adm build-chain [apigroup:build.openshift.io][apigroup:image.openshift.io][apigroup:project.openshift.io] [Suite:openshift/conformance/parallel]",
+			"[sig-cli] oc builds complex build start-build [apigroup:build.openshift.io][apigroup:apps.openshift.io] [Skipped:Disconnected] [Suite:openshift/conformance/parallel]":                     "[sig-cli] oc builds complex build start-build [apigroup:build.openshift.io] [Skipped:Disconnected] [Suite:openshift/conformance/parallel]",
+			"[sig-cli] oc builds complex build webhooks CRUD [apigroup:build.openshift.io][apigroup:apps.openshift.io] [Skipped:Disconnected] [Suite:openshift/conformance/parallel]":                   "[sig-cli] oc builds complex build webhooks CRUD [apigroup:build.openshift.io] [Skipped:Disconnected] [Suite:openshift/conformance/parallel]",
+		},
 	},
 }
 
