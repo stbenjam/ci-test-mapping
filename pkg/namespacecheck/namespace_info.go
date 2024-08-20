@@ -86,7 +86,7 @@ var (
 		"openshift-cloud-credential-operator":              "Cloud Credential Operator",
 		"openshift-cloud-network-config-controller":        "Networking / cloud-network-config-controller",
 		"openshift-cluster-csi-drivers":                    "Storage",
-		"openshift-cluster-machine-approver":               "Cloud Compute / Other Provider",
+		"openshift-cluster-machine-approver":               "Cloud Compute / Unknown",
 		"openshift-cluster-node-tuning-operator":           "Node Tuning Operator",
 		"openshift-cluster-samples-operator":               "Samples Operator",
 		"openshift-cluster-storage-operator":               "Storage",
@@ -117,7 +117,7 @@ var (
 		"openshift-kube-scheduler-operator":                "kube-scheduler",
 		"openshift-kube-storage-version-migrator":          "kube-storage-version-migrator",
 		"openshift-kube-storage-version-migrator-operator": "kube-storage-version-migrator",
-		"openshift-machine-api":                            "Cloud Compute / Other Provider",
+		"openshift-machine-api":                            "Cloud Compute / Unknown",
 		"openshift-machine-config-operator":                "Machine Config Operator",
 		"openshift-marketplace":                            "OLM",
 		"openshift-monitoring":                             "Monitoring",
@@ -145,7 +145,7 @@ var (
 			"openshift-cloud-controller-manager",
 			"openshift-cloud-controller-manager-operator",
 		},
-		"Cloud Compute / Other Provider": {
+		"Cloud Compute / Unknown": {
 			"openshift-cluster-machine-approver",
 			"openshift-machine-api",
 		},
