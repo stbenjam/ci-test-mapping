@@ -169876,6 +169876,10 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "[sig-api-machinery] kube-apiserver operator TestKMSEncryptionInPlaceUpdate [OCPFeatureGate:KMSEncryption][Serial][Timeout:120m][Suite:encryption-kms-2]",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "[sig-api-machinery] kube-apiserver operator TestKMSEncryptionKMSToKMSMigration [OCPFeatureGate:KMSEncryption][Serial][Timeout:120m][Suite:encryption-kms-2]",
     "Suite": "openshift-tests"
   },
@@ -184344,7 +184348,15 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "[sig-cluster-lifecycle][OCPFeatureGate:VSphereHostVMGroupZonal][platform:vsphere] A Machine in a managed cluster associated with a vm-host group should have the correct topology labels [apigroup:machine.openshift.io][Suite:openshift/conformance/parallel] [Conformance]",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "[sig-cluster-lifecycle][OCPFeatureGate:VSphereHostVMGroupZonal][platform:vsphere] A Machine in a managed cluster should be placed in the correct vm-host group [apigroup:machine.openshift.io][Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-cluster-lifecycle][OCPFeatureGate:VSphereHostVMGroupZonal][platform:vsphere] A Machine in a managed cluster should be placed in the correct vm-host group [apigroup:machine.openshift.io][Suite:openshift/conformance/parallel] [Conformance]",
     "Suite": "openshift-tests"
   },
   {
@@ -184420,7 +184432,15 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "[sig-cluster-lifecycle][platform:vsphere] Managed cluster should machine network should be correlated with node networking [apigroup:machine.openshift.io][Suite:openshift/conformance/parallel] [Conformance]",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "[sig-cluster-lifecycle][platform:vsphere] Managed cluster should machines should have all specified portgroup associated with their failure domain [apigroup:machine.openshift.io][Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-cluster-lifecycle][platform:vsphere] Managed cluster should machines should have all specified portgroup associated with their failure domain [apigroup:machine.openshift.io][Suite:openshift/conformance/parallel] [Conformance]",
     "Suite": "openshift-tests"
   },
   {
@@ -184432,7 +184452,15 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "[sig-cluster-lifecycle][platform:vsphere] Managed cluster should node VMs should have all specified portgroups attached which are associated with their failure domain [apigroup:machine.openshift.io][Suite:openshift/conformance/parallel] [Conformance]",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "[sig-cluster-lifecycle][platform:vsphere] Managed cluster should node addresses should be correlated with the machine network [apigroup:machine.openshift.io][Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-cluster-lifecycle][platform:vsphere] Managed cluster should node addresses should be correlated with the machine network [apigroup:machine.openshift.io][Suite:openshift/conformance/parallel] [Conformance]",
     "Suite": "openshift-tests"
   },
   {

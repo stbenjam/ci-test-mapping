@@ -683436,6 +683436,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "openshift-tests:519aa34b05996c0f4abbd995e5be5b96",
+    "Name": "[sig-api-machinery] kube-apiserver operator TestKMSEncryptionInPlaceUpdate [OCPFeatureGate:KMSEncryption][Serial][Timeout:120m][Suite:encryption-kms-2]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": -1,
+    "StaffApprovedObsolete": false,
+    "Component": "kube-apiserver",
+    "Capabilities": [
+      "OCPFeatureGate:KMSEncryption"
+    ],
+    "JIRAComponent": "kube-apiserver",
+    "JIRAComponentID": "14814"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "openshift-tests:39d03da1860ac6164b7f6ac17942c438",
     "Name": "[sig-api-machinery] kube-apiserver operator TestKMSEncryptionKMSToKMSMigration [OCPFeatureGate:KMSEncryption][Serial][Timeout:120m][Suite:encryption-kms-2]",
     "Suite": "openshift-tests",
@@ -741410,8 +741426,40 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "openshift-tests:0c5129ee44c2609b529a4f7bd1891d0c",
+    "Name": "[sig-cluster-lifecycle][OCPFeatureGate:VSphereHostVMGroupZonal][platform:vsphere] A Machine in a managed cluster associated with a vm-host group should have the correct topology labels [apigroup:machine.openshift.io][Suite:openshift/conformance/parallel] [Conformance]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "OCPFeatureGate:VSphereHostVMGroupZonal"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "openshift-tests:4e39fafc1561e1a0fcbab571ddee757d",
     "Name": "[sig-cluster-lifecycle][OCPFeatureGate:VSphereHostVMGroupZonal][platform:vsphere] A Machine in a managed cluster should be placed in the correct vm-host group [apigroup:machine.openshift.io][Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "OCPFeatureGate:VSphereHostVMGroupZonal"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:685ddebf95f215fee6e1bfb863087c38",
+    "Name": "[sig-cluster-lifecycle][OCPFeatureGate:VSphereHostVMGroupZonal][platform:vsphere] A Machine in a managed cluster should be placed in the correct vm-host group [apigroup:machine.openshift.io][Suite:openshift/conformance/parallel] [Conformance]",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -741714,8 +741762,40 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "openshift-tests:142a78fab4985797b143a063d14e192d",
+    "Name": "[sig-cluster-lifecycle][platform:vsphere] Managed cluster should machine network should be correlated with node networking [apigroup:machine.openshift.io][Suite:openshift/conformance/parallel] [Conformance]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "openshift-tests:90da9ca4d0bb077ab48fd0ae73de7ba2",
     "Name": "[sig-cluster-lifecycle][platform:vsphere] Managed cluster should machines should have all specified portgroup associated with their failure domain [apigroup:machine.openshift.io][Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:88b182240415f8e4daaf3a25a9980188",
+    "Name": "[sig-cluster-lifecycle][platform:vsphere] Managed cluster should machines should have all specified portgroup associated with their failure domain [apigroup:machine.openshift.io][Suite:openshift/conformance/parallel] [Conformance]",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -741762,8 +741842,40 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "openshift-tests:0623898fb0553eb739a94c4aedb6a40b",
+    "Name": "[sig-cluster-lifecycle][platform:vsphere] Managed cluster should node VMs should have all specified portgroups attached which are associated with their failure domain [apigroup:machine.openshift.io][Suite:openshift/conformance/parallel] [Conformance]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "openshift-tests:272e8c7ea14b10b2e50012cd58922517",
     "Name": "[sig-cluster-lifecycle][platform:vsphere] Managed cluster should node addresses should be correlated with the machine network [apigroup:machine.openshift.io][Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:022c97b6ad6bf771ac295764b0991a11",
+    "Name": "[sig-cluster-lifecycle][platform:vsphere] Managed cluster should node addresses should be correlated with the machine network [apigroup:machine.openshift.io][Suite:openshift/conformance/parallel] [Conformance]",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
