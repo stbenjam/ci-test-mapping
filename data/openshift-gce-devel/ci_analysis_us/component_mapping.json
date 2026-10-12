@@ -696208,22 +696208,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:5efe2be428e38699d22e60b9d8b6e817",
-    "Name": "[sig-arch] all containers in ns/openshift-metallb-system must have terminationMessagePolicy=FallbackToLogsOnError",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests-upgrade:06588de36f7df6eacfdd1fabd45ec0ac",
     "Name": "[sig-arch] all containers in ns/openshift-monitoring must have terminationMessagePolicy=FallbackToLogsOnError",
     "Suite": "openshift-tests-upgrade",
@@ -697026,22 +697010,6 @@
     "Kind": "TestOwnership",
     "ID": "openshift-tests:7b06291e9ffb6b8dcc51420f9086379b",
     "Name": "[sig-arch] all containers in ns/openshift-sre-pruning must have terminationMessagePolicy=FallbackToLogsOnError",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:a2cb32696c3371b14c0ca66849c966b8",
-    "Name": "[sig-arch] all containers in ns/openshift-sriov-network-operator must have terminationMessagePolicy=FallbackToLogsOnError",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -697932,22 +697900,6 @@
     ],
     "JIRAComponent": "OLM",
     "JIRAComponentID": "14927"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:2a5693c65182efbaf4cb5c18270fb941",
-    "Name": "[sig-arch] all leases in ns/openshift-metallb-system must gracefully release",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
   },
   {
     "APIVersion": "v1",
@@ -713778,54 +713730,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:fe36aa6e3b87b0ac4e4a43a055d88fad",
-    "Name": "[sig-architecture] platform pods in ns/openshift-metallb-system should not exit a moderate amount of times",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:cf638546c5c76b439f0d17b2a55ee773",
-    "Name": "[sig-architecture] platform pods in ns/openshift-metallb-system should not exit an excessive amount of times",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:8c487ea3f927f5cbcc26aee718acd158",
-    "Name": "[sig-architecture] platform pods in ns/openshift-metallb-system should not fail to start",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests-upgrade:9de650c7159306f1257c2e3c5f48b227",
     "Name": "[sig-architecture] platform pods in ns/openshift-monitoring should not exit a moderate amount of times",
     "Suite": "openshift-tests-upgrade",
@@ -716964,54 +716868,6 @@
     "Kind": "TestOwnership",
     "ID": "openshift-tests:a01c99e476e5cf77f691fc52c29022c2",
     "Name": "[sig-architecture] platform pods in ns/openshift-sre-pruning should not fail to start",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:d81d04ec314f29c41f264bd0c163db58",
-    "Name": "[sig-architecture] platform pods in ns/openshift-sriov-network-operator should not exit a moderate amount of times",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:01c34bad05a2b027f654f4604e7911ec",
-    "Name": "[sig-architecture] platform pods in ns/openshift-sriov-network-operator should not exit an excessive amount of times",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:9c9796406cea17a65bec05fdba9543bf",
-    "Name": "[sig-architecture] platform pods in ns/openshift-sriov-network-operator should not fail to start",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -721484,22 +721340,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:ebb9c66193f2a2ec1249566255edd1b7",
-    "Name": "[sig-auth] all workloads in ns/openshift-metallb-system must set the 'openshift.io/required-scc' annotation",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": -1,
-    "StaffApprovedObsolete": false,
-    "Component": "oauth-apiserver",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "oauth-apiserver",
-    "JIRAComponentID": "14859"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests-upgrade:73c1712edf73dd03787f3be3aac79092",
     "Name": "[sig-auth] all workloads in ns/openshift-monitoring must set the 'openshift.io/required-scc' annotation",
     "Suite": "openshift-tests-upgrade",
@@ -722216,22 +722056,6 @@
     ],
     "JIRAComponent": "service-ca",
     "JIRAComponentID": "14966"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:8973fa995a377a7207793cd4a14e1e71",
-    "Name": "[sig-auth] all workloads in ns/openshift-sriov-network-operator must set the 'openshift.io/required-scc' annotation",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": -1,
-    "StaffApprovedObsolete": false,
-    "Component": "oauth-apiserver",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "oauth-apiserver",
-    "JIRAComponentID": "14859"
   },
   {
     "APIVersion": "v1",
@@ -1114660,38 +1114484,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:5963ef2f1fe2d1f7d45ce83c1f5d3aa7",
-    "Name": "objects in ns/openshift-metallb-system should have generation increasing monotonically",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:586c5fd28f8896ae1e337d03f54764eb",
-    "Name": "objects in ns/openshift-metallb-system should not have too many generations",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests-upgrade:9c5e33ed2409bd2576a13b15bf50044c",
     "Name": "objects in ns/openshift-monitoring should have generation increasing monotonically",
     "Suite": "openshift-tests-upgrade",
@@ -1116278,38 +1116070,6 @@
     "Kind": "TestOwnership",
     "ID": "openshift-tests:c0a730c8225d3289e67e9a2415f20458",
     "Name": "objects in ns/openshift-sre-pruning should not have too many generations",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:4dbe568806d207612a44b6fea6034f27",
-    "Name": "objects in ns/openshift-sriov-network-operator should have generation increasing monotonically",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:80b40bf159befec241dd706419816fbf",
-    "Name": "objects in ns/openshift-sriov-network-operator should not have too many generations",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -1119636,22 +1119396,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:9326a2024443d2fe24f479d31925495a",
-    "Name": "operators in in ns/openshift-metallb-system should not submit invalid apply statements",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests-upgrade:d4a1a616c4e2115d4d40a4407bd84d05",
     "Name": "operators in in ns/openshift-monitoring should not submit invalid apply statements",
     "Suite": "openshift-tests-upgrade",
@@ -1120438,22 +1120182,6 @@
     "Kind": "TestOwnership",
     "ID": "openshift-tests:b009913ed95ca396482814eb768afda0",
     "Name": "operators in in ns/openshift-sre-pruning should not submit invalid apply statements",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:19f93bddff72a3c5684071ced4eeac07",
-    "Name": "operators in in ns/openshift-sriov-network-operator should not submit invalid apply statements",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -1136884,86 +1136612,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:2a659d649873cac237ff9ad120c989e7",
-    "Name": "users in ns/openshift-metallb-system must not produce too many applies",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:6ff4c711582076c751b8583c75914b43",
-    "Name": "users in ns/openshift-metallb-system must not produce too many invalid \"apply\" requests",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:0fcfc45a8fec13c1de8fd5cccfaec1da",
-    "Name": "users in ns/openshift-metallb-system must not produce too many invalid \"create\" requests",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:18444cf8e06fa5f18c7798830f776127",
-    "Name": "users in ns/openshift-metallb-system must not produce too many invalid \"patch\" requests",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:8fa8bc2c88ba2df58d139f3ce57d17ad",
-    "Name": "users in ns/openshift-metallb-system must not produce too many invalid \"update\" requests",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests-upgrade:42b90f762988eec64853281f771f009c",
     "Name": "users in ns/openshift-monitoring must not produce too many applies",
     "Suite": "openshift-tests-upgrade",
@@ -1140950,86 +1140598,6 @@
     "Kind": "TestOwnership",
     "ID": "openshift-tests:7231aa1a205ace66a9227572b14db453",
     "Name": "users in ns/openshift-sre-pruning must not produce too many invalid \"update\" requests",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:f28cbc87402c19b87b85b0d43fa451b4",
-    "Name": "users in ns/openshift-sriov-network-operator must not produce too many applies",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:3cf70be4b17d6cc99e9c4366adbd81af",
-    "Name": "users in ns/openshift-sriov-network-operator must not produce too many invalid \"apply\" requests",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:ae94ddf3f4fe47cd38b20a61f3bb0e9f",
-    "Name": "users in ns/openshift-sriov-network-operator must not produce too many invalid \"create\" requests",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:e2e1b7b2e7452fe9d385c5f0dab4edb6",
-    "Name": "users in ns/openshift-sriov-network-operator must not produce too many invalid \"patch\" requests",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:592587ab7bba6e5f165757ecd9f78f7c",
-    "Name": "users in ns/openshift-sriov-network-operator must not produce too many invalid \"update\" requests",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
