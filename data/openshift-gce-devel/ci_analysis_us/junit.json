@@ -173064,10 +173064,6 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[sig-arch] all containers in ns/openshift-metallb-system must have terminationMessagePolicy=FallbackToLogsOnError",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[sig-arch] all containers in ns/openshift-monitoring must have terminationMessagePolicy=FallbackToLogsOnError",
     "Suite": "openshift-tests-upgrade"
   },
@@ -173269,10 +173265,6 @@
   },
   {
     "Name": "[sig-arch] all containers in ns/openshift-sre-pruning must have terminationMessagePolicy=FallbackToLogsOnError",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[sig-arch] all containers in ns/openshift-sriov-network-operator must have terminationMessagePolicy=FallbackToLogsOnError",
     "Suite": "openshift-tests"
   },
   {
@@ -173493,10 +173485,6 @@
   },
   {
     "Name": "[sig-arch] all leases in ns/openshift-marketplace must gracefully release",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[sig-arch] all leases in ns/openshift-metallb-system must gracefully release",
     "Suite": "openshift-tests"
   },
   {
@@ -177456,18 +177444,6 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[sig-architecture] platform pods in ns/openshift-metallb-system should not exit a moderate amount of times",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[sig-architecture] platform pods in ns/openshift-metallb-system should not exit an excessive amount of times",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[sig-architecture] platform pods in ns/openshift-metallb-system should not fail to start",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[sig-architecture] platform pods in ns/openshift-monitoring should not exit a moderate amount of times",
     "Suite": "openshift-tests-upgrade"
   },
@@ -178253,18 +178229,6 @@
   },
   {
     "Name": "[sig-architecture] platform pods in ns/openshift-sre-pruning should not fail to start",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[sig-architecture] platform pods in ns/openshift-sriov-network-operator should not exit a moderate amount of times",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[sig-architecture] platform pods in ns/openshift-sriov-network-operator should not exit an excessive amount of times",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[sig-architecture] platform pods in ns/openshift-sriov-network-operator should not fail to start",
     "Suite": "openshift-tests"
   },
   {
@@ -179368,10 +179332,6 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[sig-auth] all workloads in ns/openshift-metallb-system must set the 'openshift.io/required-scc' annotation",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[sig-auth] all workloads in ns/openshift-monitoring must set the 'openshift.io/required-scc' annotation",
     "Suite": "openshift-tests-upgrade"
   },
@@ -179549,10 +179509,6 @@
   },
   {
     "Name": "[sig-auth] all workloads in ns/openshift-service-ca-operator must set the 'openshift.io/required-scc' annotation",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[sig-auth] all workloads in ns/openshift-sriov-network-operator must set the 'openshift.io/required-scc' annotation",
     "Suite": "openshift-tests"
   },
   {
@@ -276196,14 +276152,6 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "objects in ns/openshift-metallb-system should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "objects in ns/openshift-metallb-system should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "objects in ns/openshift-monitoring should have generation increasing monotonically",
     "Suite": "openshift-tests-upgrade"
   },
@@ -276601,14 +276549,6 @@
   },
   {
     "Name": "objects in ns/openshift-sre-pruning should not have too many generations",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "objects in ns/openshift-sriov-network-operator should have generation increasing monotonically",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "objects in ns/openshift-sriov-network-operator should not have too many generations",
     "Suite": "openshift-tests"
   },
   {
@@ -277440,10 +277380,6 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "operators in in ns/openshift-metallb-system should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "operators in in ns/openshift-monitoring should not submit invalid apply statements",
     "Suite": "openshift-tests-upgrade"
   },
@@ -277641,10 +277577,6 @@
   },
   {
     "Name": "operators in in ns/openshift-sre-pruning should not submit invalid apply statements",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "operators in in ns/openshift-sriov-network-operator should not submit invalid apply statements",
     "Suite": "openshift-tests"
   },
   {
@@ -281752,26 +281684,6 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "users in ns/openshift-metallb-system must not produce too many applies",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "users in ns/openshift-metallb-system must not produce too many invalid \"apply\" requests",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "users in ns/openshift-metallb-system must not produce too many invalid \"create\" requests",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "users in ns/openshift-metallb-system must not produce too many invalid \"patch\" requests",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "users in ns/openshift-metallb-system must not produce too many invalid \"update\" requests",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "users in ns/openshift-monitoring must not produce too many applies",
     "Suite": "openshift-tests-upgrade"
   },
@@ -282769,26 +282681,6 @@
   },
   {
     "Name": "users in ns/openshift-sre-pruning must not produce too many invalid \"update\" requests",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "users in ns/openshift-sriov-network-operator must not produce too many applies",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "users in ns/openshift-sriov-network-operator must not produce too many invalid \"apply\" requests",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "users in ns/openshift-sriov-network-operator must not produce too many invalid \"create\" requests",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "users in ns/openshift-sriov-network-operator must not produce too many invalid \"patch\" requests",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "users in ns/openshift-sriov-network-operator must not produce too many invalid \"update\" requests",
     "Suite": "openshift-tests"
   },
   {
