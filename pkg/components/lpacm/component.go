@@ -18,10 +18,16 @@ var LPacmComponent = Component{
 		DefaultJiraComponent: "LP--ACM",
 		Matchers: []config.ComponentMatcher{
 			{Suite: "ACM-lp-interop"},
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ACM-Virt--`)},
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ACM--`)},
-			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--ACM--`)},
-			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--ACM--`)},
+			// ACM+Virt test patterns with acm-virt capability
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ACM-Virt--`), Capabilities: []string{"acm-virt"}},
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ACM--`), Capabilities: []string{"acm-virt"}},
+			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--ACM--`), Capabilities: []string{"acm-virt"}},
+			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--ACM--`), Capabilities: []string{"acm-virt"}},
+			// OPP test patterns with opp capability
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--Observability`), Capabilities: []string{"opp"}},
+			{SuiteRegEx: regexp.MustCompile(`^acm-opp-app$`), Capabilities: []string{"opp"}},
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--OPP--acm`), Capabilities: []string{"opp"}},
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ACM-OBS-ODF`), Capabilities: []string{"opp"}},
 		},
 	},
 }
