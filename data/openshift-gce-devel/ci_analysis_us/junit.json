@@ -156784,6 +156784,10 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "[Monitor:rbac-cluster-admin-escalation-checker][sig-auth] clusterrolebinding \"object-controller-cluster-admin-rolebinding\" must not grant permission to cluster-admin equivalent access (all verbs on all resources)",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "[Monitor:rbac-cluster-admin-escalation-checker][sig-auth] clusterrolebinding \"olm-operator-binding-openshift-operator-lifecycle-manager\" must not grant permission to create or modify admission webhook configurations",
     "Suite": "openshift-tests-upgrade"
   },
@@ -202897,6 +202901,30 @@
   },
   {
     "Name": "[sig-network][OCPFeatureGate:NetworkDiagnosticsConfig][Serial] Should set the condition to false if there are no nodes able to host the source pods [Suite:openshift/conformance/serial]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network][OCPFeatureGate:NetworkObservabilityInstall][Feature:NetObserv] Network Observability should not be auto-deployed on single node clusters [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network][OCPFeatureGate:NetworkObservabilityInstall][Feature:NetObserv] health checks Network Observability should have FlowCollector CR in Ready state [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network][OCPFeatureGate:NetworkObservabilityInstall][Feature:NetObserv] health checks Network Observability should have Prometheus scraping non-zero NetObserv metrics [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network][OCPFeatureGate:NetworkObservabilityInstall][Feature:NetObserv] health checks Network Observability should have operator pod running [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network][OCPFeatureGate:NetworkObservabilityInstall][Feature:NetObserv] health checks Network Observability should not have excessive errors in operator logs [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network][OCPFeatureGate:NetworkObservabilityInstall][Feature:NetObserv][Serial] Network Observability should clean up a timed out OLM installation [Timeout:30m] [Suite:openshift/conformance/serial]",
     "Suite": "openshift-tests"
   },
   {
