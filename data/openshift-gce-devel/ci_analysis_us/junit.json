@@ -172396,10 +172396,6 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "[sig-apps][OCPFeatureGate:DualReplica][Suite:openshift/two-node] [Degraded] Two Node Fencing behavior in degraded mode should rotate etcd serving certs for the remaining master [Serial] [apigroup:operator.openshift.io]",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "[sig-apps][Suite:openshift/two-node] [Degraded] Two Node Fencing behavior in degraded mode should rotate etcd serving certs for the remaining master [Serial] [apigroup:operator.openshift.io]",
     "Suite": "openshift-tests"
   },
@@ -184360,7 +184356,15 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "[sig-cluster-lifecycle][OCPFeatureGate:VSphereMultiVCenterDay2][platform:vsphere] vSphere failure domain ValidatingAdmissionPolicies should allow an unrelated Infrastructure update when a MachineSet's region/zone labels match no failure domain [apigroup:machine.openshift.io][Suite:openshift/conformance/serial] [Conformance] [Serial]",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "[sig-cluster-lifecycle][OCPFeatureGate:VSphereMultiVCenterDay2][platform:vsphere] vSphere failure domain ValidatingAdmissionPolicies should allow removing a failure domain after the referencing MachineSet is deleted [apigroup:machine.openshift.io][Suite:openshift/conformance/serial]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-cluster-lifecycle][OCPFeatureGate:VSphereMultiVCenterDay2][platform:vsphere] vSphere failure domain ValidatingAdmissionPolicies should allow removing a failure domain after the referencing MachineSet is deleted [apigroup:machine.openshift.io][Suite:openshift/conformance/serial] [Conformance] [Serial]",
     "Suite": "openshift-tests"
   },
   {
@@ -184368,7 +184372,15 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "[sig-cluster-lifecycle][OCPFeatureGate:VSphereMultiVCenterDay2][platform:vsphere] vSphere failure domain ValidatingAdmissionPolicies should allow removing an unused failure domain from Infrastructure [apigroup:machine.openshift.io][Suite:openshift/conformance/serial] [Conformance] [Serial]",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "[sig-cluster-lifecycle][OCPFeatureGate:VSphereMultiVCenterDay2][platform:vsphere] vSphere failure domain ValidatingAdmissionPolicies should block removing a failure domain referenced by a ControlPlaneMachineSet [apigroup:machine.openshift.io][Suite:openshift/conformance/serial]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-cluster-lifecycle][OCPFeatureGate:VSphereMultiVCenterDay2][platform:vsphere] vSphere failure domain ValidatingAdmissionPolicies should block removing a failure domain referenced by a ControlPlaneMachineSet [apigroup:machine.openshift.io][Suite:openshift/conformance/serial] [Conformance] [Serial]",
     "Suite": "openshift-tests"
   },
   {
@@ -184376,11 +184388,23 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "[sig-cluster-lifecycle][OCPFeatureGate:VSphereMultiVCenterDay2][platform:vsphere] vSphere failure domain ValidatingAdmissionPolicies should block removing a failure domain referenced by a Machine [apigroup:machine.openshift.io][Suite:openshift/conformance/serial] [Conformance] [Serial]",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "[sig-cluster-lifecycle][OCPFeatureGate:VSphereMultiVCenterDay2][platform:vsphere] vSphere failure domain ValidatingAdmissionPolicies should block removing a failure domain referenced by a MachineSet [apigroup:machine.openshift.io][Suite:openshift/conformance/serial]",
     "Suite": "openshift-tests"
   },
   {
+    "Name": "[sig-cluster-lifecycle][OCPFeatureGate:VSphereMultiVCenterDay2][platform:vsphere] vSphere failure domain ValidatingAdmissionPolicies should block removing a failure domain referenced by a MachineSet [apigroup:machine.openshift.io][Suite:openshift/conformance/serial] [Conformance] [Serial]",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "[sig-cluster-lifecycle][OCPFeatureGate:VSphereMultiVCenterDay2][platform:vsphere] vSphere failure domain ValidatingAdmissionPolicies should have three VAPs and three bindings deployed by the operator [apigroup:machine.openshift.io][Suite:openshift/conformance/serial]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-cluster-lifecycle][OCPFeatureGate:VSphereMultiVCenterDay2][platform:vsphere] vSphere failure domain ValidatingAdmissionPolicies should have three VAPs and three bindings deployed by the operator [apigroup:machine.openshift.io][Suite:openshift/conformance/serial] [Conformance] [Serial]",
     "Suite": "openshift-tests"
   },
   {
@@ -184401,6 +184425,10 @@
   },
   {
     "Name": "[sig-cluster-lifecycle][platform:vsphere] Managed cluster should new machines should pass multi network tests [Serial][apigroup:machine.openshift.io][Suite:openshift/conformance/serial]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-cluster-lifecycle][platform:vsphere] Managed cluster should new machines should pass multi network tests [Serial][apigroup:machine.openshift.io][Suite:openshift/conformance/serial] [Conformance]",
     "Suite": "openshift-tests"
   },
   {
@@ -184444,7 +184472,15 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "[sig-cluster-lifecycle][platform:vsphere][Suite:openshift/conformance/serial][Serial] Managed cluster should provisions multiple MachineSets with bounded concurrency [apigroup:machine.openshift.io][Serial] [Conformance]",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "[sig-cluster-lifecycle][platform:vsphere][Suite:openshift/conformance/serial][Serial] Managed cluster should scales and deletes a MachineSet through its lifecycle [apigroup:machine.openshift.io][Serial]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-cluster-lifecycle][platform:vsphere][Suite:openshift/conformance/serial][Serial] Managed cluster should scales and deletes a MachineSet through its lifecycle [apigroup:machine.openshift.io][Serial] [Conformance]",
     "Suite": "openshift-tests"
   },
   {
@@ -188396,6 +188432,30 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "[sig-etcd] cluster-etcd-operator [Operator][Serial][Disruptive][OCPFeatureGate:AutomatedEtcdBackup] TestBackupFailureOnMissingPVC",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-etcd] cluster-etcd-operator [Operator][Serial][Disruptive][OCPFeatureGate:AutomatedEtcdBackup] TestBackupHappyPath [Timeout:30m]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-etcd] cluster-etcd-operator [Operator][Serial][Disruptive][OCPFeatureGate:AutomatedEtcdBackup] TestMultipleBackupsAreSkipped",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-etcd] cluster-etcd-operator [Operator][Serial][Disruptive][OCPFeatureGate:AutomatedEtcdBackup] TestPeriodicBackupHappyPath [Timeout:30m]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-etcd] cluster-etcd-operator [Operator][Serial][Disruptive][OCPFeatureGate:AutomatedEtcdBackup] TestRetentionBySize",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-etcd] cluster-etcd-operator [Operator][Serial][Disruptive][OCPFeatureGate:AutomatedEtcdBackup] TestWrongScheduleDegradesOperator",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "[sig-etcd] cluster-etcd-operator [Operator][Serial][Disruptive][OCPFeatureGate:EtcdBackendQuota] TestEtcdDBScaling",
     "Suite": "openshift-tests"
   },
@@ -188677,10 +188737,6 @@
   },
   {
     "Name": "[sig-etcd][apigroup:config.openshift.io][OCPFeatureGate:DualReplica][Suite:openshift/two-node][Serial][Slow][Disruptive] Two Node with Fencing cluster should recover from single node kubelet service disruption",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "[sig-etcd][apigroup:config.openshift.io][OCPFeatureGate:DualReplica][Suite:openshift/two-node][Slow][Serial][Disruptive][Requires:HypervisorSSHConfig] TNF cluster recovers when a permanently failed node needing manual recovery is replaced",
     "Suite": "openshift-tests"
   },
   {
@@ -210012,6 +210068,10 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "[sig-node] [DRA] kubelet [Feature:DynamicResourceAllocation] [FeatureGate:DRADeviceTaints] DeviceTaintRule evicts pod [FeatureGate:DRADeviceTaintRules] [FeatureGate:DynamicResourceAllocation]",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "[sig-node] [DRA] kubelet [Feature:DynamicResourceAllocation] [FeatureGate:DRADeviceTaints] NoExecute can be tolerated [FeatureGate:DynamicResourceAllocation]",
     "Suite": "openshift-tests"
   },
@@ -211697,6 +211757,10 @@
   },
   {
     "Name": "[sig-node] zstd:chunked Image should successfully run date command [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-node][DRA][OCPFeatureGate:DynamicResourceAllocation] Dynamic Resource Allocation should manage DeviceTaintRules through the v1beta2 API [apigroup:resource.k8s.io] [OCPFeatureGate:DRADeviceTaintRules] [Suite:openshift/conformance/parallel]",
     "Suite": "openshift-tests"
   },
   {
