@@ -693536,22 +693536,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:0dd497b13a6c51f955713104b474a15d",
-    "Name": "[sig-apps][OCPFeatureGate:DualReplica][Suite:openshift/two-node] [Degraded] Two Node Fencing behavior in degraded mode should rotate etcd serving certs for the remaining master [Serial] [apigroup:operator.openshift.io]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 1,
-    "StaffApprovedObsolete": false,
-    "Component": "openshift-controller-manager / apps",
-    "Capabilities": [
-      "OCPFeatureGate:DualReplica"
-    ],
-    "JIRAComponent": "openshift-controller-manager / apps",
-    "JIRAComponentID": "14971"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:60fc3dc63109887762c0d521ee55710f",
     "Name": "[sig-apps][Suite:openshift/two-node] [Degraded] Two Node Fencing behavior in degraded mode should rotate etcd serving certs for the remaining master [Serial] [apigroup:operator.openshift.io]",
     "Suite": "openshift-tests",
@@ -741474,8 +741458,40 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "openshift-tests:bcd731a546d5f767e34ae793c368b2d3",
+    "Name": "[sig-cluster-lifecycle][OCPFeatureGate:VSphereMultiVCenterDay2][platform:vsphere] vSphere failure domain ValidatingAdmissionPolicies should allow an unrelated Infrastructure update when a MachineSet's region/zone labels match no failure domain [apigroup:machine.openshift.io][Suite:openshift/conformance/serial] [Conformance] [Serial]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "OCPFeatureGate:VSphereMultiVCenterDay2"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "openshift-tests:105decb9bbfbfbf9a2cacaf05c59d7a5",
     "Name": "[sig-cluster-lifecycle][OCPFeatureGate:VSphereMultiVCenterDay2][platform:vsphere] vSphere failure domain ValidatingAdmissionPolicies should allow removing a failure domain after the referencing MachineSet is deleted [apigroup:machine.openshift.io][Suite:openshift/conformance/serial]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "OCPFeatureGate:VSphereMultiVCenterDay2"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:c1cb970b1a04dda67f2cec989b682a1d",
+    "Name": "[sig-cluster-lifecycle][OCPFeatureGate:VSphereMultiVCenterDay2][platform:vsphere] vSphere failure domain ValidatingAdmissionPolicies should allow removing a failure domain after the referencing MachineSet is deleted [apigroup:machine.openshift.io][Suite:openshift/conformance/serial] [Conformance] [Serial]",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -741506,8 +741522,40 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "openshift-tests:036238fb77a757f618e85ba0ccb201eb",
+    "Name": "[sig-cluster-lifecycle][OCPFeatureGate:VSphereMultiVCenterDay2][platform:vsphere] vSphere failure domain ValidatingAdmissionPolicies should allow removing an unused failure domain from Infrastructure [apigroup:machine.openshift.io][Suite:openshift/conformance/serial] [Conformance] [Serial]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "OCPFeatureGate:VSphereMultiVCenterDay2"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "openshift-tests:1c67c16f26c5bcce31542a284403dfc5",
     "Name": "[sig-cluster-lifecycle][OCPFeatureGate:VSphereMultiVCenterDay2][platform:vsphere] vSphere failure domain ValidatingAdmissionPolicies should block removing a failure domain referenced by a ControlPlaneMachineSet [apigroup:machine.openshift.io][Suite:openshift/conformance/serial]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "OCPFeatureGate:VSphereMultiVCenterDay2"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:025ca0f101f767bd5fb1ec68939270fd",
+    "Name": "[sig-cluster-lifecycle][OCPFeatureGate:VSphereMultiVCenterDay2][platform:vsphere] vSphere failure domain ValidatingAdmissionPolicies should block removing a failure domain referenced by a ControlPlaneMachineSet [apigroup:machine.openshift.io][Suite:openshift/conformance/serial] [Conformance] [Serial]",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -741538,6 +741586,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "openshift-tests:e41799a4b3a8b0e3b8f3899c92ed454f",
+    "Name": "[sig-cluster-lifecycle][OCPFeatureGate:VSphereMultiVCenterDay2][platform:vsphere] vSphere failure domain ValidatingAdmissionPolicies should block removing a failure domain referenced by a Machine [apigroup:machine.openshift.io][Suite:openshift/conformance/serial] [Conformance] [Serial]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "OCPFeatureGate:VSphereMultiVCenterDay2"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "openshift-tests:817f284b8e725a2bb8cc5b27f88df98c",
     "Name": "[sig-cluster-lifecycle][OCPFeatureGate:VSphereMultiVCenterDay2][platform:vsphere] vSphere failure domain ValidatingAdmissionPolicies should block removing a failure domain referenced by a MachineSet [apigroup:machine.openshift.io][Suite:openshift/conformance/serial]",
     "Suite": "openshift-tests",
@@ -741554,8 +741618,40 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "openshift-tests:f8d163bd53ae7061260c48918077b0b2",
+    "Name": "[sig-cluster-lifecycle][OCPFeatureGate:VSphereMultiVCenterDay2][platform:vsphere] vSphere failure domain ValidatingAdmissionPolicies should block removing a failure domain referenced by a MachineSet [apigroup:machine.openshift.io][Suite:openshift/conformance/serial] [Conformance] [Serial]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "OCPFeatureGate:VSphereMultiVCenterDay2"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "openshift-tests:1f5fe011c143a2c8e0eeeda27b2634f5",
     "Name": "[sig-cluster-lifecycle][OCPFeatureGate:VSphereMultiVCenterDay2][platform:vsphere] vSphere failure domain ValidatingAdmissionPolicies should have three VAPs and three bindings deployed by the operator [apigroup:machine.openshift.io][Suite:openshift/conformance/serial]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "OCPFeatureGate:VSphereMultiVCenterDay2"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:7a93d5fbe1eb23a95ff1501f53d43e51",
+    "Name": "[sig-cluster-lifecycle][OCPFeatureGate:VSphereMultiVCenterDay2][platform:vsphere] vSphere failure domain ValidatingAdmissionPolicies should have three VAPs and three bindings deployed by the operator [apigroup:machine.openshift.io][Suite:openshift/conformance/serial] [Conformance] [Serial]",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -741636,6 +741732,22 @@
     "Kind": "TestOwnership",
     "ID": "openshift-tests:e27effe38618c57bdf8647ed1995c40a",
     "Name": "[sig-cluster-lifecycle][platform:vsphere] Managed cluster should new machines should pass multi network tests [Serial][apigroup:machine.openshift.io][Suite:openshift/conformance/serial]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:b80ec6886e5b218f3a2afbd2117bbb74",
+    "Name": "[sig-cluster-lifecycle][platform:vsphere] Managed cluster should new machines should pass multi network tests [Serial][apigroup:machine.openshift.io][Suite:openshift/conformance/serial] [Conformance]",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -741810,8 +741922,40 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "openshift-tests:384b2ddc911a61f5dedd019b2a1f7169",
+    "Name": "[sig-cluster-lifecycle][platform:vsphere][Suite:openshift/conformance/serial][Serial] Managed cluster should provisions multiple MachineSets with bounded concurrency [apigroup:machine.openshift.io][Serial] [Conformance]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "openshift-tests:90075fb4ed0ada8c26cdf3800d90c0ee",
     "Name": "[sig-cluster-lifecycle][platform:vsphere][Suite:openshift/conformance/serial][Serial] Managed cluster should scales and deletes a MachineSet through its lifecycle [apigroup:machine.openshift.io][Serial]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:b8b1dd1061c79632cc791985cc79b946",
+    "Name": "[sig-cluster-lifecycle][platform:vsphere][Suite:openshift/conformance/serial][Serial] Managed cluster should scales and deletes a MachineSet through its lifecycle [apigroup:machine.openshift.io][Serial] [Conformance]",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -757618,6 +757762,102 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "openshift-tests:ef9a3c63527c14f8fed3d504f653ac7b",
+    "Name": "[sig-etcd] cluster-etcd-operator [Operator][Serial][Disruptive][OCPFeatureGate:AutomatedEtcdBackup] TestBackupFailureOnMissingPVC",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Etcd",
+    "Capabilities": [
+      "OCPFeatureGate:AutomatedEtcdBackup"
+    ],
+    "JIRAComponent": "Etcd",
+    "JIRAComponentID": "14713"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:66d10a57a3cf3c884757c44c165bbe5f",
+    "Name": "[sig-etcd] cluster-etcd-operator [Operator][Serial][Disruptive][OCPFeatureGate:AutomatedEtcdBackup] TestBackupHappyPath [Timeout:30m]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Etcd",
+    "Capabilities": [
+      "OCPFeatureGate:AutomatedEtcdBackup"
+    ],
+    "JIRAComponent": "Etcd",
+    "JIRAComponentID": "14713"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:9daf5e47f4d13c536e6afb7048286324",
+    "Name": "[sig-etcd] cluster-etcd-operator [Operator][Serial][Disruptive][OCPFeatureGate:AutomatedEtcdBackup] TestMultipleBackupsAreSkipped",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Etcd",
+    "Capabilities": [
+      "OCPFeatureGate:AutomatedEtcdBackup"
+    ],
+    "JIRAComponent": "Etcd",
+    "JIRAComponentID": "14713"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:298a1a8ef462afc52020b0bb0238f5b4",
+    "Name": "[sig-etcd] cluster-etcd-operator [Operator][Serial][Disruptive][OCPFeatureGate:AutomatedEtcdBackup] TestPeriodicBackupHappyPath [Timeout:30m]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Etcd",
+    "Capabilities": [
+      "OCPFeatureGate:AutomatedEtcdBackup"
+    ],
+    "JIRAComponent": "Etcd",
+    "JIRAComponentID": "14713"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:8972ae25dac113d518e1553cd621762c",
+    "Name": "[sig-etcd] cluster-etcd-operator [Operator][Serial][Disruptive][OCPFeatureGate:AutomatedEtcdBackup] TestRetentionBySize",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Etcd",
+    "Capabilities": [
+      "OCPFeatureGate:AutomatedEtcdBackup"
+    ],
+    "JIRAComponent": "Etcd",
+    "JIRAComponentID": "14713"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:aa6134f2763c0ccaac8dbee1ce17a5e2",
+    "Name": "[sig-etcd] cluster-etcd-operator [Operator][Serial][Disruptive][OCPFeatureGate:AutomatedEtcdBackup] TestWrongScheduleDegradesOperator",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Etcd",
+    "Capabilities": [
+      "OCPFeatureGate:AutomatedEtcdBackup"
+    ],
+    "JIRAComponent": "Etcd",
+    "JIRAComponentID": "14713"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "openshift-tests:43499fc2b0ed7d57de97b1c353c74a01",
     "Name": "[sig-etcd] cluster-etcd-operator [Operator][Serial][Disruptive][OCPFeatureGate:EtcdBackendQuota] TestEtcdDBScaling",
     "Suite": "openshift-tests",
@@ -758740,22 +758980,6 @@
     "Kind": "TestOwnership",
     "ID": "openshift-tests:24be8327290776e9e82726d7e17f32ac",
     "Name": "[sig-etcd][apigroup:config.openshift.io][OCPFeatureGate:DualReplica][Suite:openshift/two-node][Serial][Slow][Disruptive] Two Node with Fencing cluster should recover from single node kubelet service disruption",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Etcd",
-    "Capabilities": [
-      "OCPFeatureGate:DualReplica"
-    ],
-    "JIRAComponent": "Etcd",
-    "JIRAComponentID": "14713"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:d4a0c8dc63bd2579fe7bad165a5f8933",
-    "Name": "[sig-etcd][apigroup:config.openshift.io][OCPFeatureGate:DualReplica][Suite:openshift/two-node][Slow][Serial][Disruptive][Requires:HypervisorSSHConfig] TNF cluster recovers when a permanently failed node needing manual recovery is replaced",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -844804,6 +845028,25 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "openshift-tests:c3436490324de4c5fd4190bc69962104",
+    "Name": "[sig-node] [DRA] kubelet [Feature:DynamicResourceAllocation] [FeatureGate:DRADeviceTaints] DeviceTaintRule evicts pod [FeatureGate:DRADeviceTaintRules] [FeatureGate:DynamicResourceAllocation]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 1,
+    "StaffApprovedObsolete": false,
+    "Component": "Node / Kubelet",
+    "Capabilities": [
+      "DynamicResourceAllocation",
+      "FeatureGate:DRADeviceTaintRules",
+      "FeatureGate:DRADeviceTaints",
+      "FeatureGate:DynamicResourceAllocation"
+    ],
+    "JIRAComponent": "Node / Kubelet",
+    "JIRAComponentID": "14851"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "openshift-tests:12eaad1df53ad9e1b1c025ac880837e4",
     "Name": "[sig-node] [DRA] kubelet [Feature:DynamicResourceAllocation] [FeatureGate:DRADeviceTaints] NoExecute can be tolerated [FeatureGate:DynamicResourceAllocation]",
     "Suite": "openshift-tests",
@@ -851658,6 +851901,23 @@
     "Component": "Node / Kubelet",
     "Capabilities": [
       "Other"
+    ],
+    "JIRAComponent": "Node / Kubelet",
+    "JIRAComponentID": "14851"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:d9d051f723108dbd75c5ddbb4ad68d5b",
+    "Name": "[sig-node][DRA][OCPFeatureGate:DynamicResourceAllocation] Dynamic Resource Allocation should manage DeviceTaintRules through the v1beta2 API [apigroup:resource.k8s.io] [OCPFeatureGate:DRADeviceTaintRules] [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 1,
+    "StaffApprovedObsolete": false,
+    "Component": "Node / Kubelet",
+    "Capabilities": [
+      "OCPFeatureGate:DRADeviceTaintRules",
+      "OCPFeatureGate:DynamicResourceAllocation"
     ],
     "JIRAComponent": "Node / Kubelet",
     "JIRAComponentID": "14851"
