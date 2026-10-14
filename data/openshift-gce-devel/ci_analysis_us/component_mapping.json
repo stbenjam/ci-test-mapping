@@ -630914,6 +630914,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "openshift-tests:7db7b894f3920a2e1f3d18e7a878075a",
+    "Name": "[Monitor:rbac-cluster-admin-escalation-checker][sig-auth] clusterrolebinding \"object-controller-cluster-admin-rolebinding\" must not grant permission to cluster-admin equivalent access (all verbs on all resources)",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": -1,
+    "StaffApprovedObsolete": false,
+    "Component": "oauth-apiserver",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "oauth-apiserver",
+    "JIRAComponentID": "14859"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "openshift-tests-upgrade:b26c18ec95d8b1df684e752ad777bc50",
     "Name": "[Monitor:rbac-cluster-admin-escalation-checker][sig-auth] clusterrolebinding \"olm-operator-binding-openshift-operator-lifecycle-manager\" must not grant permission to create or modify admission webhook configurations",
     "Suite": "openshift-tests-upgrade",
@@ -815696,6 +815712,108 @@
     "Component": "Networking / cluster-network-operator",
     "Capabilities": [
       "OCPFeatureGate:NetworkDiagnosticsConfig"
+    ],
+    "JIRAComponent": "Networking / cluster-network-operator",
+    "JIRAComponentID": "14922"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:44e80a76922e3766e757ffb237d0506e",
+    "Name": "[sig-network][OCPFeatureGate:NetworkObservabilityInstall][Feature:NetObserv] Network Observability should not be auto-deployed on single node clusters [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": -1,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / cluster-network-operator",
+    "Capabilities": [
+      "NetObserv",
+      "OCPFeatureGate:NetworkObservabilityInstall"
+    ],
+    "JIRAComponent": "Networking / cluster-network-operator",
+    "JIRAComponentID": "14922"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:61260b2df9b4857b90b26274b1fbbcf2",
+    "Name": "[sig-network][OCPFeatureGate:NetworkObservabilityInstall][Feature:NetObserv] health checks Network Observability should have FlowCollector CR in Ready state [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": -1,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / cluster-network-operator",
+    "Capabilities": [
+      "NetObserv",
+      "OCPFeatureGate:NetworkObservabilityInstall"
+    ],
+    "JIRAComponent": "Networking / cluster-network-operator",
+    "JIRAComponentID": "14922"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:3dfc43b78d56caa63b61437f1c4a5d05",
+    "Name": "[sig-network][OCPFeatureGate:NetworkObservabilityInstall][Feature:NetObserv] health checks Network Observability should have Prometheus scraping non-zero NetObserv metrics [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": -1,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / cluster-network-operator",
+    "Capabilities": [
+      "NetObserv",
+      "OCPFeatureGate:NetworkObservabilityInstall"
+    ],
+    "JIRAComponent": "Networking / cluster-network-operator",
+    "JIRAComponentID": "14922"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:bfa5bfaaa39af09824ba315b7a94190a",
+    "Name": "[sig-network][OCPFeatureGate:NetworkObservabilityInstall][Feature:NetObserv] health checks Network Observability should have operator pod running [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": -1,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / cluster-network-operator",
+    "Capabilities": [
+      "NetObserv",
+      "OCPFeatureGate:NetworkObservabilityInstall"
+    ],
+    "JIRAComponent": "Networking / cluster-network-operator",
+    "JIRAComponentID": "14922"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:5da97a811fa4da108ac67582274d9bb0",
+    "Name": "[sig-network][OCPFeatureGate:NetworkObservabilityInstall][Feature:NetObserv] health checks Network Observability should not have excessive errors in operator logs [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": -1,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / cluster-network-operator",
+    "Capabilities": [
+      "NetObserv",
+      "OCPFeatureGate:NetworkObservabilityInstall"
+    ],
+    "JIRAComponent": "Networking / cluster-network-operator",
+    "JIRAComponentID": "14922"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:2d543483f4098d6150d6a73edfc17c16",
+    "Name": "[sig-network][OCPFeatureGate:NetworkObservabilityInstall][Feature:NetObserv][Serial] Network Observability should clean up a timed out OLM installation [Timeout:30m] [Suite:openshift/conformance/serial]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": -1,
+    "StaffApprovedObsolete": false,
+    "Component": "Networking / cluster-network-operator",
+    "Capabilities": [
+      "NetObserv",
+      "OCPFeatureGate:NetworkObservabilityInstall"
     ],
     "JIRAComponent": "Networking / cluster-network-operator",
     "JIRAComponentID": "14922"
