@@ -809421,7 +809421,7 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:2b52023973aa10beacb067081d57ab22",
+    "ID": "openshift-tests:6d8419719d84e7a4336f2bc7feeffde1",
     "Name": "[sig-network] services when running openshift ipv4 cluster ensures external ip policy is configured correctly on the cluster [apigroup:config.openshift.io] [Serial] [Suite:openshift/conformance/serial]",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
