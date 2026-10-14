@@ -166,20 +166,121 @@ The command `./ci-test-mapping jira-verify` will inform you of any Jira
 components that have been removed, and report on any new Jira components
 that are available.
 
-To create any missing components, run `./ci-test-mapping jira-create`.
+To generate local mapping files for any missing components, run
+`./ci-test-mapping jira-create`. It updates `pkg/components/` and `pkg/registry/`;
+it does not create Jira components or issues.
 If any components are being renamed, run `jira-create` first and then
 move the configuration to the new component.
 
 Run `./ci-test-mapping jira-verify` to ensure it reports back cleanly.
 
-You'll need to set the env var `JIRA_TOKEN` to your personal API token
-With the new hosted Jira environment a basic authentication header must be used.
-Set the env var `JIRA_TOKEN_BASIC` with the output from `echo -n "your_email@redhat.com:the_token" | base64 -w 0`
-(you can create the token from your Jira profile page). Then:
+Configure Jira authentication as described below. Then:
 
 1. Move any configuration for renamed components
 2. Delete any obsolete `pkg/components/<component>` directory
 3. Remove references to removed components from `pkg/registry`.
+
+### Jira authentication
+
+`map`, `jira-create`, and `jira-verify` share the opt-in flag
+`--jira-service-account` (default `false`). Every Jira consumer only reads Jira:
+
+| Command | Jira GET paths | Local or other output |
+| --- | --- | --- |
+| `map` | `/rest/api/2/project/OCPBUGS/components` | Test and variant mappings; optional BigQuery writes |
+| `jira-create` | `/rest/api/2/issue/createmeta/OCPBUGS/issuetypes/` and that path plus the Bug issue-type ID | Component templates and registry entries |
+| `jira-verify` | Same creation-metadata paths as `jira-create` | Mapping verification logs |
+
+There are no Jira search consumers or Jira writers. The Makefile's mapping
+targets and both mapping invocations in `hack/cronjob-update-mapping.sh` call
+`map`. Authentication is independent of `--mode`, `--push-to-bigquery`,
+`--map-variant`, and local file generation.
+
+Without the flag, requests continue to use `https://redhat.atlassian.net/`.
+`JIRA_TOKEN` takes precedence and supplies `Authorization: Bearer <token>`.
+If it is empty or unset, `JIRA_TOKEN_BASIC` supplies `Authorization: Basic
+<base64(email:token)>`. For example:
+
+```sh
+export JIRA_TOKEN_BASIC=$(printf '%s' 'your_email@redhat.com:the_token' | base64 -w 0)
+./ci-test-mapping jira-verify
+```
+
+Create the personal API token from your Jira profile. Set only the credential
+you intend to use: a nonempty `JIRA_TOKEN` overrides Basic authentication.
+`jira-create` and `jira-verify` require legacy credentials; `map` retains its
+existing ability to attempt unauthenticated reads. Service-account variables
+alone do not enable OAuth and are ignored without the flag.
+
+For service-account authentication, supply a **read-only (RO) OAuth credential**
+created in Atlassian Administration, including for `jira-create`:
+
+```sh
+export JIRA_CLIENT_ID='<RO credential client ID>'
+export JIRA_CLIENT_SECRET='<RO credential client secret>'
+export JIRA_CLOUD_ID='<Jira site cloud UUID>'
+./ci-test-mapping map --mode=local --jira-service-account
+./ci-test-mapping jira-verify --jira-service-account
+./ci-test-mapping jira-create --jira-service-account
+```
+
+Both `JIRA_CLIENT_ID` and `JIRA_CLIENT_SECRET` must be nonempty, and
+`JIRA_CLOUD_ID` must be a UUID. Missing configuration or a failed initial token
+grant fails the command; there is no fallback to legacy credentials while the
+flag is enabled.
+
+The client sends a form-encoded `client_credentials` grant to
+`https://auth.atlassian.com/oauth/token`, acquires a token at startup, and uses
+`https://api.atlassian.com/ex/jira/{cloud-id}/` with the same relative REST v2
+paths. One HTTP client/token source is reused for all Jira calls and component
+retries in a command. `golang.org/x/oauth2/clientcredentials` caches tokens and
+obtains replacements on expiry, including its early-expiry margin. No token
+files, refresh scheduler, or runtime scopes are used. Keep the supplied command
+or job context alive through all calls and renewals. Canceling it stops later
+grants; a cached valid token can still serve requests with independent live
+contexts. Command context cancellation stops Jira requests and retry waits.
+CLI interrupts and SIGTERM retain their default process termination behavior.
+
+Configure scopes on the credential in Atlassian Administration, following
+[Atlassian's service-account OAuth guidance](https://support.atlassian.com/user-management/docs/create-oauth-2-0-credential-for-service-accounts/).
+The current REST v2 documentation recommends the read scope `read:jira-work`
+for [project components](https://developer.atlassian.com/cloud/jira/platform/rest/v2/api-group-project-components/#api-rest-api-2-project-projectIdOrKey-components-get)
+and [creation metadata](https://developer.atlassian.com/cloud/jira/platform/rest/v2/api-group-issues/#api-rest-api-2-issue-createmeta-projectIdOrKey-issuetypes-get).
+The project-components API requires **Browse Projects**. Both creation-metadata
+APIs require **Create issues** project permission even though they are GETs;
+RO OAuth scopes do not bypass Jira project permissions. Confirm these reads
+work for the chosen account before rolling out the metadata commands. No write
+OAuth scope is needed by this application.
+
+The endpoints remain documented; local HTTP tests verify gateway routing,
+authentication, token reuse/renewal, cancellation, component IDs, both metadata
+response shapes, and Documentation filtering. They do not verify live Atlassian
+credentials, gateway access, scopes, project permissions, or the site's actual
+responses. Existing metadata readers consume a single page; confirm the Bug
+issue type and components field are on that page. The components reader expects
+an array; projects using Compass may return a paginated shape and require a
+separate change. No search API migration is needed.
+
+For a first RO rollout (deployment files are not changed here):
+
+1. Build and deploy the binary containing this change.
+2. Inject the RO credential as secret-backed `JIRA_CLIENT_ID` and
+   `JIRA_CLIENT_SECRET`, and set `JIRA_CLOUD_ID` to the site's UUID. Ensure both
+   credential variables are nonempty. Allow HTTPS egress to `auth.atlassian.com`
+   and `api.atlassian.com`.
+3. Add `--jira-service-account` to **both** `ci-test-mapping map` invocations in
+   the deployed copy of `hack/cronjob-update-mapping.sh` (Engineering and QE),
+   or to each equivalent job's command arguments. Environment injection alone
+   leaves those invocations using legacy authentication. `prune` and `map-verify`
+   do not contact Jira and need no Jira settings.
+4. Validate `jira-verify --jira-service-account` and a local `map` run against
+   the real site, compare component IDs/results, and check creation-metadata
+   permissions before enabling the flag on any metadata jobs. Validate token
+   replacement during a run lasting beyond a token lifetime if applicable.
+5. Keep the existing legacy credential available during rollout. Roll back by
+   removing `--jira-service-account` from the affected command(s); the legacy
+   endpoint and Bearer-then-Basic precedence take effect again. The remaining
+   service-account variables do not affect legacy runs.
 
 # Component Readiness Variant Mapping
 

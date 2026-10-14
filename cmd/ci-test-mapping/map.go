@@ -20,7 +20,6 @@ import (
 	v1 "github.com/openshift-eng/ci-test-mapping/pkg/api/types/v1"
 	"github.com/openshift-eng/ci-test-mapping/pkg/bigquery"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components"
-	"github.com/openshift-eng/ci-test-mapping/pkg/jira"
 	"github.com/openshift-eng/ci-test-mapping/pkg/obsoletetests"
 	"github.com/openshift-eng/ci-test-mapping/pkg/registry"
 )
@@ -34,6 +33,10 @@ var mapCmd = &cobra.Command{
 	RunE: func(cmd *cobra.Command, args []string) error {
 		if err := verifyParams(); err != nil {
 			_ = cmd.Usage()
+			return err
+		}
+		jiraClient, err := f.jiraFlags.GetClient(cmd.Context(), false)
+		if err != nil {
 			return err
 		}
 
@@ -98,7 +101,7 @@ var mapCmd = &cobra.Command{
 		createdAt := civil.DateTimeOf(now)
 		log.Infof("mapping tests to ownership")
 
-		jiraComponentIDs, err := jira.GetJiraComponents(getAuthorizationHeader())
+		jiraComponentIDs, err := jiraClient.GetJiraComponents(cmd.Context())
 		if err != nil {
 			return errors.WithMessage(err, "could not get jira component mapping")
 		}
@@ -185,6 +188,7 @@ type MapFlags struct {
 	pushToBQ            bool
 	bigqueryFlags       *flags.BigQueryFlags
 	configFlags         *flags.ConfigFlags
+	jiraFlags           *flags.JiraFlags
 	junitTable          string
 	jobVariantsTable    string
 	testMappingTable    string
@@ -198,12 +202,14 @@ func NewMapFlags() *MapFlags {
 	return &MapFlags{
 		bigqueryFlags: flags.NewBigQueryFlags(),
 		configFlags:   flags.NewConfigFlags(),
+		jiraFlags:     &flags.JiraFlags{},
 	}
 }
 
 func (f *MapFlags) BindFlags(fs *pflag.FlagSet) {
 	f.bigqueryFlags.BindFlags(fs)
 	f.configFlags.BindFlags(fs)
+	f.jiraFlags.BindFlags(fs)
 }
 
 func init() {

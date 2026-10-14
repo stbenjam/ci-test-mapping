@@ -1,8 +1,8 @@
 package jira
 
 import (
+	"context"
 	"encoding/json"
-	"io"
 	"net/http"
 	"strconv"
 	"time"
@@ -14,9 +14,14 @@ import (
 )
 
 func GetJiraComponents(authorization string) (map[string]int64, error) {
+	return NewClient(&http.Client{}, SiteURL, authorization).GetJiraComponents(context.Background())
+}
+
+// GetJiraComponents loads OCPBUGS component IDs using the command's shared client.
+func (c *Client) GetJiraComponents(ctx context.Context) (map[string]int64, error) {
 	start := time.Now()
 	log.Infof("loading jira ocpbugs component information...")
-	body, err := jiraRequest("https://redhat.atlassian.net/rest/api/2/project/OCPBUGS/components", authorization)
+	body, err := c.jiraRequest(ctx, "rest/api/2/project/OCPBUGS/components")
 	if err != nil {
 		return nil, err
 	}
@@ -42,28 +47,20 @@ func GetJiraComponents(authorization string) (map[string]int64, error) {
 	return ids, nil
 }
 
-func jiraRequest(apiURL, authorization string) ([]byte, error) {
-	req, err := http.NewRequest("GET", apiURL, nil)
+func (c *Client) jiraRequest(ctx context.Context, restPath string) ([]byte, error) {
+	req, err := c.NewRequest(ctx, restPath)
 	if err != nil {
 		return nil, err
 	}
 
-	req.Header.Add("Accept", "application/json")
-	req.Header.Add("Content-Type", "application/json")
-
-	// testing UAT environment required auth
-	// may not be necessary after migration
-	if authorization != "" {
-		req.Header.Add("Authorization", authorization)
-	}
-
 	var finalError error // keep the last error seen in case all attempts fail
 	for _, wait := range []time.Duration{0, 1, 5, 15} {
-		// sleep for an increasing time before retrying
-		time.Sleep(wait * time.Minute)
+		if err := waitForRetry(ctx, wait*time.Minute); err != nil {
+			return nil, err
+		}
 
 		var bytes []byte
-		bytes, finalError = singleJiraRequest(req)
+		bytes, finalError = c.read(req)
 		if finalError == nil {
 			return bytes, nil
 		}
@@ -72,18 +69,19 @@ func jiraRequest(apiURL, authorization string) ([]byte, error) {
 	return nil, finalError
 }
 
-func singleJiraRequest(req *http.Request) ([]byte, error) {
-	// needing this method seemed a bit silly but defer in a loop is a no-no
-	resp, err := (&http.Client{}).Do(req)
-	if err == nil {
-		defer resp.Body.Close()
-		if resp.StatusCode != http.StatusOK {
-			err = errors.New(resp.Status)
-		}
+func waitForRetry(ctx context.Context, delay time.Duration) error {
+	if err := ctx.Err(); err != nil {
+		return err
 	}
-	if err != nil {
-		return nil, err
+	if delay == 0 {
+		return nil
 	}
-
-	return io.ReadAll(resp.Body)
+	timer := time.NewTimer(delay)
+	defer timer.Stop()
+	select {
+	case <-ctx.Done():
+		return ctx.Err()
+	case <-timer.C:
+		return nil
+	}
 }

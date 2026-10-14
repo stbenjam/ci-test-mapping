@@ -1,43 +1,30 @@
 package cmd
 
 import (
-	"os"
+	"fmt"
 
 	"github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
 	"k8s.io/apimachinery/pkg/util/sets"
 
+	"github.com/openshift-eng/ci-test-mapping/cmd/ci-test-mapping/flags"
 	"github.com/openshift-eng/ci-test-mapping/pkg/registry"
 )
 
-type VerifyFlags struct {
-	JiraURL string
-}
-
-func NewVerifyFlags() *VerifyFlags {
-	return &VerifyFlags{
-		JiraURL: "https://redhat.atlassian.net/rest/api/2/issue/createmeta/OCPBUGS/issuetypes/",
-	}
-}
+var verifyJiraFlags flags.JiraFlags
 
 var verifyCmd = &cobra.Command{
 	Use:   "jira-verify",
 	Short: "Verify all JIRA components are represented in ci-test-mapping",
-	Run: func(cmd *cobra.Command, args []string) {
-		f := NewVerifyFlags()
-
+	RunE: func(cmd *cobra.Command, args []string) error {
 		logrus.Info("fetching jira components from jira...")
-		bearerToken := os.Getenv("JIRA_TOKEN")
-		if len(bearerToken) == 0 {
-			basicToken := os.Getenv("JIRA_TOKEN_BASIC")
-			if len(basicToken) == 0 {
-				cmd.Usage() // nolint:errcheck
-				logrus.Fatal("jira token required")
-			}
-		}
-		jiraComponents, err := getJiraComponents(f.JiraURL)
+		jiraClient, err := verifyJiraFlags.GetClient(cmd.Context(), true)
 		if err != nil {
-			logrus.WithError(err).Fatal("could not fetch jira components")
+			return err
+		}
+		jiraComponents, err := getJiraComponents(cmd.Context(), jiraClient)
+		if err != nil {
+			return fmt.Errorf("could not fetch jira components: %w", err)
 		}
 
 		logrus.Info("verifying all components have a mapping")
@@ -64,9 +51,11 @@ var verifyCmd = &cobra.Command{
 		}
 
 		logrus.Info("done!")
+		return nil
 	},
 }
 
 func init() {
+	verifyJiraFlags.BindFlags(verifyCmd.Flags())
 	rootCmd.AddCommand(verifyCmd)
 }

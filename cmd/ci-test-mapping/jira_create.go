@@ -1,10 +1,10 @@
 package cmd
 
 import (
+	"context"
 	"encoding/json"
 	"fmt"
 	"io"
-	"net/http"
 	"os"
 	"path/filepath"
 	"regexp"
@@ -16,37 +16,27 @@ import (
 
 	"k8s.io/apimachinery/pkg/util/sets"
 
+	"github.com/openshift-eng/ci-test-mapping/cmd/ci-test-mapping/flags"
+	"github.com/openshift-eng/ci-test-mapping/pkg/jira"
 	"github.com/openshift-eng/ci-test-mapping/pkg/registry"
 )
 
-type CreateFlags struct {
-	JiraURL string
-}
+const createMetadataPath = "rest/api/2/issue/createmeta/OCPBUGS/issuetypes/"
 
-func NewCreateFlags() *CreateFlags {
-	return &CreateFlags{
-		JiraURL: "https://redhat.atlassian.net/rest/api/2/issue/createmeta/OCPBUGS/issuetypes/",
-	}
-}
+var createJiraFlags flags.JiraFlags
 
 var createCmd = &cobra.Command{
 	Use:   "jira-create",
 	Short: "Create mapping components for missing Jira components",
-	Run: func(cmd *cobra.Command, args []string) {
-		f := NewCreateFlags()
-
-		bearerToken := os.Getenv("JIRA_TOKEN")
-		if len(bearerToken) == 0 {
-			basicToken := os.Getenv("JIRA_TOKEN_BASIC")
-			if len(basicToken) == 0 {
-				cmd.Usage() // nolint:errcheck
-				logrus.Fatal("jira token required")
-			}
+	RunE: func(cmd *cobra.Command, args []string) error {
+		jiraClient, err := createJiraFlags.GetClient(cmd.Context(), true)
+		if err != nil {
+			return err
 		}
 
-		components, err := getJiraComponents(f.JiraURL)
+		components, err := getJiraComponents(cmd.Context(), jiraClient)
 		if err != nil {
-			logrus.WithError(err).Fatal("could not fetch jira components")
+			return fmt.Errorf("could not fetch jira components: %w", err)
 		}
 
 		reg := registry.NewComponentRegistry()
@@ -62,44 +52,19 @@ var createCmd = &cobra.Command{
 					"package": getPackageName(component),
 				}).Infof("no mapping for jira component %q, creating...", component)
 				if err := copyTemplate(component); err != nil {
-					logrus.WithError(err).Fatal("couldn't copy template")
+					return fmt.Errorf("couldn't copy template: %w", err)
 				}
 			}
 		}
+		return nil
 	},
 }
 
-func getAuthorizationHeader() string {
-	bearerToken := os.Getenv("JIRA_TOKEN")
-	if len(bearerToken) > 0 {
-		return fmt.Sprintf("Bearer %s", bearerToken)
-	}
-
-	basicToken := os.Getenv("JIRA_TOKEN_BASIC")
-	if len(basicToken) > 0 {
-		return fmt.Sprintf("Basic %s", basicToken)
-	}
-
-	// may not be required so return empty string
-	return ""
-}
-
-func addRequestAuthorization(req *http.Request) {
-	authorization := getAuthorizationHeader()
-	if len(authorization) > 0 {
-		req.Header.Add("Authorization", authorization)
-	}
-}
-
-func getJiraBugTypeID(url string) (string, error) {
-	req, err := http.NewRequest("GET", url, nil)
+func getJiraBugTypeID(ctx context.Context, client *jira.Client) (string, error) {
+	req, err := client.NewRequest(ctx, createMetadataPath)
 	if err != nil {
-		logrus.WithError(err).Fatal("could not create GET client")
+		return "", fmt.Errorf("could not create GET client: %w", err)
 	}
-	addRequestAuthorization(req)
-	req.Header.Add("Content-Type", "application/json")
-	req.Header.Add("Accept", "application/json")
-	client := &http.Client{}
 	resp, err := client.Do(req)
 	if err != nil {
 		return "", err
@@ -108,7 +73,7 @@ func getJiraBugTypeID(url string) (string, error) {
 
 	body, err := io.ReadAll(resp.Body)
 	if err != nil {
-		logrus.WithError(err).Fatal("error while reading types response")
+		return "", fmt.Errorf("error while reading types response: %w", err)
 	}
 
 	type JiraTypes struct {
@@ -139,31 +104,23 @@ func getJiraBugTypeID(url string) (string, error) {
 	return "", nil
 }
 
-func getJiraComponents(url string) ([]string, error) {
+func getJiraComponents(ctx context.Context, client *jira.Client) ([]string, error) {
 
 	// bug type ids are not constant across environments so look it up
-	id, err := getJiraBugTypeID(url)
+	id, err := getJiraBugTypeID(ctx, client)
 	if err != nil {
-		logrus.WithError(err).Fatal("could not fetch jira bug type")
+		return nil, fmt.Errorf("could not fetch jira bug type: %w", err)
 	}
 
 	if len(id) == 0 {
-		logrus.Fatalf("jira bug type id required")
+		return nil, fmt.Errorf("jira bug type id required")
 	}
 
-	componentsURL := fmt.Sprintf("%s%s", url, id)
-	if !strings.HasSuffix(url, "/") {
-		componentsURL = fmt.Sprintf("%s/%s", url, id)
-	}
-
-	req, err := http.NewRequest("GET", componentsURL, nil)
+	componentsPath := createMetadataPath + id
+	req, err := client.NewRequest(ctx, componentsPath)
 	if err != nil {
-		logrus.WithError(err).Fatal("could not create GET client")
+		return nil, fmt.Errorf("could not create GET client: %w", err)
 	}
-	addRequestAuthorization(req)
-	req.Header.Add("Content-Type", "application/json")
-	req.Header.Add("Accept", "application/json")
-	client := &http.Client{}
 	resp, err := client.Do(req)
 	if err != nil {
 		return nil, err
@@ -172,7 +129,7 @@ func getJiraComponents(url string) ([]string, error) {
 
 	body, err := io.ReadAll(resp.Body)
 	if err != nil {
-		logrus.WithError(err).Fatal("error while reading response")
+		return nil, fmt.Errorf("error while reading response: %w", err)
 	}
 
 	type Fields struct {
@@ -332,5 +289,6 @@ func copyTemplate(component string) error {
 }
 
 func init() {
+	createJiraFlags.BindFlags(createCmd.Flags())
 	rootCmd.AddCommand(createCmd)
 }
