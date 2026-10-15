@@ -193232,6 +193232,10 @@
     "Suite": "hypershift-e2e"
   },
   {
+    "Name": "[sig-hypershift][Jira:Hypershift][Feature:NodePoolLifecycle] NodePool Lifecycle should create a NodePool with Azure IP forwarding set to AllowAllAddresses and verify it is applied",
+    "Suite": "hypershift-e2e"
+  },
+  {
     "Name": "[sig-hypershift][Jira:Hypershift][Feature:NodePoolLifecycle] NodePool Lifecycle should create and manage NTO PerformanceProfile via NodePool TuningConfig",
     "Suite": "hypershift-e2e"
   },
@@ -196980,7 +196984,27 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "[sig-network-edge][Feature:IngressOperator] Author:shudili-Medium-56772-Ingress Controller sets allowPrivilegeEscalation on the haproxy container in the router deployment [Serial] [Suite:openshift/conformance/serial]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network-edge][Feature:IngressOperator] Author:shudili-NonHyperShiftHOST-ROSA-OSD_CCS-ARO-High-75907-Ingress Operator should not always remain in the progressing state [Disruptive] [Suite:openshift/conformance/serial]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network-edge][Feature:IngressOperator] Author:shudili-NonHyperShiftHOST-ROSA-OSD_CCS-ARO-High-75909-Ingress Operator should not always remain in the progressing state [Disruptive] [Suite:openshift/conformance/serial]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network-edge][Feature:IngressOperator] Author:shudili-ROSA-OSD_CCS-ARO-Critical-62530-openshift ingress operator is failing to update router-certs [Serial] [Suite:openshift/conformance/serial]",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "[sig-network-edge][Feature:IngressOperator] Author:shudili-ROSA-OSD_CCS-ARO-Critical-77283-Router should support SHA1 CA certificates in the default certificate chain [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network-edge][Feature:IngressOperator] Author:shudili-ROSA-OSD_CCS-ARO-High-75908-http2 connection coalescing component routing should not be broken with single certificate [Disruptive] [Suite:openshift/conformance/serial]",
     "Suite": "openshift-tests"
   },
   {
