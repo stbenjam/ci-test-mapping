@@ -738241,6 +738241,38 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "openshift-tests:53fda93272f17a5d8069c979d7e48dd1",
+    "Name": "[sig-cluster-lifecycle] Cluster Machine Approver Kubelet serving CSR approval approves a renewed kubelet serving CSR on a control-plane node",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 2,
+    "StaffApprovedObsolete": false,
+    "Component": "Cloud Compute / Machine CSR Approver",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Cloud Compute / Machine CSR Approver",
+    "JIRAComponentID": "14680"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:e3f71876e26ca6ae04565ab4ea439d1b",
+    "Name": "[sig-cluster-lifecycle] Cluster Machine Approver Kubelet serving CSR approval approves a renewed kubelet serving CSR on a worker node",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 2,
+    "StaffApprovedObsolete": false,
+    "Component": "Cloud Compute / Machine CSR Approver",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Cloud Compute / Machine CSR Approver",
+    "JIRAComponentID": "14680"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "Cluster upgrade:2b2216bdf4b6c563428ce86dd8db4613",
     "Name": "[sig-cluster-lifecycle] Cluster completes upgrade",
     "Suite": "Cluster upgrade",
@@ -845594,6 +845626,25 @@
     "Component": "Node / Kubelet",
     "Capabilities": [
       "DynamicResourceAllocation",
+      "FeatureGate:DRADeviceTaints",
+      "OffByDefault"
+    ],
+    "JIRAComponent": "Node / Kubelet",
+    "JIRAComponentID": "14851"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:ade7703f171e5b4bace2e1a34c625fbc",
+    "Name": "[sig-node] [DRA] kubelet [Feature:DynamicResourceAllocation] [FeatureGate:DRADeviceTaints] [Beta] DeviceTaintRule evicts pod [FeatureGate:DRADeviceTaintRules] [Beta] [Feature:OffByDefault]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 1,
+    "StaffApprovedObsolete": false,
+    "Component": "Node / Kubelet",
+    "Capabilities": [
+      "DynamicResourceAllocation",
+      "FeatureGate:DRADeviceTaintRules",
       "FeatureGate:DRADeviceTaints",
       "OffByDefault"
     ],

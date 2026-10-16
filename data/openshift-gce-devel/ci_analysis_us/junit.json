@@ -183552,6 +183552,14 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "[sig-cluster-lifecycle] Cluster Machine Approver Kubelet serving CSR approval approves a renewed kubelet serving CSR on a control-plane node",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-cluster-lifecycle] Cluster Machine Approver Kubelet serving CSR approval approves a renewed kubelet serving CSR on a worker node",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "[sig-cluster-lifecycle] Cluster completes upgrade",
     "Suite": "Cluster upgrade"
   },
@@ -210201,6 +210209,10 @@
   },
   {
     "Name": "[sig-node] [DRA] kubelet [Feature:DynamicResourceAllocation] [FeatureGate:DRADeviceTaints] [Alpha] [Feature:OffByDefault] NoSchedule keeps pod pending",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-node] [DRA] kubelet [Feature:DynamicResourceAllocation] [FeatureGate:DRADeviceTaints] [Beta] DeviceTaintRule evicts pod [FeatureGate:DRADeviceTaintRules] [Beta] [Feature:OffByDefault]",
     "Suite": "openshift-tests"
   },
   {
