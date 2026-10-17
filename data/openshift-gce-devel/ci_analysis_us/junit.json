@@ -19364,15 +19364,7 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (block volmode)] multiVolume [Slow] should concurrently access the volume and its clone from pods on the same node [LinuxOnly][Feature:VolumeSourceXFS]",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (block volmode)] multiVolume [Slow] should concurrently access the volume and restored snapshot from pods on the same node [LinuxOnly] [Feature:VolumeSnapshotDataSource] [Feature:VolumeSourceXFS]",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (block volmode)] multiVolume [Slow] should concurrently access the volume and restored snapshot from pods on the same node [LinuxOnly][Feature:VolumeSnapshotDataSource][Feature:VolumeSourceXFS]",
     "Suite": "openshift-tests"
   },
   {
@@ -19600,14 +19592,6 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (default fs)] read-write-once-pod[Feature:ReadWriteOncePod] should block a second pod from using an in-use ReadWriteOncePod volume",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (default fs)] read-write-once-pod[Feature:ReadWriteOncePod] should block a second pod from using an in-use ReadWriteOncePod volume on the same node",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (default fs)] seLinuxMount [Feature:SELinux] [FeatureGate:SELinuxMountReadWriteOncePod] [Beta] [FeatureGate:SELinuxChangePolicy] [Beta] Pod with RWO and recursive policy should mount volumes without SELinux mount option",
     "Suite": "openshift-tests"
   },
@@ -19648,15 +19632,7 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (default fs)] subPath should fail if non-existent subpath is outside the volume [Slow][LinuxOnly]",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (default fs)] subPath should fail if subpath directory is outside the volume [Slow] [LinuxOnly]",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (default fs)] subPath should fail if subpath directory is outside the volume [Slow][LinuxOnly]",
     "Suite": "openshift-tests"
   },
   {
@@ -19664,15 +19640,7 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (default fs)] subPath should fail if subpath file is outside the volume [Slow][LinuxOnly]",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (default fs)] subPath should fail if subpath with backstepping is outside the volume [Slow] [LinuxOnly]",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (default fs)] subPath should fail if subpath with backstepping is outside the volume [Slow][LinuxOnly]",
     "Suite": "openshift-tests"
   },
   {
@@ -19713,10 +19681,6 @@
   },
   {
     "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (default fs)] subPath should support restarting containers using file as subpath [Slow] [LinuxOnly]",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (default fs)] subPath should support restarting containers using file as subpath [Slow][LinuxOnly]",
     "Suite": "openshift-tests"
   },
   {
@@ -19852,15 +19816,7 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ext4)] multiVolume [Slow] should concurrently access the volume and its clone from pods on the same node [LinuxOnly][Feature:VolumeSourceXFS]",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ext4)] multiVolume [Slow] should concurrently access the volume and restored snapshot from pods on the same node [LinuxOnly] [Feature:VolumeSnapshotDataSource] [Feature:VolumeSourceXFS]",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ext4)] multiVolume [Slow] should concurrently access the volume and restored snapshot from pods on the same node [LinuxOnly][Feature:VolumeSnapshotDataSource][Feature:VolumeSourceXFS]",
     "Suite": "openshift-tests"
   },
   {
@@ -19904,15 +19860,7 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (filesystem volmode)] multiVolume [Slow] should concurrently access the volume and its clone from pods on the same node [LinuxOnly][Feature:VolumeSourceXFS]",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (filesystem volmode)] multiVolume [Slow] should concurrently access the volume and restored snapshot from pods on the same node [LinuxOnly] [Feature:VolumeSnapshotDataSource] [Feature:VolumeSourceXFS]",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (filesystem volmode)] multiVolume [Slow] should concurrently access the volume and restored snapshot from pods on the same node [LinuxOnly][Feature:VolumeSnapshotDataSource][Feature:VolumeSourceXFS]",
     "Suite": "openshift-tests"
   },
   {
@@ -19953,14 +19901,6 @@
   },
   {
     "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)(allowExpansion)] [Feature:Windows] volume-expand should resize volume when PVC is edited while pod is using it",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)(allowExpansion)][Feature:Windows] volume-expand Verify if offline PVC expansion works",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)(allowExpansion)][Feature:Windows] volume-expand should resize volume when PVC is edited while pod is using it",
     "Suite": "openshift-tests"
   },
   {
@@ -20176,142 +20116,6 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] multiVolume [Slow] should access to two volumes with different volume mode and retain data across pod recreation on different node",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] multiVolume [Slow] should access to two volumes with different volume mode and retain data across pod recreation on the same node",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] multiVolume [Slow] should access to two volumes with the same volume mode and retain data across pod recreation on different node",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] multiVolume [Slow] should access to two volumes with the same volume mode and retain data across pod recreation on the same node",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] multiVolume [Slow] should concurrently access the single read-only volume from pods on the same node",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] multiVolume [Slow] should concurrently access the single volume from pods on different node",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] multiVolume [Slow] should concurrently access the single volume from pods on the same node",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] multiVolume [Slow] should concurrently access the volume and its clone from pods on the same node [LinuxOnly][Feature:VolumeSourceXFS]",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] multiVolume [Slow] should concurrently access the volume and restored snapshot from pods on the same node [LinuxOnly][Feature:VolumeSnapshotDataSource][Feature:VolumeSourceXFS]",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] provisioning should mount multiple PV pointing to the same storage on the same node",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] provisioning should provision storage with mount options",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] provisioning should provision storage with pvc data source",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] provisioning should provision storage with pvc data source in parallel [Slow]",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] provisioning should provision storage with snapshot data source [Feature:VolumeSnapshotDataSource]",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] subPath should be able to unmount after the subpath directory is deleted [LinuxOnly]",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] subPath should fail if non-existent subpath is outside the volume [Slow][LinuxOnly]",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] subPath should fail if subpath directory is outside the volume [Slow][LinuxOnly]",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] subPath should fail if subpath file is outside the volume [Slow][LinuxOnly]",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] subPath should fail if subpath with backstepping is outside the volume [Slow][LinuxOnly]",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] subPath should support creating multiple subpath from same volumes [Slow]",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] subPath should support existing directories when readOnly specified in the volumeSource",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] subPath should support existing directory",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] subPath should support existing single file [LinuxOnly]",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] subPath should support file as subpath [LinuxOnly]",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] subPath should support non-existent path",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] subPath should support readOnly directory specified in the volumeMount",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] subPath should support readOnly file specified in the volumeMount [LinuxOnly]",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] subPath should support restarting containers using directory as subpath [Slow]",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] subPath should support restarting containers using file as subpath [Slow][LinuxOnly]",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] subPath should verify container cannot write to subpath readonly volumes [Slow]",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] volume-expand should not allow expansion of pvcs without AllowVolumeExpansion property",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] volumeIO should write files of various sizes, verify size, validate content [Slow]",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] volumes should allow exec of files on the volume",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] volumes should store data",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (xfs)] [Slow] multiVolume [Slow] should access to two volumes with different volume mode and retain data across pod recreation on different node",
     "Suite": "openshift-tests"
   },
@@ -20368,50 +20172,6 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (xfs)][Slow] multiVolume [Slow] should access to two volumes with different volume mode and retain data across pod recreation on different node",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (xfs)][Slow] multiVolume [Slow] should access to two volumes with different volume mode and retain data across pod recreation on the same node",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (xfs)][Slow] multiVolume [Slow] should access to two volumes with the same volume mode and retain data across pod recreation on different node",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (xfs)][Slow] multiVolume [Slow] should access to two volumes with the same volume mode and retain data across pod recreation on the same node",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (xfs)][Slow] multiVolume [Slow] should concurrently access the single read-only volume from pods on the same node",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (xfs)][Slow] multiVolume [Slow] should concurrently access the single volume from pods on different node",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (xfs)][Slow] multiVolume [Slow] should concurrently access the single volume from pods on the same node",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (xfs)][Slow] multiVolume [Slow] should concurrently access the volume and its clone from pods on the same node [LinuxOnly][Feature:VolumeSourceXFS]",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (xfs)][Slow] multiVolume [Slow] should concurrently access the volume and restored snapshot from pods on the same node [LinuxOnly][Feature:VolumeSnapshotDataSource][Feature:VolumeSourceXFS]",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (xfs)][Slow] volumes should allow exec of files on the volume",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (xfs)][Slow] volumes should store data",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic Snapshot (delete policy)] snapshottable [Feature:VolumeSnapshotDataSource] volume snapshot controller should check snapshot fields, check restore correctly works after modifying source data, check deletion (persistent)",
     "Suite": "openshift-tests"
   },
@@ -20421,18 +20181,6 @@
   },
   {
     "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic Snapshot (delete policy)] snapshottable-stress [Feature:VolumeSnapshotDataSource] should support snapshotting of many volumes repeatedly [Slow] [Serial]",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic Snapshot (delete policy)] snapshottable-stress[Feature:VolumeSnapshotDataSource] should support snapshotting of many volumes repeatedly [Slow] [Serial]",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic Snapshot (delete policy)] snapshottable[Feature:VolumeSnapshotDataSource] volume snapshot controller should check snapshot fields, check restore correctly works after modifying source data, check deletion (persistent)",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic Snapshot (delete policy)] snapshottable[Feature:VolumeSnapshotDataSource] volume snapshot controller should check snapshot fields, check restore correctly works, check deletion (ephemeral)",
     "Suite": "openshift-tests"
   },
   {
@@ -20448,18 +20196,6 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic Snapshot (retain policy)] snapshottable-stress[Feature:VolumeSnapshotDataSource] should support snapshotting of many volumes repeatedly [Slow] [Serial]",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic Snapshot (retain policy)] snapshottable[Feature:VolumeSnapshotDataSource] volume snapshot controller should check snapshot fields, check restore correctly works after modifying source data, check deletion (persistent)",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic Snapshot (retain policy)] snapshottable[Feature:VolumeSnapshotDataSource] volume snapshot controller should check snapshot fields, check restore correctly works, check deletion (ephemeral)",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Ephemeral Snapshot (delete policy)] snapshottable [Feature:VolumeSnapshotDataSource] volume snapshot controller should check snapshot fields, check restore correctly works after modifying source data, check deletion (persistent)",
     "Suite": "openshift-tests"
   },
@@ -20468,27 +20204,11 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Ephemeral Snapshot (delete policy)] snapshottable[Feature:VolumeSnapshotDataSource] volume snapshot controller should check snapshot fields, check restore correctly works after modifying source data, check deletion (persistent)",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Ephemeral Snapshot (delete policy)] snapshottable[Feature:VolumeSnapshotDataSource] volume snapshot controller should check snapshot fields, check restore correctly works, check deletion (ephemeral)",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Ephemeral Snapshot (retain policy)] snapshottable [Feature:VolumeSnapshotDataSource] volume snapshot controller should check snapshot fields, check restore correctly works after modifying source data, check deletion (persistent)",
     "Suite": "openshift-tests"
   },
   {
     "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Ephemeral Snapshot (retain policy)] snapshottable [Feature:VolumeSnapshotDataSource] volume snapshot controller should check snapshot fields, check restore correctly works, check deletion (ephemeral)",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Ephemeral Snapshot (retain policy)] snapshottable[Feature:VolumeSnapshotDataSource] volume snapshot controller should check snapshot fields, check restore correctly works after modifying source data, check deletion (persistent)",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Ephemeral Snapshot (retain policy)] snapshottable[Feature:VolumeSnapshotDataSource] volume snapshot controller should check snapshot fields, check restore correctly works, check deletion (ephemeral)",
     "Suite": "openshift-tests"
   },
   {
@@ -20568,15 +20288,7 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Inline-volume (default fs)] subPath should fail if non-existent subpath is outside the volume [Slow][LinuxOnly]",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Inline-volume (default fs)] subPath should fail if subpath directory is outside the volume [Slow] [LinuxOnly]",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Inline-volume (default fs)] subPath should fail if subpath directory is outside the volume [Slow][LinuxOnly]",
     "Suite": "openshift-tests"
   },
   {
@@ -20584,15 +20296,7 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Inline-volume (default fs)] subPath should fail if subpath file is outside the volume [Slow][LinuxOnly]",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Inline-volume (default fs)] subPath should fail if subpath with backstepping is outside the volume [Slow] [LinuxOnly]",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Inline-volume (default fs)] subPath should fail if subpath with backstepping is outside the volume [Slow][LinuxOnly]",
     "Suite": "openshift-tests"
   },
   {
@@ -20636,10 +20340,6 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Inline-volume (default fs)] subPath should support restarting containers using file as subpath [Slow][LinuxOnly]",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Inline-volume (default fs)] subPath should verify container cannot write to subpath readonly volumes [Slow]",
     "Suite": "openshift-tests"
   },
@@ -20680,27 +20380,11 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Inline-volume (ntfs)][Feature:Windows] volumes should allow exec of files on the volume",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Inline-volume (ntfs)][Feature:Windows] volumes should store data",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Inline-volume (xfs)] [Slow] volumes should allow exec of files on the volume",
     "Suite": "openshift-tests"
   },
   {
     "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Inline-volume (xfs)] [Slow] volumes should store data",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Inline-volume (xfs)][Slow] volumes should allow exec of files on the volume",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Inline-volume (xfs)][Slow] volumes should store data",
     "Suite": "openshift-tests"
   },
   {
@@ -20736,15 +20420,7 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Pre-provisioned PV (block volmode)] multiVolume [Slow] should concurrently access the volume and its clone from pods on the same node [LinuxOnly][Feature:VolumeSourceXFS]",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Pre-provisioned PV (block volmode)] multiVolume [Slow] should concurrently access the volume and restored snapshot from pods on the same node [LinuxOnly] [Feature:VolumeSnapshotDataSource] [Feature:VolumeSourceXFS]",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Pre-provisioned PV (block volmode)] multiVolume [Slow] should concurrently access the volume and restored snapshot from pods on the same node [LinuxOnly][Feature:VolumeSnapshotDataSource][Feature:VolumeSourceXFS]",
     "Suite": "openshift-tests"
   },
   {
@@ -20768,15 +20444,7 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Pre-provisioned PV (default fs)] subPath should fail if non-existent subpath is outside the volume [Slow][LinuxOnly]",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Pre-provisioned PV (default fs)] subPath should fail if subpath directory is outside the volume [Slow] [LinuxOnly]",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Pre-provisioned PV (default fs)] subPath should fail if subpath directory is outside the volume [Slow][LinuxOnly]",
     "Suite": "openshift-tests"
   },
   {
@@ -20784,15 +20452,7 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Pre-provisioned PV (default fs)] subPath should fail if subpath file is outside the volume [Slow][LinuxOnly]",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Pre-provisioned PV (default fs)] subPath should fail if subpath with backstepping is outside the volume [Slow] [LinuxOnly]",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Pre-provisioned PV (default fs)] subPath should fail if subpath with backstepping is outside the volume [Slow][LinuxOnly]",
     "Suite": "openshift-tests"
   },
   {
@@ -20833,10 +20493,6 @@
   },
   {
     "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Pre-provisioned PV (default fs)] subPath should support restarting containers using file as subpath [Slow] [LinuxOnly]",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Pre-provisioned PV (default fs)] subPath should support restarting containers using file as subpath [Slow][LinuxOnly]",
     "Suite": "openshift-tests"
   },
   {
@@ -20904,15 +20560,7 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Pre-provisioned PV (filesystem volmode)] multiVolume [Slow] should concurrently access the volume and its clone from pods on the same node [LinuxOnly][Feature:VolumeSourceXFS]",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Pre-provisioned PV (filesystem volmode)] multiVolume [Slow] should concurrently access the volume and restored snapshot from pods on the same node [LinuxOnly] [Feature:VolumeSnapshotDataSource] [Feature:VolumeSourceXFS]",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Pre-provisioned PV (filesystem volmode)] multiVolume [Slow] should concurrently access the volume and restored snapshot from pods on the same node [LinuxOnly][Feature:VolumeSnapshotDataSource][Feature:VolumeSourceXFS]",
     "Suite": "openshift-tests"
   },
   {
@@ -20932,27 +20580,11 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Pre-provisioned PV (ntfs)][Feature:Windows] volumes should allow exec of files on the volume",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Pre-provisioned PV (ntfs)][Feature:Windows] volumes should store data",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Pre-provisioned PV (xfs)] [Slow] volumes should allow exec of files on the volume",
     "Suite": "openshift-tests"
   },
   {
     "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Pre-provisioned PV (xfs)] [Slow] volumes should store data",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Pre-provisioned PV (xfs)][Slow] volumes should allow exec of files on the volume",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Pre-provisioned PV (xfs)][Slow] volumes should store data",
     "Suite": "openshift-tests"
   },
   {
@@ -20964,27 +20596,11 @@
     "Suite": "openshift-tests"
   },
   {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Pre-provisioned Snapshot (delete policy)] snapshottable[Feature:VolumeSnapshotDataSource] volume snapshot controller should check snapshot fields, check restore correctly works after modifying source data, check deletion (persistent)",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Pre-provisioned Snapshot (delete policy)] snapshottable[Feature:VolumeSnapshotDataSource] volume snapshot controller should check snapshot fields, check restore correctly works, check deletion (ephemeral)",
-    "Suite": "openshift-tests"
-  },
-  {
     "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Pre-provisioned Snapshot (retain policy)] snapshottable [Feature:VolumeSnapshotDataSource] volume snapshot controller should check snapshot fields, check restore correctly works after modifying source data, check deletion (persistent)",
     "Suite": "openshift-tests"
   },
   {
     "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Pre-provisioned Snapshot (retain policy)] snapshottable [Feature:VolumeSnapshotDataSource] volume snapshot controller should check snapshot fields, check restore correctly works, check deletion (ephemeral)",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Pre-provisioned Snapshot (retain policy)] snapshottable[Feature:VolumeSnapshotDataSource] volume snapshot controller should check snapshot fields, check restore correctly works after modifying source data, check deletion (persistent)",
-    "Suite": "openshift-tests"
-  },
-  {
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Pre-provisioned Snapshot (retain policy)] snapshottable[Feature:VolumeSnapshotDataSource] volume snapshot controller should check snapshot fields, check restore correctly works, check deletion (ephemeral)",
     "Suite": "openshift-tests"
   },
   {
@@ -160400,6 +160016,10 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "[OTP][sig-installer][Suite:openshift/openstack] The OpenStack platform on volume creation should create a cinder volume with specified metadata when using cinder storage class with appendVolumeMetadata",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "[OTP][sig-installer][Suite:openshift/openstack] The OpenStack platform on volume creation should create a manila share when using manila storage class",
     "Suite": "openshift-tests"
   },
@@ -194680,6 +194300,10 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "[sig-mco][Suite:openshift/machine-config-operator/disruptive][Disruptive][OCPFeatureGate:IrreconcilableMachineConfig][Serial] Verify MCS Ignition contents for irreconcilable MachineConfig",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "[sig-mco][Suite:openshift/machine-config-operator/disruptive][Disruptive][OCPFeatureGate:IrreconcilableMachineConfig][Serial] [PolarionID:84219] Verify irreconcilable changes on new and existing nodes after scale up [Disruptive]",
     "Suite": "openshift-tests"
   },
@@ -210232,6 +209856,18 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "[sig-node] [DRA] kubelet [Feature:DynamicResourceAllocation] [FeatureGate:DRADeviceTaints] [FeatureGate:DRAWorkloadResourceClaims] [FeatureGate:GenericWorkload] [KubeletMinVersion:1.36] DeviceTaintRule evicts pod with PodGroup claim [FeatureGate:DRADeviceTaintRules] [Beta] [Feature:OffByDefault] [FeatureGate:DynamicResourceAllocation]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-node] [DRA] kubelet [Feature:DynamicResourceAllocation] [FeatureGate:DRADeviceTaints] [FeatureGate:DRAWorkloadResourceClaims] [FeatureGate:GenericWorkload] [KubeletMinVersion:1.36] NoSchedule can be tolerated for PodGroup claims [Beta] [Feature:OffByDefault] [FeatureGate:DynamicResourceAllocation]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-node] [DRA] kubelet [Feature:DynamicResourceAllocation] [FeatureGate:DRADeviceTaints] [FeatureGate:DRAWorkloadResourceClaims] [FeatureGate:GenericWorkload] [KubeletMinVersion:1.36] NoSchedule keeps pod with PodGroup claim pending [Beta] [Feature:OffByDefault] [FeatureGate:DynamicResourceAllocation]",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "[sig-node] [DRA] kubelet [Feature:DynamicResourceAllocation] [FeatureGate:DRAPartitionableDevices] [Alpha] [Feature:OffByDefault] must consume and free up counters",
     "Suite": "openshift-tests"
   },
@@ -210289,6 +209925,14 @@
   },
   {
     "Name": "[sig-node] [DRA] kubelet [Feature:DynamicResourceAllocation] [FeatureGate:DRAPrioritizedList] uses the config for the selected subrequest [FeatureGate:DynamicResourceAllocation]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-node] [DRA] kubelet [Feature:DynamicResourceAllocation] [FeatureGate:GenericWorkload] [FeatureGate:DRAWorkloadResourceClaims] [KubeletMinVersion:1.36] allocates devices for PodGroups [Beta] [Feature:OffByDefault] [FeatureGate:DynamicResourceAllocation]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-node] [DRA] kubelet [Feature:DynamicResourceAllocation] [FeatureGate:GenericWorkload] [FeatureGate:DRAWorkloadResourceClaims] [KubeletMinVersion:1.36] generates claims from templates for PodGroups [Beta] [Feature:OffByDefault] [FeatureGate:DynamicResourceAllocation]",
     "Suite": "openshift-tests"
   },
   {
@@ -214548,6 +214192,14 @@
     "Suite": "CNV-lp-interop"
   },
   {
+    "Name": "[sig-scheduling] GangScheduling [FeatureGate:GenericWorkload] should schedule pods only when quorum is reached [Beta] [Feature:OffByDefault]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-scheduling] GangScheduling [FeatureGate:GenericWorkload] should schedule pods with basic scheduling policy [Beta] [Feature:OffByDefault]",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "[sig-scheduling] LimitRange should create a LimitRange with defaults and ensure pod has those defaults applied. [Conformance]",
     "Suite": "openshift-tests"
   },
@@ -214873,6 +214525,26 @@
   },
   {
     "Name": "[sig-scheduling] SchedulerPriorities [Serial] PodTopologySpread Scoring validates pod should be preferably scheduled to node which makes the matching pods more evenly distributed [Suite:openshift/conformance/serial] [Suite:k8s]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-scheduling] Workload [FeatureGate:GenericWorkload] CRUD Tests PodGroup API availability [Beta] [Feature:OffByDefault]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-scheduling] Workload [FeatureGate:GenericWorkload] CRUD Tests Workload API availability [Beta] [Feature:OffByDefault]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-scheduling] WorkloadAwarePreemption [FeatureGate:GenericWorkload] workload-aware preemption should preempt entire group with All disruption mode by a pod group [Beta] [Feature:OffByDefault]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-scheduling] WorkloadAwarePreemption [FeatureGate:GenericWorkload] workload-aware preemption should preempt partial group with Single disruption mode by a pod group [Beta] [Feature:OffByDefault]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-scheduling] WorkloadAwarePreemption [FeatureGate:GenericWorkload] workload-aware preemption should preempt partial group with Single disruption mode by an individual pod [Beta] [Feature:OffByDefault]",
     "Suite": "openshift-tests"
   },
   {
