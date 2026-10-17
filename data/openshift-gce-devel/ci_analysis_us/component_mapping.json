@@ -80652,43 +80652,8 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:9800ca936c7a175382975766dcecb45f",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (block volmode)] multiVolume [Slow] should concurrently access the volume and its clone from pods on the same node [LinuxOnly][Feature:VolumeSourceXFS]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Dynamic PV (block volmode)",
-      "VolumeSourceXFS"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:d36d6610b7f6c65ce8d6b2b681735947",
     "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (block volmode)] multiVolume [Slow] should concurrently access the volume and restored snapshot from pods on the same node [LinuxOnly] [Feature:VolumeSnapshotDataSource] [Feature:VolumeSourceXFS]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Dynamic PV (block volmode)",
-      "VolumeSnapshotDataSource",
-      "VolumeSourceXFS"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:931594f147433fe3e4fb140f3eb08b7a",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (block volmode)] multiVolume [Slow] should concurrently access the volume and restored snapshot from pods on the same node [LinuxOnly][Feature:VolumeSnapshotDataSource][Feature:VolumeSourceXFS]",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -81637,40 +81602,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:cd2e524244f4e16754462fa2c8dacc73",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (default fs)] read-write-once-pod[Feature:ReadWriteOncePod] should block a second pod from using an in-use ReadWriteOncePod volume",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Dynamic PV (default fs)",
-      "ReadWriteOncePod"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:f54778aed073a99f1a9b06879c40722c",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (default fs)] read-write-once-pod[Feature:ReadWriteOncePod] should block a second pod from using an in-use ReadWriteOncePod volume on the same node",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Dynamic PV (default fs)",
-      "ReadWriteOncePod"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:e3d6ed54d94c8238371c273ccbf54081",
     "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (default fs)] seLinuxMount [Feature:SELinux] [FeatureGate:SELinuxMountReadWriteOncePod] [Beta] [FeatureGate:SELinuxChangePolicy] [Beta] Pod with RWO and recursive policy should mount volumes without SELinux mount option",
     "Suite": "openshift-tests",
@@ -81859,40 +81790,8 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:c87581b9c053fa441e39fc3060d27416",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (default fs)] subPath should fail if non-existent subpath is outside the volume [Slow][LinuxOnly]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Dynamic PV (default fs)"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:8c845ae60970290323807579fd7eaf6d",
     "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (default fs)] subPath should fail if subpath directory is outside the volume [Slow] [LinuxOnly]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Dynamic PV (default fs)"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:95f33d71cd6373e22b43203b8e0b716c",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (default fs)] subPath should fail if subpath directory is outside the volume [Slow][LinuxOnly]",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -81923,40 +81822,8 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:2a309fc81ad17cc53ce6ded39c1be4a4",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (default fs)] subPath should fail if subpath file is outside the volume [Slow][LinuxOnly]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Dynamic PV (default fs)"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:2f7143c460e4a8ff1e0f57eea853530e",
     "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (default fs)] subPath should fail if subpath with backstepping is outside the volume [Slow] [LinuxOnly]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Dynamic PV (default fs)"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:b7900b0abe9760d339095d9395ab0566",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (default fs)] subPath should fail if subpath with backstepping is outside the volume [Slow][LinuxOnly]",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -82117,22 +81984,6 @@
     "Kind": "TestOwnership",
     "ID": "openshift-tests:2725d177a3eccb98f04bf316860c9bb1",
     "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (default fs)] subPath should support restarting containers using file as subpath [Slow] [LinuxOnly]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Dynamic PV (default fs)"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:d4eb6ba5639f1557dc5acf594de88ef8",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (default fs)] subPath should support restarting containers using file as subpath [Slow][LinuxOnly]",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -82706,43 +82557,8 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:aebab508c2374970f7c9b1b6d1e38b5c",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ext4)] multiVolume [Slow] should concurrently access the volume and its clone from pods on the same node [LinuxOnly][Feature:VolumeSourceXFS]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Dynamic PV (ext4)",
-      "VolumeSourceXFS"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:6b3f7fe22d3f2ccd1107575bc72c1076",
     "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ext4)] multiVolume [Slow] should concurrently access the volume and restored snapshot from pods on the same node [LinuxOnly] [Feature:VolumeSnapshotDataSource] [Feature:VolumeSourceXFS]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Dynamic PV (ext4)",
-      "VolumeSnapshotDataSource",
-      "VolumeSourceXFS"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:616e5f2037c94443094a822d1ea13686",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ext4)] multiVolume [Slow] should concurrently access the volume and restored snapshot from pods on the same node [LinuxOnly][Feature:VolumeSnapshotDataSource][Feature:VolumeSourceXFS]",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -82920,43 +82736,8 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:2dccdd38c8636d6405e73f1aa9e4ca09",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (filesystem volmode)] multiVolume [Slow] should concurrently access the volume and its clone from pods on the same node [LinuxOnly][Feature:VolumeSourceXFS]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Dynamic PV (filesystem volmode)",
-      "VolumeSourceXFS"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:0a987621a2781aa5e35f137864dbd459",
     "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (filesystem volmode)] multiVolume [Slow] should concurrently access the volume and restored snapshot from pods on the same node [LinuxOnly] [Feature:VolumeSnapshotDataSource] [Feature:VolumeSourceXFS]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Dynamic PV (filesystem volmode)",
-      "VolumeSnapshotDataSource",
-      "VolumeSourceXFS"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:1fa1d5b574b880d68fa469004397bad4",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (filesystem volmode)] multiVolume [Slow] should concurrently access the volume and restored snapshot from pods on the same node [LinuxOnly][Feature:VolumeSnapshotDataSource][Feature:VolumeSourceXFS]",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -83121,40 +82902,6 @@
     "Kind": "TestOwnership",
     "ID": "openshift-tests:93232b63c3534b1e7f8927266ffdad9d",
     "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)(allowExpansion)] [Feature:Windows] volume-expand should resize volume when PVC is edited while pod is using it",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Dynamic PV (ntfs)(allowExpansion)",
-      "Windows"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:7f0cbb5e5c0fae127c3a2b76ecc99f74",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)(allowExpansion)][Feature:Windows] volume-expand Verify if offline PVC expansion works",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Dynamic PV (ntfs)(allowExpansion)",
-      "Windows"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:fb1b3654d4c6ed8fd5f9c855b4334513",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)(allowExpansion)][Feature:Windows] volume-expand should resize volume when PVC is edited while pod is using it",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -84107,588 +83854,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:907ba96d988c830083c31856e9cbeefd",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] multiVolume [Slow] should access to two volumes with different volume mode and retain data across pod recreation on different node",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Dynamic PV (ntfs)",
-      "Windows"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:19ef6452ed10dcd31567c2d43eb37c73",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] multiVolume [Slow] should access to two volumes with different volume mode and retain data across pod recreation on the same node",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Dynamic PV (ntfs)",
-      "Windows"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:162db3e63addd64364a64259519ef6bd",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] multiVolume [Slow] should access to two volumes with the same volume mode and retain data across pod recreation on different node",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Dynamic PV (ntfs)",
-      "Windows"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:f5673f04b91333e6e66a772a2542da94",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] multiVolume [Slow] should access to two volumes with the same volume mode and retain data across pod recreation on the same node",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Dynamic PV (ntfs)",
-      "Windows"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:0c0ad897e8081bae379dafc6bc9229a0",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] multiVolume [Slow] should concurrently access the single read-only volume from pods on the same node",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Dynamic PV (ntfs)",
-      "Windows"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:c887dcc256184e0bdb64c5063a1b9475",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] multiVolume [Slow] should concurrently access the single volume from pods on different node",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Dynamic PV (ntfs)",
-      "Windows"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:bdb61aecce489a6908b0dd33ef55e183",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] multiVolume [Slow] should concurrently access the single volume from pods on the same node",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Dynamic PV (ntfs)",
-      "Windows"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:5af71bb3d825fed2ad99e4b548f1c51a",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] multiVolume [Slow] should concurrently access the volume and its clone from pods on the same node [LinuxOnly][Feature:VolumeSourceXFS]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Dynamic PV (ntfs)",
-      "VolumeSourceXFS",
-      "Windows"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:ae20f04810221bdd19cd99a7e9d59748",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] multiVolume [Slow] should concurrently access the volume and restored snapshot from pods on the same node [LinuxOnly][Feature:VolumeSnapshotDataSource][Feature:VolumeSourceXFS]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Dynamic PV (ntfs)",
-      "VolumeSnapshotDataSource",
-      "VolumeSourceXFS",
-      "Windows"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:9553a946df007970387db386c2e7ebb4",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] provisioning should mount multiple PV pointing to the same storage on the same node",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Dynamic PV (ntfs)",
-      "Windows"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:944ea094f6f8815cf9113a4fe6d3a21a",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] provisioning should provision storage with mount options",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Dynamic PV (ntfs)",
-      "Windows"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:7b553a5a71448d23f77d460b43491173",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] provisioning should provision storage with pvc data source",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Dynamic PV (ntfs)",
-      "Windows"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:b02d805dfde85211411da27566e028ed",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] provisioning should provision storage with pvc data source in parallel [Slow]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Dynamic PV (ntfs)",
-      "Windows"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:29174147b8b37343ab465249c5daac30",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] provisioning should provision storage with snapshot data source [Feature:VolumeSnapshotDataSource]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Dynamic PV (ntfs)",
-      "VolumeSnapshotDataSource",
-      "Windows"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:ef463bae4b171143875056d66bbc801f",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] subPath should be able to unmount after the subpath directory is deleted [LinuxOnly]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Dynamic PV (ntfs)",
-      "Windows"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:38852ea2cd82c32f2c32da8bd08ac675",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] subPath should fail if non-existent subpath is outside the volume [Slow][LinuxOnly]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Dynamic PV (ntfs)",
-      "Windows"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:e536bbcbf87dcf6b680c83b0d5525d8b",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] subPath should fail if subpath directory is outside the volume [Slow][LinuxOnly]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Dynamic PV (ntfs)",
-      "Windows"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:46e94e94adad0937afbd8ac336373ecd",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] subPath should fail if subpath file is outside the volume [Slow][LinuxOnly]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Dynamic PV (ntfs)",
-      "Windows"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:17d181ec2492363715f267388fc0766a",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] subPath should fail if subpath with backstepping is outside the volume [Slow][LinuxOnly]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Dynamic PV (ntfs)",
-      "Windows"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:f519bea34480c770bf788fb5a6ae3abc",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] subPath should support creating multiple subpath from same volumes [Slow]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Dynamic PV (ntfs)",
-      "Windows"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:48bc50ccafc8557a5120a678b3545a95",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] subPath should support existing directories when readOnly specified in the volumeSource",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Dynamic PV (ntfs)",
-      "Windows"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:c90f9ba16d1c8ece52719ee7587365c0",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] subPath should support existing directory",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Dynamic PV (ntfs)",
-      "Windows"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:783c3d07ec4497b5785e5b193444f27c",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] subPath should support existing single file [LinuxOnly]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Dynamic PV (ntfs)",
-      "Windows"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:503c793db1bd2c008b58b33d7118f329",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] subPath should support file as subpath [LinuxOnly]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Dynamic PV (ntfs)",
-      "Windows"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:688f0bee446cdeecc0424a7c9c06bb28",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] subPath should support non-existent path",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Dynamic PV (ntfs)",
-      "Windows"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:a967a9609ccf67f6f7ab6efa1e5b54e9",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] subPath should support readOnly directory specified in the volumeMount",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Dynamic PV (ntfs)",
-      "Windows"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:1e8540bbed67372df094203b3a20118e",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] subPath should support readOnly file specified in the volumeMount [LinuxOnly]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Dynamic PV (ntfs)",
-      "Windows"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:f810e3ecbdc3d0f9b41b5f3ad347bcb4",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] subPath should support restarting containers using directory as subpath [Slow]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Dynamic PV (ntfs)",
-      "Windows"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:d1131d01068dd67991424ad52da2d7d2",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] subPath should support restarting containers using file as subpath [Slow][LinuxOnly]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Dynamic PV (ntfs)",
-      "Windows"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:d471505fb8f9c36d16c0739e842b38bd",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] subPath should verify container cannot write to subpath readonly volumes [Slow]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Dynamic PV (ntfs)",
-      "Windows"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:62b84181f2cc1c287105ed6148da9afd",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] volume-expand should not allow expansion of pvcs without AllowVolumeExpansion property",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Dynamic PV (ntfs)",
-      "Windows"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:7f14258995cebe4f80df2f46cebb291b",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] volumeIO should write files of various sizes, verify size, validate content [Slow]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Dynamic PV (ntfs)",
-      "Windows"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:53a8307175aaa4dbde26ed4c634208be",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] volumes should allow exec of files on the volume",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Dynamic PV (ntfs)",
-      "Windows"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:c0923bb2805d006a54b1d7917b7c60f6",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (ntfs)][Feature:Windows] volumes should store data",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Dynamic PV (ntfs)",
-      "Windows"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:36124181c9c9558587cc9c3ab218f97d",
     "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (xfs)] [Slow] multiVolume [Slow] should access to two volumes with different volume mode and retain data across pod recreation on different node",
     "Suite": "openshift-tests",
@@ -84916,185 +84081,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:22f87ea693c60529f39b49704ef5fb1f",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (xfs)][Slow] multiVolume [Slow] should access to two volumes with different volume mode and retain data across pod recreation on different node",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Dynamic PV (xfs)"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:5ab6826f28843e4d9b0a5a6574cc8b8d",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (xfs)][Slow] multiVolume [Slow] should access to two volumes with different volume mode and retain data across pod recreation on the same node",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Dynamic PV (xfs)"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:620356e1778092d0255150ff14abab19",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (xfs)][Slow] multiVolume [Slow] should access to two volumes with the same volume mode and retain data across pod recreation on different node",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Dynamic PV (xfs)"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:18876acc91a546380cddf429f70e280b",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (xfs)][Slow] multiVolume [Slow] should access to two volumes with the same volume mode and retain data across pod recreation on the same node",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Dynamic PV (xfs)"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:c6b4013ab384d072b88fa84ce370169d",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (xfs)][Slow] multiVolume [Slow] should concurrently access the single read-only volume from pods on the same node",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Dynamic PV (xfs)"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:366d84c2e6e76b016f261c4aa149fec9",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (xfs)][Slow] multiVolume [Slow] should concurrently access the single volume from pods on different node",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Dynamic PV (xfs)"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:0476946bc88a978cd45e15139cf227e0",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (xfs)][Slow] multiVolume [Slow] should concurrently access the single volume from pods on the same node",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Dynamic PV (xfs)"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:7fc26dc862909096950225f120300c6f",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (xfs)][Slow] multiVolume [Slow] should concurrently access the volume and its clone from pods on the same node [LinuxOnly][Feature:VolumeSourceXFS]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Dynamic PV (xfs)",
-      "VolumeSourceXFS"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:642f031d3b79d9442484aa4631ec1f1b",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (xfs)][Slow] multiVolume [Slow] should concurrently access the volume and restored snapshot from pods on the same node [LinuxOnly][Feature:VolumeSnapshotDataSource][Feature:VolumeSourceXFS]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Dynamic PV (xfs)",
-      "VolumeSnapshotDataSource",
-      "VolumeSourceXFS"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:0396c8243f656f0b2a67303f667c0f50",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (xfs)][Slow] volumes should allow exec of files on the volume",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Dynamic PV (xfs)"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:5699083028adff1d3fbc080cca089867",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic PV (xfs)][Slow] volumes should store data",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Dynamic PV (xfs)"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:71ab79df674e59c9ade31d1c847800b1",
     "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic Snapshot (delete policy)] snapshottable [Feature:VolumeSnapshotDataSource] volume snapshot controller should check snapshot fields, check restore correctly works after modifying source data, check deletion (persistent)",
     "Suite": "openshift-tests",
@@ -85131,57 +84117,6 @@
     "Kind": "TestOwnership",
     "ID": "openshift-tests:ce5f6c9d3c9e6501034c6642e0980778",
     "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic Snapshot (delete policy)] snapshottable-stress [Feature:VolumeSnapshotDataSource] should support snapshotting of many volumes repeatedly [Slow] [Serial]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Dynamic Snapshot (delete policy)",
-      "VolumeSnapshotDataSource"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:661a65da5c2383b9168db44bce7c5f5f",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic Snapshot (delete policy)] snapshottable-stress[Feature:VolumeSnapshotDataSource] should support snapshotting of many volumes repeatedly [Slow] [Serial]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Dynamic Snapshot (delete policy)",
-      "VolumeSnapshotDataSource"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:8a593d5222dffa7a51ea0e08485d4bed",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic Snapshot (delete policy)] snapshottable[Feature:VolumeSnapshotDataSource] volume snapshot controller should check snapshot fields, check restore correctly works after modifying source data, check deletion (persistent)",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Dynamic Snapshot (delete policy)",
-      "VolumeSnapshotDataSource"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:c321117e8e3d275ea489deef684bc116",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic Snapshot (delete policy)] snapshottable[Feature:VolumeSnapshotDataSource] volume snapshot controller should check snapshot fields, check restore correctly works, check deletion (ephemeral)",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -85248,57 +84183,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:638bac1eef258af04ae014510dc77654",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic Snapshot (retain policy)] snapshottable-stress[Feature:VolumeSnapshotDataSource] should support snapshotting of many volumes repeatedly [Slow] [Serial]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Dynamic Snapshot (retain policy)",
-      "VolumeSnapshotDataSource"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:7bd88a31c01aca35e0b39361781be7c1",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic Snapshot (retain policy)] snapshottable[Feature:VolumeSnapshotDataSource] volume snapshot controller should check snapshot fields, check restore correctly works after modifying source data, check deletion (persistent)",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Dynamic Snapshot (retain policy)",
-      "VolumeSnapshotDataSource"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:27de5f9ae57c9fb0b2638fd84cab75eb",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Dynamic Snapshot (retain policy)] snapshottable[Feature:VolumeSnapshotDataSource] volume snapshot controller should check snapshot fields, check restore correctly works, check deletion (ephemeral)",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Dynamic Snapshot (retain policy)",
-      "VolumeSnapshotDataSource"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:4f9b34648129fa7440597627154bdcce",
     "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Ephemeral Snapshot (delete policy)] snapshottable [Feature:VolumeSnapshotDataSource] volume snapshot controller should check snapshot fields, check restore correctly works after modifying source data, check deletion (persistent)",
     "Suite": "openshift-tests",
@@ -85333,40 +84217,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:0285618198f076200ddc72f418d485f7",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Ephemeral Snapshot (delete policy)] snapshottable[Feature:VolumeSnapshotDataSource] volume snapshot controller should check snapshot fields, check restore correctly works after modifying source data, check deletion (persistent)",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Ephemeral Snapshot (delete policy)",
-      "VolumeSnapshotDataSource"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:24475ffe8b513204de39971611d87017",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Ephemeral Snapshot (delete policy)] snapshottable[Feature:VolumeSnapshotDataSource] volume snapshot controller should check snapshot fields, check restore correctly works, check deletion (ephemeral)",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Ephemeral Snapshot (delete policy)",
-      "VolumeSnapshotDataSource"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:eb15a2c223fc57738eb9c3ef707cc3f4",
     "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Ephemeral Snapshot (retain policy)] snapshottable [Feature:VolumeSnapshotDataSource] volume snapshot controller should check snapshot fields, check restore correctly works after modifying source data, check deletion (persistent)",
     "Suite": "openshift-tests",
@@ -85386,40 +84236,6 @@
     "Kind": "TestOwnership",
     "ID": "openshift-tests:16c0391ffa0a96f9bd6b8294be11a651",
     "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Ephemeral Snapshot (retain policy)] snapshottable [Feature:VolumeSnapshotDataSource] volume snapshot controller should check snapshot fields, check restore correctly works, check deletion (ephemeral)",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Ephemeral Snapshot (retain policy)",
-      "VolumeSnapshotDataSource"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:c8333f09ed72f4b2cc02966552d677c9",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Ephemeral Snapshot (retain policy)] snapshottable[Feature:VolumeSnapshotDataSource] volume snapshot controller should check snapshot fields, check restore correctly works after modifying source data, check deletion (persistent)",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Ephemeral Snapshot (retain policy)",
-      "VolumeSnapshotDataSource"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:d118dde3e28295078b9c2607d3a8d9dc",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Ephemeral Snapshot (retain policy)] snapshottable[Feature:VolumeSnapshotDataSource] volume snapshot controller should check snapshot fields, check restore correctly works, check deletion (ephemeral)",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -85739,40 +84555,8 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:2b13be63b180d64ee91a9db509cccc2e",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Inline-volume (default fs)] subPath should fail if non-existent subpath is outside the volume [Slow][LinuxOnly]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Inline-volume (default fs)"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:8136cff8f230c8958bbb046313fff282",
     "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Inline-volume (default fs)] subPath should fail if subpath directory is outside the volume [Slow] [LinuxOnly]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Inline-volume (default fs)"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:dc2c1c153d8756e9927b790b78fb9b55",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Inline-volume (default fs)] subPath should fail if subpath directory is outside the volume [Slow][LinuxOnly]",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -85803,40 +84587,8 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:16a6bfc26049ace337996b55eecdeeb5",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Inline-volume (default fs)] subPath should fail if subpath file is outside the volume [Slow][LinuxOnly]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Inline-volume (default fs)"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:d22230d74386e8db7fe1cef78147ea32",
     "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Inline-volume (default fs)] subPath should fail if subpath with backstepping is outside the volume [Slow] [LinuxOnly]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Inline-volume (default fs)"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:bc312357590d5ed93dd8762c89653f33",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Inline-volume (default fs)] subPath should fail if subpath with backstepping is outside the volume [Slow][LinuxOnly]",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -85997,22 +84749,6 @@
     "Kind": "TestOwnership",
     "ID": "openshift-tests:8be64810be8e9a8715775564e880e138",
     "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Inline-volume (default fs)] subPath should support restarting containers using file as subpath [Slow] [LinuxOnly]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Inline-volume (default fs)"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:c58472f540e0ccf032f0ffd262ebcea9",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Inline-volume (default fs)] subPath should support restarting containers using file as subpath [Slow][LinuxOnly]",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -86189,40 +84925,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:8487a1f9daf53720ed398a7a08a9dda4",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Inline-volume (ntfs)][Feature:Windows] volumes should allow exec of files on the volume",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Inline-volume (ntfs)",
-      "Windows"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:1bdd4b5fecfaf8f4d6daf9a2a1fc73c5",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Inline-volume (ntfs)][Feature:Windows] volumes should store data",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Inline-volume (ntfs)",
-      "Windows"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:2203ae6e7e3f3cc80772ce8eb16420b1",
     "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Inline-volume (xfs)] [Slow] volumes should allow exec of files on the volume",
     "Suite": "openshift-tests",
@@ -86241,38 +84943,6 @@
     "Kind": "TestOwnership",
     "ID": "openshift-tests:dd83da6e35b459891afba52cb673bfcd",
     "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Inline-volume (xfs)] [Slow] volumes should store data",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Inline-volume (xfs)"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:39ddeb58ec2e29b439d6aba8940eafc8",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Inline-volume (xfs)][Slow] volumes should allow exec of files on the volume",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Inline-volume (xfs)"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:bcf99b024ffa7dc9a2fd6309ee43ee99",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Inline-volume (xfs)][Slow] volumes should store data",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -86416,43 +85086,8 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:5ecb7f3b2ac7d18e9ef8e1c94b8b013f",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Pre-provisioned PV (block volmode)] multiVolume [Slow] should concurrently access the volume and its clone from pods on the same node [LinuxOnly][Feature:VolumeSourceXFS]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Pre-provisioned PV (block volmode)",
-      "VolumeSourceXFS"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:56fd12474850a87d43b82fc981906418",
     "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Pre-provisioned PV (block volmode)] multiVolume [Slow] should concurrently access the volume and restored snapshot from pods on the same node [LinuxOnly] [Feature:VolumeSnapshotDataSource] [Feature:VolumeSourceXFS]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Pre-provisioned PV (block volmode)",
-      "VolumeSnapshotDataSource",
-      "VolumeSourceXFS"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:613e4154e8d7dbb9ee64de4064ad6fb3",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Pre-provisioned PV (block volmode)] multiVolume [Slow] should concurrently access the volume and restored snapshot from pods on the same node [LinuxOnly][Feature:VolumeSnapshotDataSource][Feature:VolumeSourceXFS]",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -86549,40 +85184,8 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:67d9935cdc268b0d3129c9954d00ee54",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Pre-provisioned PV (default fs)] subPath should fail if non-existent subpath is outside the volume [Slow][LinuxOnly]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Pre-provisioned PV (default fs)"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:67ae3714a8b092d65ceac7b6ec5fb5a3",
     "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Pre-provisioned PV (default fs)] subPath should fail if subpath directory is outside the volume [Slow] [LinuxOnly]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Pre-provisioned PV (default fs)"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:abf41ad7e3f49fdb3deb4e68b9fb163f",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Pre-provisioned PV (default fs)] subPath should fail if subpath directory is outside the volume [Slow][LinuxOnly]",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -86613,40 +85216,8 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:3c8dc27b7c89c7e19f0b04cf1a946773",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Pre-provisioned PV (default fs)] subPath should fail if subpath file is outside the volume [Slow][LinuxOnly]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Pre-provisioned PV (default fs)"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:249d3a6022a83ab7b946c065fbdf4d0a",
     "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Pre-provisioned PV (default fs)] subPath should fail if subpath with backstepping is outside the volume [Slow] [LinuxOnly]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Pre-provisioned PV (default fs)"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:4049f30f9f5d5387b2422b401b5a18d5",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Pre-provisioned PV (default fs)] subPath should fail if subpath with backstepping is outside the volume [Slow][LinuxOnly]",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -86807,22 +85378,6 @@
     "Kind": "TestOwnership",
     "ID": "openshift-tests:f6ea88578b08537cb6e8bea6f7718a9d",
     "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Pre-provisioned PV (default fs)] subPath should support restarting containers using file as subpath [Slow] [LinuxOnly]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Pre-provisioned PV (default fs)"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:22464555507938ba08bb49020024d8cc",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Pre-provisioned PV (default fs)] subPath should support restarting containers using file as subpath [Slow][LinuxOnly]",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -87094,43 +85649,8 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:6466e3c8dacbe97b292dfc243ff9ffe2",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Pre-provisioned PV (filesystem volmode)] multiVolume [Slow] should concurrently access the volume and its clone from pods on the same node [LinuxOnly][Feature:VolumeSourceXFS]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Pre-provisioned PV (filesystem volmode)",
-      "VolumeSourceXFS"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:ff8df63e69246cb23e0210b32541419b",
     "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Pre-provisioned PV (filesystem volmode)] multiVolume [Slow] should concurrently access the volume and restored snapshot from pods on the same node [LinuxOnly] [Feature:VolumeSnapshotDataSource] [Feature:VolumeSourceXFS]",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Pre-provisioned PV (filesystem volmode)",
-      "VolumeSnapshotDataSource",
-      "VolumeSourceXFS"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:ac9863d2194669f354b4da01a283ce70",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Pre-provisioned PV (filesystem volmode)] multiVolume [Slow] should concurrently access the volume and restored snapshot from pods on the same node [LinuxOnly][Feature:VolumeSnapshotDataSource][Feature:VolumeSourceXFS]",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -87213,40 +85733,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:d1e65322fb44dd264b56e50e801af01b",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Pre-provisioned PV (ntfs)][Feature:Windows] volumes should allow exec of files on the volume",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Pre-provisioned PV (ntfs)",
-      "Windows"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:bd24f8936766f24ef68a07170d8dda24",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Pre-provisioned PV (ntfs)][Feature:Windows] volumes should store data",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Pre-provisioned PV (ntfs)",
-      "Windows"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:f645177d2afc0b9ddd6d3701740f8582",
     "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Pre-provisioned PV (xfs)] [Slow] volumes should allow exec of files on the volume",
     "Suite": "openshift-tests",
@@ -87265,38 +85751,6 @@
     "Kind": "TestOwnership",
     "ID": "openshift-tests:fcff66aaf37add94df1a133dea92062b",
     "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Pre-provisioned PV (xfs)] [Slow] volumes should store data",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Pre-provisioned PV (xfs)"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:1c5db1cfc6567394a2d52ded714d4d80",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Pre-provisioned PV (xfs)][Slow] volumes should allow exec of files on the volume",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Pre-provisioned PV (xfs)"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:0c7bdb4822f308e4c3f214cebb95327f",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Pre-provisioned PV (xfs)][Slow] volumes should store data",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -87345,40 +85799,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:441b58c0a368c8a4f62a08b495744a76",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Pre-provisioned Snapshot (delete policy)] snapshottable[Feature:VolumeSnapshotDataSource] volume snapshot controller should check snapshot fields, check restore correctly works after modifying source data, check deletion (persistent)",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Pre-provisioned Snapshot (delete policy)",
-      "VolumeSnapshotDataSource"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:c318a6de09e81f4e03160727d2da8e70",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Pre-provisioned Snapshot (delete policy)] snapshottable[Feature:VolumeSnapshotDataSource] volume snapshot controller should check snapshot fields, check restore correctly works, check deletion (ephemeral)",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Pre-provisioned Snapshot (delete policy)",
-      "VolumeSnapshotDataSource"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "openshift-tests:b773e06aa5fed9eee6469bb5f8ce262c",
     "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Pre-provisioned Snapshot (retain policy)] snapshottable [Feature:VolumeSnapshotDataSource] volume snapshot controller should check snapshot fields, check restore correctly works after modifying source data, check deletion (persistent)",
     "Suite": "openshift-tests",
@@ -87398,40 +85818,6 @@
     "Kind": "TestOwnership",
     "ID": "openshift-tests:59a7ebf68864e7f77323a37751915132",
     "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Pre-provisioned Snapshot (retain policy)] snapshottable [Feature:VolumeSnapshotDataSource] volume snapshot controller should check snapshot fields, check restore correctly works, check deletion (ephemeral)",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Pre-provisioned Snapshot (retain policy)",
-      "VolumeSnapshotDataSource"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:09a4b56b0e3fb6831e74e2d292cf14ba",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Pre-provisioned Snapshot (retain policy)] snapshottable[Feature:VolumeSnapshotDataSource] volume snapshot controller should check snapshot fields, check restore correctly works after modifying source data, check deletion (persistent)",
-    "Suite": "openshift-tests",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Storage / Kubernetes External Components",
-    "Capabilities": [
-      "Pre-provisioned Snapshot (retain policy)",
-      "VolumeSnapshotDataSource"
-    ],
-    "JIRAComponent": "Storage / Kubernetes External Components",
-    "JIRAComponentID": "14777"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "openshift-tests:2f194eedb0bd3add0ec2a7ba8b5726b4",
-    "Name": "External Storage [Driver: vpc.block.csi.ibm.io] [Testpattern: Pre-provisioned Snapshot (retain policy)] snapshottable[Feature:VolumeSnapshotDataSource] volume snapshot controller should check snapshot fields, check restore correctly works, check deletion (ephemeral)",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -645378,6 +643764,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "openshift-tests:39b0e7e99c3754d32109b4f0be19598d",
+    "Name": "[OTP][sig-installer][Suite:openshift/openstack] The OpenStack platform on volume creation should create a cinder volume with specified metadata when using cinder storage class with appendVolumeMetadata",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Installer / OpenShift on OpenStack",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Installer / OpenShift on OpenStack",
+    "JIRAComponentID": "14784"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "openshift-tests:6b2336f1ec8cb2280c1895dd3f0aa3b9",
     "Name": "[OTP][sig-installer][Suite:openshift/openstack] The OpenStack platform on volume creation should create a manila share when using manila storage class",
     "Suite": "openshift-tests",
@@ -782759,6 +781161,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "openshift-tests:e66e078143d0dac30cf0c4926adcf394",
+    "Name": "[sig-mco][Suite:openshift/machine-config-operator/disruptive][Disruptive][OCPFeatureGate:IrreconcilableMachineConfig][Serial] Verify MCS Ignition contents for irreconcilable MachineConfig",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Machine Config Operator",
+    "Capabilities": [
+      "OCPFeatureGate:IrreconcilableMachineConfig"
+    ],
+    "JIRAComponent": "Machine Config Operator",
+    "JIRAComponentID": "14737"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "openshift-tests:d82c37951a7e0933b9bc44c22828054d",
     "Name": "[sig-mco][Suite:openshift/machine-config-operator/disruptive][Disruptive][OCPFeatureGate:IrreconcilableMachineConfig][Serial] [PolarionID:84219] Verify irreconcilable changes on new and existing nodes after scale up [Disruptive]",
     "Suite": "openshift-tests",
@@ -845722,6 +844140,70 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "openshift-tests:a9a2b29e5d7b9aad8a1f734184e687cb",
+    "Name": "[sig-node] [DRA] kubelet [Feature:DynamicResourceAllocation] [FeatureGate:DRADeviceTaints] [FeatureGate:DRAWorkloadResourceClaims] [FeatureGate:GenericWorkload] [KubeletMinVersion:1.36] DeviceTaintRule evicts pod with PodGroup claim [FeatureGate:DRADeviceTaintRules] [Beta] [Feature:OffByDefault] [FeatureGate:DynamicResourceAllocation]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 1,
+    "StaffApprovedObsolete": false,
+    "Component": "Node / Kubelet",
+    "Capabilities": [
+      "DynamicResourceAllocation",
+      "FeatureGate:DRADeviceTaintRules",
+      "FeatureGate:DRADeviceTaints",
+      "FeatureGate:DRAWorkloadResourceClaims",
+      "FeatureGate:DynamicResourceAllocation",
+      "FeatureGate:GenericWorkload",
+      "OffByDefault"
+    ],
+    "JIRAComponent": "Node / Kubelet",
+    "JIRAComponentID": "14851"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:226f727447e6e004dc440c04f166a652",
+    "Name": "[sig-node] [DRA] kubelet [Feature:DynamicResourceAllocation] [FeatureGate:DRADeviceTaints] [FeatureGate:DRAWorkloadResourceClaims] [FeatureGate:GenericWorkload] [KubeletMinVersion:1.36] NoSchedule can be tolerated for PodGroup claims [Beta] [Feature:OffByDefault] [FeatureGate:DynamicResourceAllocation]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 1,
+    "StaffApprovedObsolete": false,
+    "Component": "Node / Kubelet",
+    "Capabilities": [
+      "DynamicResourceAllocation",
+      "FeatureGate:DRADeviceTaints",
+      "FeatureGate:DRAWorkloadResourceClaims",
+      "FeatureGate:DynamicResourceAllocation",
+      "FeatureGate:GenericWorkload",
+      "OffByDefault"
+    ],
+    "JIRAComponent": "Node / Kubelet",
+    "JIRAComponentID": "14851"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:07e62fe574672dfe25a031f496e1293c",
+    "Name": "[sig-node] [DRA] kubelet [Feature:DynamicResourceAllocation] [FeatureGate:DRADeviceTaints] [FeatureGate:DRAWorkloadResourceClaims] [FeatureGate:GenericWorkload] [KubeletMinVersion:1.36] NoSchedule keeps pod with PodGroup claim pending [Beta] [Feature:OffByDefault] [FeatureGate:DynamicResourceAllocation]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 1,
+    "StaffApprovedObsolete": false,
+    "Component": "Node / Kubelet",
+    "Capabilities": [
+      "DynamicResourceAllocation",
+      "FeatureGate:DRADeviceTaints",
+      "FeatureGate:DRAWorkloadResourceClaims",
+      "FeatureGate:DynamicResourceAllocation",
+      "FeatureGate:GenericWorkload",
+      "OffByDefault"
+    ],
+    "JIRAComponent": "Node / Kubelet",
+    "JIRAComponentID": "14851"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "openshift-tests:2e95d6c7a0cbeef893ec3b09166ec59a",
     "Name": "[sig-node] [DRA] kubelet [Feature:DynamicResourceAllocation] [FeatureGate:DRAPartitionableDevices] [Alpha] [Feature:OffByDefault] must consume and free up counters",
     "Suite": "openshift-tests",
@@ -845976,6 +844458,46 @@
       "DynamicResourceAllocation",
       "FeatureGate:DRAPrioritizedList",
       "FeatureGate:DynamicResourceAllocation"
+    ],
+    "JIRAComponent": "Node / Kubelet",
+    "JIRAComponentID": "14851"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:24eb521c8799ca2938ed41222606df10",
+    "Name": "[sig-node] [DRA] kubelet [Feature:DynamicResourceAllocation] [FeatureGate:GenericWorkload] [FeatureGate:DRAWorkloadResourceClaims] [KubeletMinVersion:1.36] allocates devices for PodGroups [Beta] [Feature:OffByDefault] [FeatureGate:DynamicResourceAllocation]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 1,
+    "StaffApprovedObsolete": false,
+    "Component": "Node / Kubelet",
+    "Capabilities": [
+      "DynamicResourceAllocation",
+      "FeatureGate:DRAWorkloadResourceClaims",
+      "FeatureGate:DynamicResourceAllocation",
+      "FeatureGate:GenericWorkload",
+      "OffByDefault"
+    ],
+    "JIRAComponent": "Node / Kubelet",
+    "JIRAComponentID": "14851"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:3ec7942f940fd2a3ee428b30f07d0db0",
+    "Name": "[sig-node] [DRA] kubelet [Feature:DynamicResourceAllocation] [FeatureGate:GenericWorkload] [FeatureGate:DRAWorkloadResourceClaims] [KubeletMinVersion:1.36] generates claims from templates for PodGroups [Beta] [Feature:OffByDefault] [FeatureGate:DynamicResourceAllocation]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 1,
+    "StaffApprovedObsolete": false,
+    "Component": "Node / Kubelet",
+    "Capabilities": [
+      "DynamicResourceAllocation",
+      "FeatureGate:DRAWorkloadResourceClaims",
+      "FeatureGate:DynamicResourceAllocation",
+      "FeatureGate:GenericWorkload",
+      "OffByDefault"
     ],
     "JIRAComponent": "Node / Kubelet",
     "JIRAComponentID": "14851"
@@ -863070,6 +861592,40 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "openshift-tests:b1d4b0d53f3aa29134f326c2c96fd6b0",
+    "Name": "[sig-scheduling] GangScheduling [FeatureGate:GenericWorkload] should schedule pods only when quorum is reached [Beta] [Feature:OffByDefault]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": -20,
+    "StaffApprovedObsolete": false,
+    "Component": "kube-scheduler",
+    "Capabilities": [
+      "FeatureGate:GenericWorkload",
+      "OffByDefault"
+    ],
+    "JIRAComponent": "kube-scheduler",
+    "JIRAComponentID": "14786"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:dff22dde5acb9be9f64e1217e37a697e",
+    "Name": "[sig-scheduling] GangScheduling [FeatureGate:GenericWorkload] should schedule pods with basic scheduling policy [Beta] [Feature:OffByDefault]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": -20,
+    "StaffApprovedObsolete": false,
+    "Component": "kube-scheduler",
+    "Capabilities": [
+      "FeatureGate:GenericWorkload",
+      "OffByDefault"
+    ],
+    "JIRAComponent": "kube-scheduler",
+    "JIRAComponentID": "14786"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "openshift-tests:28f45a8efbe75b893f748249386e25a7",
     "Name": "[sig-scheduling] LimitRange should create a LimitRange with defaults and ensure pod has those defaults applied. [Conformance]",
     "Suite": "openshift-tests",
@@ -864378,6 +862934,91 @@
     "Component": "kube-scheduler",
     "Capabilities": [
       "Other"
+    ],
+    "JIRAComponent": "kube-scheduler",
+    "JIRAComponentID": "14786"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:50b5006697f74e896ef058e38e396600",
+    "Name": "[sig-scheduling] Workload [FeatureGate:GenericWorkload] CRUD Tests PodGroup API availability [Beta] [Feature:OffByDefault]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": -20,
+    "StaffApprovedObsolete": false,
+    "Component": "kube-scheduler",
+    "Capabilities": [
+      "FeatureGate:GenericWorkload",
+      "OffByDefault"
+    ],
+    "JIRAComponent": "kube-scheduler",
+    "JIRAComponentID": "14786"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:802b748006b209576b3dfc1945e78b6d",
+    "Name": "[sig-scheduling] Workload [FeatureGate:GenericWorkload] CRUD Tests Workload API availability [Beta] [Feature:OffByDefault]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": -20,
+    "StaffApprovedObsolete": false,
+    "Component": "kube-scheduler",
+    "Capabilities": [
+      "FeatureGate:GenericWorkload",
+      "OffByDefault"
+    ],
+    "JIRAComponent": "kube-scheduler",
+    "JIRAComponentID": "14786"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:3e4ee2a7bafb8306978f8b79db3d82e4",
+    "Name": "[sig-scheduling] WorkloadAwarePreemption [FeatureGate:GenericWorkload] workload-aware preemption should preempt entire group with All disruption mode by a pod group [Beta] [Feature:OffByDefault]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": -20,
+    "StaffApprovedObsolete": false,
+    "Component": "kube-scheduler",
+    "Capabilities": [
+      "FeatureGate:GenericWorkload",
+      "OffByDefault"
+    ],
+    "JIRAComponent": "kube-scheduler",
+    "JIRAComponentID": "14786"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:f39af6b64cba206faad5f06c59da7d80",
+    "Name": "[sig-scheduling] WorkloadAwarePreemption [FeatureGate:GenericWorkload] workload-aware preemption should preempt partial group with Single disruption mode by a pod group [Beta] [Feature:OffByDefault]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": -20,
+    "StaffApprovedObsolete": false,
+    "Component": "kube-scheduler",
+    "Capabilities": [
+      "FeatureGate:GenericWorkload",
+      "OffByDefault"
+    ],
+    "JIRAComponent": "kube-scheduler",
+    "JIRAComponentID": "14786"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:832feb79d1de2201b33a9c3dfd9e5df2",
+    "Name": "[sig-scheduling] WorkloadAwarePreemption [FeatureGate:GenericWorkload] workload-aware preemption should preempt partial group with Single disruption mode by an individual pod [Beta] [Feature:OffByDefault]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": -20,
+    "StaffApprovedObsolete": false,
+    "Component": "kube-scheduler",
+    "Capabilities": [
+      "FeatureGate:GenericWorkload",
+      "OffByDefault"
     ],
     "JIRAComponent": "kube-scheduler",
     "JIRAComponentID": "14786"
