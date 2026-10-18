@@ -201036,6 +201036,10 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "[sig-network] services when running openshift ipv4 cluster ensures external ip policy is configured correctly on the cluster [apigroup:config.openshift.io] [Suite:openshift/disruptive-longrunning]",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "[sig-network] services when running openshift ipv4 cluster on bare metal [apigroup:config.openshift.io] ensures external auto assign cidr is configured correctly on the cluster [apigroup:config.openshift.io] [Serial] [Suite:openshift/conformance/serial]",
     "Suite": "openshift-tests"
   },
@@ -202616,7 +202620,27 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "[sig-network][OCPFeatureGate:NetworkObservabilityInstall][Feature:NetObserv] health checks [Skipped:Disconnected] Network Observability should have FlowCollector CR in Ready state [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network][OCPFeatureGate:NetworkObservabilityInstall][Feature:NetObserv] health checks [Skipped:Disconnected] Network Observability should have Prometheus scraping non-zero NetObserv metrics [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network][OCPFeatureGate:NetworkObservabilityInstall][Feature:NetObserv] health checks [Skipped:Disconnected] Network Observability should have operator pod running [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network][OCPFeatureGate:NetworkObservabilityInstall][Feature:NetObserv] health checks [Skipped:Disconnected] Network Observability should not have excessive errors in operator logs [Suite:openshift/conformance/parallel]",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "[sig-network][OCPFeatureGate:NetworkObservabilityInstall][Feature:NetObserv][Serial] Network Observability should clean up a timed out OLM installation [Timeout:30m] [Suite:openshift/conformance/serial]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-network][OCPFeatureGate:NetworkObservabilityInstall][Feature:NetObserv][Serial][Skipped:Disconnected] Network Observability should clean up a timed out OLM installation [Timeout:30m] [Suite:openshift/conformance/serial]",
     "Suite": "openshift-tests"
   },
   {
