@@ -681918,6 +681918,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "openshift-tests:9abea74ccff4fd88a7e1b330ba69c66f",
+    "Name": "[sig-api-machinery] kube-apiserver operator TestKMSEncryptionRotation [OCPFeatureGate:KMSEncryption][Serial][Timeout:120m][Suite:encryption-kms-3]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": -1,
+    "StaffApprovedObsolete": false,
+    "Component": "kube-apiserver",
+    "Capabilities": [
+      "OCPFeatureGate:KMSEncryption"
+    ],
+    "JIRAComponent": "kube-apiserver",
+    "JIRAComponentID": "14814"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "openshift-tests:54a96b1c0ada5d37ab66e9159342bd0d",
     "Name": "[sig-api-machinery] kube-apiserver operator TestKMSEncryptionRotation [OCPFeatureGate:KMSEncryption][Suite:encryption-kms-rotation]",
     "Suite": "openshift-tests",
@@ -681936,6 +681952,22 @@
     "Kind": "TestOwnership",
     "ID": "openshift-tests:4cf1c5c84eaf945939176466c0e46374",
     "Name": "[sig-api-machinery] kube-apiserver operator TestKMSPreflightDeploy [OCPFeatureGate:KMSEncryption][Serial][Timeout:120m][Suite:encryption-kms-2]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": -1,
+    "StaffApprovedObsolete": false,
+    "Component": "kube-apiserver",
+    "Capabilities": [
+      "OCPFeatureGate:KMSEncryption"
+    ],
+    "JIRAComponent": "kube-apiserver",
+    "JIRAComponentID": "14814"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:1fc99adcec47ffd5034c00f18a588540",
+    "Name": "[sig-api-machinery] kube-apiserver operator TestKMSPreflightLifecycle [OCPFeatureGate:KMSEncryption][Serial][Timeout:120m][Suite:encryption-kms-3]",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": -1,
@@ -740436,8 +740468,40 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "openshift-tests:8d9602fa89704104449ed0e813e10a7e",
+    "Name": "[sig-cluster-lifecycle][platform:vsphere][Suite:openshift/disruptive-longrunning][Disruptive] Managed cluster should create machines with data disks [apigroup:machine.openshift.io][Serial] [Serial]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "openshift-tests:7e3b321cb6d71fba5d7850464339c084",
     "Name": "[sig-cluster-lifecycle][platform:vsphere][Suite:openshift/disruptive-longrunning][Disruptive] Managed cluster should create machinesets with a data disk using each provisioning mode [apigroup:machine.openshift.io][Serial]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:f4d0b78c51da3158ae0cbf8acda20a87",
+    "Name": "[sig-cluster-lifecycle][platform:vsphere][Suite:openshift/disruptive-longrunning][Disruptive] Managed cluster should create machinesets with a data disk using each provisioning mode [apigroup:machine.openshift.io][Serial] [Serial]",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,
@@ -740468,6 +740532,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "openshift-tests:91013f71312ce43c83a4db787f1e51bd",
+    "Name": "[sig-cluster-lifecycle][platform:vsphere][Suite:openshift/disruptive-longrunning][Disruptive] Managed cluster should create machinesets with eagerly zeroed data disk [apigroup:machine.openshift.io][Serial] [Serial]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "openshift-tests:58e59fb39918b88c21d80285d18884fe",
     "Name": "[sig-cluster-lifecycle][platform:vsphere][Suite:openshift/disruptive-longrunning][Disruptive] Managed cluster should create machinesets with thick data disk [apigroup:machine.openshift.io][Serial]",
     "Suite": "openshift-tests",
@@ -740484,8 +740564,40 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "openshift-tests:5749591d6593db75bf9902fb0ecec10c",
+    "Name": "[sig-cluster-lifecycle][platform:vsphere][Suite:openshift/disruptive-longrunning][Disruptive] Managed cluster should create machinesets with thick data disk [apigroup:machine.openshift.io][Serial] [Serial]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "openshift-tests:e4caf14eed2ac1ebf683e7706fcb29bc",
     "Name": "[sig-cluster-lifecycle][platform:vsphere][Suite:openshift/disruptive-longrunning][Disruptive] Managed cluster should create machinesets with thin data disk [apigroup:machine.openshift.io][Serial]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "Unknown",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "Unknown",
+    "JIRAComponentID": "14832"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:c41646a0b7d35da179016c16f7840ea9",
+    "Name": "[sig-cluster-lifecycle][platform:vsphere][Suite:openshift/disruptive-longrunning][Disruptive] Managed cluster should create machinesets with thin data disk [apigroup:machine.openshift.io][Serial] [Serial]",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
     "Priority": 0,

@@ -169516,11 +169516,19 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "[sig-api-machinery] kube-apiserver operator TestKMSEncryptionRotation [OCPFeatureGate:KMSEncryption][Serial][Timeout:120m][Suite:encryption-kms-3]",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "[sig-api-machinery] kube-apiserver operator TestKMSEncryptionRotation [OCPFeatureGate:KMSEncryption][Suite:encryption-kms-rotation]",
     "Suite": "openshift-tests"
   },
   {
     "Name": "[sig-api-machinery] kube-apiserver operator TestKMSPreflightDeploy [OCPFeatureGate:KMSEncryption][Serial][Timeout:120m][Suite:encryption-kms-2]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-api-machinery] kube-apiserver operator TestKMSPreflightLifecycle [OCPFeatureGate:KMSEncryption][Serial][Timeout:120m][Suite:encryption-kms-3]",
     "Suite": "openshift-tests"
   },
   {
@@ -184120,7 +184128,15 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "[sig-cluster-lifecycle][platform:vsphere][Suite:openshift/disruptive-longrunning][Disruptive] Managed cluster should create machines with data disks [apigroup:machine.openshift.io][Serial] [Serial]",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "[sig-cluster-lifecycle][platform:vsphere][Suite:openshift/disruptive-longrunning][Disruptive] Managed cluster should create machinesets with a data disk using each provisioning mode [apigroup:machine.openshift.io][Serial]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-cluster-lifecycle][platform:vsphere][Suite:openshift/disruptive-longrunning][Disruptive] Managed cluster should create machinesets with a data disk using each provisioning mode [apigroup:machine.openshift.io][Serial] [Serial]",
     "Suite": "openshift-tests"
   },
   {
@@ -184128,11 +184144,23 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "[sig-cluster-lifecycle][platform:vsphere][Suite:openshift/disruptive-longrunning][Disruptive] Managed cluster should create machinesets with eagerly zeroed data disk [apigroup:machine.openshift.io][Serial] [Serial]",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "[sig-cluster-lifecycle][platform:vsphere][Suite:openshift/disruptive-longrunning][Disruptive] Managed cluster should create machinesets with thick data disk [apigroup:machine.openshift.io][Serial]",
     "Suite": "openshift-tests"
   },
   {
+    "Name": "[sig-cluster-lifecycle][platform:vsphere][Suite:openshift/disruptive-longrunning][Disruptive] Managed cluster should create machinesets with thick data disk [apigroup:machine.openshift.io][Serial] [Serial]",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "[sig-cluster-lifecycle][platform:vsphere][Suite:openshift/disruptive-longrunning][Disruptive] Managed cluster should create machinesets with thin data disk [apigroup:machine.openshift.io][Serial]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-cluster-lifecycle][platform:vsphere][Suite:openshift/disruptive-longrunning][Disruptive] Managed cluster should create machinesets with thin data disk [apigroup:machine.openshift.io][Serial] [Serial]",
     "Suite": "openshift-tests"
   },
   {

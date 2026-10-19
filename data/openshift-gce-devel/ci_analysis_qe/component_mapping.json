@@ -96567,38 +96567,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "Logging:7b78ded3c7b2913b31810bcc453d7b24",
-    "Name": "OCP-53404:qitang:Logging:[sig-openshift-logging] Logging  vector-loki Upgrade testing loki-operator Upgrade with Vector as collector - major version LokiStack [Serial][Slow]",
-    "Suite": "Logging",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Logging",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Logging",
-    "JIRAComponentID": "14829"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "Logging:d2a4dd04394013eddafd1de255aeb184",
-    "Name": "OCP-53407:qitang:Logging:[sig-openshift-logging] Logging  vector-loki Upgrade testing loki-operator Upgrade with Vector as collector - minor version.[Serial][Slow]",
-    "Suite": "Logging",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Logging",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Logging",
-    "JIRAComponentID": "14829"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "Network_Observability:abdeccb23d31df2e994b3600daba58bc",
     "Name": "OCP-53595:memodi:Network_Observability:Verify flow correctness and metrics [Serial]",
     "Suite": "Network_Observability",
@@ -99817,54 +99785,6 @@
     "Kind": "TestOwnership",
     "ID": "Logging:185a1d998fd6095dd3c0b8c46ececad7",
     "Name": "OCP-54523:ikanse:Logging:[sig-openshift-logging] Logging  LokiStack tlsSecurityProfile tests loki-operator LokiStack comply with the intermediate TLS security profile when global API Server has no tlsSecurityProfile defined[Slow][Disruptive] [Serial]",
-    "Suite": "Logging",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Logging",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Logging",
-    "JIRAComponentID": "14829"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "Logging:107c57f7aac2f57ed110bc279cc5ccda",
-    "Name": "OCP-54525:ikanse:Logging:[sig-openshift-logging] Logging  LokiStack tlsSecurityProfile tests loki-operator LokiStack comply with the old tlsSecurityProfile when configured in the global API server configuration[Slow][Disruptive] [Serial]",
-    "Suite": "Logging",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Logging",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Logging",
-    "JIRAComponentID": "14829"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "Logging:b2ef3a5e383c6037cd97e97c637cdbe3",
-    "Name": "OCP-54526:ikanse:Logging:[sig-openshift-logging] Logging  LokiStack tlsSecurityProfile tests loki-operator Forwarding to lokistack comply with the custom tlsSecurityProfile when configured in the global API server configuration[Slow][Disruptive] [Serial]",
-    "Suite": "Logging",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Logging",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Logging",
-    "JIRAComponentID": "14829"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "Logging:e2c6d38f89113096a2b4f76c5f470f8e",
-    "Name": "OCP-54527:ikanse:Logging:[sig-openshift-logging] Logging  LokiStack tlsSecurityProfile tests loki-operator LokiStack comply with the global tlsSecurityProfile - old to intermediate[Slow][Disruptive] [Serial]",
     "Suite": "Logging",
     "Product": "OpenShift",
     "Priority": 0,
@@ -112441,22 +112361,6 @@
     "Kind": "TestOwnership",
     "ID": "Logging:ff51f00f2b52da08ac7b45c6c438b6b0",
     "Name": "OCP-61450:ikanse:Logging:[sig-openshift-logging] Logging  Log Forward to User-Managed-ES Collector-External Elasticsearch output complies with the tlsSecurityProfile config.[Slow][Disruptive] [Serial]",
-    "Suite": "Logging",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Logging",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Logging",
-    "JIRAComponentID": "14829"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "Logging:08f49aeae01c3da72abf7c4ba524a1de",
-    "Name": "OCP-61476:ikanse:Logging:[sig-openshift-logging] Logging  Log Forward to external GrafanaLoki log store Collector-External Loki output complies with the tlsSecurityProfile configuration.[Slow][Disruptive] [Serial]",
     "Suite": "Logging",
     "Product": "OpenShift",
     "Priority": 0,
@@ -155693,22 +155597,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "Logging:6a4df1da545d82f9c2daa07a5dc7e612",
-    "Name": "OCP-84898:kbharti:Logging:[sig-openshift-logging] Logging  - LokiStack Performance Test Performance-Vector-LokiStack-Performance test from vector to LokiStack using 1x.extra-small tsize and ViaQ datamodel with log loss measurement[Serial][Slow]",
-    "Suite": "Logging",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Logging",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Logging",
-    "JIRAComponentID": "14829"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "Workloads:21301b29fdd01ae8a5b146a24e80e185",
     "Name": "OCP-84911:yinzhou:Workloads:[sig-scheduling] Workloads JobSet operand test failurePolicy.action set as RestartJobSetAndIgnoreMaxRestarts",
     "Suite": "Workloads",
@@ -155753,22 +155641,6 @@
     ],
     "JIRAComponent": "oc",
     "JIRAComponentID": "14806"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
-    "ID": "Logging:3eaafe8ff1cca196929402b5aabdd3ef",
-    "Name": "OCP-84975:kbharti:Logging:[sig-openshift-logging] Logging  - LokiStack Performance Test Performance-Vector-LokiStack-Performance test from vector to LokiStack using 1x.extra-small tsize and Otel datamodel with log loss measurement[Serial][Slow]",
-    "Suite": "Logging",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Logging",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Logging",
-    "JIRAComponentID": "14829"
   },
   {
     "APIVersion": "v1",
