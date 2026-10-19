@@ -24140,14 +24140,6 @@
     "Suite": "SDN"
   },
   {
-    "Name": "OCP-53404:qitang:Logging:[sig-openshift-logging] Logging  vector-loki Upgrade testing loki-operator Upgrade with Vector as collector - major version LokiStack [Serial][Slow]",
-    "Suite": "Logging"
-  },
-  {
-    "Name": "OCP-53407:qitang:Logging:[sig-openshift-logging] Logging  vector-loki Upgrade testing loki-operator Upgrade with Vector as collector - minor version.[Serial][Slow]",
-    "Suite": "Logging"
-  },
-  {
     "Name": "OCP-53595:memodi:Network_Observability:Verify flow correctness and metrics [Serial]",
     "Suite": "Network_Observability"
   },
@@ -24953,18 +24945,6 @@
   },
   {
     "Name": "OCP-54523:ikanse:Logging:[sig-openshift-logging] Logging  LokiStack tlsSecurityProfile tests loki-operator LokiStack comply with the intermediate TLS security profile when global API Server has no tlsSecurityProfile defined[Slow][Disruptive] [Serial]",
-    "Suite": "Logging"
-  },
-  {
-    "Name": "OCP-54525:ikanse:Logging:[sig-openshift-logging] Logging  LokiStack tlsSecurityProfile tests loki-operator LokiStack comply with the old tlsSecurityProfile when configured in the global API server configuration[Slow][Disruptive] [Serial]",
-    "Suite": "Logging"
-  },
-  {
-    "Name": "OCP-54526:ikanse:Logging:[sig-openshift-logging] Logging  LokiStack tlsSecurityProfile tests loki-operator Forwarding to lokistack comply with the custom tlsSecurityProfile when configured in the global API server configuration[Slow][Disruptive] [Serial]",
-    "Suite": "Logging"
-  },
-  {
-    "Name": "OCP-54527:ikanse:Logging:[sig-openshift-logging] Logging  LokiStack tlsSecurityProfile tests loki-operator LokiStack comply with the global tlsSecurityProfile - old to intermediate[Slow][Disruptive] [Serial]",
     "Suite": "Logging"
   },
   {
@@ -28109,10 +28089,6 @@
   },
   {
     "Name": "OCP-61450:ikanse:Logging:[sig-openshift-logging] Logging  Log Forward to User-Managed-ES Collector-External Elasticsearch output complies with the tlsSecurityProfile config.[Slow][Disruptive] [Serial]",
-    "Suite": "Logging"
-  },
-  {
-    "Name": "OCP-61476:ikanse:Logging:[sig-openshift-logging] Logging  Log Forward to external GrafanaLoki log store Collector-External Loki output complies with the tlsSecurityProfile configuration.[Slow][Disruptive] [Serial]",
     "Suite": "Logging"
   },
   {
@@ -38920,10 +38896,6 @@
     "Suite": "Logging"
   },
   {
-    "Name": "OCP-84898:kbharti:Logging:[sig-openshift-logging] Logging  - LokiStack Performance Test Performance-Vector-LokiStack-Performance test from vector to LokiStack using 1x.extra-small tsize and ViaQ datamodel with log loss measurement[Serial][Slow]",
-    "Suite": "Logging"
-  },
-  {
     "Name": "OCP-84911:yinzhou:Workloads:[sig-scheduling] Workloads JobSet operand test failurePolicy.action set as RestartJobSetAndIgnoreMaxRestarts",
     "Suite": "Workloads"
   },
@@ -38934,10 +38906,6 @@
   {
     "Name": "OCP-84913:yinzhou:Workloads:[sig-scheduling] Workloads JobSet operand test failurePolicy.action set as FailJobSet",
     "Suite": "Workloads"
-  },
-  {
-    "Name": "OCP-84975:kbharti:Logging:[sig-openshift-logging] Logging  - LokiStack Performance Test Performance-Vector-LokiStack-Performance test from vector to LokiStack using 1x.extra-small tsize and Otel datamodel with log loss measurement[Serial][Slow]",
-    "Suite": "Logging"
   },
   {
     "Name": "OCP-85073:sregidor:MCO:[sig-mco] MCO [P2] automatically re-cordons manually uncordoned node during update [Disruptive] [Serial][Serial]",
