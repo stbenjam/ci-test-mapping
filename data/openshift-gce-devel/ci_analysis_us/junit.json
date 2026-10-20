@@ -188612,6 +188612,14 @@
     "Suite": "hypershift-e2e"
   },
   {
+    "Name": "[sig-hypershift][Jira:Hypershift][Feature:AWSManagedDNS] Hosted Cluster Managed DNS AWS Managed Ingress DNS should point the guest dns.config public and private zones at the managed zones",
+    "Suite": "hypershift-e2e"
+  },
+  {
+    "Name": "[sig-hypershift][Jira:Hypershift][Feature:AWSManagedDNS] Hosted Cluster Managed DNS AWS Managed Ingress DNS should report AWSManagedDNSAvailable True with public and private ingress zones",
+    "Suite": "hypershift-e2e"
+  },
+  {
     "Name": "[sig-hypershift][Jira:Hypershift][Feature:BackupRestore] BackupRestore Backup should create backup and schedule successfully",
     "Suite": "hypershift-e2e"
   },
