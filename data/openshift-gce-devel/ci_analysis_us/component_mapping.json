@@ -758404,6 +758404,38 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "hypershift-e2e:106138396ff97890fdfa247ad95d7029",
+    "Name": "[sig-hypershift][Jira:Hypershift][Feature:AWSManagedDNS] Hosted Cluster Managed DNS AWS Managed Ingress DNS should point the guest dns.config public and private zones at the managed zones",
+    "Suite": "hypershift-e2e",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "HyperShift",
+    "Capabilities": [
+      "AWSManagedDNS"
+    ],
+    "JIRAComponent": "HyperShift",
+    "JIRAComponentID": "14684"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "hypershift-e2e:97fe3039d7c77308246664cd02adaa1f",
+    "Name": "[sig-hypershift][Jira:Hypershift][Feature:AWSManagedDNS] Hosted Cluster Managed DNS AWS Managed Ingress DNS should report AWSManagedDNSAvailable True with public and private ingress zones",
+    "Suite": "hypershift-e2e",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "HyperShift",
+    "Capabilities": [
+      "AWSManagedDNS"
+    ],
+    "JIRAComponent": "HyperShift",
+    "JIRAComponentID": "14684"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "hypershift-e2e:f4faef1d2c2403fff19abd3079c3009f",
     "Name": "[sig-hypershift][Jira:Hypershift][Feature:BackupRestore] BackupRestore Backup should create backup and schedule successfully",
     "Suite": "hypershift-e2e",
