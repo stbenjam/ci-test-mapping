@@ -51,6 +51,14 @@ var EtcdComponent = Component{
 			"[Etcd][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-etcd-operator": "[bz-Etcd][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-etcd-operator",
 
 			"[sig-scheduling][Early] The openshift-etcd pods [apigroup:operator.openshift.io] should be scheduled on different nodes [Skipped:SingleReplicaTopology] [Suite:openshift/conformance/parallel]": "[sig-scheduling][Early] The openshift-etcd pods [apigroup:operator.openshift.io] should be scheduled on different nodes [Suite:openshift/conformance/parallel]",
+
+			// https://github.com/openshift/cluster-etcd-operator/pull/1731 - Added OCPFeatureGate:AutomatedEtcdBackup label
+			"[sig-etcd] cluster-etcd-operator [Operator][Serial][Disruptive][OCPFeatureGate:AutomatedEtcdBackup] TestBackupHappyPath [Timeout:30m]":         "[sig-etcd] cluster-etcd-operator [Operator][Serial][Disruptive] TestBackupHappyPath [Timeout:30m]",
+			"[sig-etcd] cluster-etcd-operator [Operator][Serial][Disruptive][OCPFeatureGate:AutomatedEtcdBackup] TestPeriodicBackupHappyPath [Timeout:30m]": "[sig-etcd] cluster-etcd-operator [Operator][Serial][Disruptive] TestPeriodicBackupHappyPath [Timeout:30m]",
+			"[sig-etcd] cluster-etcd-operator [Operator][Serial][Disruptive][OCPFeatureGate:AutomatedEtcdBackup] TestRetentionBySize":                       "[sig-etcd] cluster-etcd-operator [Operator][Serial][Disruptive] TestRetentionBySize",
+			"[sig-etcd] cluster-etcd-operator [Operator][Serial][Disruptive][OCPFeatureGate:AutomatedEtcdBackup] TestMultipleBackupsAreSkipped":             "[sig-etcd] cluster-etcd-operator [Operator][Serial][Disruptive] TestMultipleBackupsAreSkipped",
+			"[sig-etcd] cluster-etcd-operator [Operator][Serial][Disruptive][OCPFeatureGate:AutomatedEtcdBackup] TestBackupFailureOnMissingPVC":             "[sig-etcd] cluster-etcd-operator [Operator][Serial][Disruptive] TestBackupFailureOnMissingPVC",
+			"[sig-etcd] cluster-etcd-operator [Operator][Serial][Disruptive][OCPFeatureGate:AutomatedEtcdBackup] TestWrongScheduleDegradesOperator":         "[sig-etcd] cluster-etcd-operator [Operator][Serial][Disruptive] TestWrongScheduleDegradesOperator",
 		},
 	},
 }

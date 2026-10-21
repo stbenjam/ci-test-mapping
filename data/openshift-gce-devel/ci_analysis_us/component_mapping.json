@@ -756948,7 +756948,7 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:ef9a3c63527c14f8fed3d504f653ac7b",
+    "ID": "openshift-tests:c3ada85f91b6ec77058552ecaad0fd61",
     "Name": "[sig-etcd] cluster-etcd-operator [Operator][Serial][Disruptive][OCPFeatureGate:AutomatedEtcdBackup] TestBackupFailureOnMissingPVC",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
@@ -756964,7 +756964,7 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:66d10a57a3cf3c884757c44c165bbe5f",
+    "ID": "openshift-tests:13af5126444a005f0c100eda9deab85d",
     "Name": "[sig-etcd] cluster-etcd-operator [Operator][Serial][Disruptive][OCPFeatureGate:AutomatedEtcdBackup] TestBackupHappyPath [Timeout:30m]",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
@@ -756980,7 +756980,7 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:9daf5e47f4d13c536e6afb7048286324",
+    "ID": "openshift-tests:d4b2628e27e34e40077d8a281f2e5816",
     "Name": "[sig-etcd] cluster-etcd-operator [Operator][Serial][Disruptive][OCPFeatureGate:AutomatedEtcdBackup] TestMultipleBackupsAreSkipped",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
@@ -756996,7 +756996,7 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:298a1a8ef462afc52020b0bb0238f5b4",
+    "ID": "openshift-tests:3a8726cf42cbc8cc924311d208f8be85",
     "Name": "[sig-etcd] cluster-etcd-operator [Operator][Serial][Disruptive][OCPFeatureGate:AutomatedEtcdBackup] TestPeriodicBackupHappyPath [Timeout:30m]",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
@@ -757012,7 +757012,7 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:8972ae25dac113d518e1553cd621762c",
+    "ID": "openshift-tests:a6e196fddd2b3b4843f2f3193c0cb0aa",
     "Name": "[sig-etcd] cluster-etcd-operator [Operator][Serial][Disruptive][OCPFeatureGate:AutomatedEtcdBackup] TestRetentionBySize",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
@@ -757028,7 +757028,7 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "openshift-tests:aa6134f2763c0ccaac8dbee1ce17a5e2",
+    "ID": "openshift-tests:37253735551550d607e9a85f5c40ca7c",
     "Name": "[sig-etcd] cluster-etcd-operator [Operator][Serial][Disruptive][OCPFeatureGate:AutomatedEtcdBackup] TestWrongScheduleDegradesOperator",
     "Suite": "openshift-tests",
     "Product": "OpenShift",
