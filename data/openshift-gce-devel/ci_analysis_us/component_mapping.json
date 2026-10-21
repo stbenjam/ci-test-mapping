@@ -155309,6 +155309,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "hypershift-e2e:59b48e30ed115ac209041b59c85d2d83",
+    "Name": "TestCreateCluster/Main/[Feature:AzureMachineDiagnostics]_VerifyAzureMachineDiagnostics",
+    "Suite": "hypershift-e2e",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "HyperShift",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "HyperShift",
+    "JIRAComponentID": "14684"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "hypershift-e2e:5851d23c443f8d4ff666b32e6cc5ebda",
     "Name": "TestCreateCluster/Main/break-glass-credentials",
     "Suite": "hypershift-e2e",
@@ -428166,8 +428182,40 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Gitops--Parallel Test Suite:cf2b5a740b006ebe8bc6c049c8f4b9c4",
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-001_alpha_to_beta_dex_conversion Ensure dex spec field can be converted between ArgoCD v1alpha1 and v1beta1 [openshift]",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Gitops",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Gitops",
+    "JIRAComponentID": "14692"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "lp-ocp-compat--Gitops--Parallel Test Suite:1548fc49804c6f814ee60e3e4d50069e",
     "Name": "[It] GitOps Operator Parallel E2E Tests 1-003_alpha_to_beta_sso_conflict_conversion verifies expected behaviour of ArgoCD CR when dex and keycloak are both specified in v1alpha1 API",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Gitops",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Gitops",
+    "JIRAComponentID": "14692"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Gitops--Parallel Test Suite:6c60c002939ab978072e3b2150df5eaf",
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-003_alpha_to_beta_sso_conflict_conversion verifies expected behaviour of ArgoCD CR when dex and keycloak are both specified in v1alpha1 API [openshift]",
     "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite",
     "Product": "OpenShift",
     "Priority": 0,
@@ -428198,8 +428246,40 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Gitops--Parallel Test Suite:a8722ecc06438d60ee3d06df1dc09a36",
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-003_validate_console_link verifies ConsoleLink exists and has expected content [openshift]",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Gitops",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Gitops",
+    "JIRAComponentID": "14692"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "lp-ocp-compat--Gitops--Parallel Test Suite:43ea0144f96cb9b39e7035ae8ce689a2",
     "Name": "[It] GitOps Operator Parallel E2E Tests 1-004_beta_to_alpha_conversion verifies v1beta1 ArgoCD CR containing Dex SSO values can be converted to v1alpha1",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Gitops",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Gitops",
+    "JIRAComponentID": "14692"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Gitops--Parallel Test Suite:b653f0de60e0655f0dbdd477880b40be",
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-004_beta_to_alpha_conversion verifies v1beta1 ArgoCD CR containing Dex SSO values can be converted to v1alpha1 [openshift]",
     "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite",
     "Product": "OpenShift",
     "Priority": 0,
@@ -428230,8 +428310,40 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Gitops--Parallel Test Suite:2aea286b8e47daa42538429a40b6944c",
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-005_validate_metrics_test verifies that default ServiceMonitors exist in openshift-gitops and PrometheusRule ArgoCDSyncAlert exists [openshift]",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Gitops",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Gitops",
+    "JIRAComponentID": "14692"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "lp-ocp-compat--Gitops--Parallel Test Suite:5e156bfd71ffbd931e993999c203c89c",
     "Name": "[It] GitOps Operator Parallel E2E Tests 1-005_validate_route_tls ensures that certificates can be confirmed on server and webhook Routes",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Gitops",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Gitops",
+    "JIRAComponentID": "14692"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Gitops--Parallel Test Suite:e04d20ce619fec3104365661f408bd86",
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-005_validate_route_tls ensures that certificates can be confirmed on server and webhook Routes [openshift]",
     "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite",
     "Product": "OpenShift",
     "Priority": 0,
@@ -428390,6 +428502,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Gitops--Parallel Test Suite:31a9bbb657c8134338138d061eba7700",
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-023_validate_repo_server_tls verifying ArgoCD .spec.repo AutoTLS and verifyTLS work as expected [openshift]",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Gitops",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Gitops",
+    "JIRAComponentID": "14692"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "lp-ocp-compat--Gitops--Parallel Test Suite:b3d70100710a53d49c0eb58469f92a6c",
     "Name": "[It] GitOps Operator Parallel E2E Tests 1-025-validate-managed-by-change ensuring that managed-by label can transition between two different Argo CD instances",
     "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite",
@@ -428438,8 +428566,40 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Gitops--Parallel Test Suite:f590bae783d70fcabb63f57da47447f0",
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-030_validate_reencrypt verifies Argo CD Server's Route can be enabled with TLSTerminationReencrypt [openshift]",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Gitops",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Gitops",
+    "JIRAComponentID": "14692"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "lp-ocp-compat--Gitops--Parallel Test Suite:820269e6a119f12dbe4f2c38be5efb93",
     "Name": "[It] GitOps Operator Parallel E2E Tests 1-031_validate_toolchain verifies that toolchain versions have the expected values",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Gitops",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Gitops",
+    "JIRAComponentID": "14692"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Gitops--Parallel Test Suite:28eb2dd9397d07bbe7fbd1799a9cc642",
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-031_validate_toolchain verifies that toolchain versions have the expected values [openshift]",
     "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite",
     "Product": "OpenShift",
     "Priority": 0,
@@ -428662,6 +428822,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Gitops--Parallel Test Suite:ffe6e66df9e9683dd2c3f7b318eee2ca",
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-041_validate_argocd_sync_alert verifying PrometheusRule gitops-operator-argocd-alerts exists and has expected values [openshift]",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Gitops",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Gitops",
+    "JIRAComponentID": "14692"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "lp-ocp-compat--Gitops--Parallel Test Suite:5358bdcfb1dfdc171183a99cd0951f63",
     "Name": "[It] GitOps Operator Parallel E2E Tests 1-042_restricted_pss_compliant_test verifies that all Argo CD components can run with pod-security enforce, warn, and audit of 'restricted'",
     "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite",
@@ -428680,6 +428856,22 @@
     "Kind": "TestOwnership",
     "ID": "lp-ocp-compat--Gitops--Parallel Test Suite:300c0a95d9334654fa4cfb88bad04f42",
     "Name": "[It] GitOps Operator Parallel E2E Tests 1-042_validate_status_host verifies that .status.host of ArgoCD matches .spec.host of Route, and status is updated when Route is removed",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Gitops",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Gitops",
+    "JIRAComponentID": "14692"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Gitops--Parallel Test Suite:f23e7ac99e3ef71879212d1a8c594d77",
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-042_validate_status_host verifies that .status.host of ArgoCD matches .spec.host of Route, and status is updated when Route is removed [openshift]",
     "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite",
     "Product": "OpenShift",
     "Priority": 0,
@@ -428870,6 +429062,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Gitops--Parallel Test Suite:6057db07b93947cd917d3c696dcb8cc0",
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-050_validate_sso ensures the conditions in status when external Authentication is enabled on clusters; above 4.20 by default in openshift is enabled [openshift]",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Gitops",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Gitops",
+    "JIRAComponentID": "14692"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "lp-ocp-compat--Gitops--Parallel Test Suite:9167f6b188e3b7ed7f16adb0e4d37d17",
     "Name": "[It] GitOps Operator Parallel E2E Tests 1-050_validate_sso ensures the conditions in status when external Authentication is enabled on clusters; above 4.20 by default in openshit is enabled",
     "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite",
@@ -428918,6 +429126,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Gitops--Parallel Test Suite:f65dbfa706b473ee34e92b1dd822ae82",
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-053_validate_cluster_admin_rbac validates that openshift-gitops instance has expected .spec.RBAC.policy values [openshift]",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Gitops",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Gitops",
+    "JIRAComponentID": "14692"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "lp-ocp-compat--Gitops--Parallel Test Suite:71b2f909439383fe430645a431f76ede",
     "Name": "[It] GitOps Operator Parallel E2E Tests 1-054_validate_deploymentconfig verifies a DeploymentConfig can be deployed by Argo CD",
     "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite",
@@ -428934,8 +429158,40 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Gitops--Parallel Test Suite:5d6cd87b78b5ea0856871d9029b805ce",
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-054_validate_deploymentconfig verifies a DeploymentConfig can be deployed by Argo CD [openshift]",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Gitops",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Gitops",
+    "JIRAComponentID": "14692"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "lp-ocp-compat--Gitops--Parallel Test Suite:0993d8fcaa448739328b2e71edb1ff97",
     "Name": "[It] GitOps Operator Parallel E2E Tests 1-055_drop_resource_customizations verifies that resource customization is dropped in conversion from ArgoCD v1alpha1 to v1beta1",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Gitops",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Gitops",
+    "JIRAComponentID": "14692"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Gitops--Parallel Test Suite:a12cdee6bd4d63c3d604df74d86bd223",
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-055_drop_resource_customizations verifies that resource customization is dropped in conversion from ArgoCD v1alpha1 to v1beta1 [openshift]",
     "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite",
     "Product": "OpenShift",
     "Priority": 0,
@@ -429062,6 +429318,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Gitops--Parallel Test Suite:302cc3c12d9ea33be630bb4f6e8d0864",
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-063_validate_dex_liveness_probe_test verifies dex server Pod has expected liveness probe values [openshift]",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Gitops",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Gitops",
+    "JIRAComponentID": "14692"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "lp-ocp-compat--Gitops--Parallel Test Suite:4c903c03fdd4339c58318eef4150282c",
     "Name": "[It] GitOps Operator Parallel E2E Tests 1-063_validate_statefulset_restart verifies that if a user modifies application controller image that it is reconciled back to desired image",
     "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite",
@@ -429096,6 +429368,22 @@
     "Kind": "TestOwnership",
     "ID": "lp-ocp-compat--Gitops--Parallel Test Suite:18c027206a961aa5de58ca5a72d574e3",
     "Name": "[It] GitOps Operator Parallel E2E Tests 1-065_validate_redis_ha_anti_affinity ensuring that Redis HA StatefulSet has expected PodAffinity",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Gitops",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Gitops",
+    "JIRAComponentID": "14692"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Gitops--Parallel Test Suite:aa1dd7bdf6d7b0e457045410b6ce71e7",
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-065_validate_redis_ha_anti_affinity ensuring that Redis HA StatefulSet has expected PodAffinity [HA]",
     "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite",
     "Product": "OpenShift",
     "Priority": 0,
@@ -429190,8 +429478,40 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Gitops--Parallel Test Suite:8b9192a2a26536964b73c00fef9f5b80",
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-068_validate_redis_secure_comm_autotls_no_ha validates that the operator configures Redis using auto-gen TLS certificates when HA is disabled [openshift]",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Gitops",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Gitops",
+    "JIRAComponentID": "14692"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "lp-ocp-compat--Gitops--Parallel Test Suite:5f5e99e268ea926d99abfc8ae911fee2",
     "Name": "[It] GitOps Operator Parallel E2E Tests 1-069_validate_redis_secure_comm_autotls_ha verifying when HA is enabled that Argo CD starts successfully in HA mode, and that AutoTLS can be enabled",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Gitops",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Gitops",
+    "JIRAComponentID": "14692"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Gitops--Parallel Test Suite:fc612cbde46e04a210566dbf8fdf4394",
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-069_validate_redis_secure_comm_autotls_ha verifying when HA is enabled that Argo CD starts successfully in HA mode, and that AutoTLS can be enabled [openshift, HA]",
     "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite",
     "Product": "OpenShift",
     "Priority": 0,
@@ -429254,6 +429574,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Gitops--Parallel Test Suite:17796e1af85c26d2446fc5bbdfdd6e1a",
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-075_validate_dex_anyuid validates that dex runs when serviceaccount has anyuid SCC [openshift]",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Gitops",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Gitops",
+    "JIRAComponentID": "14692"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "lp-ocp-compat--Gitops--Parallel Test Suite:acb5b8852cba54221c066a6e5f59395b",
     "Name": "[It] GitOps Operator Parallel E2E Tests 1-079_validate_vars_for_notificaitons ensures that setting an environment variable on notifications controller via ArgoCD CR will cause the env var to be set on notification controller Deployment",
     "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite",
@@ -429288,6 +429624,22 @@
     "Kind": "TestOwnership",
     "ID": "lp-ocp-compat--Gitops--Parallel Test Suite:64392ea5115838fedf08026595c49550",
     "Name": "[It] GitOps Operator Parallel E2E Tests 1-081_validate_applicationset_deployment verifies that openshift-gitops Argo CD has applicationset controller workload and service with expected values",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Gitops",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Gitops",
+    "JIRAComponentID": "14692"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Gitops--Parallel Test Suite:79892c08cdf65d0cafd9210b8d5f4707",
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-081_validate_applicationset_deployment verifies that openshift-gitops Argo CD has applicationset controller workload and service with expected values [openshift]",
     "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite",
     "Product": "OpenShift",
     "Priority": 0,
@@ -429446,6 +429798,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Gitops--Parallel Test Suite:d73599b90417435050e408a0c8ea9c54",
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-090_validate_permissions ensure the GitOps Operator CSV has the correct cluster permissions and gitopsservices CRD has expected properties [openshift]",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Gitops",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Gitops",
+    "JIRAComponentID": "14692"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "lp-ocp-compat--Gitops--Parallel Test Suite:7541b8f67f0506cc04573b1b0a428045",
     "Name": "[It] GitOps Operator Parallel E2E Tests 1-091_argocd_app_validate-applicationset-status ensures that ArgoCD CR .status.applicationset field correctly reflects the status of applicationset controller workload",
     "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite",
@@ -429480,6 +429848,22 @@
     "Kind": "TestOwnership",
     "ID": "lp-ocp-compat--Gitops--Parallel Test Suite:872f08af61a6814f3285a7ee288a79f0",
     "Name": "[It] GitOps Operator Parallel E2E Tests 1-095_validate_dex_clientsecret verifies that the Dex client secret is sourced from a short-lived TokenRequest token and is correctly set in argocd-secret",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Gitops",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Gitops",
+    "JIRAComponentID": "14692"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Gitops--Parallel Test Suite:7729d19dde3fefaf7a7e24be94267378",
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-095_validate_dex_clientsecret verifies that the Dex client secret is sourced from a short-lived TokenRequest token and is correctly set in argocd-secret [openshift]",
     "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite",
     "Product": "OpenShift",
     "Priority": 0,
@@ -429542,6 +429926,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Gitops--Parallel Test Suite:2e665f2d45560714634715f4dad42372",
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-096-validate_home_env_argocd_controller verifies openshift-gitops app controller StatefulSet container has expected HOME env var and redis-initial-pass volume mount [openshift]",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Gitops",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Gitops",
+    "JIRAComponentID": "14692"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "lp-ocp-compat--Gitops--Parallel Test Suite:b108e65a0b9caccac0fe68640dce4615",
     "Name": "[It] GitOps Operator Parallel E2E Tests 1-098_validate_dex_clientsecret_deprecated validates that dex client secret is properly copied from service account token to argocd-secret",
     "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite",
@@ -429590,6 +429990,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Gitops--Parallel Test Suite:2a5220375d8fcf7408858ae6f4dbd4d2",
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-103_argocd_alpha_to_beta_conversion ensures that creation of a v1alpha1 ArgoCD CR with SSO fields will be translated into a v1beta1 ArgoCD CR via webhook [openshift]",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Gitops",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Gitops",
+    "JIRAComponentID": "14692"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "lp-ocp-compat--Gitops--Parallel Test Suite:2ac7b3885324c07930d2452bc9ae1dd9",
     "Name": "[It] GitOps Operator Parallel E2E Tests 1-104_validate_applicationset_tls_scm_volume_mount verifies that specifying a ConfigMap to ArgoCD CR .spec.applicationSet.SCMRootCAConfigMap will cause that ConfigMap to be mounted into applicationset controller Deployment, and that applicationset controller has expected volumes and mounts",
     "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite",
@@ -429608,6 +430024,22 @@
     "Kind": "TestOwnership",
     "ID": "lp-ocp-compat--Gitops--Parallel Test Suite:a6a16771272d029c59d9c3b559b9b3cd",
     "Name": "[It] GitOps Operator Parallel E2E Tests 1-104_validate_prometheus_alert verify that openshift gitops operator servicemonitor exists in openshift-gitops-operator namespace, and has the expected values",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Gitops",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Gitops",
+    "JIRAComponentID": "14692"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Gitops--Parallel Test Suite:1f4ae9be954b72c53311bb8682f58c84",
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-104_validate_prometheus_alert verify that openshift gitops operator servicemonitor exists in openshift-gitops-operator namespace, and has the expected values [openshift]",
     "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite",
     "Product": "OpenShift",
     "Priority": 0,
@@ -429672,6 +430104,22 @@
     "Kind": "TestOwnership",
     "ID": "lp-ocp-compat--Gitops--Parallel Test Suite:689b893cc87ee4858c77753b0eb7c477",
     "Name": "[It] GitOps Operator Parallel E2E Tests 1-109_validate_reencrypt_termination_policy ensure the openshift-gitops default argo cd server route has expected TLS  Config values: insecure redirect and reencrypt, and the route ingress is sucessfully admitted",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Gitops",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Gitops",
+    "JIRAComponentID": "14692"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Gitops--Parallel Test Suite:b2e56a4a98dc0e55df6c561a0c93492d",
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-109_validate_reencrypt_termination_policy ensure the openshift-gitops default argo cd server route has expected TLS  Config values: insecure redirect and reencrypt, and the route ingress is sucessfully admitted [openshift]",
     "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite",
     "Product": "OpenShift",
     "Priority": 0,
@@ -429830,6 +430278,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Gitops--Parallel Test Suite:fc6d691371db0044c6899c05d6fc653e",
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-118_validate_redis_ssc verifies that HA pods have expected SSC [openshift]",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Gitops",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Gitops",
+    "JIRAComponentID": "14692"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "lp-ocp-compat--Gitops--Parallel Test Suite:4e5442c7d572a0380e421be5bef7b64f",
     "Name": "[It] GitOps Operator Parallel E2E Tests 1-119_argocd_respectRBAC ensures that setting .spec.controller.respectRBAC will cause that value to be set in Argo CD's argocd-cm ConfigMap, and that invalid values are ignored",
     "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite",
@@ -429974,8 +430438,40 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Gitops--Parallel Test Suite:325cb86eaa023f84f9d65dce95de2250",
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-125_validate_server_serving_cert_annotation_restore does not add serving-cert annotation when argocd-server-tls already exists as a user-managed secret (not Service CA) [openshift]",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Gitops",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Gitops",
+    "JIRAComponentID": "14692"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "lp-ocp-compat--Gitops--Parallel Test Suite:35cd52aefcc114e30d5cb9c6ee1e397b",
     "Name": "[It] GitOps Operator Parallel E2E Tests 1-125_validate_server_serving_cert_annotation_restore restores service.beta.openshift.io/serving-cert-secret-name when Route TLS returns from passthrough to default reencrypt",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Gitops",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Gitops",
+    "JIRAComponentID": "14692"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Gitops--Parallel Test Suite:aaa196dbd6cfbe9cac10c0090fd8797d",
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-125_validate_server_serving_cert_annotation_restore restores service.beta.openshift.io/serving-cert-secret-name when Route TLS returns from passthrough to default reencrypt [openshift]",
     "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite",
     "Product": "OpenShift",
     "Priority": 0,
@@ -430198,8 +430694,40 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Gitops--Parallel Test Suite:13523c54a69a85f74e737efdfa404cdb",
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-126_validate_servicemonitor_metrics_config verifies agent metrics config is applied to ServiceMonitor [openshift]",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Gitops",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Gitops",
+    "JIRAComponentID": "14692"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "lp-ocp-compat--Gitops--Parallel Test Suite:c45380e7eff4bb9af6bba5c4d5da3726",
     "Name": "[It] GitOps Operator Parallel E2E Tests 1-126_validate_servicemonitor_metrics_config verifies per-component metrics config is applied to ServiceMonitors",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Gitops",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Gitops",
+    "JIRAComponentID": "14692"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Gitops--Parallel Test Suite:98232659801662b1799520ae024d20d8",
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-126_validate_servicemonitor_metrics_config verifies per-component metrics config is applied to ServiceMonitors [openshift]",
     "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite",
     "Product": "OpenShift",
     "Priority": 0,
@@ -430230,8 +430758,88 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Gitops--Parallel Test Suite:73d2156044df76c0659a34d7cd9b6c6a",
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-126_validate_servicemonitor_metrics_config verifies principal metrics config is applied to ServiceMonitor [openshift]",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Gitops",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Gitops",
+    "JIRAComponentID": "14692"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "lp-ocp-compat--Gitops--Parallel Test Suite:340a8a3d04ebf91f1836be7cebd3e7e1",
     "Name": "[It] GitOps Operator Parallel E2E Tests 1-131_validate_rolebinding_no_tracking_annotation_propagation does not propagate Argo CD tracking annotations from the ArgoCD CR to RoleBindings created in managed namespaces",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Gitops",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Gitops",
+    "JIRAComponentID": "14692"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Gitops--Parallel Test Suite:3be908e6e26cb04c0e490323bae4f94f",
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-141_source_hydrator activate Commit Server by Source Hydrator config [openshift]",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Gitops",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Gitops",
+    "JIRAComponentID": "14692"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Gitops--Parallel Test Suite:a200a3be1fd1345fde4ca27910df72a9",
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-141_source_hydrator apply CommitServer configuration options to the running CommitServer deployment [openshift]",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Gitops",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Gitops",
+    "JIRAComponentID": "14692"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Gitops--Parallel Test Suite:bbb8f3c0fbb0762134ad9b0ae2ff8ea3",
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-141_source_hydrator hydrate helm to another directory via https [openshift]",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--Gitops",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "LP--Gitops",
+    "JIRAComponentID": "14692"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-ocp-compat--Gitops--Parallel Test Suite:4e5aff212505ccdc61f1fa83375486c1",
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-141_source_hydrator hydrate kustomize to another branch via ssh [openshift]",
     "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite",
     "Product": "OpenShift",
     "Priority": 0,
@@ -629300,6 +629908,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "openshift-tests-upgrade:7db7b894f3920a2e1f3d18e7a878075a",
+    "Name": "[Monitor:rbac-cluster-admin-escalation-checker][sig-auth] clusterrolebinding \"object-controller-cluster-admin-rolebinding\" must not grant permission to cluster-admin equivalent access (all verbs on all resources)",
+    "Suite": "openshift-tests-upgrade",
+    "Product": "OpenShift",
+    "Priority": -1,
+    "StaffApprovedObsolete": false,
+    "Component": "oauth-apiserver",
+    "Capabilities": [
+      "Other"
+    ],
+    "JIRAComponent": "oauth-apiserver",
+    "JIRAComponentID": "14859"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "openshift-tests:7db7b894f3920a2e1f3d18e7a878075a",
     "Name": "[Monitor:rbac-cluster-admin-escalation-checker][sig-auth] clusterrolebinding \"object-controller-cluster-admin-rolebinding\" must not grant permission to cluster-admin equivalent access (all verbs on all resources)",
     "Suite": "openshift-tests",
@@ -758429,6 +759053,38 @@
     "Component": "HyperShift",
     "Capabilities": [
       "AWSManagedDNS"
+    ],
+    "JIRAComponent": "HyperShift",
+    "JIRAComponentID": "14684"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "hypershift-e2e:faf46fa1e9224c18f28562d78e721ef1",
+    "Name": "[sig-hypershift][Jira:Hypershift][Feature:AzureMachineDiagnostics] Azure Bootstrap Diagnostics should collect a serial boot log from a worker that never registers a Node",
+    "Suite": "hypershift-e2e",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "HyperShift",
+    "Capabilities": [
+      "AzureMachineDiagnostics"
+    ],
+    "JIRAComponent": "HyperShift",
+    "JIRAComponentID": "14684"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "hypershift-e2e:44bb0f2483cf655407542bd84d8de3d3",
+    "Name": "[sig-hypershift][Jira:Hypershift][Feature:AzureMachineDiagnostics] Azure Machine Diagnostics should collect nonempty serial, journal, kubelet and CRI-O artifacts for Azure workers",
+    "Suite": "hypershift-e2e",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "HyperShift",
+    "Capabilities": [
+      "AzureMachineDiagnostics"
     ],
     "JIRAComponent": "HyperShift",
     "JIRAComponentID": "14684"
