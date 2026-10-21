@@ -37972,6 +37972,10 @@
     "Suite": "hypershift-e2e"
   },
   {
+    "Name": "TestCreateCluster/Main/[Feature:AzureMachineDiagnostics]_VerifyAzureMachineDiagnostics",
+    "Suite": "hypershift-e2e"
+  },
+  {
     "Name": "TestCreateCluster/Main/break-glass-credentials",
     "Suite": "hypershift-e2e"
   },
@@ -106120,7 +106124,15 @@
     "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
   },
   {
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-001_alpha_to_beta_dex_conversion Ensure dex spec field can be converted between ArgoCD v1alpha1 and v1beta1 [openshift]",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
+  },
+  {
     "Name": "[It] GitOps Operator Parallel E2E Tests 1-003_alpha_to_beta_sso_conflict_conversion verifies expected behaviour of ArgoCD CR when dex and keycloak are both specified in v1alpha1 API",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
+  },
+  {
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-003_alpha_to_beta_sso_conflict_conversion verifies expected behaviour of ArgoCD CR when dex and keycloak are both specified in v1alpha1 API [openshift]",
     "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
   },
   {
@@ -106128,7 +106140,15 @@
     "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
   },
   {
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-003_validate_console_link verifies ConsoleLink exists and has expected content [openshift]",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
+  },
+  {
     "Name": "[It] GitOps Operator Parallel E2E Tests 1-004_beta_to_alpha_conversion verifies v1beta1 ArgoCD CR containing Dex SSO values can be converted to v1alpha1",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
+  },
+  {
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-004_beta_to_alpha_conversion verifies v1beta1 ArgoCD CR containing Dex SSO values can be converted to v1alpha1 [openshift]",
     "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
   },
   {
@@ -106136,7 +106156,15 @@
     "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
   },
   {
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-005_validate_metrics_test verifies that default ServiceMonitors exist in openshift-gitops and PrometheusRule ArgoCDSyncAlert exists [openshift]",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
+  },
+  {
     "Name": "[It] GitOps Operator Parallel E2E Tests 1-005_validate_route_tls ensures that certificates can be confirmed on server and webhook Routes",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
+  },
+  {
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-005_validate_route_tls ensures that certificates can be confirmed on server and webhook Routes [openshift]",
     "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
   },
   {
@@ -106176,6 +106204,10 @@
     "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
   },
   {
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-023_validate_repo_server_tls verifying ArgoCD .spec.repo AutoTLS and verifyTLS work as expected [openshift]",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
+  },
+  {
     "Name": "[It] GitOps Operator Parallel E2E Tests 1-025-validate-managed-by-change ensuring that managed-by label can transition between two different Argo CD instances",
     "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
   },
@@ -106188,7 +106220,15 @@
     "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
   },
   {
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-030_validate_reencrypt verifies Argo CD Server's Route can be enabled with TLSTerminationReencrypt [openshift]",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
+  },
+  {
     "Name": "[It] GitOps Operator Parallel E2E Tests 1-031_validate_toolchain verifies that toolchain versions have the expected values",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
+  },
+  {
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-031_validate_toolchain verifies that toolchain versions have the expected values [openshift]",
     "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
   },
   {
@@ -106244,11 +106284,19 @@
     "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
   },
   {
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-041_validate_argocd_sync_alert verifying PrometheusRule gitops-operator-argocd-alerts exists and has expected values [openshift]",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
+  },
+  {
     "Name": "[It] GitOps Operator Parallel E2E Tests 1-042_restricted_pss_compliant_test verifies that all Argo CD components can run with pod-security enforce, warn, and audit of 'restricted'",
     "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
   },
   {
     "Name": "[It] GitOps Operator Parallel E2E Tests 1-042_validate_status_host verifies that .status.host of ArgoCD matches .spec.host of Route, and status is updated when Route is removed",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
+  },
+  {
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-042_validate_status_host verifies that .status.host of ArgoCD matches .spec.host of Route, and status is updated when Route is removed [openshift]",
     "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
   },
   {
@@ -106296,6 +106344,10 @@
     "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
   },
   {
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-050_validate_sso ensures the conditions in status when external Authentication is enabled on clusters; above 4.20 by default in openshift is enabled [openshift]",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
+  },
+  {
     "Name": "[It] GitOps Operator Parallel E2E Tests 1-050_validate_sso ensures the conditions in status when external Authentication is enabled on clusters; above 4.20 by default in openshit is enabled",
     "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
   },
@@ -106308,11 +106360,23 @@
     "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
   },
   {
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-053_validate_cluster_admin_rbac validates that openshift-gitops instance has expected .spec.RBAC.policy values [openshift]",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
+  },
+  {
     "Name": "[It] GitOps Operator Parallel E2E Tests 1-054_validate_deploymentconfig verifies a DeploymentConfig can be deployed by Argo CD",
     "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
   },
   {
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-054_validate_deploymentconfig verifies a DeploymentConfig can be deployed by Argo CD [openshift]",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
+  },
+  {
     "Name": "[It] GitOps Operator Parallel E2E Tests 1-055_drop_resource_customizations verifies that resource customization is dropped in conversion from ArgoCD v1alpha1 to v1beta1",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
+  },
+  {
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-055_drop_resource_customizations verifies that resource customization is dropped in conversion from ArgoCD v1alpha1 to v1beta1 [openshift]",
     "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
   },
   {
@@ -106344,6 +106408,10 @@
     "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
   },
   {
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-063_validate_dex_liveness_probe_test verifies dex server Pod has expected liveness probe values [openshift]",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
+  },
+  {
     "Name": "[It] GitOps Operator Parallel E2E Tests 1-063_validate_statefulset_restart verifies that if a user modifies application controller image that it is reconciled back to desired image",
     "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
   },
@@ -106353,6 +106421,10 @@
   },
   {
     "Name": "[It] GitOps Operator Parallel E2E Tests 1-065_validate_redis_ha_anti_affinity ensuring that Redis HA StatefulSet has expected PodAffinity",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
+  },
+  {
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-065_validate_redis_ha_anti_affinity ensuring that Redis HA StatefulSet has expected PodAffinity [HA]",
     "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
   },
   {
@@ -106376,7 +106448,15 @@
     "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
   },
   {
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-068_validate_redis_secure_comm_autotls_no_ha validates that the operator configures Redis using auto-gen TLS certificates when HA is disabled [openshift]",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
+  },
+  {
     "Name": "[It] GitOps Operator Parallel E2E Tests 1-069_validate_redis_secure_comm_autotls_ha verifying when HA is enabled that Argo CD starts successfully in HA mode, and that AutoTLS can be enabled",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
+  },
+  {
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-069_validate_redis_secure_comm_autotls_ha verifying when HA is enabled that Argo CD starts successfully in HA mode, and that AutoTLS can be enabled [openshift, HA]",
     "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
   },
   {
@@ -106392,6 +106472,10 @@
     "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
   },
   {
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-075_validate_dex_anyuid validates that dex runs when serviceaccount has anyuid SCC [openshift]",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
+  },
+  {
     "Name": "[It] GitOps Operator Parallel E2E Tests 1-079_validate_vars_for_notificaitons ensures that setting an environment variable on notifications controller via ArgoCD CR will cause the env var to be set on notification controller Deployment",
     "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
   },
@@ -106401,6 +106485,10 @@
   },
   {
     "Name": "[It] GitOps Operator Parallel E2E Tests 1-081_validate_applicationset_deployment verifies that openshift-gitops Argo CD has applicationset controller workload and service with expected values",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
+  },
+  {
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-081_validate_applicationset_deployment verifies that openshift-gitops Argo CD has applicationset controller workload and service with expected values [openshift]",
     "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
   },
   {
@@ -106440,6 +106528,10 @@
     "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
   },
   {
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-090_validate_permissions ensure the GitOps Operator CSV has the correct cluster permissions and gitopsservices CRD has expected properties [openshift]",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
+  },
+  {
     "Name": "[It] GitOps Operator Parallel E2E Tests 1-091_argocd_app_validate-applicationset-status ensures that ArgoCD CR .status.applicationset field correctly reflects the status of applicationset controller workload",
     "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
   },
@@ -106449,6 +106541,10 @@
   },
   {
     "Name": "[It] GitOps Operator Parallel E2E Tests 1-095_validate_dex_clientsecret verifies that the Dex client secret is sourced from a short-lived TokenRequest token and is correctly set in argocd-secret",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
+  },
+  {
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-095_validate_dex_clientsecret verifies that the Dex client secret is sourced from a short-lived TokenRequest token and is correctly set in argocd-secret [openshift]",
     "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
   },
   {
@@ -106464,6 +106560,10 @@
     "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
   },
   {
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-096-validate_home_env_argocd_controller verifies openshift-gitops app controller StatefulSet container has expected HOME env var and redis-initial-pass volume mount [openshift]",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
+  },
+  {
     "Name": "[It] GitOps Operator Parallel E2E Tests 1-098_validate_dex_clientsecret_deprecated validates that dex client secret is properly copied from service account token to argocd-secret",
     "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
   },
@@ -106476,11 +106576,19 @@
     "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
   },
   {
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-103_argocd_alpha_to_beta_conversion ensures that creation of a v1alpha1 ArgoCD CR with SSO fields will be translated into a v1beta1 ArgoCD CR via webhook [openshift]",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
+  },
+  {
     "Name": "[It] GitOps Operator Parallel E2E Tests 1-104_validate_applicationset_tls_scm_volume_mount verifies that specifying a ConfigMap to ArgoCD CR .spec.applicationSet.SCMRootCAConfigMap will cause that ConfigMap to be mounted into applicationset controller Deployment, and that applicationset controller has expected volumes and mounts",
     "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
   },
   {
     "Name": "[It] GitOps Operator Parallel E2E Tests 1-104_validate_prometheus_alert verify that openshift gitops operator servicemonitor exists in openshift-gitops-operator namespace, and has the expected values",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
+  },
+  {
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-104_validate_prometheus_alert verify that openshift gitops operator servicemonitor exists in openshift-gitops-operator namespace, and has the expected values [openshift]",
     "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
   },
   {
@@ -106497,6 +106605,10 @@
   },
   {
     "Name": "[It] GitOps Operator Parallel E2E Tests 1-109_validate_reencrypt_termination_policy ensure the openshift-gitops default argo cd server route has expected TLS  Config values: insecure redirect and reencrypt, and the route ingress is sucessfully admitted",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
+  },
+  {
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-109_validate_reencrypt_termination_policy ensure the openshift-gitops default argo cd server route has expected TLS  Config values: insecure redirect and reencrypt, and the route ingress is sucessfully admitted [openshift]",
     "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
   },
   {
@@ -106536,6 +106648,10 @@
     "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
   },
   {
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-118_validate_redis_ssc verifies that HA pods have expected SSC [openshift]",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
+  },
+  {
     "Name": "[It] GitOps Operator Parallel E2E Tests 1-119_argocd_respectRBAC ensures that setting .spec.controller.respectRBAC will cause that value to be set in Argo CD's argocd-cm ConfigMap, and that invalid values are ignored",
     "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
   },
@@ -106572,7 +106688,15 @@
     "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
   },
   {
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-125_validate_server_serving_cert_annotation_restore does not add serving-cert annotation when argocd-server-tls already exists as a user-managed secret (not Service CA) [openshift]",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
+  },
+  {
     "Name": "[It] GitOps Operator Parallel E2E Tests 1-125_validate_server_serving_cert_annotation_restore restores service.beta.openshift.io/serving-cert-secret-name when Route TLS returns from passthrough to default reencrypt",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
+  },
+  {
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-125_validate_server_serving_cert_annotation_restore restores service.beta.openshift.io/serving-cert-secret-name when Route TLS returns from passthrough to default reencrypt [openshift]",
     "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
   },
   {
@@ -106628,7 +106752,15 @@
     "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
   },
   {
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-126_validate_servicemonitor_metrics_config verifies agent metrics config is applied to ServiceMonitor [openshift]",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
+  },
+  {
     "Name": "[It] GitOps Operator Parallel E2E Tests 1-126_validate_servicemonitor_metrics_config verifies per-component metrics config is applied to ServiceMonitors",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
+  },
+  {
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-126_validate_servicemonitor_metrics_config verifies per-component metrics config is applied to ServiceMonitors [openshift]",
     "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
   },
   {
@@ -106636,7 +106768,27 @@
     "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
   },
   {
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-126_validate_servicemonitor_metrics_config verifies principal metrics config is applied to ServiceMonitor [openshift]",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
+  },
+  {
     "Name": "[It] GitOps Operator Parallel E2E Tests 1-131_validate_rolebinding_no_tracking_annotation_propagation does not propagate Argo CD tracking annotations from the ArgoCD CR to RoleBindings created in managed namespaces",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
+  },
+  {
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-141_source_hydrator activate Commit Server by Source Hydrator config [openshift]",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
+  },
+  {
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-141_source_hydrator apply CommitServer configuration options to the running CommitServer deployment [openshift]",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
+  },
+  {
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-141_source_hydrator hydrate helm to another directory via https [openshift]",
+    "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
+  },
+  {
+    "Name": "[It] GitOps Operator Parallel E2E Tests 1-141_source_hydrator hydrate kustomize to another branch via ssh [openshift]",
     "Suite": "lp-ocp-compat--Gitops--Parallel Test Suite"
   },
   {
@@ -156401,6 +156553,10 @@
   },
   {
     "Name": "[Monitor:rbac-cluster-admin-escalation-checker][sig-auth] clusterrolebinding \"object-controller-cluster-admin-rolebinding\" must not grant permission to cluster-admin equivalent access (all verbs on all resources)",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Monitor:rbac-cluster-admin-escalation-checker][sig-auth] clusterrolebinding \"object-controller-cluster-admin-rolebinding\" must not grant permission to cluster-admin equivalent access (all verbs on all resources)",
     "Suite": "openshift-tests"
   },
   {
@@ -188617,6 +188773,14 @@
   },
   {
     "Name": "[sig-hypershift][Jira:Hypershift][Feature:AWSManagedDNS] Hosted Cluster Managed DNS AWS Managed Ingress DNS should report AWSManagedDNSAvailable True with public and private ingress zones",
+    "Suite": "hypershift-e2e"
+  },
+  {
+    "Name": "[sig-hypershift][Jira:Hypershift][Feature:AzureMachineDiagnostics] Azure Bootstrap Diagnostics should collect a serial boot log from a worker that never registers a Node",
+    "Suite": "hypershift-e2e"
+  },
+  {
+    "Name": "[sig-hypershift][Jira:Hypershift][Feature:AzureMachineDiagnostics] Azure Machine Diagnostics should collect nonempty serial, journal, kubelet and CRI-O artifacts for Azure workers",
     "Suite": "hypershift-e2e"
   },
   {
