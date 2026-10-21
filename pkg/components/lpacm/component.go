@@ -18,8 +18,8 @@ var LPacmComponent = Component{
 		DefaultJiraComponent: "LP--ACM",
 		Matchers: []config.ComponentMatcher{
 			{Suite: "ACM-lp-interop"},
-			// ACM+Virt test patterns with acm-virt capability
-			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ACM-Virt--`), Capabilities: []string{"acm-virt"}},
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ACM--ACM\+Virt--`), Capabilities: []string{"ACM+Virt"}},
+			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ACM-Virt--`), Capabilities: []string{"ACM+Virt"}},
 			{SuiteRegEx: regexp.MustCompile(`^lp-interop--ACM--`), Capabilities: []string{"acm-virt"}},
 			{SuiteRegEx: regexp.MustCompile(`^lp-chaos--ACM--`), Capabilities: []string{"acm-virt"}},
 			{SuiteRegEx: regexp.MustCompile(`^lp-ocp-compat--ACM--`), Capabilities: []string{"acm-virt"}},
