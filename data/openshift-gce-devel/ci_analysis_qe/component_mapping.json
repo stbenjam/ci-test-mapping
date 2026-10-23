@@ -193304,22 +193304,6 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
-    "ID": "Overall CI (test step):62d446d28ec88538f647155f1175a839",
-    "Name": "ovn-sdn-migration",
-    "Suite": "Overall CI (test step)",
-    "Product": "OpenShift",
-    "Priority": 0,
-    "StaffApprovedObsolete": false,
-    "Component": "Unknown",
-    "Capabilities": [
-      "Other"
-    ],
-    "JIRAComponent": "Unknown",
-    "JIRAComponentID": "14832"
-  },
-  {
-    "APIVersion": "v1",
-    "Kind": "TestOwnership",
     "ID": "Overall CI (test step):b4f621abffcfc93880bc713e7da32304",
     "Name": "ovn-shared-to-local-gateway-mode-migration",
     "Suite": "Overall CI (test step)",
