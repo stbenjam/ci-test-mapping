@@ -27188,6 +27188,10 @@
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
+    "Name": "TestBrokerConformance/Prerequisite/#00/Setup/install_broker_\"broker-birgnwcy\"",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestBrokerConformance/Prerequisite/#00/Setup/install_broker_\"broker-bqowdlox\"",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
@@ -30852,6 +30856,10 @@
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
+    "Name": "TestBrokerSupportsAuthZ/Prerequisite/#00/Setup/install_broker_\"broker-muaplvhz\"",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestBrokerSupportsAuthZ/Prerequisite/#00/Setup/install_broker_\"broker-mxvnbsfb\"",
     "Suite": "Serverless-lp-interop"
   },
@@ -32097,6 +32105,10 @@
   },
   {
     "Name": "TestBrokerSupportsOIDC/Prerequisite/#00/Setup/install_broker_\"broker-nydiwjms\"",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
+    "Name": "TestBrokerSupportsOIDC/Prerequisite/#00/Setup/install_broker_\"broker-nzmjbwlu\"",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
@@ -33893,6 +33905,10 @@
   },
   {
     "Name": "TestChannelBasedBrokerToKsvc/Prerequisite/#00/Setup/install_broker_\"broker-fsokxqbi\"",
+    "Suite": "lp-ocp-compat--Serverless--test/eventinge2erekt"
+  },
+  {
+    "Name": "TestChannelBasedBrokerToKsvc/Prerequisite/#00/Setup/install_broker_\"broker-ftbxuoai\"",
     "Suite": "lp-ocp-compat--Serverless--test/eventinge2erekt"
   },
   {
@@ -36333,6 +36349,10 @@
   },
   {
     "Name": "TestChannelWithBackingKafkaChannelSupportsAuthZ/Prerequisite/Channel_goes_ready./Setup/install_a_Channel_named_\"channel-cifgqpyh\"",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new_channel"
+  },
+  {
+    "Name": "TestChannelWithBackingKafkaChannelSupportsAuthZ/Prerequisite/Channel_goes_ready./Setup/install_a_Channel_named_\"channel-cmsjfnxo\"",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new_channel"
   },
   {
@@ -44920,6 +44940,10 @@
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new_channel"
   },
   {
+    "Name": "TestKafkaChannelOIDC/Prerequisite/ChannelImpl_goes_ready./Setup/install_a_KafkaChannel_named_\"kafka-channel-negqwchn\"",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new_channel"
+  },
+  {
     "Name": "TestKafkaChannelOIDC/Prerequisite/ChannelImpl_goes_ready./Setup/install_a_KafkaChannel_named_\"kafka-channel-novnbucv\"",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new_channel"
   },
@@ -46472,6 +46496,10 @@
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new_channel"
   },
   {
+    "Name": "TestKafkaChannelSupportsAuthZ/Prerequisite/ChannelImpl_goes_ready./Setup/install_a_KafkaChannel_named_\"kafkachannel-vsmoeukd\"",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new_channel"
+  },
+  {
     "Name": "TestKafkaChannelSupportsAuthZ/Prerequisite/ChannelImpl_goes_ready./Setup/install_a_KafkaChannel_named_\"kafkachannel-vxaruffo\"",
     "Suite": "Serverless-lp-interop"
   },
@@ -47564,6 +47592,10 @@
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
+    "Name": "TestKafkaSinkSupportsAuthZ/Prerequisite#01/#00/Setup/install_KafkaSink_\"kafkasink-twrjinyl\"",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestKafkaSinkSupportsAuthZ/Prerequisite#01/#00/Setup/install_KafkaSink_\"kafkasink-uhkgcdju\"",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
@@ -48253,6 +48285,10 @@
   },
   {
     "Name": "TestKafkaSinkSupportsAuthZ/Prerequisite/#00/Setup/install_Topic_\"topic-qqkigaie\"",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
+    "Name": "TestKafkaSinkSupportsAuthZ/Prerequisite/#00/Setup/install_Topic_\"topic-qrcrmpmx\"",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
@@ -49150,6 +49186,10 @@
   {
     "Name": "TestKafkaSinkSupportsOIDC/Prerequisite#01/#00/Setup/install_KafkaSink_\"kafkasink-eyuhmrlo\"",
     "Suite": "Serverless-lp-interop"
+  },
+  {
+    "Name": "TestKafkaSinkSupportsOIDC/Prerequisite#01/#00/Setup/install_KafkaSink_\"kafkasink-ezmklivc\"",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
     "Name": "TestKafkaSinkSupportsOIDC/Prerequisite#01/#00/Setup/install_KafkaSink_\"kafkasink-famgxwvx\"",
@@ -50598,6 +50638,10 @@
   {
     "Name": "TestKafkaSinkSupportsOIDC/Prerequisite/#00/Setup/install_Topic_\"topic-zjihtnex\"",
     "Suite": "Serverless-lp-interop"
+  },
+  {
+    "Name": "TestKafkaSinkSupportsOIDC/Prerequisite/#00/Setup/install_Topic_\"topic-zmbixloy\"",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
     "Name": "TestKafkaSinkSupportsOIDC/Prerequisite/#00/Setup/install_Topic_\"topic-znatpzun\"",
@@ -56412,6 +56456,10 @@
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
+    "Name": "TestNamespacedBrokerNamespaceDeletion/delete_namespace/Assert/wait_for_namespace_test-namespaced-broker-huqovyan_to_be_deleted",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNamespacedBrokerNamespaceDeletion/delete_namespace/Assert/wait_for_namespace_test-namespaced-broker-hzsrejwz_to_be_deleted",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
@@ -57229,6 +57277,10 @@
   },
   {
     "Name": "TestNamespacedBrokerNamespaceDeletion/delete_namespace/Setup/delete_namespace_test-namespaced-broker-hsjtyrig",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
+    "Name": "TestNamespacedBrokerNamespaceDeletion/delete_namespace/Setup/delete_namespace_test-namespaced-broker-huqovyan",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
@@ -58073,6 +58125,10 @@
   },
   {
     "Name": "TestNamespacedBrokerNamespaceDeletion/setup_namespace/Setup/install_namespace_test-namespaced-broker-hsjtyrig",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
+    "Name": "TestNamespacedBrokerNamespaceDeletion/setup_namespace/Setup/install_namespace_test-namespaced-broker-huqovyan",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
@@ -59062,6 +59118,10 @@
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/AllFilterFeature/Requirement/Install_event_sender_sender-chbcsniq",
     "Suite": "Serverless-lp-interop"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/AllFilterFeature/Requirement/Install_event_sender_sender-chyrpcfc",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/AllFilterFeature/Requirement/Install_event_sender_sender-cikikixj",
@@ -60300,6 +60360,10 @@
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/AllFilterFeature/Requirement/Install_event_sender_sender-mrbzjtvc",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/AllFilterFeature/Requirement/Install_event_sender_sender-mrnuleoz",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
@@ -60370,6 +60434,10 @@
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/AllFilterFeature/Requirement/Install_event_sender_sender-nefxvrrt",
     "Suite": "Serverless-lp-interop"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/AllFilterFeature/Requirement/Install_event_sender_sender-nerejtsg",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/AllFilterFeature/Requirement/Install_event_sender_sender-nfunlgkx",
@@ -61613,6 +61681,10 @@
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/AllFilterFeature/Requirement/Install_event_sender_sender-xeoioagu",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/AllFilterFeature/Requirement/Install_event_sender_sender-xfxylqik",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
@@ -63136,6 +63208,10 @@
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/AnyFilterFeature/Requirement/Install_event_sender_sender-fyzmwpff",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/AnyFilterFeature/Requirement/Install_event_sender_sender-fyzwlces",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
@@ -64306,6 +64382,10 @@
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/AnyFilterFeature/Requirement/Install_event_sender_sender-mildppxw",
     "Suite": "Serverless-lp-interop"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/AnyFilterFeature/Requirement/Install_event_sender_sender-mivpumdp",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/AnyFilterFeature/Requirement/Install_event_sender_sender-mixnioop",
@@ -65764,6 +65844,10 @@
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/AnyFilterFeature/Requirement/Install_event_sender_sender-uppasffm",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/AnyFilterFeature/Requirement/Install_event_sender_sender-upyddxww",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
@@ -65853,6 +65937,10 @@
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/AnyFilterFeature/Requirement/Install_event_sender_sender-vdntjuxb",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/AnyFilterFeature/Requirement/Install_event_sender_sender-vdvffefq",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
@@ -66198,6 +66286,10 @@
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/AnyFilterFeature/Requirement/Install_event_sender_sender-xcekqtjv",
     "Suite": "Serverless-lp-interop"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/AnyFilterFeature/Requirement/Install_event_sender_sender-xcmfycnv",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/AnyFilterFeature/Requirement/Install_event_sender_sender-xcrnoime",
@@ -66617,6 +66709,10 @@
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/AnyFilterFeature/Requirement/Install_event_sender_sender-zowaymmi",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/AnyFilterFeature/Requirement/Install_event_sender_sender-zoysdtgo",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
@@ -67204,6 +67300,10 @@
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/CloudEvents_SQL_filter/Requirement/Install_event_sender_sender-gpkxhwmv",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/CloudEvents_SQL_filter/Requirement/Install_event_sender_sender-gsebnizj",
     "Suite": "Serverless-lp-interop"
   },
@@ -67578,6 +67678,10 @@
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/CloudEvents_SQL_filter/Requirement/Install_event_sender_sender-mxbjpzej",
     "Suite": "Serverless-lp-interop"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/CloudEvents_SQL_filter/Requirement/Install_event_sender_sender-mxbkdjbb",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/CloudEvents_SQL_filter/Requirement/Install_event_sender_sender-myclgbjj",
@@ -69436,6 +69540,10 @@
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/Exact_filter/Requirement/Install_event_sender_sender-rsswjrdi",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/Exact_filter/Requirement/Install_event_sender_sender-rvjrgvaq",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
@@ -69706,6 +69814,10 @@
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/Exact_filter/Requirement/Install_event_sender_sender-wfqggntg",
     "Suite": "Serverless-lp-interop"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/Exact_filter/Requirement/Install_event_sender_sender-wfumtmti",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/Exact_filter/Requirement/Install_event_sender_sender-wimrodhe",
@@ -70150,6 +70262,10 @@
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/FilterAttributeWithEmptyFiltersFeature/Requirement/Install_event_sender_sender-cfljlqnj",
     "Suite": "Serverless-lp-interop"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/FilterAttributeWithEmptyFiltersFeature/Requirement/Install_event_sender_sender-cfltezdi",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/FilterAttributeWithEmptyFiltersFeature/Requirement/Install_event_sender_sender-cfpnmdrp",
@@ -70733,6 +70849,10 @@
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/FilterAttributeWithEmptyFiltersFeature/Requirement/Install_event_sender_sender-luzwqlso",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/FilterAttributeWithEmptyFiltersFeature/Requirement/Install_event_sender_sender-lvczbidv",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
@@ -72208,6 +72328,10 @@
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/FiltersOverrideAttributeFilterFeature/Requirement/Install_event_sender_sender-jynfgsot",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/FiltersOverrideAttributeFilterFeature/Requirement/Install_event_sender_sender-kaizbnlo",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
@@ -72981,6 +73105,10 @@
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/FiltersOverrideAttributeFilterFeature/Requirement/Install_event_sender_sender-wgwbbmcf",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/FiltersOverrideAttributeFilterFeature/Requirement/Install_event_sender_sender-whoqauax",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
@@ -74168,6 +74296,10 @@
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/MissingAttributesFeature/Requirement/Install_event_sender_sender-pvraeunu",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MissingAttributesFeature/Requirement/Install_event_sender_sender-pwslxbuo",
     "Suite": "Serverless-lp-interop"
   },
@@ -74588,6 +74720,10 @@
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/MissingAttributesFeature/Requirement/Install_event_sender_sender-wamhwyyo",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MissingAttributesFeature/Requirement/Install_event_sender_sender-wbfpmoqu",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
@@ -74926,6 +75062,10 @@
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleFiltersFeature/Requirement/Install_event_sender_sender-abqjphmh",
     "Suite": "Serverless-lp-interop"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleFiltersFeature/Requirement/Install_event_sender_sender-abtgprmy",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleFiltersFeature/Requirement/Install_event_sender_sender-aivcehfk",
@@ -75341,6 +75481,10 @@
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleFiltersFeature/Requirement/Install_event_sender_sender-dmsosijq",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleFiltersFeature/Requirement/Install_event_sender_sender-dmvvnsoh",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
@@ -76584,6 +76728,10 @@
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleFiltersFeature/Requirement/Install_event_sender_sender-nikezhqq",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleFiltersFeature/Requirement/Install_event_sender_sender-nioahwhq",
     "Suite": "Serverless-lp-interop"
   },
@@ -77133,6 +77281,10 @@
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleFiltersFeature/Requirement/Install_event_sender_sender-rxfhbqsn",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleFiltersFeature/Requirement/Install_event_sender_sender-rxkpxkel",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
@@ -79288,6 +79440,10 @@
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-etfrjhdu",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-etfymwij",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
@@ -79616,6 +79772,10 @@
     "Suite": "Serverless-lp-interop"
   },
   {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-fygpwwou",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-fzounswv",
     "Suite": "Serverless-lp-interop"
   },
@@ -79717,6 +79877,10 @@
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-ggfnjwkf",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-ggnooibt",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
@@ -80168,6 +80332,10 @@
     "Suite": "Serverless-lp-interop"
   },
   {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-iiqxmzvg",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-iirivavc",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
@@ -80481,6 +80649,10 @@
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-jpfnxrui",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-jpujlemk",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
@@ -81366,6 +81538,10 @@
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-nbssyips",
     "Suite": "Serverless-lp-interop"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-nccsemxm",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-ncewrrfq",
@@ -82892,6 +83068,10 @@
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-tyitdfps",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-typywygh",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
@@ -83493,6 +83673,10 @@
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-wooyokzw",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/MultipleTriggersAndSinksFeature/Requirement/Install_event_sender_sender-wovbgxfs",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
@@ -84972,6 +85156,10 @@
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/Prefix_filter/Requirement/Install_event_sender_sender-jcjxmwdo",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/Prefix_filter/Requirement/Install_event_sender_sender-jffcwviq",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
@@ -85968,6 +86156,10 @@
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/Prefix_filter/Requirement/Install_event_sender_sender-zvwidkca",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/Prefix_filter/Setup",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
@@ -86740,6 +86932,10 @@
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/Suffix_filter/Requirement/Install_event_sender_sender-klteseip",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/Suffix_filter/Requirement/Install_event_sender_sender-kpyqneno",
     "Suite": "Serverless-lp-interop"
   },
@@ -86877,6 +87073,10 @@
   },
   {
     "Name": "TestNewTriggerFilters/New_Trigger_Filters/Suffix_filter/Requirement/Install_event_sender_sender-nezrmuqy",
+    "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
+  },
+  {
+    "Name": "TestNewTriggerFilters/New_Trigger_Filters/Suffix_filter/Requirement/Install_event_sender_sender-nfjvnpbg",
     "Suite": "lp-ocp-compat--Serverless--test/e2e_new"
   },
   {
@@ -139676,6 +139876,94 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "[Monitor:host-network-connection-integrity][Jira:\"Networking / ovn-kubernetes\"] monitor test host-network-connection-integrity cleanup",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Monitor:host-network-connection-integrity][Jira:\"Networking / ovn-kubernetes\"] monitor test host-network-connection-integrity cleanup",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Monitor:host-network-connection-integrity][Jira:\"Networking / ovn-kubernetes\"] monitor test host-network-connection-integrity collection",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Monitor:host-network-connection-integrity][Jira:\"Networking / ovn-kubernetes\"] monitor test host-network-connection-integrity collection",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Monitor:host-network-connection-integrity][Jira:\"Networking / ovn-kubernetes\"] monitor test host-network-connection-integrity interval construction",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Monitor:host-network-connection-integrity][Jira:\"Networking / ovn-kubernetes\"] monitor test host-network-connection-integrity interval construction",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Monitor:host-network-connection-integrity][Jira:\"Networking / ovn-kubernetes\"] monitor test host-network-connection-integrity preparation",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Monitor:host-network-connection-integrity][Jira:\"Networking / ovn-kubernetes\"] monitor test host-network-connection-integrity preparation",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Monitor:host-network-connection-integrity][Jira:\"Networking / ovn-kubernetes\"] monitor test host-network-connection-integrity setup",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Monitor:host-network-connection-integrity][Jira:\"Networking / ovn-kubernetes\"] monitor test host-network-connection-integrity setup",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Monitor:host-network-connection-integrity][Jira:\"Networking / ovn-kubernetes\"] monitor test host-network-connection-integrity test evaluation",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Monitor:host-network-connection-integrity][Jira:\"Networking / ovn-kubernetes\"] monitor test host-network-connection-integrity test evaluation",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Monitor:host-network-connection-integrity][Jira:\"Networking / ovn-kubernetes\"] monitor test host-network-connection-integrity writing to storage",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Monitor:host-network-connection-integrity][Jira:\"Networking / ovn-kubernetes\"] monitor test host-network-connection-integrity writing to storage",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Monitor:host-network-connection-integrity][sig-network] can collect network.openshift.io/host-connection-integrity=poller poller pod logs",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Monitor:host-network-connection-integrity][sig-network] can collect network.openshift.io/host-connection-integrity=poller poller pod logs",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Monitor:host-network-connection-integrity][sig-network] can collect ovnkube-controller logs for host connection integrity",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Monitor:host-network-connection-integrity][sig-network] can collect ovnkube-controller logs for host connection integrity",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Monitor:host-network-connection-integrity][sig-network] established host-network connections should not be black-holed by gateway reconcile during UDN teardown",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Monitor:host-network-connection-integrity][sig-network] established host-network connections should not be black-holed by gateway reconcile during UDN teardown",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[Monitor:host-network-connection-integrity][sig-network] host connection integrity pollers should be ready on every node",
+    "Suite": "openshift-tests-upgrade"
+  },
+  {
+    "Name": "[Monitor:host-network-connection-integrity][sig-network] host connection integrity pollers should be ready on every node",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "[Monitor:image-registry-availability][Jira:\"Image Registry\"] monitor test image-registry-availability cleanup",
     "Suite": "openshift-tests-upgrade"
   },
@@ -184272,7 +184560,15 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "[sig-cluster-lifecycle][OCPFeatureGate:AWSDedicatedHosts][platform:aws][Serial][Suite:openshift/conformance/serial] MAPA Dedicated Hosts Creating Machines with Dedicated Hosts should create a machine with BYO dedicated host from existing machineset [Conformance]",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "[sig-cluster-lifecycle][OCPFeatureGate:AWSDedicatedHosts][platform:aws][Serial][Suite:openshift/conformance/serial] MAPA Dedicated Hosts Creating Machines with Dedicated Hosts should create a machine with dynamic dedicated host allocation",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-cluster-lifecycle][OCPFeatureGate:AWSDedicatedHosts][platform:aws][Serial][Suite:openshift/conformance/serial] MAPA Dedicated Hosts Creating Machines with Dedicated Hosts should create a machine with dynamic dedicated host allocation [Conformance]",
     "Suite": "openshift-tests"
   },
   {
@@ -184280,11 +184576,23 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "[sig-cluster-lifecycle][OCPFeatureGate:AWSDedicatedHosts][platform:aws][Serial][Suite:openshift/conformance/serial] MAPA Dedicated Hosts Scaling MachineSet with Dedicated Hosts should scale down a machineset with dedicated hosts and cleanup properly [Conformance]",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "[sig-cluster-lifecycle][OCPFeatureGate:AWSDedicatedHosts][platform:aws][Serial][Suite:openshift/conformance/serial] MAPA Dedicated Hosts Scaling MachineSet with Dedicated Hosts should scale up a machineset and place instances on dedicated hosts",
     "Suite": "openshift-tests"
   },
   {
+    "Name": "[sig-cluster-lifecycle][OCPFeatureGate:AWSDedicatedHosts][platform:aws][Serial][Suite:openshift/conformance/serial] MAPA Dedicated Hosts Scaling MachineSet with Dedicated Hosts should scale up a machineset and place instances on dedicated hosts [Conformance]",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "[sig-cluster-lifecycle][OCPFeatureGate:AWSDedicatedHosts][platform:aws][Serial][Suite:openshift/conformance/serial] MAPA Dedicated Hosts Scaling MachineSet with Dedicated Hosts should verify dedicated host capacity is tracked correctly when scaling",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-cluster-lifecycle][OCPFeatureGate:AWSDedicatedHosts][platform:aws][Serial][Suite:openshift/conformance/serial] MAPA Dedicated Hosts Scaling MachineSet with Dedicated Hosts should verify dedicated host capacity is tracked correctly when scaling [Conformance]",
     "Suite": "openshift-tests"
   },
   {
@@ -188648,6 +188956,22 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "[sig-etcd][Feature:DisasterRecovery][Suite:openshift/etcd/recovery][Disruptive] etcd is able to block the rollout of a revision when the quorum is not safe [Serial]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-etcd][Feature:DisasterRecovery][Suite:openshift/etcd/recovery][Timeout:1h] [Feature:EtcdRecovery][Disruptive] Recover with quorum restore [Serial]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-etcd][Feature:DisasterRecovery][Suite:openshift/etcd/recovery][Timeout:2h] [Feature:EtcdRecovery][Disruptive] Recover with snapshot with two unhealthy nodes and lost quorum [Serial]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-etcd][Feature:DisasterRecovery][Suite:openshift/etcd/recovery][Timeout:30m] [Feature:EtcdRecovery][Disruptive] Restore snapshot from node on another single unhealthy node [Serial]",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "[sig-etcd][Feature:EtcdVerticalScaling][Suite:openshift/etcd/scaling] etcd is able to vertically scale up and down when CPMS is disabled [apigroup:machine.openshift.io]",
     "Suite": "openshift-tests"
   },
@@ -189233,6 +189557,10 @@
   },
   {
     "Name": "[sig-hypershift][Jira:Hypershift][Feature:ControlPlaneTLS] Control Plane TLS Operator when control plane TLS configuration is modified should update HostedCluster TLS profile to Modern",
+    "Suite": "hypershift-e2e"
+  },
+  {
+    "Name": "[sig-hypershift][Jira:Hypershift][Feature:ControlPlaneUpgrade] Control Plane Upgrade should not have ResourceDeletesInProgress after upgrade",
     "Suite": "hypershift-e2e"
   },
   {
@@ -193324,6 +193652,10 @@
     "Suite": "hypershift-e2e"
   },
   {
+    "Name": "[sig-hypershift][Jira:Hypershift][Feature:NodeCommunication] Hosted Cluster Node Communication when the hosted cluster is on GCP should reconcile the worker firewall rule and allow cross-node worker traffic",
+    "Suite": "hypershift-e2e"
+  },
+  {
     "Name": "[sig-hypershift][Jira:Hypershift][Feature:NodePoolArm64] NodePool ARM64 When creating an ARM64 NodePool, it should provision a node with ARM64 architecture",
     "Suite": "hypershift-e2e"
   },
@@ -193429,6 +193761,10 @@
   },
   {
     "Name": "[sig-hypershift][Jira:Hypershift][Feature:SecretEncryption] Hosted Cluster Secret Encryption KMS Spec Validation Azure KMS should have KMS authentication configured",
+    "Suite": "hypershift-e2e"
+  },
+  {
+    "Name": "[sig-hypershift][Jira:Hypershift][Feature:StorageKMS] Hosted Cluster Storage KMS Day-1 KMS key configuration should propagate initialKMSKeyARN to the hosted cluster ClusterCSIDriver and StorageClass, and encrypt provisioned volumes",
     "Suite": "hypershift-e2e"
   },
   {

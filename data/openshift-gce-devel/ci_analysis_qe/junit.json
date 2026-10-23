@@ -48320,10 +48320,6 @@
     "Suite": "Overall CI (test step)"
   },
   {
-    "Name": "ovn-sdn-migration",
-    "Suite": "Overall CI (test step)"
-  },
-  {
     "Name": "ovn-shared-to-local-gateway-mode-migration",
     "Suite": "Overall CI (test step)"
   },
