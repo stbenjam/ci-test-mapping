@@ -869473,6 +869473,24 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "openshift-tests:07898227b4a966825ebdb36e3c21c941",
+    "Name": "[sig-storage] CSI Mock selinux on mount SELinuxMount [LinuxOnly] [Feature:SELinux] should not unstage RWO volume when starting a second pod with the same SELinux context [FeatureGate:SELinuxMountReadWriteOncePod] [Beta] [FeatureGate:SELinuxMount] [Alpha] [Disabled:Alpha] [Suite:k8s]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 1,
+    "StaffApprovedObsolete": false,
+    "Component": "Storage",
+    "Capabilities": [
+      "FeatureGate:SELinuxMount",
+      "FeatureGate:SELinuxMountReadWriteOncePod",
+      "SELinux"
+    ],
+    "JIRAComponent": "Storage",
+    "JIRAComponentID": "14799"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "openshift-tests:040a27b4495ea1c9367460a1d929b3a0",
     "Name": "[sig-storage] CSI Mock selinux on mount SELinuxMount [LinuxOnly] [Feature:SELinux] should not unstage RWO volume when starting a second pod with the same SELinux context [FeatureGate:SELinuxMountReadWriteOncePod] [Beta] [FeatureGate:SELinuxMount] [Beta] [Feature:OffByDefault]",
     "Suite": "openshift-tests",
@@ -869624,6 +869642,24 @@
     "StaffApprovedObsolete": false,
     "Component": "Storage",
     "Capabilities": [
+      "SELinux"
+    ],
+    "JIRAComponent": "Storage",
+    "JIRAComponentID": "14799"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:f4f9f26f8bda28a3be3ab5e0fc876d2d",
+    "Name": "[sig-storage] CSI Mock selinux on mount SELinuxMount [LinuxOnly] [Feature:SELinux] should pass SELinux mount option for RWO volume with SELinuxMount enabled [FeatureGate:SELinuxMountReadWriteOncePod] [Beta] [FeatureGate:SELinuxMount] [Alpha] [Disabled:Alpha] [Suite:k8s]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 1,
+    "StaffApprovedObsolete": false,
+    "Component": "Storage",
+    "Capabilities": [
+      "FeatureGate:SELinuxMount",
+      "FeatureGate:SELinuxMountReadWriteOncePod",
       "SELinux"
     ],
     "JIRAComponent": "Storage",
@@ -869866,6 +869902,24 @@
     "StaffApprovedObsolete": false,
     "Component": "Storage",
     "Capabilities": [
+      "SELinux"
+    ],
+    "JIRAComponent": "Storage",
+    "JIRAComponentID": "14799"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:35daf21e569dc0206998629446bca4e8",
+    "Name": "[sig-storage] CSI Mock selinux on mount SELinuxMount [LinuxOnly] [Feature:SELinux] should unstage RWO volume when starting a second pod with different SELinux context [FeatureGate:SELinuxMountReadWriteOncePod] [Beta] [FeatureGate:SELinuxMount] [Alpha] [Disabled:Alpha] [Suite:k8s]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 1,
+    "StaffApprovedObsolete": false,
+    "Component": "Storage",
+    "Capabilities": [
+      "FeatureGate:SELinuxMount",
+      "FeatureGate:SELinuxMountReadWriteOncePod",
       "SELinux"
     ],
     "JIRAComponent": "Storage",
@@ -870234,6 +870288,24 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "openshift-tests:5ae9c762e410cf63e92af10789bfd5fe",
+    "Name": "[sig-storage] CSI Mock selinux on mount metrics SELinuxMount metrics [LinuxOnly] [Feature:SELinux] [Serial] error is bumped on two Pods with a different context on RWO volume and SELinuxMount enabled [FeatureGate:SELinuxMountReadWriteOncePod] [Beta] [FeatureGate:SELinuxMount] [Alpha] [Disabled:Alpha] [Suite:k8s]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 1,
+    "StaffApprovedObsolete": false,
+    "Component": "Storage",
+    "Capabilities": [
+      "FeatureGate:SELinuxMount",
+      "FeatureGate:SELinuxMountReadWriteOncePod",
+      "SELinux"
+    ],
+    "JIRAComponent": "Storage",
+    "JIRAComponentID": "14799"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "openshift-tests:0d98df023e98167ff882ca841a4c4e96",
     "Name": "[sig-storage] CSI Mock selinux on mount metrics SELinuxMount metrics [LinuxOnly] [Feature:SELinux] [Serial] error is bumped on two Pods with a different context on RWOP volume [FeatureGate:SELinuxMountReadWriteOncePod] [Beta] [Suite:openshift/conformance/serial] [Suite:k8s]",
     "Suite": "openshift-tests",
@@ -870242,6 +870314,42 @@
     "StaffApprovedObsolete": false,
     "Component": "Storage",
     "Capabilities": [
+      "FeatureGate:SELinuxMountReadWriteOncePod",
+      "SELinux"
+    ],
+    "JIRAComponent": "Storage",
+    "JIRAComponentID": "14799"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:321f847ee3e08654b5c9b42cd909ac3b",
+    "Name": "[sig-storage] CSI Mock selinux on mount metrics SELinuxMount metrics [LinuxOnly] [Feature:SELinux] [Serial] error is bumped on two Pods with a different context on RWX volume and SELinuxMount enabled [FeatureGate:SELinuxMountReadWriteOncePod] [Beta] [FeatureGate:SELinuxMount] [Alpha] [Disabled:Alpha] [Suite:k8s]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 1,
+    "StaffApprovedObsolete": false,
+    "Component": "Storage",
+    "Capabilities": [
+      "FeatureGate:SELinuxMount",
+      "FeatureGate:SELinuxMountReadWriteOncePod",
+      "SELinux"
+    ],
+    "JIRAComponent": "Storage",
+    "JIRAComponentID": "14799"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "openshift-tests:d1162e28a5251fbc0b85dae3768a7f78",
+    "Name": "[sig-storage] CSI Mock selinux on mount metrics SELinuxMount metrics [LinuxOnly] [Feature:SELinux] [Serial] error is not bumped on two Pods with the same context on RWO volume and SELinuxMount enabled [FeatureGate:SELinuxMountReadWriteOncePod] [Beta] [FeatureGate:SELinuxMount] [Alpha] [Disabled:Alpha] [Suite:k8s]",
+    "Suite": "openshift-tests",
+    "Product": "OpenShift",
+    "Priority": 1,
+    "StaffApprovedObsolete": false,
+    "Component": "Storage",
+    "Capabilities": [
+      "FeatureGate:SELinuxMount",
       "FeatureGate:SELinuxMountReadWriteOncePod",
       "SELinux"
     ],
@@ -1124698,6 +1124806,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-interop--CNV--ACM+Virt--pytest:0433d4125b3b3948e6a37c08d7a54a67",
+    "Name": "test_alerts_fired_during_upgrade",
+    "Suite": "lp-interop--CNV--ACM+Virt--pytest",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--CNV",
+    "Capabilities": [
+      "ACM+Virt"
+    ],
+    "JIRAComponent": "LP--CNV",
+    "JIRAComponentID": "14663"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "CNV-lp-interop:0433d4125b3b3948e6a37c08d7a54a67",
     "Name": "test_alerts_fired_during_upgrade",
     "Suite": "CNV-lp-interop",
@@ -1125530,6 +1125654,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-interop--CNV--ACM+Virt--pytest:b8d1475b7b5ae157ef21e43b8fe3507f",
+    "Name": "test_golden_image_pvc_names_after_upgrade",
+    "Suite": "lp-interop--CNV--ACM+Virt--pytest",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--CNV",
+    "Capabilities": [
+      "ACM+Virt"
+    ],
+    "JIRAComponent": "LP--CNV",
+    "JIRAComponentID": "14663"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "CNV-lp-interop:b8d1475b7b5ae157ef21e43b8fe3507f",
     "Name": "test_golden_image_pvc_names_after_upgrade",
     "Suite": "CNV-lp-interop",
@@ -1125594,9 +1125734,41 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-interop--CNV--ACM+Virt--pytest:4cad97b4df9d8ffe2e0dda1dcd437258",
+    "Name": "test_is_vm_running_after_upgrade",
+    "Suite": "lp-interop--CNV--ACM+Virt--pytest",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--CNV",
+    "Capabilities": [
+      "ACM+Virt"
+    ],
+    "JIRAComponent": "LP--CNV",
+    "JIRAComponentID": "14663"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "CNV-lp-interop:4cad97b4df9d8ffe2e0dda1dcd437258",
     "Name": "test_is_vm_running_after_upgrade",
     "Suite": "CNV-lp-interop",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--CNV",
+    "Capabilities": [
+      "ACM+Virt"
+    ],
+    "JIRAComponent": "LP--CNV",
+    "JIRAComponentID": "14663"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-interop--CNV--ACM+Virt--pytest:1865015415ebe17fb4b5ba4ddbe52d7b",
+    "Name": "test_is_vm_running_before_upgrade",
+    "Suite": "lp-interop--CNV--ACM+Virt--pytest",
     "Product": "OpenShift",
     "Priority": 0,
     "StaffApprovedObsolete": false,
@@ -1125654,6 +1125826,22 @@
     ],
     "JIRAComponent": "Insights Operator",
     "JIRAComponentID": "14926"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-interop--CNV--ACM+Virt--pytest:5807e69a97b0a17f85f5d64ac1d84303",
+    "Name": "test_machine_type_after_upgrade",
+    "Suite": "lp-interop--CNV--ACM+Virt--pytest",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--CNV",
+    "Capabilities": [
+      "ACM+Virt"
+    ],
+    "JIRAComponent": "LP--CNV",
+    "JIRAComponentID": "14663"
   },
   {
     "APIVersion": "v1",
@@ -1125738,9 +1125926,41 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-interop--CNV--ACM+Virt--pytest:abfe02fc1e8fa113cf61f8424be66dc5",
+    "Name": "test_metric_kubevirt_vmi_number_of_outdated_after_upgrade",
+    "Suite": "lp-interop--CNV--ACM+Virt--pytest",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--CNV",
+    "Capabilities": [
+      "ACM+Virt"
+    ],
+    "JIRAComponent": "LP--CNV",
+    "JIRAComponentID": "14663"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "CNV-lp-interop:abfe02fc1e8fa113cf61f8424be66dc5",
     "Name": "test_metric_kubevirt_vmi_number_of_outdated_after_upgrade",
     "Suite": "CNV-lp-interop",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--CNV",
+    "Capabilities": [
+      "ACM+Virt"
+    ],
+    "JIRAComponent": "LP--CNV",
+    "JIRAComponentID": "14663"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-interop--CNV--ACM+Virt--pytest:743352105223443a05ec60513f5e974d",
+    "Name": "test_metric_kubevirt_vmi_number_of_outdated_before_upgrade",
+    "Suite": "lp-interop--CNV--ACM+Virt--pytest",
     "Product": "OpenShift",
     "Priority": 0,
     "StaffApprovedObsolete": false,
@@ -1125802,9 +1126022,41 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-interop--CNV--ACM+Virt--pytest:b5d5e5929e36cb64e085ea1959f82e0e",
+    "Name": "test_migration_after_upgrade",
+    "Suite": "lp-interop--CNV--ACM+Virt--pytest",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--CNV",
+    "Capabilities": [
+      "ACM+Virt"
+    ],
+    "JIRAComponent": "LP--CNV",
+    "JIRAComponentID": "14663"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "CNV-lp-interop:b5d5e5929e36cb64e085ea1959f82e0e",
     "Name": "test_migration_after_upgrade",
     "Suite": "CNV-lp-interop",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--CNV",
+    "Capabilities": [
+      "ACM+Virt"
+    ],
+    "JIRAComponent": "LP--CNV",
+    "JIRAComponentID": "14663"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-interop--CNV--ACM+Virt--pytest:c961e12589c1f360562dbe545093dad0",
+    "Name": "test_migration_before_upgrade",
+    "Suite": "lp-interop--CNV--ACM+Virt--pytest",
     "Product": "OpenShift",
     "Priority": 0,
     "StaffApprovedObsolete": false,
@@ -1125850,6 +1126102,22 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-interop--CNV--ACM+Virt--pytest:8d55c3746fe642751089344a51915cc8",
+    "Name": "test_no_deprecated_api_alert_after_tests",
+    "Suite": "lp-interop--CNV--ACM+Virt--pytest",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--CNV",
+    "Capabilities": [
+      "ACM+Virt"
+    ],
+    "JIRAComponent": "LP--CNV",
+    "JIRAComponentID": "14663"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "CNV-lp-interop:8d55c3746fe642751089344a51915cc8",
     "Name": "test_no_deprecated_api_alert_after_tests",
     "Suite": "CNV-lp-interop",
@@ -1125866,9 +1126134,41 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-interop--CNV--ACM+Virt--pytest:a3812fe68554a1eb0d23e517ca5cd816",
+    "Name": "test_nodes_labels_after_upgrade",
+    "Suite": "lp-interop--CNV--ACM+Virt--pytest",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--CNV",
+    "Capabilities": [
+      "ACM+Virt"
+    ],
+    "JIRAComponent": "LP--CNV",
+    "JIRAComponentID": "14663"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "CNV-lp-interop:a3812fe68554a1eb0d23e517ca5cd816",
     "Name": "test_nodes_labels_after_upgrade",
     "Suite": "CNV-lp-interop",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--CNV",
+    "Capabilities": [
+      "ACM+Virt"
+    ],
+    "JIRAComponent": "LP--CNV",
+    "JIRAComponentID": "14663"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-interop--CNV--ACM+Virt--pytest:b543ab8dc6581301e62081e221947537",
+    "Name": "test_nodes_taints_after_upgrade",
+    "Suite": "lp-interop--CNV--ACM+Virt--pytest",
     "Product": "OpenShift",
     "Priority": 0,
     "StaffApprovedObsolete": false,
@@ -1125930,9 +1126230,41 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-interop--CNV--ACM+Virt--pytest:d3bf43f4195640394cc9743ba4f1aebd",
+    "Name": "test_outdated_vmis_count_matches_kubevirt_status_after_upgrade",
+    "Suite": "lp-interop--CNV--ACM+Virt--pytest",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--CNV",
+    "Capabilities": [
+      "ACM+Virt"
+    ],
+    "JIRAComponent": "LP--CNV",
+    "JIRAComponentID": "14663"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "CNV-lp-interop:d3bf43f4195640394cc9743ba4f1aebd",
     "Name": "test_outdated_vmis_count_matches_kubevirt_status_after_upgrade",
     "Suite": "CNV-lp-interop",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--CNV",
+    "Capabilities": [
+      "ACM+Virt"
+    ],
+    "JIRAComponent": "LP--CNV",
+    "JIRAComponentID": "14663"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-interop--CNV--ACM+Virt--pytest:e9f22cacac9e57675669a3825e570eb7",
+    "Name": "test_pci_topology_after_upgrade",
+    "Suite": "lp-interop--CNV--ACM+Virt--pytest",
     "Product": "OpenShift",
     "Priority": 0,
     "StaffApprovedObsolete": false,
@@ -1126013,6 +1126345,22 @@
     "ID": "CNV-lp-interop:b7d94e4ca05bdb9e6770b63348d946c6",
     "Name": "test_post_installation",
     "Suite": "CNV-lp-interop",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--CNV",
+    "Capabilities": [
+      "ACM+Virt"
+    ],
+    "JIRAComponent": "LP--CNV",
+    "JIRAComponentID": "14663"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-interop--CNV--ACM+Virt--pytest:ebab36d779f8b7a0677d10db4ab6f4f4",
+    "Name": "test_production_source_cnv_upgrade_process",
+    "Suite": "lp-interop--CNV--ACM+Virt--pytest",
     "Product": "OpenShift",
     "Priority": 0,
     "StaffApprovedObsolete": false,
@@ -1127194,9 +1127542,41 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-interop--CNV--ACM+Virt--pytest:58c8d706a49f0ed7d9225fbc3cd40081",
+    "Name": "test_vm_console_after_upgrade",
+    "Suite": "lp-interop--CNV--ACM+Virt--pytest",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--CNV",
+    "Capabilities": [
+      "ACM+Virt"
+    ],
+    "JIRAComponent": "LP--CNV",
+    "JIRAComponentID": "14663"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "CNV-lp-interop:58c8d706a49f0ed7d9225fbc3cd40081",
     "Name": "test_vm_console_after_upgrade",
     "Suite": "CNV-lp-interop",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--CNV",
+    "Capabilities": [
+      "ACM+Virt"
+    ],
+    "JIRAComponent": "LP--CNV",
+    "JIRAComponentID": "14663"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-interop--CNV--ACM+Virt--pytest:7af435f6c3f4f19e8e654eec4b72a36b",
+    "Name": "test_vm_console_before_upgrade",
+    "Suite": "lp-interop--CNV--ACM+Virt--pytest",
     "Product": "OpenShift",
     "Priority": 0,
     "StaffApprovedObsolete": false,
@@ -1127274,9 +1127654,41 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-interop--CNV--ACM+Virt--pytest:f2f5f916816141da45baf5c1a5ab33fb",
+    "Name": "test_vm_post_copy_migration_after_upgrade",
+    "Suite": "lp-interop--CNV--ACM+Virt--pytest",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--CNV",
+    "Capabilities": [
+      "ACM+Virt"
+    ],
+    "JIRAComponent": "LP--CNV",
+    "JIRAComponentID": "14663"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "CNV-lp-interop:f2f5f916816141da45baf5c1a5ab33fb",
     "Name": "test_vm_post_copy_migration_after_upgrade",
     "Suite": "CNV-lp-interop",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--CNV",
+    "Capabilities": [
+      "ACM+Virt"
+    ],
+    "JIRAComponent": "LP--CNV",
+    "JIRAComponentID": "14663"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-interop--CNV--ACM+Virt--pytest:3f69520a94e0ffb096030c77305d640a",
+    "Name": "test_vm_post_copy_migration_before_upgrade",
+    "Suite": "lp-interop--CNV--ACM+Virt--pytest",
     "Product": "OpenShift",
     "Priority": 0,
     "StaffApprovedObsolete": false,
@@ -1127306,9 +1127718,41 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-interop--CNV--ACM+Virt--pytest:6ef04044baeeb723f4346fdfbce4a8ed",
+    "Name": "test_vm_run_strategy_after_upgrade",
+    "Suite": "lp-interop--CNV--ACM+Virt--pytest",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--CNV",
+    "Capabilities": [
+      "ACM+Virt"
+    ],
+    "JIRAComponent": "LP--CNV",
+    "JIRAComponentID": "14663"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "CNV-lp-interop:6ef04044baeeb723f4346fdfbce4a8ed",
     "Name": "test_vm_run_strategy_after_upgrade",
     "Suite": "CNV-lp-interop",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--CNV",
+    "Capabilities": [
+      "ACM+Virt"
+    ],
+    "JIRAComponent": "LP--CNV",
+    "JIRAComponentID": "14663"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-interop--CNV--ACM+Virt--pytest:1caf932c1a6a13d7782c37dc1c22b932",
+    "Name": "test_vm_run_strategy_before_upgrade",
+    "Suite": "lp-interop--CNV--ACM+Virt--pytest",
     "Product": "OpenShift",
     "Priority": 0,
     "StaffApprovedObsolete": false,
@@ -1127338,9 +1127782,41 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-interop--CNV--ACM+Virt--pytest:51f7820b12f4580e55f242d532a13d27",
+    "Name": "test_vm_snapshot_created_before_upgrade",
+    "Suite": "lp-interop--CNV--ACM+Virt--pytest",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--CNV",
+    "Capabilities": [
+      "ACM+Virt"
+    ],
+    "JIRAComponent": "LP--CNV",
+    "JIRAComponentID": "14663"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "CNV-lp-interop:51f7820b12f4580e55f242d532a13d27",
     "Name": "test_vm_snapshot_created_before_upgrade",
     "Suite": "CNV-lp-interop",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--CNV",
+    "Capabilities": [
+      "ACM+Virt"
+    ],
+    "JIRAComponent": "LP--CNV",
+    "JIRAComponentID": "14663"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-interop--CNV--ACM+Virt--pytest:fc5c76c89d1e8a87e8de8792728ba177",
+    "Name": "test_vm_snapshot_restore_before_upgrade",
+    "Suite": "lp-interop--CNV--ACM+Virt--pytest",
     "Product": "OpenShift",
     "Priority": 0,
     "StaffApprovedObsolete": false,
@@ -1127370,9 +1127846,41 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-interop--CNV--ACM+Virt--pytest:70674cdf4a09ab670c1072da8028cc34",
+    "Name": "test_vm_snapshot_restore_check_after_upgrade",
+    "Suite": "lp-interop--CNV--ACM+Virt--pytest",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--CNV",
+    "Capabilities": [
+      "ACM+Virt"
+    ],
+    "JIRAComponent": "LP--CNV",
+    "JIRAComponentID": "14663"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "CNV-lp-interop:70674cdf4a09ab670c1072da8028cc34",
     "Name": "test_vm_snapshot_restore_check_after_upgrade",
     "Suite": "CNV-lp-interop",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--CNV",
+    "Capabilities": [
+      "ACM+Virt"
+    ],
+    "JIRAComponent": "LP--CNV",
+    "JIRAComponentID": "14663"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-interop--CNV--ACM+Virt--pytest:eec727b51c02c62b15bfc0ae400eb651",
+    "Name": "test_vm_snapshot_restore_create_after_upgrade",
+    "Suite": "lp-interop--CNV--ACM+Virt--pytest",
     "Product": "OpenShift",
     "Priority": 0,
     "StaffApprovedObsolete": false,
@@ -1127402,9 +1127910,41 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-interop--CNV--ACM+Virt--pytest:c44a5f377fb8135d6db3050546bd803b",
+    "Name": "test_vm_ssh_after_upgrade",
+    "Suite": "lp-interop--CNV--ACM+Virt--pytest",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--CNV",
+    "Capabilities": [
+      "ACM+Virt"
+    ],
+    "JIRAComponent": "LP--CNV",
+    "JIRAComponentID": "14663"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "CNV-lp-interop:c44a5f377fb8135d6db3050546bd803b",
     "Name": "test_vm_ssh_after_upgrade",
     "Suite": "CNV-lp-interop",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--CNV",
+    "Capabilities": [
+      "ACM+Virt"
+    ],
+    "JIRAComponent": "LP--CNV",
+    "JIRAComponentID": "14663"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-interop--CNV--ACM+Virt--pytest:dbee05991e511eaeae1af08c72dbf8b5",
+    "Name": "test_vm_ssh_before_upgrade",
+    "Suite": "lp-interop--CNV--ACM+Virt--pytest",
     "Product": "OpenShift",
     "Priority": 0,
     "StaffApprovedObsolete": false,
@@ -1127434,9 +1127974,41 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-interop--CNV--ACM+Virt--pytest:1e6d65118db8e2c39b67e9f5c66b4cd8",
+    "Name": "test_vm_with_hotplug_after_upgrade",
+    "Suite": "lp-interop--CNV--ACM+Virt--pytest",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--CNV",
+    "Capabilities": [
+      "ACM+Virt"
+    ],
+    "JIRAComponent": "LP--CNV",
+    "JIRAComponentID": "14663"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "CNV-lp-interop:1e6d65118db8e2c39b67e9f5c66b4cd8",
     "Name": "test_vm_with_hotplug_after_upgrade",
     "Suite": "CNV-lp-interop",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--CNV",
+    "Capabilities": [
+      "ACM+Virt"
+    ],
+    "JIRAComponent": "LP--CNV",
+    "JIRAComponentID": "14663"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-interop--CNV--ACM+Virt--pytest:2c1f5bbfdb7a629db874e4788e3ab4db",
+    "Name": "test_vm_with_hotplug_before_upgrade",
+    "Suite": "lp-interop--CNV--ACM+Virt--pytest",
     "Product": "OpenShift",
     "Priority": 0,
     "StaffApprovedObsolete": false,
@@ -1127498,9 +1128070,41 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-interop--CNV--ACM+Virt--pytest:f8c5656a4471f630c39d0892521d7be7",
+    "Name": "test_vmi_pod_image_updates_after_upgrade_optin",
+    "Suite": "lp-interop--CNV--ACM+Virt--pytest",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--CNV",
+    "Capabilities": [
+      "ACM+Virt"
+    ],
+    "JIRAComponent": "LP--CNV",
+    "JIRAComponentID": "14663"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "CNV-lp-interop:f8c5656a4471f630c39d0892521d7be7",
     "Name": "test_vmi_pod_image_updates_after_upgrade_optin",
     "Suite": "CNV-lp-interop",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--CNV",
+    "Capabilities": [
+      "ACM+Virt"
+    ],
+    "JIRAComponent": "LP--CNV",
+    "JIRAComponentID": "14663"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-interop--CNV--ACM+Virt--pytest:3041eecd0c07f706f17cc6f32921d8ab",
+    "Name": "test_vms_boot_time_after_upgrade",
+    "Suite": "lp-interop--CNV--ACM+Virt--pytest",
     "Product": "OpenShift",
     "Priority": 0,
     "StaffApprovedObsolete": false,
@@ -1127530,9 +1128134,41 @@
   {
     "APIVersion": "v1",
     "Kind": "TestOwnership",
+    "ID": "lp-interop--CNV--ACM+Virt--pytest:34e7ede0d21a5db7df7c39f45b124716",
+    "Name": "test_windows_vm_after_upgrade",
+    "Suite": "lp-interop--CNV--ACM+Virt--pytest",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--CNV",
+    "Capabilities": [
+      "ACM+Virt"
+    ],
+    "JIRAComponent": "LP--CNV",
+    "JIRAComponentID": "14663"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
     "ID": "CNV-lp-interop:34e7ede0d21a5db7df7c39f45b124716",
     "Name": "test_windows_vm_after_upgrade",
     "Suite": "CNV-lp-interop",
+    "Product": "OpenShift",
+    "Priority": 0,
+    "StaffApprovedObsolete": false,
+    "Component": "LP--CNV",
+    "Capabilities": [
+      "ACM+Virt"
+    ],
+    "JIRAComponent": "LP--CNV",
+    "JIRAComponentID": "14663"
+  },
+  {
+    "APIVersion": "v1",
+    "Kind": "TestOwnership",
+    "ID": "lp-interop--CNV--ACM+Virt--pytest:20090444482aee18e0c5549e8fe59899",
+    "Name": "test_windows_vm_before_upgrade",
+    "Suite": "lp-interop--CNV--ACM+Virt--pytest",
     "Product": "OpenShift",
     "Priority": 0,
     "StaffApprovedObsolete": false,
