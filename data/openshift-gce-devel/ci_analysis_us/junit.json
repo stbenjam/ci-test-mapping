@@ -216144,6 +216144,10 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "[sig-storage] CSI Mock selinux on mount SELinuxMount [LinuxOnly] [Feature:SELinux] should not unstage RWO volume when starting a second pod with the same SELinux context [FeatureGate:SELinuxMountReadWriteOncePod] [Beta] [FeatureGate:SELinuxMount] [Alpha] [Disabled:Alpha] [Suite:k8s]",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "[sig-storage] CSI Mock selinux on mount SELinuxMount [LinuxOnly] [Feature:SELinux] should not unstage RWO volume when starting a second pod with the same SELinux context [FeatureGate:SELinuxMountReadWriteOncePod] [Beta] [FeatureGate:SELinuxMount] [Beta] [Feature:OffByDefault]",
     "Suite": "openshift-tests"
   },
@@ -216177,6 +216181,10 @@
   },
   {
     "Name": "[sig-storage] CSI Mock selinux on mount SELinuxMount [LinuxOnly] [Feature:SELinux] should not unstage volume when starting a second pod with the same SELinux context [Suite:openshift/conformance/parallel] [Suite:k8s]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-storage] CSI Mock selinux on mount SELinuxMount [LinuxOnly] [Feature:SELinux] should pass SELinux mount option for RWO volume with SELinuxMount enabled [FeatureGate:SELinuxMountReadWriteOncePod] [Beta] [FeatureGate:SELinuxMount] [Alpha] [Disabled:Alpha] [Suite:k8s]",
     "Suite": "openshift-tests"
   },
   {
@@ -216229,6 +216237,10 @@
   },
   {
     "Name": "[sig-storage] CSI Mock selinux on mount SELinuxMount [LinuxOnly] [Feature:SELinux] should pass SELinux mount option for RWOP volume and Pod with SELinux context set [Suite:openshift/conformance/parallel] [Suite:k8s]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-storage] CSI Mock selinux on mount SELinuxMount [LinuxOnly] [Feature:SELinux] should unstage RWO volume when starting a second pod with different SELinux context [FeatureGate:SELinuxMountReadWriteOncePod] [Beta] [FeatureGate:SELinuxMount] [Alpha] [Disabled:Alpha] [Suite:k8s]",
     "Suite": "openshift-tests"
   },
   {
@@ -216312,7 +216324,19 @@
     "Suite": "openshift-tests"
   },
   {
+    "Name": "[sig-storage] CSI Mock selinux on mount metrics SELinuxMount metrics [LinuxOnly] [Feature:SELinux] [Serial] error is bumped on two Pods with a different context on RWO volume and SELinuxMount enabled [FeatureGate:SELinuxMountReadWriteOncePod] [Beta] [FeatureGate:SELinuxMount] [Alpha] [Disabled:Alpha] [Suite:k8s]",
+    "Suite": "openshift-tests"
+  },
+  {
     "Name": "[sig-storage] CSI Mock selinux on mount metrics SELinuxMount metrics [LinuxOnly] [Feature:SELinux] [Serial] error is bumped on two Pods with a different context on RWOP volume [FeatureGate:SELinuxMountReadWriteOncePod] [Beta] [Suite:openshift/conformance/serial] [Suite:k8s]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-storage] CSI Mock selinux on mount metrics SELinuxMount metrics [LinuxOnly] [Feature:SELinux] [Serial] error is bumped on two Pods with a different context on RWX volume and SELinuxMount enabled [FeatureGate:SELinuxMountReadWriteOncePod] [Beta] [FeatureGate:SELinuxMount] [Alpha] [Disabled:Alpha] [Suite:k8s]",
+    "Suite": "openshift-tests"
+  },
+  {
+    "Name": "[sig-storage] CSI Mock selinux on mount metrics SELinuxMount metrics [LinuxOnly] [Feature:SELinux] [Serial] error is not bumped on two Pods with the same context on RWO volume and SELinuxMount enabled [FeatureGate:SELinuxMountReadWriteOncePod] [Beta] [FeatureGate:SELinuxMount] [Alpha] [Disabled:Alpha] [Suite:k8s]",
     "Suite": "openshift-tests"
   },
   {
@@ -278713,6 +278737,10 @@
   },
   {
     "Name": "test_alerts_fired_during_upgrade",
+    "Suite": "lp-interop--CNV--ACM+Virt--pytest"
+  },
+  {
+    "Name": "test_alerts_fired_during_upgrade",
     "Suite": "CNV-lp-interop"
   },
   {
@@ -278921,6 +278949,10 @@
   },
   {
     "Name": "test_golden_image_pvc_names_after_upgrade",
+    "Suite": "lp-interop--CNV--ACM+Virt--pytest"
+  },
+  {
+    "Name": "test_golden_image_pvc_names_after_upgrade",
     "Suite": "CNV-lp-interop"
   },
   {
@@ -278937,7 +278969,15 @@
   },
   {
     "Name": "test_is_vm_running_after_upgrade",
+    "Suite": "lp-interop--CNV--ACM+Virt--pytest"
+  },
+  {
+    "Name": "test_is_vm_running_after_upgrade",
     "Suite": "CNV-lp-interop"
+  },
+  {
+    "Name": "test_is_vm_running_before_upgrade",
+    "Suite": "lp-interop--CNV--ACM+Virt--pytest"
   },
   {
     "Name": "test_is_vm_running_before_upgrade",
@@ -278950,6 +278990,10 @@
   {
     "Name": "test_lifecycle_daemonset_reconciliation",
     "Suite": "insights-operator-tests"
+  },
+  {
+    "Name": "test_machine_type_after_upgrade",
+    "Suite": "lp-interop--CNV--ACM+Virt--pytest"
   },
   {
     "Name": "test_machine_type_after_upgrade",
@@ -278973,7 +279017,15 @@
   },
   {
     "Name": "test_metric_kubevirt_vmi_number_of_outdated_after_upgrade",
+    "Suite": "lp-interop--CNV--ACM+Virt--pytest"
+  },
+  {
+    "Name": "test_metric_kubevirt_vmi_number_of_outdated_after_upgrade",
     "Suite": "CNV-lp-interop"
+  },
+  {
+    "Name": "test_metric_kubevirt_vmi_number_of_outdated_before_upgrade",
+    "Suite": "lp-interop--CNV--ACM+Virt--pytest"
   },
   {
     "Name": "test_metric_kubevirt_vmi_number_of_outdated_before_upgrade",
@@ -278989,7 +279041,15 @@
   },
   {
     "Name": "test_migration_after_upgrade",
+    "Suite": "lp-interop--CNV--ACM+Virt--pytest"
+  },
+  {
+    "Name": "test_migration_after_upgrade",
     "Suite": "CNV-lp-interop"
+  },
+  {
+    "Name": "test_migration_before_upgrade",
+    "Suite": "lp-interop--CNV--ACM+Virt--pytest"
   },
   {
     "Name": "test_migration_before_upgrade",
@@ -279001,11 +279061,23 @@
   },
   {
     "Name": "test_no_deprecated_api_alert_after_tests",
+    "Suite": "lp-interop--CNV--ACM+Virt--pytest"
+  },
+  {
+    "Name": "test_no_deprecated_api_alert_after_tests",
     "Suite": "CNV-lp-interop"
   },
   {
     "Name": "test_nodes_labels_after_upgrade",
+    "Suite": "lp-interop--CNV--ACM+Virt--pytest"
+  },
+  {
+    "Name": "test_nodes_labels_after_upgrade",
     "Suite": "CNV-lp-interop"
+  },
+  {
+    "Name": "test_nodes_taints_after_upgrade",
+    "Suite": "lp-interop--CNV--ACM+Virt--pytest"
   },
   {
     "Name": "test_nodes_taints_after_upgrade",
@@ -279021,7 +279093,15 @@
   },
   {
     "Name": "test_outdated_vmis_count_matches_kubevirt_status_after_upgrade",
+    "Suite": "lp-interop--CNV--ACM+Virt--pytest"
+  },
+  {
+    "Name": "test_outdated_vmis_count_matches_kubevirt_status_after_upgrade",
     "Suite": "CNV-lp-interop"
+  },
+  {
+    "Name": "test_pci_topology_after_upgrade",
+    "Suite": "lp-interop--CNV--ACM+Virt--pytest"
   },
   {
     "Name": "test_pci_topology_after_upgrade",
@@ -279042,6 +279122,10 @@
   {
     "Name": "test_post_installation",
     "Suite": "CNV-lp-interop"
+  },
+  {
+    "Name": "test_production_source_cnv_upgrade_process",
+    "Suite": "lp-interop--CNV--ACM+Virt--pytest"
   },
   {
     "Name": "test_production_source_cnv_upgrade_process",
@@ -279337,7 +279421,15 @@
   },
   {
     "Name": "test_vm_console_after_upgrade",
+    "Suite": "lp-interop--CNV--ACM+Virt--pytest"
+  },
+  {
+    "Name": "test_vm_console_after_upgrade",
     "Suite": "CNV-lp-interop"
+  },
+  {
+    "Name": "test_vm_console_before_upgrade",
+    "Suite": "lp-interop--CNV--ACM+Virt--pytest"
   },
   {
     "Name": "test_vm_console_before_upgrade",
@@ -279357,7 +279449,15 @@
   },
   {
     "Name": "test_vm_post_copy_migration_after_upgrade",
+    "Suite": "lp-interop--CNV--ACM+Virt--pytest"
+  },
+  {
+    "Name": "test_vm_post_copy_migration_after_upgrade",
     "Suite": "CNV-lp-interop"
+  },
+  {
+    "Name": "test_vm_post_copy_migration_before_upgrade",
+    "Suite": "lp-interop--CNV--ACM+Virt--pytest"
   },
   {
     "Name": "test_vm_post_copy_migration_before_upgrade",
@@ -279365,7 +279465,15 @@
   },
   {
     "Name": "test_vm_run_strategy_after_upgrade",
+    "Suite": "lp-interop--CNV--ACM+Virt--pytest"
+  },
+  {
+    "Name": "test_vm_run_strategy_after_upgrade",
     "Suite": "CNV-lp-interop"
+  },
+  {
+    "Name": "test_vm_run_strategy_before_upgrade",
+    "Suite": "lp-interop--CNV--ACM+Virt--pytest"
   },
   {
     "Name": "test_vm_run_strategy_before_upgrade",
@@ -279373,7 +279481,15 @@
   },
   {
     "Name": "test_vm_snapshot_created_before_upgrade",
+    "Suite": "lp-interop--CNV--ACM+Virt--pytest"
+  },
+  {
+    "Name": "test_vm_snapshot_created_before_upgrade",
     "Suite": "CNV-lp-interop"
+  },
+  {
+    "Name": "test_vm_snapshot_restore_before_upgrade",
+    "Suite": "lp-interop--CNV--ACM+Virt--pytest"
   },
   {
     "Name": "test_vm_snapshot_restore_before_upgrade",
@@ -279381,7 +279497,15 @@
   },
   {
     "Name": "test_vm_snapshot_restore_check_after_upgrade",
+    "Suite": "lp-interop--CNV--ACM+Virt--pytest"
+  },
+  {
+    "Name": "test_vm_snapshot_restore_check_after_upgrade",
     "Suite": "CNV-lp-interop"
+  },
+  {
+    "Name": "test_vm_snapshot_restore_create_after_upgrade",
+    "Suite": "lp-interop--CNV--ACM+Virt--pytest"
   },
   {
     "Name": "test_vm_snapshot_restore_create_after_upgrade",
@@ -279389,7 +279513,15 @@
   },
   {
     "Name": "test_vm_ssh_after_upgrade",
+    "Suite": "lp-interop--CNV--ACM+Virt--pytest"
+  },
+  {
+    "Name": "test_vm_ssh_after_upgrade",
     "Suite": "CNV-lp-interop"
+  },
+  {
+    "Name": "test_vm_ssh_before_upgrade",
+    "Suite": "lp-interop--CNV--ACM+Virt--pytest"
   },
   {
     "Name": "test_vm_ssh_before_upgrade",
@@ -279397,7 +279529,15 @@
   },
   {
     "Name": "test_vm_with_hotplug_after_upgrade",
+    "Suite": "lp-interop--CNV--ACM+Virt--pytest"
+  },
+  {
+    "Name": "test_vm_with_hotplug_after_upgrade",
     "Suite": "CNV-lp-interop"
+  },
+  {
+    "Name": "test_vm_with_hotplug_before_upgrade",
+    "Suite": "lp-interop--CNV--ACM+Virt--pytest"
   },
   {
     "Name": "test_vm_with_hotplug_before_upgrade",
@@ -279413,7 +279553,15 @@
   },
   {
     "Name": "test_vmi_pod_image_updates_after_upgrade_optin",
+    "Suite": "lp-interop--CNV--ACM+Virt--pytest"
+  },
+  {
+    "Name": "test_vmi_pod_image_updates_after_upgrade_optin",
     "Suite": "CNV-lp-interop"
+  },
+  {
+    "Name": "test_vms_boot_time_after_upgrade",
+    "Suite": "lp-interop--CNV--ACM+Virt--pytest"
   },
   {
     "Name": "test_vms_boot_time_after_upgrade",
@@ -279421,7 +279569,15 @@
   },
   {
     "Name": "test_windows_vm_after_upgrade",
+    "Suite": "lp-interop--CNV--ACM+Virt--pytest"
+  },
+  {
+    "Name": "test_windows_vm_after_upgrade",
     "Suite": "CNV-lp-interop"
+  },
+  {
+    "Name": "test_windows_vm_before_upgrade",
+    "Suite": "lp-interop--CNV--ACM+Virt--pytest"
   },
   {
     "Name": "test_windows_vm_before_upgrade",
